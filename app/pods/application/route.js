@@ -26,7 +26,7 @@ export default class ApplicationRoute extends Route {
 
   model(params) {
     if (params.source) {
-      this.metrics.trackEvent('source', params.source);
+      this.metrics.trackEvent('GoogleAnalytics', { category: 'QR Scanned', action: params.source });
       this.transitionTo('home', { queryParams: { source: null } });
     }
   }
