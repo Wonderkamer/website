@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/Wonderkamer/website/compare/1.2.4...1.2.5) (2021-09-13)
+
+
+### Bug Fixes
+
+* event tracking ([118be76](https://github.com/Wonderkamer/website/commits/118be76e1bd2cca982c27e2862db9da0853e3f2f))
+
 ### [1.2.4](https://github.com/Wonderkamer/website/compare/1.2.3...1.2.4) (2021-07-13)
 
 
