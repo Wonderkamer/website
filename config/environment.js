@@ -67,9 +67,9 @@ module.exports = function (environment) {
       config: {
         id: googleTrackingIdsPerEnvironment[environment] || googleTrackingIdsPerEnvironment['testing'],
         // Use `analytics_debug.js` in development
-        debug: false, //environment === 'development',
+        debug: environment === 'development',
         // Use verbose tracing of GA events
-        trace: false, //environment === 'development',
+        trace: environment === 'development',
         // Ensure development env hits aren't sent to GA
         sendHitTask: environment !== 'development',
         // Specify Google Analytics plugins

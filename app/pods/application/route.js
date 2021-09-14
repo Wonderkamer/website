@@ -27,7 +27,7 @@ export default class ApplicationRoute extends Route {
   model(params) {
     if (params.source) {
       this.metrics.trackEvent('GoogleAnalytics', { category: 'QR Scanned', action: params.source });
-      this.transitionTo('home', { queryParams: { source: null } });
+      this.transitionAway = true;
     }
   }
 
@@ -36,5 +36,14 @@ export default class ApplicationRoute extends Route {
 
     this.intl.setLocale(['nl-nl']);
     this.moment.setLocale('nl');
+  }
+
+  afterModel() {
+    if (this.transitionAway) {
+      delete this.transitionAway;
+      setTimeout(() => {
+        this.router.transitionTo('home', { queryParams: { source: null } });
+      }, 1000);
+    }
   }
 }
