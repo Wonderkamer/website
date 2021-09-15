@@ -27,7 +27,7 @@ export default shuffle([
     id: index++,
     title: 'Eric',
     slug: 'eric-haas',
-    active: true,
+    active: false,
     'tag-line': 'Sociaal ondernemer / business development',
   },
   {
@@ -83,14 +83,14 @@ export default shuffle([
     id: index++,
     title: 'Kaoutar',
     slug: 'kaoutar-beni-driss',
-    active: true,
+    active: false,
     'tag-line': 'Verbinder',
   },
   {
     id: index++,
     title: 'Christine',
     slug: 'christine-van-rossum',
-    active: true,
+    active: false,
     'tag-line': '',
   },
   {
@@ -148,5 +148,12 @@ export default shuffle([
     slug: 'selm-wenselaar',
     active: true,
     'tag-line': 'Dramaturg, Schrijver, Curator',
+  },
+  {
+    id: index++,
+    title: 'Manuel',
+    slug: 'manuel-schipper',
+    active: true,
+    'tag-line': '...',
   },
 ]);
