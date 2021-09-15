@@ -1,1 +1,5 @@
+#!/bin/zsh
+
+source ~/.zshrc
+
 yarn commitlint --edit $1
