@@ -40,7 +40,7 @@ export default class ApplicationRoute extends Route {
   afterModel() {
     if (this.sourceParam) {
       setTimeout(() => {
-        this.metrics.trackEvent('GoogleAnalytics', { category: 'QR Scanned', action: this.sourceParam });
+        this.metrics.trackEvent('GoogleAnalytics', { category: 'landing', action: 'qr-code', label: this.sourceParam });
         delete this.sourceParam;
         this.router.transitionTo('home', { queryParams: { source: null } });
       }, 1000);

@@ -4,8 +4,11 @@ import { Changeset } from 'ember-changeset';
 import { action } from '@ember/object';
 import { ContactForm, ContactFormValidations } from '../changesets/contact-form';
 import lookupValidator from 'ember-changeset-validations';
+import { inject as service } from '@ember/service';
 
 export default class SectionContactComponent extends Component {
+  @service metrics;
+
   @tracked changeset;
   @tracked isSubmitted = false;
 
@@ -25,6 +28,8 @@ export default class SectionContactComponent extends Component {
       }
       this.changeset.save().then((response) => {
         if (response['success'] === true) {
+          this.metrics.trackEvent('GoogleAnalytics', { category: 'communication', action: 'submitted-contact-form', value: 1 });
+
           this.isSubmitted = true;
         }
       });
