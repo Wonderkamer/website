@@ -26,8 +26,7 @@ export default class ApplicationRoute extends Route {
 
   model(params) {
     if (params.source) {
-      this.metrics.trackEvent('GoogleAnalytics', { category: 'QR Scanned', action: params.source });
-      this.transitionAway = true;
+      this.sourceParam = params.source;
     }
   }
 
@@ -39,9 +38,10 @@ export default class ApplicationRoute extends Route {
   }
 
   afterModel() {
-    if (this.transitionAway) {
-      delete this.transitionAway;
+    if (this.sourceParam) {
       setTimeout(() => {
+        this.metrics.trackEvent('GoogleAnalytics', { category: 'QR Scanned', action: this.sourceParam });
+        delete this.sourceParam;
         this.router.transitionTo('home', { queryParams: { source: null } });
       }, 1000);
     }
