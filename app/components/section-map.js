@@ -1,5 +1,5 @@
 import Component from '@glimmer/component';
-import mapStyle from '../../../config/google-map-style/renault';
+import mapStyle from '../config/google-map-style/renault';
 
 export default class SectionMapComponent extends Component {
   lat = 52.362;

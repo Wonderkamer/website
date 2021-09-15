@@ -2,7 +2,7 @@ import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { Changeset } from 'ember-changeset';
 import { action } from '@ember/object';
-import { ContactForm, ContactFormValidations } from '../../../changesets/contact-form';
+import { ContactForm, ContactFormValidations } from '../changesets/contact-form';
 import lookupValidator from 'ember-changeset-validations';
 
 export default class SectionContactComponent extends Component {

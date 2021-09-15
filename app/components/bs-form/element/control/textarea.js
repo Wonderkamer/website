@@ -1,8 +1,8 @@
-import { action, computed } from '@ember/object';
 import BaseControl from 'ember-bootstrap/components/bs-form/element/control';
+import defaultValue from 'ember-bootstrap/utils/default-decorator';
 import formValidationClass from 'ember-bootstrap/utils/cp/form-validation-class';
 import sizeClass from 'ember-bootstrap/utils/cp/size-class';
-import defaultValue from 'ember-bootstrap/utils/default-decorator';
+import { action, computed } from '@ember/object';
 import { tagName } from '@ember-decorators/component';
 
 @tagName('')
@@ -24,18 +24,19 @@ export default class TextDate extends BaseControl {
   }
 
   @action
-  onKeyDown(event) {
-    if (event.keyCode === 13 && !event.ctrlKey) {
-      event.preventDefault();
-
-      document.execCommand('insertText', false, '\n');
+  onKeyPress(event) {
+    if (event.keyCode === 13) {
+      if (!event.ctrlKey) {
+        event.preventDefault();
+        document.execCommand('insertText', false, '\n');
+      } else {
+        event.target.form.dispatchEvent(new Event('submit', { cancelable: true }));
+      }
     }
-
-    this.onChange(event.target.value);
   }
 
   @action
-  onKeyUp(event) {
+  onInput(event) {
     const element = event.target;
 
     this.onChange(element.value);
