@@ -2,6 +2,13 @@
 
 source ~/.zshrc
 
+BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+
+if [ "$BRANCH" = "master" ]; then
+  echo "You can't commit directly to master branch"
+  exit 1
+fi
+
 #
 # Run linting with lint-staged (see lint-staged.config.js)
 #
