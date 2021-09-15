@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Wonderkamer/website/compare/1.2.8...1.3.0) (2021-09-15)
+
+
+### Features
+
+* reconfigured and added events tracking ([34aaaa8](https://github.com/Wonderkamer/website/commits/34aaaa8336051fe8cc4a0fb238c48d46ccac368c))
+
+
+### Bug Fixes
+
+* event-tracking ([cc30a63](https://github.com/Wonderkamer/website/commits/cc30a63a485b2c9b5ab8d5772e20c57d22983d2f))
+
+
+### Refactoring
+
+* upgraded packages and relocated components ([ede4c08](https://github.com/Wonderkamer/website/commits/ede4c080dd77fa7ef54383a2fe680005d732b455))
+
+
+### Miscellaneous
+
+* prevent commit to mster ([4306955](https://github.com/Wonderkamer/website/commits/430695551b4229e9a75b625abb62f72c5be46a6a))
+* reconfigure google analytics debugging per env ([1ae2b9d](https://github.com/Wonderkamer/website/commits/1ae2b9df1b9ea96646952de0b8b57fd4e20b11e0))
+* tooling ([1653a58](https://github.com/Wonderkamer/website/commits/1653a580c8b9c7dd7aeff4fae2c745d3fe8b795e))
+
+
+### Content Changes
+
+* add/remove members ([4901d0a](https://github.com/Wonderkamer/website/commits/4901d0a4ac0df07ebb231a4a6c33f6c7c0d8c47b))
+
 ### [1.2.8](https://github.com/Wonderkamer/website/compare/1.2.6...1.2.8) (2021-09-15)
 
 ### [1.2.7](https://github.com/Wonderkamer/website/compare/1.2.6...1.2.7) (2021-09-15)
