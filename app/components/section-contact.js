@@ -28,7 +28,7 @@ export default class SectionContactComponent extends Component {
       }
       this.changeset.save().then((response) => {
         if (response['success'] === true) {
-          this.metrics.trackEvent('GoogleAnalytics', { category: 'communication', action: 'submitted-contact-form', value: 1 });
+          this.metrics.trackEvent('GoogleAnalytics', { category: 'communication', action: 'submitted-contact-form' });
 
           this.isSubmitted = true;
         }
