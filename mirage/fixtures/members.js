@@ -150,6 +150,7 @@ export default shuffle([
     'tag-line': 'Dramaturg, Schrijver, Curator',
   },
   {
+    /** prefers not to have a bio and picture present, is ok with anonynmous presence */
     id: index++,
     title: 'Manuel',
     slug: 'manuel-schipper',
