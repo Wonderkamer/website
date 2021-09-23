@@ -64,7 +64,8 @@ if (! $reCaptchaResponse->isSuccess()) {
 $name = $data['name'] ?: 'none';
 $subject = $data['subject'] ?: 'none';
 $message = $data['message'] ?: 'none';
-$via = $data['via'] ?: 'none';
+$email = $data['email'] ?: 'none';
+$phone = $data['phone'] ?: 'none';
 
 try {
     $mailToUs = new Mail\Message();
@@ -73,7 +74,8 @@ try {
 Er is een bericht via het contactformulier van de wonderkamer.com website...
 
 Van : $name
-Via : $via
+Via : $email
+    : $phone
 Onderwerp : $subject
 Bericht : 
 
@@ -82,15 +84,15 @@ EOT;
 
     $mailToUs->setBody($body);
     $mailToUs->setFrom($_ENV['CONTACT_FORM_RECIPIENT']);
-    if (filter_var($data['via'], FILTER_VALIDATE_EMAIL)) {
-        $mailToUs->setReplyTo($data['via']);
+    if (filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+        $mailToUs->setReplyTo($data['email']);
     }
     $mailToUs->addTo($_ENV['CONTACT_FORM_RECIPIENT'], 'Wonderkamer');
     $mailToUs->setSubject('[wonderkamer.com] contact verzoek');
 
     $transport->send($mailToUs);
 
-    if (filter_var($data['via'], FILTER_VALIDATE_EMAIL)) {
+    if (filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
         $mailToInquirer = new Mail\Message();
 
         $body = <<<EOT
@@ -103,7 +105,7 @@ EOT;
 
         $mailToInquirer->setBody($body);
         $mailToInquirer->setFrom($_ENV['CONTACT_FORM_RECIPIENT'], 'Wonderkamer');
-        $mailToInquirer->addTo($data['via'], $data['name']);
+        $mailToInquirer->addTo($data['email'], $data['name']);
         $mailToInquirer->setSubject('[wonderkamer.com] contact verzoek');
 
         $transport->send($mailToInquirer);

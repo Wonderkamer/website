@@ -1,9 +1,11 @@
-import { validateLength, validatePresence } from 'ember-changeset-validations/validators';
+import { validateLength, validatePresence, validateFormat } from 'ember-changeset-validations/validators';
 import fetch from 'fetch';
 
 class ContactForm {
   name = '';
   subject = '';
+  email = '';
+  phone = '';
   message = '';
   reCaptchaToken = null;
 
@@ -18,7 +20,14 @@ class ContactForm {
     const response = await fetch(url, {
       method: 'POST',
       headers: headers,
-      body: JSON.stringify({ name: this.name, via: this.via, subject: this.subject, message: this.message, reCaptchaToken: this.reCaptchaToken }),
+      body: JSON.stringify({
+        name: this.name,
+        phone: this.phone,
+        email: this.email,
+        subject: this.subject,
+        message: this.message,
+        reCaptchaToken: this.reCaptchaToken,
+      }),
     });
 
     return await response.json();
@@ -27,7 +36,8 @@ class ContactForm {
 
 const ContactFormValidations = {
   name: [validatePresence({ presence: true, ignoreBlank: true, description: 'naam' }), validateLength({ max: 30, description: 'naam' })],
-  via: [validatePresence({ presence: true, ignoreBlank: true, description: 'via' }), validateLength({ max: 30, description: 'via' })],
+  email: [validatePresence({ presence: true, ignoreBlank: true, description: 'e-mail' }), validateFormat({ type: 'email', description: 'e-mail' })],
+  phone: [validatePresence({ presence: true, ignoreBlank: true, description: 'telefoon' }), validateLength({ max: 30, description: 'telefoon' })],
   subject: [validatePresence({ presence: true, ignoreBlank: true, description: 'onderwerp' }), validateLength({ max: 120, description: 'onderwerp' })],
   message: [validatePresence({ presence: true, ignoreBlank: true, description: 'boodschap' }), validateLength({ max: 1000, description: 'boodschap' })],
   reCaptchaToken: [validatePresence({ presence: true, ignoreBlank: true, description: 'captcha' })],

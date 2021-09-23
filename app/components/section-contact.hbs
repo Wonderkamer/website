@@ -7,7 +7,7 @@
 
   <div class="row text-responsive">
     <div class="col-12 col-sm-5">
-      <Util::MarkdownFromUrl @url="/sections/contact.md"/>
+      <Util::MarkdownFromUrl @url="/sections/contact.md" />
     </div>
     <div class="col-12 col-sm-7">
 
@@ -16,42 +16,93 @@
       {{/if}}
 
       {{#unless this.isSubmitted}}
-        <BsForm @model={{this.changeset}}
-                @submitOnEnter={{true}}
-                @onSubmit={{fn this.onSubmit}}
-                autocomplete="off" as |form|>
+        <BsForm
+          @model={{this.changeset}}
+          @submitOnEnter={{true}}
+          @onSubmit={{fn this.onSubmit}}
+          autocomplete="off"
+          as |form|
+        >
           <form.element @size="lg" @property="name" @label="Naam" as |element|>
-            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent"/>
+            <element.control
+              autocomplete="off"
+              data-lpignore="true"
+              class="bg-transparent"
+            />
           </form.element>
-          <form.element @size="lg" @property="via" @label="Telefoon of e-mail" as |element|>
-            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent"/>
+          <form.element
+            @size="lg"
+            @property="email"
+            @label="E-mail"
+            as |element|
+          >
+            <element.control
+              autocomplete="off"
+              data-lpignore="true"
+              class="bg-transparent"
+            />
           </form.element>
-          <form.element @size="lg" @property="subject" @label="Onderwerp" as |element|>
-            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent"/>
+          <form.element
+            @size="lg"
+            @property="phone"
+            @label="Telefoon"
+            as |element|
+          >
+            <element.control
+              autocomplete="off"
+              data-lpignore="true"
+              class="bg-transparent"
+            />
           </form.element>
-          <form.element @size="lg" @controlType="textarea" @property="message" @label="Boodschap" as |element|>
-            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent" rows="5"/>
+          <form.element
+            @size="lg"
+            @property="subject"
+            @label="Onderwerp"
+            as |element|
+          >
+            <element.control
+              autocomplete="off"
+              data-lpignore="true"
+              class="bg-transparent"
+            />
+          </form.element>
+          <form.element
+            @size="lg"
+            @controlType="textarea"
+            @property="message"
+            @label="Boodschap"
+            as |element|
+          >
+            <element.control
+              autocomplete="off"
+              data-lpignore="true"
+              class="bg-transparent"
+              rows="5"
+            />
           </form.element>
 
           <style>
-            .g-recaptcha {
-              margin-left: auto;
-              display: table;
-            }
+            .g-recaptcha { margin-left: auto; display: table; }
           </style>
           <form.element @property="reCaptchaToken">
-            <GRecaptcha @onSuccess={{fn this.onCaptchaResolved}} @onExpired={{fn this.onCaptchaExpired}} @ref={{mut this.reCaptchaReference}} />
+            <GRecaptcha
+              @onSuccess={{fn this.onCaptchaResolved}}
+              @onExpired={{fn this.onCaptchaExpired}}
+              @ref={{mut this.reCaptchaReference}}
+            />
           </form.element>
 
-          <BsButton @type="outline-primary" @block={{true}} @buttonType="submit">verzend</BsButton>
+          <BsButton
+            @type="outline-primary"
+            @block={{true}}
+            @buttonType="submit"
+          >verzend</BsButton>
         </BsForm>
       {{/unless}}
 
     </div>
   </div>
 
-  <PortalTarget @name="section-contact"/>
-
+  <PortalTarget @name="section-contact" />
 
 </div>
-

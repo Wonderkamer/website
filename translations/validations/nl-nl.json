@@ -1,6 +1,7 @@
 {
   "validations": {
     "present": "{description} moet ingevuld worden",
-    "tooLong": "{description} is te lang (maximaal {max} tekens)"
+    "tooLong": "{description} is te lang (maximaal {max} tekens)",
+    "email": "{description} moet een geldig e-mail adres bevatten"
   }
 }
