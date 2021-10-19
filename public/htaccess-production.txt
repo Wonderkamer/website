@@ -1,6 +1,6 @@
 # AuthType Basic
 # AuthName "Protected Area"
-# AuthUserFile /var/www/clients/client14/web128/web/.htpasswd
+# AuthUserFile /sites/wonderkamer.com/www/.htpasswd
 # Require valid-user
 
 <IfModule mod_rewrite.c>
@@ -9,12 +9,12 @@
   RewriteBase /
 
   # rewrite http > https
-  RewriteCond %{SERVER_PORT} 80
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
+  #RewriteCond %{SERVER_PORT} 80
+  #RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
 
-  # rewrite www.wonderkamer.com > https://www.wonderkamer.com (only for production)
+  # rewrite www.wonderkamer.com > wonderkamer.com (only for production)
   RewriteCond %{HTTP_HOST} ^www.wonderkamer.com$ [NC]
-  RewriteRule ^(.*)$ https://wonderkamer.com/$1 [R=301,L]
+  RewriteRule ^(.*)$ http://wonderkamer.com/$1 [R=301,L]
 
   # rewrite 404 to index.html (deeplinks in SPA)
   RewriteRule ^index\.html$ - [L]

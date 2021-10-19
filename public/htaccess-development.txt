@@ -1,6 +1,6 @@
 AuthType Basic
 AuthName "Protected Area"
-AuthUserFile /var/www/clients/client14/web129/web/.htpasswd
+AuthUserFile /sites/wonderkamer.com/subdomains/dev/.htpasswd
 Require valid-user
 Order Deny,Allow
 Deny from all
@@ -12,12 +12,8 @@ Satisfy any
   RewriteBase /
 
   # rewrite http > https
-  RewriteCond %{SERVER_PORT} 80
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
-
-  # rewrite www.wonderkamer.com > https://www.wonderkamer.com (only for production)
-  RewriteCond %{HTTP_HOST} ^www.wonderkamer.com$ [NC]
-  RewriteRule ^(.*)$ https://wonderkamer.com/$1 [R=301,L]
+  # RewriteCond %{SERVER_PORT} 80
+  # RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
 
   # rewrite 404 to index.html (deeplinks in SPA)
   RewriteRule ^index\.html$ - [L]
