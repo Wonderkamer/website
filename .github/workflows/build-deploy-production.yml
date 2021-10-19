@@ -2,14 +2,13 @@ name: Production Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -35,7 +34,7 @@ jobs:
       - name: Install PHP dependencies (into /dist/vendor)
         uses: nick-zh/composer-php@php7.4
         with:
-          action: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
+          action: "install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress"
 
       - name: Persist distribution directory (/dist as 'build-prod')
         uses: actions/upload-artifact@v2
@@ -50,7 +49,6 @@ jobs:
     needs: build
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -66,7 +64,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
           local-dir: dist/
-          ftp-server: sftp://s2.bushbaby.nl/web
-          ftp-username: wonderkamer_site_prod
+          ftp-server: sftp://wonderkamer.com.transurl.nl/www
+          ftp-username: wonderkamer.com
           ftp-password: ${{ secrets.PRD_SFTP_PASSWORD }}
           git-ftp-args: --insecure

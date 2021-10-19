@@ -37,11 +37,13 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
 
 $transport = new SmtpTransport();
 $transport->setOptions(new SmtpOptions([
-    'host'              => 'mail.bushbaby.nl',
+    'host'              => 'smtp.transip.email',
+    'port' => 465,
     'connection_class'  => 'login',
     'connection_config' => [
         'username' => $_ENV['CONTACT_FORM_RECIPIENT'],
         'password' => $_ENV['SMTP_PASSWORD'],
+        'ssl'      => 'tls',
     ],
 ]));
 
