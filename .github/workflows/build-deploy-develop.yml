@@ -2,48 +2,45 @@ name: Development Deploy
 
 on:
   push:
-    branches: [ develop ]
+    branches: [develop]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
+      - name: Install dependencies and build
+        run: |
+          yarn install
+          yarn build-dev
 
-    - name: Install dependencies and build
-      run: |
-        yarn install
-        yarn build-dev
+      - name: Copy development htaccess
+        uses: canastro/copy-file-action@master
+        with:
+          source: "public/htaccess-development.txt"
+          target: "dist/.htaccess"
 
-    - name: Copy development htaccess
-      uses: canastro/copy-file-action@master
-      with:
-        source: "public/htaccess-development.txt"
-        target: "dist/.htaccess"
+      - name: Install dotenv file
+        run: |
+          echo "GOOGLE_RECAPTCHA_SECRET=\"${{ secrets.GOOGLE_RECAPTCHA_SECRET }}\"" > dist/.env
+          echo "SMTP_PASSWORD=\"${{ secrets.SMTP_PASSWORD }}\"" >> dist/.env
+          echo "CONTACT_FORM_RECIPIENT=\"hallo@wonderkamer.com\"" >> dist/.env
 
-    - name: Install dotenv file
-      run: |
-        echo "GOOGLE_RECAPTCHA_SECRET=\"${{ secrets.GOOGLE_RECAPTCHA_SECRET }}\"" > dist/.env
-        echo "SMTP_PASSWORD=\"${{ secrets.SMTP_PASSWORD }}\"" >> dist/.env
-        echo "CONTACT_FORM_RECIPIENT=\"hallo@wonderkamer.com\"" >> dist/.env
+      - name: Install PHP dependencies (into /dist/vendor)
+        uses: nick-zh/composer-php@php7.4
+        with:
+          action: "install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress"
 
-
-
-    - name: Install PHP dependencies (into /dist/vendor)
-      uses: nick-zh/composer-php@php7.4
-      with:
-        action: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
-
-    - name: Persist distribution directory (/dist as 'build-dev')
-      uses: actions/upload-artifact@v2
-      with:
-        name: build-dev
-        path: dist/
+      - name: Persist distribution directory (/dist as 'build-dev')
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-dev
+          path: dist/
 
   # see https://github.com/SamKirkland/FTP-Deploy-Action
   deploy-to-develop:
@@ -52,23 +49,22 @@ jobs:
     needs: build
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
+      - name: Retrieve distribution
+        uses: actions/download-artifact@v2
+        with:
+          name: build-dev
+          path: dist
 
-    - name: Retrieve distribution
-      uses: actions/download-artifact@v2
-      with:
-        name: build-dev
-        path: dist
-
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
-      with:
-        local-dir: dist/
-        ftp-server: sftp://s2.bushbaby.nl/web
-        ftp-username: wonderkamer_site_dev
-        ftp-password: ${{ secrets.DEV_SFTP_PASSWORD }}
-        git-ftp-args: --insecure
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          local-dir: dist/
+          ftp-server: sftp://wonderkamer.com.transurl.nl/subdomains/dev
+          ftp-username: wonderkamer.com
+          ftp-password: ${{ secrets.DEV_SFTP_PASSWORD }}
+          git-ftp-args: --insecure
