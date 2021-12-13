@@ -34,7 +34,7 @@ export default shuffle([
     id: index++,
     title: 'Masja',
     slug: 'masja-ros',
-    active: true,
+    active: false,
     'tag-line': 'Social media entrepreneur',
   },
   {
@@ -118,7 +118,7 @@ export default shuffle([
     id: index++,
     title: 'Maria',
     slug: 'maria',
-    active: true,
+    active: false,
     'tag-line': '...',
   },
   {
@@ -156,5 +156,12 @@ export default shuffle([
     slug: 'manuel-schipper',
     active: true,
     'tag-line': '...',
+  },
+  {
+    id: index++,
+    title: 'Michaël',
+    slug: 'michael-kiliaan',
+    active: true,
+    'tag-line': 'Frontend developer',
   },
 ]);
