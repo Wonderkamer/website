@@ -1,13 +1,13 @@
-{{on-key 'ArrowUp' this.previousSection}}
-{{on-key 'ArrowDown' this.nextSection}}
+{{on-key "ArrowUp" this.previousSection}}
+{{on-key "ArrowDown" this.nextSection}}
 
 <div {{did-insert this.sectionInserted}}>
   <Section class="bg-primary" @routeId="home">
-    <SectionTitle/>
+    <SectionTitle />
   </Section>
 
   <Section class="bg-secondary py-5" @routeId="about">
-    <SectionAbout/>
+    <SectionAbout />
   </Section>
 
   <Section @routeId="impressions">
@@ -15,15 +15,15 @@
   </Section>
 
   <Section class="bg-secondary py-5" @routeId="members">
-    <SectionMembers @members={{this.members}} @member={{this.member}}/>
+    <SectionMembers @members={{this.members}} @member={{this.member}} />
   </Section>
 
   <Section class="bg-secondary" @routeId="map">
-    <SectionMap/>
+    <SectionMap />
   </Section>
 
   <Section class="bg-secondary py-5" @routeId="contact">
-    <SectionContact/>
+    <SectionContact />
   </Section>
 </div>
 {{outlet}}

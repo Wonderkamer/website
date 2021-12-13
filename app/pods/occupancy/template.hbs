@@ -1,7 +1,15 @@
 {{page-title "Bezetting"}}
 <section class="bg-primary d-flex align-items-center justify-content-center">
-  <div class="w-100 min-vh-100 d-flex flex-row align-items-center justify-content-center position-relative">
-    <Occupancy::Singular @occupancies={{this.model}} class="occupancy occupancy-singular"/>
-    <Occupancy::Averages @occupancies={{this.model}} class="occupancy occupancy-averages"/>
+  <div
+    class="w-100 min-vh-100 d-flex flex-row align-items-center justify-content-center position-relative"
+  >
+    <Occupancy::Singular
+      @occupancies={{this.model}}
+      class="occupancy occupancy-singular"
+    />
+    <Occupancy::Averages
+      @occupancies={{this.model}}
+      class="occupancy occupancy-averages"
+    />
   </div>
 </section>

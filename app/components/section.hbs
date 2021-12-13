@@ -1,6 +1,8 @@
-<section class="d-flex {{this.classes}}"
+<section
+  class="d-flex {{this.classes}}"
   {{in-viewport onEnter=(fn this.onViewIn) onExit=(fn this.onViewOut)}}
-         ...attributes>
+  ...attributes
+>
   <div class="d-flex flex-grow-1">
     {{yield}}
   </div>
