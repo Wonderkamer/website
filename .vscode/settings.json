@@ -1,0 +1,12 @@
+{
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.packageManager": "yarn",
+    "editor.formatOnSave": true,
+    "prettier.documentSelectors": ["**/*.hbs"],
+    "[handlebars]": {
+       "editor.defaultFormatter": "esbenp.prettier-vscode",
+       "editor.formatOnSave": true,
+       "files.insertFinalNewline": false
+    }
+}

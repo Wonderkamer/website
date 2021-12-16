@@ -12,7 +12,13 @@
 
             <item.title class="py-4" data-slug={{member.slug}}>
               <div class="d-flex justify-content-between align-items-start {{if (mod index 2) "flex-row" "flex-row-reverse"}}">
-                <img src={{member.profileImgSmallSrc}} class="img-fluid rounded-circle" alt="" role="presentation" style="max-width: 4rem; max-height: 4rem;min-width: 3rem; min-height: 3rem;">
+                <img
+                  src={{member.profileImgSmallSrc}}
+                  class="img-fluid rounded-circle"
+                  alt=""
+                  role="presentation"
+                  style="max-width: 4rem; max-height: 4rem;min-width: 3rem; min-height: 3rem;"
+                />
                 <div class="{{if (mod index 2) "text-right" "text-left"}}">
                   <h5 class="mb-0">{{member.title}}</h5>
                   <p class="mb-0 font-italic">{{lowercase member.tagLine}}</p>
@@ -23,7 +29,7 @@
             <item.body>
               <div class="row {{if (mod index 2) "flex-row-reverse" "flex-row"}}">
                 <div class="col-12 col-sm-6 col-md-5">
-                  <img class="img-fluid mb-0" src="{{member.profileImgLargeSrc}}" alt={{member.title}}/>
+                  <img class="img-fluid mb-0" src="{{member.profileImgLargeSrc}}" alt={{member.title}} />
                   <p class="small mb-0 {{if (mod index 2) "text-right" "text-left"}}">{{member.title}}, {{member.tagLine}}</p>
                 </div>
 

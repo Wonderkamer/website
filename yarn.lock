@@ -6693,6 +6693,13 @@ ember-style-modifier@^0.6.0:
     ember-cli-babel "^7.21.0"
     ember-modifier "^2.1.0"
 
+ember-template-lint-plugin-prettier@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/ember-template-lint-plugin-prettier/-/ember-template-lint-plugin-prettier-3.0.1.tgz#af117d12e1e0ab2037efb1e538c8b638197e31b1"
+  integrity sha512-mMDxJGp2eFqNs0fu1uiU13P5XOg+NEvzs+0BTEPtnWZ0m6t60jPvFFwKi4h62SRP4GJdtoP7WCXDo442VJZzEQ==
+  dependencies:
+    prettier-linter-helpers "^1.0.0"
+
 ember-template-lint@^2.10.0:
   version "2.21.0"
   resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-2.21.0.tgz#7e120abf309a8810eeed26c52377943faf15a95b"
