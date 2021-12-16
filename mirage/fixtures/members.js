@@ -97,7 +97,7 @@ export default shuffle([
     id: index++,
     title: 'Liesbeth',
     slug: 'liesbeth-scholten',
-    active: true,
+    active: false,
     'tag-line': 'Co-creator, facilitator en onderzoeker',
   },
   {
