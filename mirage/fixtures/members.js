@@ -111,7 +111,7 @@ export default shuffle([
     id: index++,
     title: 'Bas',
     slug: 'bas-mijling',
-    active: true,
+    active: false,
     'tag-line': 'Onderzoeker luchtkwaliteit',
   },
   {
@@ -146,7 +146,7 @@ export default shuffle([
     id: index++,
     title: 'Selm',
     slug: 'selm-wenselaar',
-    active: true,
+    active: false,
     'tag-line': 'Dramaturg, Schrijver, Curator',
   },
   {
@@ -154,14 +154,14 @@ export default shuffle([
     id: index++,
     title: 'Manuel',
     slug: 'manuel-schipper',
-    active: true,
+    active: false,
     'tag-line': '...',
   },
   {
     id: index++,
     title: 'Michaël',
     slug: 'michael-kiliaan',
-    active: true,
+    active: false,
     'tag-line': 'Frontend developer',
   },
 ]);

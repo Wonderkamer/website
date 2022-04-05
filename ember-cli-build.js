@@ -6,7 +6,7 @@ const isProductionLikeBuild = ['production', 'testing'].indexOf(EmberApp.env()) 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     'ember-bootstrap': {
-      bootstrapVersion: 4,
+      bootstrapVersion: 5,
       importBootstrapCSS: false,
     },
     fingerprint: {

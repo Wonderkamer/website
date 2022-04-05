@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import 'app/fonts';
+@import "app/fonts";
 
 section {
   min-height: 100vh;
@@ -51,49 +51,15 @@ section {
 //}
 //@media (max-width: 1200px) {
 .text-responsive {
-  font-size: calc(0.975rem + .5vw) !important;
+  font-size: calc(0.975rem + 0.5vw) !important;
 }
 
 //}
 .form-group {
   label {
     font-weight: bold;
-    @include responsive-font-size($font-size-sm - 0.2rem, true);
+    // @include responsive-font-size($font-size-sm - 0.2rem, true);
     text-transform: uppercase;
-  }
-
-  div.invalid-feedback {
-    padding: $badge-padding-y $badge-padding-x;
-
-    font-weight: $badge-font-weight;
-    line-height: 1;
-    float:right;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    @include border-radius($badge-border-radius);
-    @include transition($badge-transition);
-
-    @at-root a#{&} {
-      @include hover-focus() {
-        text-decoration: none;
-      }
-    }
-
-    // Empty badges collapse automatically
-    &:empty {
-      display: none;
-    }
-    @include badge-variant(map-get($theme-colors, 'primary'));
-    ////width: auto;
-    font-size: $font-size-sm * 0.8 !important;
-    //text-align: right;
-    //color: $text-muted;
-    //background-color: map-get($theme-colors, 'primary');
-    //display:inline !important;
-    //margin-left: auto;
-    //@include border-radius(4px);
-    //padding: 2px 4px;
   }
 
   //&:after {
@@ -107,8 +73,32 @@ section {
   //}
 }
 
+div.invalid-feedback {
+  padding: $badge-padding-y $badge-padding-x;
+
+  font-weight: $badge-font-weight;
+  line-height: 1;
+  float: right;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+
+  @include border-radius($badge-border-radius);
+  @include transition($transition-base);
+
+  // Empty badges collapse automatically
+  &:empty {
+    display: none;
+  }
+
+  background-color: map-get($theme-colors, "primary") !important;
+  color: map-get($theme-colors, "dark") !important;
+  font-size: $font-size-sm * 0.8 !important;
+}
+
 .form-control {
-  &.is-valid, &.is-invalid {
+  &.is-valid,
+  &.is-invalid {
     border-color: transparent;
     background-image: none;
   }
@@ -117,14 +107,14 @@ section {
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=email]:focus,
-input[type=number]:focus,
-[type=text].form-control:focus,
-[type=password].form-control:focus,
-[type=email].form-control:focus,
-[type=tel].form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
 [contenteditable].form-control:focus {
   box-shadow: inset 0 -1px 0 #ddd;
   border: transparent;
@@ -150,8 +140,8 @@ input[type=number]:focus,
       width: 200px;
       height: 1rem;
       text-align: right;
-      font-size: $font-size-sm * .8;
-      color: map-get($grays, '700');
+      font-size: $font-size-sm * 0.8;
+      color: map-get($grays, "700");
       line-height: 0;
     }
   }
@@ -165,9 +155,10 @@ input[type=number]:focus,
       margin-top: 1.5rem;
     }
 
-    .title, .label {
-      font-size: $font-size-sm * .8;
-      color: map-get($grays, '700');
+    .title,
+    .label {
+      font-size: $font-size-sm * 0.8;
+      color: map-get($grays, "700");
     }
 
     .label {
@@ -178,7 +169,7 @@ input[type=number]:focus,
       height: 20vh;
 
       .bar {
-        background-color: map-get($theme-colors, 'dark');
+        background-color: map-get($theme-colors, "dark");
         line-height: 0;
 
         margin-right: 2px;
@@ -201,7 +192,7 @@ input[type=number]:focus,
 
 .section-members .accordion {
   .rounded-circle {
-    border: 2px solid map-get($theme-colors, 'primary');
+    border: 2px solid map-get($theme-colors, "primary");
   }
 
   .card {
@@ -217,7 +208,10 @@ input[type=number]:focus,
         padding: 2.25rem 0;
         width: 100%;
 
-        &.btn:focus, &.btn:active:focus, &.btn.active:focus, &.btn:hover {
+        &.btn:focus,
+        &.btn:active:focus,
+        &.btn.active:focus,
+        &.btn:hover {
           outline: none;
           box-shadow: none;
           text-decoration: none;
@@ -228,5 +222,12 @@ input[type=number]:focus,
     .card-body {
       padding: 1rem 0;
     }
+  }
+}
+
+.badge {
+  color: unset !important;
+  &.bg-primary {
+    color: map-get($colors, "dark") !important;
   }
 }

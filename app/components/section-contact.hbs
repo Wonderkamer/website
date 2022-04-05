@@ -16,7 +16,7 @@
       {{/if}}
 
       {{#unless this.isSubmitted}}
-        <BsForm @model={{this.changeset}} @submitOnEnter={{true}} @onSubmit={{fn this.onSubmit}} autocomplete="off" as |form|>
+        <BsForm @formLayout="vertical" @model={{this.changeset}} @submitOnEnter={{true}} @onSubmit={{fn this.onSubmit}} autocomplete="off" as |form|>
           <form.element @size="lg" @property="name" @label="Naam" as |element|>
             <element.control autocomplete="off" data-lpignore="true" class="bg-transparent" />
           </form.element>
@@ -40,7 +40,7 @@
             <GRecaptcha @onSuccess={{fn this.onCaptchaResolved}} @onExpired={{fn this.onCaptchaExpired}} @ref={{mut this.reCaptchaReference}} />
           </form.element>
 
-          <BsButton @type="outline-primary" @block={{true}} @buttonType="submit">verzend</BsButton>
+          <BsButton @type="primary" @buttonType="submit" class="w-100 mt-5">verzend</BsButton>
         </BsForm>
       {{/unless}}
 
