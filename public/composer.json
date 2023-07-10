@@ -2,8 +2,8 @@
     "name": "wonderkamer/website",
     "description": "stichting Wonderkamer website - backend",
     "require": {
-        "google/recaptcha": "^1.2",
-        "vlucas/phpdotenv": "^4.0",
+        "google/recaptcha": "1.2.4",
+        "vlucas/phpdotenv": "4.1.8",
         "laminas/laminas-mail": "^2.12",
         "laminas/laminas-servicemanager": "^3.4",
         "laminas/laminas-json": "^3.1"
