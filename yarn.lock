@@ -7483,10 +7483,10 @@ eslint-config-prettier@^6.11.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-plugin-ember-es6-class@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember-es6-class/-/eslint-plugin-ember-es6-class-0.0.1.tgz#f16234f4dd8105bae54bb23041471f2a44cd64a0"
-  integrity sha512-P9Ae4e/LCp9TPcJ8ogYaSTS9e8Xh/al0JQLgE4kgqICXuIMpQV9S2s+733EbCIpyMY+mJlkrGIyd3kwL3TnyWg==
+eslint-plugin-ember-es6-class@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember-es6-class/-/eslint-plugin-ember-es6-class-0.0.2.tgz#d5c95bb2954d4bbda9afb583cfc6e4d6c82be813"
+  integrity sha512-ClCcigH/ZCtb3i+j1hJCY+Z90qhHdWYVVPeshdXhZeIH3U7JsRINasxaSfQV+cNpxSlSz/CtQ0gX/H5IiuK/UA==
   dependencies:
     requireindex "~1.1.0"
 
