@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":pinAllExceptPeerDependencies"],
+  "rebaseWhen": "conflicted",
+  "hostRules": [
+    {
+      "hostType": "git-tags",
+      "matchHost": "https://github.com/Wonderkamer",
+      "encrypted": {
+        "token": "wcFMA7CNLw51im1DARAAzNuc17LQ4ZH72N2XbnPYHbwvvc95Icd6rNqILaqc1qkBf0sUBe0D4/sczSgn43M68lS4EtOtrbgxu2otgrav2W9ipSOh0Dc5puIp6Qp5Hk8HjqCXcHo83Bnk7O9pZ2q/cFz2OGtVUuwzN9JrQodjNZftnm4cdwochQW0JyD1ZWhx8eAo/ChmgnUudT6HcFzDCHKSbcq71/iMlM6OaCAc7Ek5CEdKjoKomKtezOWVwlgPVUaFwJwAl5Zv5qSaszVdTs8R0pFajJGF+YqVxJA19DJ5wBcZZEFP85qtxYVhMrC6prPE4R0LYUL0NgtYBC2uO1zlo3w34MG8uINi9BCTFGEQwfdaUP/Ia6xYsaB430vI2sMStwA2IZ8Jqxt7pj/AgDhzyv8E3k5Zkbt+/FTZS9wMAykAddL91CiluIexR7xLY4m01OcplrszyKNbUAnnGdjLprdDrXlPWnF3dG3/BbID2PRepbMLWdr138ijrZ/Q3WjpssS4w6spM/BzsiWvYmSGubszcoGsJTuhfmbYRUpM+5PABZ2Hul6ByioCG3PSzui2eEk/pLoGSh+HkXK7V2hwEX4c+zH0TfcgDtiU+Tme+gAUq706WgkWl8IPzaRCKYSoKfptjCxtnK66Biz0+WHZ0W3Uod+jVWeeO3fkVPDK6x3SviNKD60Zg8ZqmibSegEbvmOqytCft/m4W+8/f8mqBMT/K+AxifXSXggXn+AaXQBdSyrWqZyMOw1XZiiDDoggIlne4umkg8zHs/srK64l/TJu1gwtvP6qbTq4jVebI7K8/WM3Yj3tB3uPGQNhTAqO7kvNWnj8ewlZJ9tLEbhtqUh3DRlH8r45"
+      }
+    },
+    {
+      "hostType": "docker-compose",
+      "matchHost": "https://ghcr.io/Wonderkamer",
+      "username": "basz",
+      "encrypted": {
+        "token": "wcFMA7CNLw51im1DARAAzNuc17LQ4ZH72N2XbnPYHbwvvc95Icd6rNqILaqc1qkBf0sUBe0D4/sczSgn43M68lS4EtOtrbgxu2otgrav2W9ipSOh0Dc5puIp6Qp5Hk8HjqCXcHo83Bnk7O9pZ2q/cFz2OGtVUuwzN9JrQodjNZftnm4cdwochQW0JyD1ZWhx8eAo/ChmgnUudT6HcFzDCHKSbcq71/iMlM6OaCAc7Ek5CEdKjoKomKtezOWVwlgPVUaFwJwAl5Zv5qSaszVdTs8R0pFajJGF+YqVxJA19DJ5wBcZZEFP85qtxYVhMrC6prPE4R0LYUL0NgtYBC2uO1zlo3w34MG8uINi9BCTFGEQwfdaUP/Ia6xYsaB430vI2sMStwA2IZ8Jqxt7pj/AgDhzyv8E3k5Zkbt+/FTZS9wMAykAddL91CiluIexR7xLY4m01OcplrszyKNbUAnnGdjLprdDrXlPWnF3dG3/BbID2PRepbMLWdr138ijrZ/Q3WjpssS4w6spM/BzsiWvYmSGubszcoGsJTuhfmbYRUpM+5PABZ2Hul6ByioCG3PSzui2eEk/pLoGSh+HkXK7V2hwEX4c+zH0TfcgDtiU+Tme+gAUq706WgkWl8IPzaRCKYSoKfptjCxtnK66Biz0+WHZ0W3Uod+jVWeeO3fkVPDK6x3SviNKD60Zg8ZqmibSegEbvmOqytCft/m4W+8/f8mqBMT/K+AxifXSXggXn+AaXQBdSyrWqZyMOw1XZiiDDoggIlne4umkg8zHs/srK64l/TJu1gwtvP6qbTq4jVebI7K8/WM3Yj3tB3uPGQNhTAqO7kvNWnj8ewlZJ9tLEbhtqUh3DRlH8r45"
+      }
+    },
+    {
+      "hostType": "docker",
+      "matchHost": "https://ghcr.io/Wonderkamer",
+      "username": "basz",
+      "encrypted": {
+        "token": "wcFMA7CNLw51im1DARAAzNuc17LQ4ZH72N2XbnPYHbwvvc95Icd6rNqILaqc1qkBf0sUBe0D4/sczSgn43M68lS4EtOtrbgxu2otgrav2W9ipSOh0Dc5puIp6Qp5Hk8HjqCXcHo83Bnk7O9pZ2q/cFz2OGtVUuwzN9JrQodjNZftnm4cdwochQW0JyD1ZWhx8eAo/ChmgnUudT6HcFzDCHKSbcq71/iMlM6OaCAc7Ek5CEdKjoKomKtezOWVwlgPVUaFwJwAl5Zv5qSaszVdTs8R0pFajJGF+YqVxJA19DJ5wBcZZEFP85qtxYVhMrC6prPE4R0LYUL0NgtYBC2uO1zlo3w34MG8uINi9BCTFGEQwfdaUP/Ia6xYsaB430vI2sMStwA2IZ8Jqxt7pj/AgDhzyv8E3k5Zkbt+/FTZS9wMAykAddL91CiluIexR7xLY4m01OcplrszyKNbUAnnGdjLprdDrXlPWnF3dG3/BbID2PRepbMLWdr138ijrZ/Q3WjpssS4w6spM/BzsiWvYmSGubszcoGsJTuhfmbYRUpM+5PABZ2Hul6ByioCG3PSzui2eEk/pLoGSh+HkXK7V2hwEX4c+zH0TfcgDtiU+Tme+gAUq706WgkWl8IPzaRCKYSoKfptjCxtnK66Biz0+WHZ0W3Uod+jVWeeO3fkVPDK6x3SviNKD60Zg8ZqmibSegEbvmOqytCft/m4W+8/f8mqBMT/K+AxifXSXggXn+AaXQBdSyrWqZyMOw1XZiiDDoggIlne4umkg8zHs/srK64l/TJu1gwtvP6qbTq4jVebI7K8/WM3Yj3tB3uPGQNhTAqO7kvNWnj8ewlZJ9tLEbhtqUh3DRlH8r45"
+      }
+    },
+    {
+      "hostType": "dockerfile",
+      "matchHost": "https://ghcr.io/Wonderkamer",
+      "username": "basz",
+      "encrypted": {
+        "token": "wcFMA7CNLw51im1DARAAzNuc17LQ4ZH72N2XbnPYHbwvvc95Icd6rNqILaqc1qkBf0sUBe0D4/sczSgn43M68lS4EtOtrbgxu2otgrav2W9ipSOh0Dc5puIp6Qp5Hk8HjqCXcHo83Bnk7O9pZ2q/cFz2OGtVUuwzN9JrQodjNZftnm4cdwochQW0JyD1ZWhx8eAo/ChmgnUudT6HcFzDCHKSbcq71/iMlM6OaCAc7Ek5CEdKjoKomKtezOWVwlgPVUaFwJwAl5Zv5qSaszVdTs8R0pFajJGF+YqVxJA19DJ5wBcZZEFP85qtxYVhMrC6prPE4R0LYUL0NgtYBC2uO1zlo3w34MG8uINi9BCTFGEQwfdaUP/Ia6xYsaB430vI2sMStwA2IZ8Jqxt7pj/AgDhzyv8E3k5Zkbt+/FTZS9wMAykAddL91CiluIexR7xLY4m01OcplrszyKNbUAnnGdjLprdDrXlPWnF3dG3/BbID2PRepbMLWdr138ijrZ/Q3WjpssS4w6spM/BzsiWvYmSGubszcoGsJTuhfmbYRUpM+5PABZ2Hul6ByioCG3PSzui2eEk/pLoGSh+HkXK7V2hwEX4c+zH0TfcgDtiU+Tme+gAUq706WgkWl8IPzaRCKYSoKfptjCxtnK66Biz0+WHZ0W3Uod+jVWeeO3fkVPDK6x3SviNKD60Zg8ZqmibSegEbvmOqytCft/m4W+8/f8mqBMT/K+AxifXSXggXn+AaXQBdSyrWqZyMOw1XZiiDDoggIlne4umkg8zHs/srK64l/TJu1gwtvP6qbTq4jVebI7K8/WM3Yj3tB3uPGQNhTAqO7kvNWnj8ewlZJ9tLEbhtqUh3DRlH8r45"
+      }
+    }
+  ]
+}
