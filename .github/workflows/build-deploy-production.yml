@@ -1,8 +1,12 @@
 name: Production Deploy
 
 on:
+  workflow_dispatch:
+
   push:
     branches: [master]
+    tags:
+      - '*'
 
 jobs:
   build:
@@ -22,8 +26,8 @@ jobs:
       - name: Copy production htaccess
         uses: canastro/copy-file-action@master
         with:
-          source: "public/htaccess-production.txt"
-          target: "dist/.htaccess"
+          source: 'public/htaccess-production.txt'
+          target: 'dist/.htaccess'
 
       - name: Install dotenv file
         run: |
@@ -32,9 +36,9 @@ jobs:
           echo "CONTACT_FORM_RECIPIENT=\"hallo@wonderkamer.com\"" >> dist/.env
 
       - name: Install PHP dependencies (into /dist/vendor)
-        uses: nick-zh/composer-php@php7.4
+        uses: mileschou/composer-action/8.0/v1@master
         with:
-          action: "install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress"
+          args: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
 
       - name: Persist distribution directory (/dist as 'build-prod')
         uses: actions/upload-artifact@v2
@@ -61,10 +65,14 @@ jobs:
           path: dist
 
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          local-dir: dist/
-          ftp-server: sftp://wonderkamer.com.transurl.nl/www
-          ftp-username: wonderkamer.com
-          ftp-password: ${{ secrets.PRD_SFTP_PASSWORD }}
-          git-ftp-args: --insecure
+          local_path: ./dist/*
+          remote_path: /www
+          username: wonderkamer.com
+          server: wonderkamer.com.transurl.nl
+          ssh_private_key: ignored because using password
+          password: ${{ secrets.DEV_SFTP_PASSWORD }}
+          sftp_only: true
+          delete_remote_files: true
+          sftpArgs: -o StrictHostKeyChecking=no

@@ -36,9 +36,9 @@ jobs:
           echo "CONTACT_FORM_RECIPIENT=\"hallo@wonderkamer.com\"" >> dist/.env
 
       - name: Install PHP dependencies (into /dist/vendor)
-        uses: nick-zh/composer-php@php7.4
+        uses: mileschou/composer-action/8.0/v1@master
         with:
-          action: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
+          args: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
 
       - name: Persist distribution directory (/dist as 'build-dev')
         uses: actions/upload-artifact@v2
@@ -74,4 +74,5 @@ jobs:
           ssh_private_key: ignored because using password
           password: ${{ secrets.DEV_SFTP_PASSWORD }}
           sftp_only: true
+          delete_remote_files: true
           sftpArgs: -o StrictHostKeyChecking=no
