@@ -1,6 +1,6 @@
 AuthType Basic
 AuthName "Protected Area"
-AuthUserFile /sites/wonderkamer.com/subdomains/dev/.htpasswd
+AuthUserFile /data/sites/web/wonderkamercom/subdomains/dev/.htpasswd
 Require valid-user
 Order Deny,Allow
 Deny from all
