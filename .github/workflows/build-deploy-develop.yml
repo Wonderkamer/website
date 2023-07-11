@@ -36,7 +36,7 @@ jobs:
           echo "CONTACT_FORM_RECIPIENT=\"hallo@wonderkamer.com\"" >> dist/.env
 
       - name: Install PHP dependencies (into /dist/vendor)
-        uses: mileschou/composer-action/8.0/v2@master
+        uses: mileschou/composer-action/8.0/install@master
         with:
           args: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
 
