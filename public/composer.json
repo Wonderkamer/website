@@ -1,6 +1,13 @@
 {
     "name": "wonderkamer/website",
     "description": "stichting Wonderkamer website - backend",
+    "config": {
+		"optimize-autoloader": true,
+		"prepend-autoloader": false,
+		"platform": {
+			"php": "8.0.13"
+		}
+	},
     "require": {
         "google/recaptcha": "1.2.4",
         "vlucas/phpdotenv": "4.1.8",
