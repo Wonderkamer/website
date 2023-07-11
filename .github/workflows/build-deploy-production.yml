@@ -63,13 +63,13 @@ jobs:
           name: build-prod
           path: dist
 
-      - name: FTP-Deploy-Action
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      - name: Deploy
+        uses: contention/rsync-deployments@v2.0.0
         with:
-          local_path: ./dist/*
-          remote_path: /data/sites/web/wonderkamercom/www
-          username: wonderkamercom
-          server: wondey.ssh.transip.me
-          password: ${{ secrets.PRD_SFTP_PASSWORD }}
-          sftp_only: true
-          delete_remote_files: true
+          flags: -avzr --delete-after
+          excludes:
+          user: wonderkamercom
+          host: wondey.ssh.transip.me
+          localpath: /dist/
+          remotepath: /data/sites/web/wonderkamercom/www
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
