@@ -66,7 +66,7 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           local_path: ./dist/*
-          remote_path: /subdomains/dev
+          remote_path: /data/sites/web/wonderkamercom/subdomains/dev
           username: wonderkamercom
           server: wondey.ssh.transip.me
           ssh_private_key: ignored because using password
