@@ -4,7 +4,7 @@
     "require": {
         "google/recaptcha": "1.2.4",
         "vlucas/phpdotenv": "4.1.8",
-        "laminas/laminas-mail": "2.23.0",
+        "laminas/laminas-mail": "2.22.0",
         "laminas/laminas-servicemanager": "3.20.0",
         "laminas/laminas-json": "3.5.0"
     },
