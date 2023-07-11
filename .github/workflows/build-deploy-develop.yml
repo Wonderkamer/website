@@ -70,5 +70,5 @@ jobs:
           user: wonderkamercom
           host: wondey.ssh.transip.me
           localpath: /dist/
-          remotepath: /data/sites/web/wonderkamercom/www/subdomains/dev
+          remotepath: /data/sites/web/wonderkamercom/subdomains/dev
           deploy_key: ${{ secrets.DEPLOY_KEY }}
