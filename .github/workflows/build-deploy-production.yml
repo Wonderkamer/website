@@ -67,7 +67,7 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           local_path: ./dist/*
-          remote_path: /www
+          remote_path: /data/sites/web/wonderkamercom/www
           username: wonderkamercom
           server: wondey.ssh.transip.me
           password: ${{ secrets.PRD_SFTP_PASSWORD }}
