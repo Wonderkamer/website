@@ -67,8 +67,8 @@ jobs:
         with:
           local_path: ./dist/*
           remote_path: /subdomains/dev
-          username: wonderkamer.com
-          server: wonderkamer.com.transurl.nl
+          username: wonderkamercom
+          server: wondey.ssh.transip.me
           ssh_private_key: ignored because using password
           password: ${{ secrets.DEV_SFTP_PASSWORD }}
           sftp_only: true
