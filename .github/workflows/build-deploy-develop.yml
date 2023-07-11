@@ -5,8 +5,6 @@ on:
 
   push:
     branches: [develop]
-    tags:
-      - '*'
 
 jobs:
   build:
@@ -38,7 +36,7 @@ jobs:
       - name: Install PHP dependencies (into /dist/vendor)
         uses: mileschou/composer-action/8.0/install@master
         with:
-          args: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
+          args: 'install --working-dir=./dist --prefer-dist --no-interaction --no-progress'
 
       - name: Persist distribution directory (/dist as 'build-dev')
         uses: actions/upload-artifact@v2
