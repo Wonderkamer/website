@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
 
   push:
-    branches: [master]
     tags:
       - '*'
 
@@ -69,10 +68,8 @@ jobs:
         with:
           local_path: ./dist/*
           remote_path: /www
-          username: wonderkamer.com
-          server: wonderkamer.com.transurl.nl
-          ssh_private_key: ignored because using password
-          password: ${{ secrets.DEV_SFTP_PASSWORD }}
+          username: wonderkamercom
+          server: wondey.ssh.transip.me
+          password: ${{ secrets.PRD_SFTP_PASSWORD }}
           sftp_only: true
           delete_remote_files: true
-          sftpArgs: -o StrictHostKeyChecking=no
