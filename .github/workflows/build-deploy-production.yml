@@ -40,12 +40,12 @@ jobs:
           args: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
 
       - name: Persist distribution directory (/dist as 'build-prod')
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: build-prod
           path: dist/
+          retention-days: 1
 
-  # see https://github.com/SamKirkland/FTP-Deploy-Action
   deploy-to-production:
     runs-on: ubuntu-latest
 
@@ -58,7 +58,7 @@ jobs:
           persist-credentials: false
 
       - name: Retrieve distribution
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3.0.2
         with:
           name: build-prod
           path: dist
