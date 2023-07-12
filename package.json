@@ -88,7 +88,7 @@
     "ember-in-viewport": "3.10.3",
     "ember-intl": "5.7.2",
     "ember-keyboard": "6.0.4",
-    "ember-leaflet": "5.0.0-beta.3",
+    "ember-leaflet": "5.1.1",
     "ember-leaflet-gesture-handling": "0.1.1",
     "ember-math-helpers": "3.0.0",
     "ember-maybe-import-regenerator": "0.1.6",
