@@ -187,9 +187,6 @@ devDependencies:
   eslint-plugin-ember:
     specifier: 8.14.0
     version: 8.14.0
-  eslint-plugin-ember-es6-class:
-    specifier: 0.0.1
-    version: 0.0.1
   eslint-plugin-node:
     specifier: 11.1.0
     version: 11.1.0(eslint@8.44.0)
@@ -7708,13 +7705,6 @@ packages:
       get-stdin: 6.0.0
     dev: true
 
-  /eslint-plugin-ember-es6-class@0.0.1:
-    resolution: {integrity: sha512-P9Ae4e/LCp9TPcJ8ogYaSTS9e8Xh/al0JQLgE4kgqICXuIMpQV9S2s+733EbCIpyMY+mJlkrGIyd3kwL3TnyWg==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      requireindex: 1.1.0
-    dev: true
-
   /eslint-plugin-ember@8.14.0:
     resolution: {integrity: sha512-PQhR58omMAZzcJOB8GLWzL6l/vjRZ2Uo1eohxOmgPUyeBkHfZAMlvK+OSeneMLIr4azLQ4GISkklwv6lxb8qnw==}
     engines: {node: 10.* || >= 12}
@@ -11841,11 +11831,6 @@ packages:
   /require-relative@0.8.7:
     resolution: {integrity: sha512-AKGr4qvHiryxRb19m3PsLRGuKVAbJLUD7E6eOaHkfKhwc+vSgVOCY5xNvm9EkolBKTOf0GrQAZKLimOCz81Khg==}
     dev: false
-
-  /requireindex@1.1.0:
-    resolution: {integrity: sha512-LBnkqsDE7BZKvqylbmn7lTIVdpx4K/QCduRATpO5R+wtPmky/a8pN1bO2D6wXppn1497AJF9mNjqAXr6bdl9jg==}
-    engines: {node: '>=0.10.5'}
-    dev: true
 
   /requires-port@1.0.0:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}

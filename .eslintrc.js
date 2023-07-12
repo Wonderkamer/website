@@ -9,7 +9,7 @@ module.exports = {
       legacyDecorators: true,
     },
   },
-  plugins: ['prettier', 'ember-es6-class'],
+  plugins: ['prettier'],
   extends: ['eslint:recommended', 'plugin:ember/recommended', 'plugin:prettier/recommended'],
   env: {
     browser: true,
@@ -20,7 +20,6 @@ module.exports = {
     'prettier/prettier': ['error', { singleQuote: true, printWidth: 160 }],
     'ember/classic-decorator-hooks': 'error',
     'ember/classic-decorator-no-classic-methods': 'error',
-    'ember-es6-class/no-object-extend': 0,
 
     // this can be removed once the following is fixed
     // https://github.com/mysticatea/eslint-plugin-node/issues/77
