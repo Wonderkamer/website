@@ -50,7 +50,7 @@
     "ember-resolver": "8.1.0",
     "ember-template-lint": "2.21.0",
     "eslint": "8.44.0",
-    "eslint-config-prettier": "6.15.0",
+    "eslint-config-prettier": "8.8.0",
     "eslint-plugin-ember": "8.14.0",
     "eslint-plugin-ember-es6-class": "0.0.1",
     "eslint-plugin-node": "11.1.0",
