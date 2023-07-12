@@ -11,6 +11,7 @@
     "test": "tests"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "ember build --environment=production",
     "build-dev": "ember build --environment=testing",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
