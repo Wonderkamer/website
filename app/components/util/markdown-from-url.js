@@ -45,10 +45,10 @@ export default class UtilMarkdownFromUrlComponent extends Component {
     return this.args.cssWhileIdle || {};
   }
 
-  @(task(function* (url) {
+  setupTask = task(this, { enqueue: true }, async (url) => {
     let result;
     try {
-      result = yield this.fetchMarkdownTask.perform(url);
+      result = await this.fetchMarkdownTask.perform(url);
     } catch (error) {
       switch (true) {
         case error instanceof NotFoundError:
@@ -60,13 +60,12 @@ export default class UtilMarkdownFromUrlComponent extends Component {
     }
 
     return result;
-  }).enqueue())
-  setupTask;
+  });
 
-  @task(function* (url) {
+  fetchMarkdownTask = task(this, async (url) => {
     url = `${url}?_=${version}`;
 
-    return yield fetch(url).then((response) => {
+    return await fetch(url).then((response) => {
       if (response.ok) {
         return response.text();
       } else if (response.status === 404) {
@@ -77,6 +76,5 @@ export default class UtilMarkdownFromUrlComponent extends Component {
         throw error;
       }
     });
-  })
-  fetchMarkdownTask;
+  });
 }

@@ -25,10 +25,10 @@ export default class BezettingRoute extends Route {
     });
   }
 
-  @task(function* () {
-    yield timeout(30000);
+  refreshTask = task(this, async () => {
+    await timeout(30000);
 
-    yield this.refresh();
-  })
+    await this.refresh();
+  });
   refreshTask;
 }
