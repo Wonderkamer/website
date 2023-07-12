@@ -21,8 +21,8 @@ dependencies:
     specifier: 5.0.0
     version: 5.0.0(@babel/core@7.17.8)(@glint/template@1.0.2)(ember-source@3.28.12)(webpack@5.88.1)
   ember-bootstrap-changeset-validations:
-    specifier: 4.0.0
-    version: 4.0.0
+    specifier: 5.0.0
+    version: 5.0.0
   ember-changeset:
     specifier: 3.15.0
     version: 3.15.0
@@ -3748,6 +3748,7 @@ packages:
 
   /bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: false
@@ -5982,17 +5983,14 @@ packages:
       - supports-color
       - webpack
 
-  /ember-bootstrap-changeset-validations@4.0.0:
-    resolution: {integrity: sha512-ZU5Ko9XPGxJMVca/1SibZYCOdP9bRLwm4Tc9JHLYfjuSyPak32cos58MfE3UdHvkrAOEx4FMTAeLB7Rga+0QVg==}
-    engines: {node: 10.* || >= 12}
+  /ember-bootstrap-changeset-validations@5.0.0:
+    resolution: {integrity: sha512-VYashGWE1uWdkFRfNFGkwP5LcSNfI33F7jRcZfIIFPw+jp/KXqV5DjvGrLx+hKBh998PC+O8t8gF5WhInbjtfQ==}
+    engines: {node: 12.* || 14.* || >= 16}
     dependencies:
-      ember-changeset-validations: 3.16.0
       ember-cli-babel: 7.26.11
-      ember-cli-htmlbars: 4.5.0
+      ember-cli-htmlbars: 6.2.0
     transitivePeerDependencies:
       - supports-color
-      - webpack-cli
-      - webpack-command
     dev: false
 
   /ember-bootstrap@5.0.0(@babel/core@7.17.8)(@glint/template@1.0.2)(ember-source@3.28.12)(webpack@5.88.1):
@@ -8255,6 +8253,7 @@ packages:
 
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -10660,6 +10659,7 @@ packages:
 
   /nan@2.15.0:
     resolution: {integrity: sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==}
+    requiresBuild: true
     dev: false
     optional: true
 
