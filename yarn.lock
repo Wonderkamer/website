@@ -1503,7 +1503,7 @@
     "@embroider/shared-internals" "^1.5.0"
     semver "^7.3.5"
 
-"@embroider/addon-shim@^1.2.0":
+"@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.8.4":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.8.5.tgz#c0aae417f9583058f40550f206fc53444e325f11"
   integrity sha512-pDgpdTsC9i/+5hHziygK5VIZc64OG8bupiqL0OxJp+bnINURalHMbu5B3Gikq/a0QIvMPzDFWzKxIZCBpeiHkg==
@@ -6094,7 +6094,7 @@ ember-assign-polyfill@^2.6.0:
     ember-cli-babel "^7.20.5"
     ember-cli-version-checker "^2.0.0"
 
-ember-auto-import@2.6.3:
+ember-auto-import@2.6.3, ember-auto-import@^2.5.0:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.6.3.tgz#f18d1b93dd10b08ba5496518436f9d56dd4e000a"
   integrity sha512-uLhrRDJYWCRvQ4JQ1e64XlSrqAKSd6PXaJ9ZsZI6Tlms9T4DtQFxNXasqji2ZRJBVrxEoLCRYX3RTldsQ0vNGQ==
@@ -7266,16 +7266,14 @@ ember-modifier@^3.0.0, ember-modifier@^3.1.0:
     ember-cli-typescript "^5.0.0"
     ember-compatibility-helpers "^1.2.5"
 
-ember-modifier@^3.2.7:
-  version "3.2.7"
-  resolved "https://registry.yarnpkg.com/ember-modifier/-/ember-modifier-3.2.7.tgz#f2d35b7c867cbfc549e1acd8d8903c5ecd02ea4b"
-  integrity sha512-ezcPQhH8jUfcJQbbHji4/ZG/h0yyj1jRDknfYue/ypQS8fM8LrGcCMo0rjDZLzL1Vd11InjNs3BD7BdxFlzGoA==
+"ember-modifier@^3.2.7 || ^4.0.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/ember-modifier/-/ember-modifier-4.1.0.tgz#cb91efbf8ca4ff4a1a859767afa42dddba5a2bbd"
+  integrity sha512-YFCNpEYj6jdyy3EjslRb2ehNiDvaOrXTilR9+ngq+iUqSHYto2zKV0rleiA1XJQ27ELM1q8RihT29U6Lq5EyqQ==
   dependencies:
-    ember-cli-babel "^7.26.6"
+    "@embroider/addon-shim" "^1.8.4"
     ember-cli-normalize-entity-name "^1.0.0"
     ember-cli-string-utils "^1.1.0"
-    ember-cli-typescript "^5.0.0"
-    ember-compatibility-helpers "^1.2.5"
 
 ember-moment@10.0.0:
   version "10.0.0"
@@ -7432,13 +7430,14 @@ ember-stargate@0.4.3:
     ember-resources "^5.0.1"
     tracked-maps-and-sets "^3.0.1"
 
-ember-style-modifier@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/ember-style-modifier/-/ember-style-modifier-0.8.0.tgz#ef46b3f288e63e3d850418ea8dc6f7b12edde721"
-  integrity sha512-I7M+oZ+poYYOP7n521rYv7kkYZbxotL8VbtHYxLQ3tasRZYQJ21qfu3vVjydSjwyE3w7EZRgKngBoMhKSAEZnw==
+ember-style-modifier@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/ember-style-modifier/-/ember-style-modifier-3.0.1.tgz#96aaaa2b713108725b81d8b934ec445ece6b89c3"
+  integrity sha512-WHRVIiqY/dpwDtVWlnHW0P4Z+Jha8QEwfaQdIF2ckJL77ZKdjbV2j1XZymS0Nzj61EGx5BM+YEsGL16r3hLv2A==
   dependencies:
-    ember-cli-babel "^7.26.6"
-    ember-modifier "^3.2.7"
+    ember-auto-import "^2.5.0"
+    ember-cli-babel "^7.26.11"
+    ember-modifier "^3.2.7 || ^4.0.0"
 
 ember-style-modifier@^0.7.0:
   version "0.7.0"
