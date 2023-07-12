@@ -28,13 +28,13 @@ export default class SectionImpressionsComponent extends Component {
     this.animateTask.perform();
   }
 
-  @task(function* () {
-    yield timeout(this.advanceDelay);
+  animateTask = task(this, async () => {
+    await timeout(this.advanceDelay);
 
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
 
     this.animateTask.perform();
-  })
+  });
   animateTask;
 
   get cssProperties() {
