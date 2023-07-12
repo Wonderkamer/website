@@ -19,8 +19,8 @@ jobs:
 
       - name: Install dependencies and build
         run: |
-          yarn install
-          yarn build
+          pnpm install
+          pnpm run build
 
       - name: Copy production htaccess
         uses: canastro/copy-file-action@master
