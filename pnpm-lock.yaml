@@ -173,8 +173,8 @@ devDependencies:
     specifier: 4.6.0
     version: 4.6.0(@babel/core@7.17.8)
   ember-resolver:
-    specifier: 8.1.0
-    version: 8.1.0(@babel/core@7.17.8)
+    specifier: 10.1.1
+    version: 10.1.1(@ember/string@3.1.1)(ember-source@3.28.12)
   ember-template-lint:
     specifier: 2.21.0
     version: 2.21.0
@@ -1064,7 +1064,6 @@ packages:
     dependencies:
       '@babel/core': 7.17.8
       '@babel/helper-plugin-utils': 7.16.7
-    dev: false
 
   /@babel/plugin-transform-object-super@7.16.7(@babel/core@7.17.8):
     resolution: {integrity: sha512-14J1feiQVWaGvRxj2WjyMuXS2jsBkgB3MdSN5HuC2G5nRspa5RK9COcs82Pwy5BuGcjb+fYaUj94mYcOj7rCvw==}
@@ -1771,7 +1770,6 @@ packages:
       ember-cli-babel: 7.26.11
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   /@ember/test-helpers@1.7.3:
     resolution: {integrity: sha512-0NwxM9rtl/vD/Zqv8cHefLxojL3l2xuRs6pEppff/Fe39ybXz5H7hm5ZvnpRO/lpSsIeX7tivht9ko6/V+sShw==}
@@ -2186,7 +2184,6 @@ packages:
       babel-plugin-debug-macros: 0.3.4(@babel/core@7.17.8)
     transitivePeerDependencies:
       - '@babel/core'
-    dev: false
 
   /@glint/template@1.0.2:
     resolution: {integrity: sha512-kFWfJrS7XM0NjC5YSN0CWA9FiN0mhUvWVlQ2O7YRz/uhrO8+TVYNLst0WKELRbfCXbdI7wyYQkazNgz6FoL9CA==}
@@ -2991,7 +2988,6 @@ packages:
   /ast-types@0.13.3:
     resolution: {integrity: sha512-XTZ7xGML849LkQP86sWdQzfhwbt3YwIO6MqbX9mUNYY98VKaaVZP7YNNm70IpwecbkkxmfC5IYAzOQ/2p29zRA==}
     engines: {node: '>=4'}
-    dev: false
 
   /astral-regex@2.0.0:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
@@ -3302,7 +3298,6 @@ packages:
     dependencies:
       '@babel/types': 7.22.5
       lodash: 4.17.21
-    dev: false
 
   /babel-plugin-htmlbars-inline-precompile@1.0.0:
     resolution: {integrity: sha512-4jvKEHR1bAX03hBDZ94IXsYCj3bwk9vYsn6ux6JZNL2U5pvzCWjqyrGahfsGNrhERyxw8IqcirOi9Q6WCo3dkQ==}
@@ -3748,6 +3743,7 @@ packages:
 
   /bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: false
@@ -4033,7 +4029,6 @@ packages:
     dependencies:
       broccoli-plugin: 1.3.1
       mkdirp: 0.5.6
-    dev: false
 
   /broccoli-filter@1.3.0:
     resolution: {integrity: sha512-VXJXw7eBfG82CFxaBDjYmyN7V72D4In2zwLVQJd/h3mBfF3CMdRTsv2L20lmRTtCv1sAHcB+LgMso90e/KYiLw==}
@@ -6191,7 +6186,6 @@ packages:
 
   /ember-cli-get-component-path-option@1.0.0:
     resolution: {integrity: sha512-k47TDwcJ2zPideBCZE8sCiShSxQSpebY2BHcX2DdipMmBox5gsfyVrbKJWIHeSTTKyEUgmBIvQkqTOozEziCZA==}
-    dev: false
 
   /ember-cli-head@2.0.0:
     resolution: {integrity: sha512-i9qwljBlpzU/ei0xN+FiCHUvU1ZdjVXk0OzRKoeMZJK3m4p29CvB095klT0q+PigvYFYHIyTaeSWmbgjP8CZiw==}
@@ -6372,7 +6366,6 @@ packages:
 
   /ember-cli-path-utils@1.0.0:
     resolution: {integrity: sha512-Qq0vvquzf4cFHoDZavzkOy3Izc893r/5spspWgyzLCPTaG78fM3HsrjZm7UWEltbXUqwHHYrqZd/R0jS08NqSA==}
-    dev: false
 
   /ember-cli-preprocess-registry@3.3.0:
     resolution: {integrity: sha512-60GYpw7VPeB7TvzTLZTuLTlHdOXvayxjAQ+IxM2T04Xkfyu75O2ItbWlftQW7NZVGkaCsXSRAmn22PG03VpLMA==}
@@ -7301,18 +7294,20 @@ packages:
       - supports-color
     dev: false
 
-  /ember-resolver@8.1.0(@babel/core@7.17.8):
-    resolution: {integrity: sha512-MGD7X2ztZVswGqs1mLgzhZJRhG7XiF6Mg4DgC7xJFWRYQQUHyGJpGdNWY9nXyrYnRIsCrQoL1do41zpxbrB/cg==}
-    engines: {node: '>= 10.*'}
+  /ember-resolver@10.1.1(@ember/string@3.1.1)(ember-source@3.28.12):
+    resolution: {integrity: sha512-y1zzn6C4YGJui+tJzcCKlsf1oSOSVAkRrvmg8OwqVIKnALKKb9ihx2qLCslHg8x0wJvJgMtDMXgrczvQrZW0Lw==}
+    engines: {node: 14.* || 16.* || >= 18}
+    peerDependencies:
+      '@ember/string': ^3.0.1
+      ember-source: ^4.8.3 || >= 5.0.0
+    peerDependenciesMeta:
+      ember-source:
+        optional: true
     dependencies:
-      babel-plugin-debug-macros: 0.3.4(@babel/core@7.17.8)
-      broccoli-funnel: 3.0.8
-      broccoli-merge-trees: 4.2.0
+      '@ember/string': 3.1.1
       ember-cli-babel: 7.26.11
-      ember-cli-version-checker: 5.1.2
-      resolve: 1.22.2
+      ember-source: 3.28.12(@babel/core@7.17.8)
     transitivePeerDependencies:
-      - '@babel/core'
       - supports-color
     dev: true
 
@@ -7357,7 +7352,6 @@ packages:
       recast: 0.18.10
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   /ember-source-channel-url@3.0.0:
     resolution: {integrity: sha512-vF/8BraOc66ZxIDo3VuNP7iiDrnXEINclJgSJmqwAAEpg84Zb1DHPI22XTXSDA+E8fW5btPUxu65c3ZXi8AQFA==}
@@ -7400,7 +7394,6 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
-    dev: false
 
   /ember-stargate@0.4.3(@babel/core@7.17.8)(@glimmer/tracking@1.1.1)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@3.28.12):
     resolution: {integrity: sha512-GeT5n+TT3Lfl335f16fx9ms0Jap+v5LTs8otIaQEGtFbSP5Jj/hlT3JPB9Uo8IDLXdjejxJsKRpCEzRD43g5dg==}
@@ -8255,6 +8248,7 @@ packages:
 
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -9643,7 +9637,6 @@ packages:
 
   /jquery@3.6.0:
     resolution: {integrity: sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==}
-    dev: false
 
   /js-string-escape@1.0.1:
     resolution: {integrity: sha512-Smw4xcfIQ5LVjAOuJCvN/zIodzA/BBSsluuoSykP+lUvScIi4U6RJLfwHet5cxFnCswUjISV8oAXaqaJDY3chg==}
@@ -10660,6 +10653,7 @@ packages:
 
   /nan@2.15.0:
     resolution: {integrity: sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -11705,7 +11699,6 @@ packages:
       esprima: 4.0.1
       private: 0.1.8
       source-map: 0.6.1
-    dev: false
 
   /redent@3.0.0:
     resolution: {integrity: sha512-6tDA8g98We0zd0GvVeMT9arEOnTw9qM03L9cJXaCjrip1OO764RDBLBfrB4cwzNGDj5OA5ioymC9GkizgWJDUg==}
