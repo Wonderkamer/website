@@ -91,7 +91,7 @@
     "ember-leaflet": "5.0.0-beta.3",
     "ember-leaflet-gesture-handling": "0.1.1",
     "ember-math-helpers": "3.0.0",
-    "ember-maybe-import-regenerator": "0.1.6",
+    "ember-maybe-import-regenerator": "1.0.0",
     "ember-metrics": "1.5.2",
     "ember-moment": "10.0.0",
     "ember-page-title": "7.0.0",
