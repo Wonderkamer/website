@@ -74,7 +74,7 @@
     "circular": "1.0.5",
     "ember-bootstrap": "5.0.0",
     "ember-bootstrap-changeset-validations": "4.0.0",
-    "ember-changeset": "3.15.0",
+    "ember-changeset": "4.1.2",
     "ember-changeset-validations": "3.16.0",
     "ember-cli-head": "2.0.0",
     "ember-cli-mirage": "2.4.0",
