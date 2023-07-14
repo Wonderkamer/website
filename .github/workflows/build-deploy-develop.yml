@@ -83,11 +83,6 @@ jobs:
     needs: build
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-
       - name: Retrieve distribution
         uses: actions/download-artifact@v3.0.2
         with:
