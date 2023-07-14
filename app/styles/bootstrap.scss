@@ -1,34 +1,36 @@
-// https://getbootstrap.com/docs/5.1/customize/sass/#importing
+// // https://getbootstrap.com/docs/5.1/customize/sass/#importing
 
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+// // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "ember-bootstrap/functions";
 
-// 2. Include any default variable overrides here
+// // 2. Include any default variable overrides here
 @import "app/variables";
 
-// 3. Include remainder of required Bootstrap stylesheets
+// // 3. Include remainder of required Bootstrap stylesheets
 @import "ember-bootstrap/variables";
+
+// // 4. Include any default map overrides here
+
+// // 5. Include remainder of required parts
+@import "ember-bootstrap/maps";
 @import "ember-bootstrap/mixins";
 @import "ember-bootstrap/root";
 
-// 4. Include any optional Bootstrap CSS as needed
-@import "ember-bootstrap/badge";
-@import "ember-bootstrap/helpers";
-@import "ember-bootstrap/buttons";
-@import "ember-bootstrap/accordion";
-@import "ember-bootstrap/carousel";
-@import "ember-bootstrap/containers";
-@import "ember-bootstrap/forms";
-@import "ember-bootstrap/grid";
-@import "ember-bootstrap/images";
-@import "ember-bootstrap/helpers";
-@import "ember-bootstrap/reboot";
-@import "ember-bootstrap/transitions";
-@import "ember-bootstrap/type";
+// // 6. Optionally include any other parts as needed
 @import "ember-bootstrap/utilities";
+@import "ember-bootstrap/reboot";
+@import "ember-bootstrap/type";
+@import "ember-bootstrap/images";
+@import "ember-bootstrap/containers";
+@import "ember-bootstrap/grid";
+@import "ember-bootstrap/helpers";
 
-// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+// // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "ember-bootstrap/utilities/api";
-@import "ember-bootstrap/vendor/rfs";
 
-// 6. Add additional custom code here
+// // 6. Add additional custom code here
+@import "ember-bootstrap/transitions";
+@import "ember-bootstrap/accordion";
+@import "ember-bootstrap/forms";
+@import "ember-bootstrap/buttons";
+@import "ember-bootstrap/badge";

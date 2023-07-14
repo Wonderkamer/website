@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
-import ENV from 'wonderkamer/config/environment';
+import ENV from '@wonderkamer/website/config/environment';
 import fetch from 'fetch';
-import { action, computed } from '@ember/object';
+import { action } from '@ember/object';
 import { isNone } from '@ember/utils';
 import { NotFoundError } from '@ember-data/adapter/error';
 import { task } from 'ember-concurrency';
@@ -28,7 +28,10 @@ export default class UtilMarkdownFromUrlComponent extends Component {
       if (typeof markdownOrError === 'string') {
         if (!isNone(this.replaceHash)) {
           for (let key in this.replaceHash) {
-            markdownOrError = markdownOrError.replace(new RegExp(`\\[${key}\\]`, 'g'), this.replaceHash[key]);
+            markdownOrError = markdownOrError.replace(
+              new RegExp(`\\[${key}\\]`, 'g'),
+              this.replaceHash[key]
+            );
           }
         }
 
@@ -37,10 +40,13 @@ export default class UtilMarkdownFromUrlComponent extends Component {
     });
   }
 
-  @computed('args.{cssWhileLoading,cssWhileIdle}', 'setupTask.isRunning')
   get cssProperties() {
     if (this.setupTask.isRunning) {
-      return Object.assign({}, this.args.cssWhileIdle || {}, this.args.cssWhileLoading || {});
+      return Object.assign(
+        {},
+        this.args.cssWhileIdle || {},
+        this.args.cssWhileLoading || {}
+      );
     }
     return this.args.cssWhileIdle || {};
   }

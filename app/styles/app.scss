@@ -1,6 +1,5 @@
 @import "bootstrap";
 @import "app/fonts";
-
 section {
   min-height: 100vh;
 
@@ -54,7 +53,7 @@ section {
   font-size: calc(0.975rem + 0.5vw) !important;
 }
 
-//}
+// //}
 .form-group {
   label {
     font-weight: bold;
@@ -72,6 +71,8 @@ section {
   //  content: '';
   //}
 }
+
+.g-recaptcha { margin-left: auto; display: table; }
 
 div.invalid-feedback {
   padding: $badge-padding-y $badge-padding-x;

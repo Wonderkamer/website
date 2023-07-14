@@ -12,7 +12,7 @@ module('Integration | Component | section-members', function (hooks) {
 
     await render(hbs`<SectionMembers />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.strictEqual(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | section-members', function (hooks) {
       </SectionMembers>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.strictEqual(this.element.textContent.trim(), 'template block text');
   });
 });

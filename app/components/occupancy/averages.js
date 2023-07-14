@@ -27,7 +27,9 @@ export default class OccupancyAveragesComponent extends Component {
         return new Date(occupancy.on).getDay() === value;
       });
 
-      const average = occupanciesForDay.reduce((p, c) => p + c.occupancy, 0) / occupanciesForDay.length || 0;
+      const average =
+        occupanciesForDay.reduce((p, c) => p + c.occupancy, 0) /
+          occupanciesForDay.length || 0;
 
       return { value, average };
     });
@@ -43,7 +45,9 @@ export default class OccupancyAveragesComponent extends Component {
           return new Date(occupancy.on).getHours() === value;
         });
 
-      const average = occupanciesForHour.reduce((p, c) => p + c.occupancy, 0) / occupanciesForHour.length || 0;
+      const average =
+        occupanciesForHour.reduce((p, c) => p + c.occupancy, 0) /
+          occupanciesForHour.length || 0;
 
       return { value, average };
     });
@@ -64,8 +68,12 @@ export default class OccupancyAveragesComponent extends Component {
       );
 
       return averageOccupancySplitByDay.map((entry) => {
-        const normalizedAverage = maxAverage === 0 ? maxAverage : entry.average / maxAverage;
-        return Object.assign(entry, { average: normalizedAverage, label: moment.localeData(moment.locale())._weekdaysMin[entry.value] });
+        const normalizedAverage =
+          maxAverage === 0 ? maxAverage : entry.average / maxAverage;
+        return Object.assign(entry, {
+          average: normalizedAverage,
+          label: moment.localeData(moment.locale())._weekdaysMin[entry.value],
+        });
       });
     }
 
@@ -79,9 +87,13 @@ export default class OccupancyAveragesComponent extends Component {
       );
 
       return averageOccupancySplitByHour.map((entry) => {
-        const normalizedAverage = maxAverage === 0 ? maxAverage : entry.average / maxAverage;
+        const normalizedAverage =
+          maxAverage === 0 ? maxAverage : entry.average / maxAverage;
 
-        return Object.assign(entry, { average: normalizedAverage, label: entry.value });
+        return Object.assign(entry, {
+          average: normalizedAverage,
+          label: entry.value,
+        });
       });
     }
 
@@ -95,7 +107,10 @@ export default class OccupancyAveragesComponent extends Component {
       this.title = null;
     } else {
       this.day = value;
-      this.title = this.intl.t('occupancy.days.' + moment.localeData('en')._weekdays[value].toString().toLowerCase());
+      this.title = this.intl.t(
+        'occupancy.days.' +
+          moment.localeData('en')._weekdays[value].toString().toLowerCase()
+      );
     }
 
     event.stopPropagation();
