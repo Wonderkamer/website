@@ -91,7 +91,7 @@ jobs:
         uses: actions/download-artifact@v3.0.2
         with:
           name: build-prod-${{ github.sha }}
-          path: dist
+          path: build.tar
 
       - name: Extract distribution
         run: tar -xvf build.tar
