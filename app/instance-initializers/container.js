@@ -1,4 +1,4 @@
-import application from 'wonderkamer/utils/application';
+import application from '@wonderkamer/website/utils/application';
 
 /**
  * initialize runs upon app instance initialization. It simply set the instance.

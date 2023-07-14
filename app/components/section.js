@@ -1,14 +1,13 @@
 import Component from '@glimmer/component';
 import { inject as service } from '@ember/service';
-import { action, computed } from '@ember/object';
+import { action } from '@ember/object';
 
 export default class SectionComponent extends Component {
-  @service inViewport;
   @service homeNav;
   @service router;
 
   @action
-  onViewIn(element) {
+  onViewIn() {
     if (!this.args.routeId) {
       return;
     }
@@ -17,7 +16,7 @@ export default class SectionComponent extends Component {
   }
 
   @action
-  onViewOut(element) {
+  onViewOut() {
     this.homeNav.sectionWentOutOfView(this._route);
   }
 
@@ -25,7 +24,6 @@ export default class SectionComponent extends Component {
     return this.args.routeId !== 'home' ? this.args.routeId : 'index';
   }
 
-  @computed('classIdentifier', 'isActive')
   get classes() {
     const classes = [];
 
@@ -42,7 +40,6 @@ export default class SectionComponent extends Component {
     return `section-${this.args.routeId}`;
   }
 
-  @computed('args.routeId', 'homeNav.activeRoute')
   get isActive() {
     return this.homeNav.activeRoute === `home.${this.args.routeId}`;
   }

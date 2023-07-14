@@ -1,29 +1,56 @@
 'use strict';
 
+const googleTrackingIdsPerEnvironment = {
+  development: 'G-P2DX3GTJYS',
+  testing: 'G-P2DX3GTJYS',
+  production: 'G-VNQGQ63HK5',
+};
+
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'wonderkamer',
-    podModulePrefix: 'wonderkamer/pods',
+    modulePrefix: '@wonderkamer/website',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'history',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false,
-      },
+      EXTEND_PROTOTYPES: true,
     },
 
     APP: {
-      baseUrlApi: '',
+      baseUrlApi: 'localhost:3000',
     },
-  };
 
-  ENV['ember-cli-mirage'] = { enabled: true, autostart: true };
+    emberKeyboard: { disableInputsInitializer: true },
+
+    metricsAdapters: [
+      {
+        name: 'GoogleAnalyticsFour',
+        environments: ['testing', 'production'],
+        config: {
+          id:
+            googleTrackingIdsPerEnvironment[environment] ??
+            googleTrackingIdsPerEnvironment['development'],
+          options: {
+            send_page_view: false,
+            anonymize_ip: true,
+            debug_mode: environment !== 'production',
+          },
+          // // Use `analytics_debug.js` in development
+          // debug: false, //environment === 'development',
+          // // Use verbose tracing of GA events
+          // trace: false, //environment === 'development',
+          // // Ensure development env hits aren't sent to GA
+          // sendHitTask: environment !== 'development',
+          // // Specify Google Analytics plugins
+          // require: [], //['ecommerce']
+        },
+      },
+    ],
+  };
 
   ENV['googleMutantLeaflet'] = {
     apiKey: 'AIzaSyCzKKPg9tJyLo4MqB3quf4PPjKgTMwJ7Rk',
@@ -31,14 +58,14 @@ module.exports = function (environment) {
     include: true,
   };
 
-  ENV['gReCaptcha'] = {
-    jsUrl: 'https://www.google.com/recaptcha/api.js?render=explicit', // default
-    siteKey: '6LfxAKwZAAAAAMRHZAx0NYh6Mr0rzHnQOwzgL8-4', // secret is is stored in github action keys, and placed into /public/.htaccess
+  ENV['ember-g-recaptcha'] = {
+    jsUrl: 'https://www.google.com/recaptcha/api.js', // default
+    sitekey: '6LfxAKwZAAAAAMRHZAx0NYh6Mr0rzHnQOwzgL8-4', // secret is is stored in github action keys, and placed into /public/.htaccess
   };
-
   ENV['contentSecurityPolicy'] = {
     'default-src': "'none'",
-    'script-src': "'self' 'unsafe-eval' *.googleapis.com www.google-analytics.com",
+    'script-src':
+      "'self' 'unsafe-eval' *.googleapis.com www.google-analytics.com",
     'font-src': "'self' fonts.gstatic.com",
     'img-src': "'self' data: *.googleapis.com maps.gstatic.com *.gstatic.com",
     'connect-src': "'self' www.google-analytics.com",
@@ -54,30 +81,6 @@ module.exports = function (environment) {
     includeLocales: ['nl'],
   };
 
-  const googleTrackingIdsPerEnvironment = {
-    development: 'UA-178010455-2',
-    testing: 'UA-178010455-2',
-    production: 'UA-178010455-1',
-  };
-
-  ENV['metricsAdapters'] = [
-    {
-      name: 'GoogleAnalytics',
-      environments: ['development', 'testing', 'production'],
-      config: {
-        id: googleTrackingIdsPerEnvironment[environment] || googleTrackingIdsPerEnvironment['testing'],
-        // Use `analytics_debug.js` in development
-        debug: environment !== 'production',
-        // Use verbose tracing of GA events
-        trace: environment !== 'production',
-        // Ensure development env hits aren't sent to GA
-        sendHitTask: environment !== 'development',
-        // Specify Google Analytics plugins
-        require: [], //['ecommerce']
-      },
-    },
-  ];
-
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -85,7 +88,7 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
 
-    ENV.APP.baseUrlApi = 'https://dev.wonderkamer.com';
+    ENV.APP.baseUrlApi = 'http://localhost:3000';
   }
 
   if (environment === 'test') {

@@ -7,18 +7,26 @@
 
   <div class="row">
     <div class="col-12">
-      <BsAccordion @onChange={{fn this.onChange}} @selected={{@member}} as |acc|>
-        {{#each this.activeMembers as |member index|}}
+      <BsAccordion
+        @onChange={{this.onChange}}
+        @selected={{this.selectedMember}}
+        as |acc|
+      >
+        {{#each @activeMembers as |member index|}}
           <acc.item @value={{member}} as |item|>
 
             <item.title class="py-4" data-slug={{member.slug}}>
-              <div class="d-flex justify-content-between w-100 {{if (mod index 2) 'flex-row' 'flex-row-reverse'}}">
+              <div
+                class="d-flex justify-content-between w-100
+                  {{if (mod index 2) 'flex-row' 'flex-row-reverse'}}"
+              >
                 <img
                   src={{member.profileImgSmallSrc}}
-                  class="img-fluid rounded-circle {{if (mod index 2) 'ml-auto' 'ml-auto'}}"
+                  class="img-fluid rounded-circle
+                    {{if (mod index 2) 'ml-auto' 'ml-auto'}}"
                   alt=""
-                  role="presentation"
-                  style="max-width: 4rem; max-height: 4rem;min-width: 3rem; min-height: 3rem;"
+                  role="none"
+                  {{style this.style}}
                 />
                 <div class="{{if (mod index 2) 'text-end' 'text-start'}}">
                   <h5 class="mb-0">{{member.title}}</h5>
@@ -28,10 +36,20 @@
             </item.title>
 
             <item.body class="accordion-body">
-              <div class="row {{if (mod index 2) 'flex-row-reverse' 'flex-row'}}">
+              <div
+                class="row {{if (mod index 2) 'flex-row-reverse' 'flex-row'}}"
+              >
                 <div class="col-12 col-sm-6 col-md-5">
-                  <img class="img-fluid mb-0" src="{{member.profileImgLargeSrc}}" alt={{member.title}} />
-                  <p class="small mb-0 {{if (mod index 2) 'text-right' 'text-left'}}">{{member.title}}, {{member.tagLine}}</p>
+                  <img
+                    class="img-fluid mb-0"
+                    src="{{member.profileImgLargeSrc}}"
+                    alt={{member.title}}
+                  />
+                  <p
+                    class="small mb-0
+                      {{if (mod index 2) 'text-right' 'text-left'}}"
+                  >{{member.title}}{{#if member.tagLine}},
+                      {{member.tagLine}}{{/if}}</p>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-7">

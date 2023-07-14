@@ -2,7 +2,10 @@ import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { Changeset } from 'ember-changeset';
 import { action } from '@ember/object';
-import { ContactForm, ContactFormValidations } from '../changesets/contact-form';
+import {
+  ContactForm,
+  ContactFormValidations,
+} from '../changesets/contact-form';
 import lookupValidator from 'ember-changeset-validations';
 import { inject as service } from '@ember/service';
 
@@ -17,7 +20,11 @@ export default class SectionContactComponent extends Component {
   constructor(...rest) {
     super(...rest);
 
-    this.changeset = new Changeset(new ContactForm(), lookupValidator(ContactFormValidations), ContactFormValidations);
+    this.changeset = new Changeset(
+      new ContactForm(),
+      lookupValidator(ContactFormValidations),
+      ContactFormValidations
+    );
   }
 
   @action
@@ -28,7 +35,10 @@ export default class SectionContactComponent extends Component {
       }
       this.changeset.save().then((response) => {
         if (response['success'] === true) {
-          this.metrics.trackEvent('GoogleAnalytics', { category: 'communication', action: 'submitted-contact-form' });
+          this.metrics.trackEvent('GoogleAnalytics', {
+            category: 'communication',
+            action: 'submitted-contact-form',
+          });
 
           this.isSubmitted = true;
         }

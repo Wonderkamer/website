@@ -12,7 +12,7 @@ module('Integration | Component | occupancy/averages', function (hooks) {
 
     await render(hbs`<Occupancy::Averages />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.strictEqual(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
@@ -21,6 +21,6 @@ module('Integration | Component | occupancy/averages', function (hooks) {
       </Occupancy::Averages>
     `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.strictEqual(this.element.textContent.trim(), 'template block text');
   });
 });

@@ -1,26 +1,37 @@
 import BaseControl from 'ember-bootstrap/components/bs-form/element/control';
 import defaultValue from 'ember-bootstrap/utils/default-decorator';
-import formValidationClass from 'ember-bootstrap/utils/cp/form-validation-class';
 import sizeClass from 'ember-bootstrap/utils/cp/size-class';
-import { action, computed } from '@ember/object';
-import { tagName } from '@ember-decorators/component';
+import { action } from '@ember/object';
 
-@tagName('')
 export default class TextDate extends BaseControl {
   classTypePrefix = 'form-control';
 
   @defaultValue
   size = null;
 
-  @formValidationClass('validationType')
-  formValidationClass;
-
   @sizeClass('form-control', 'size')
   sizeClass;
 
-  @computed('classTypePrefix', 'formValidationClass', 'inlineClass', 'sizeClass')
   get classNamesProxy() {
-    return [this.classTypePrefix, this.sizeClass, this.formValidationClass].join(' ');
+    return [
+      'pe-2',
+      this.classTypePrefix,
+      this.sizeClass,
+      this.formValidationClass,
+    ].join(' ');
+  }
+
+  get value() {
+    return this.args?.value ?? null;
+  }
+
+  get maxChars() {
+    return this.args?.maxChars;
+  }
+
+  // updating this value while animating will kill the progressbar. therfore duration on the animation is set to 0
+  get progress() {
+    return this.value ? Math.min(1, this.value.length / this.maxChars) : 0;
   }
 
   @action
@@ -30,15 +41,14 @@ export default class TextDate extends BaseControl {
         event.preventDefault();
         document.execCommand('insertText', false, '\n');
       } else {
-        event.target.form.dispatchEvent(new Event('submit', { cancelable: true }));
+        event.target.form.requestSubmit();
+        //dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
       }
     }
   }
 
   @action
-  onInput(event) {
-    const element = event.target;
-
-    this.onChange(element.value);
+  onInput({ target }) {
+    this.args.onChange(target?.value);
   }
 }

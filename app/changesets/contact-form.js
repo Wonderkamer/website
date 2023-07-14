@@ -1,4 +1,8 @@
-import { validateLength, validatePresence, validateFormat } from 'ember-changeset-validations/validators';
+import {
+  validateLength,
+  validatePresence,
+  validateFormat,
+} from 'ember-changeset-validations/validators';
 import fetch from 'fetch';
 
 class ContactForm {
@@ -35,12 +39,53 @@ class ContactForm {
 }
 
 const ContactFormValidations = {
-  name: [validatePresence({ presence: true, ignoreBlank: true, description: 'naam' }), validateLength({ max: 30, description: 'naam' })],
-  email: [validatePresence({ presence: true, ignoreBlank: true, description: 'e-mail' }), validateFormat({ type: 'email', description: 'e-mail' })],
-  phone: [validatePresence({ presence: true, ignoreBlank: true, description: 'telefoon' }), validateLength({ max: 30, description: 'telefoon' })],
-  subject: [validatePresence({ presence: true, ignoreBlank: true, description: 'onderwerp' }), validateLength({ max: 120, description: 'onderwerp' })],
-  message: [validatePresence({ presence: true, ignoreBlank: true, description: 'boodschap' }), validateLength({ max: 1000, description: 'boodschap' })],
-  reCaptchaToken: [validatePresence({ presence: true, ignoreBlank: true, description: 'captcha' })],
+  name: [
+    validatePresence({
+      presence: true,
+      ignoreBlank: true,
+      description: 'naam',
+    }),
+    validateLength({ max: 30, description: 'naam' }),
+  ],
+  email: [
+    validatePresence({
+      presence: true,
+      ignoreBlank: true,
+      description: 'e-mail',
+    }),
+    validateFormat({ type: 'email', description: 'e-mail' }),
+  ],
+  phone: [
+    validatePresence({
+      presence: true,
+      ignoreBlank: true,
+      description: 'telefoon',
+    }),
+    validateLength({ max: 30, description: 'telefoon' }),
+  ],
+  subject: [
+    validatePresence({
+      presence: true,
+      ignoreBlank: true,
+      description: 'onderwerp',
+    }),
+    validateLength({ max: 120, description: 'onderwerp' }),
+  ],
+  message: [
+    validatePresence({
+      presence: true,
+      ignoreBlank: true,
+      description: 'boodschap',
+    }),
+    validateLength({ max: 1000, description: 'boodschap' }),
+  ],
+  reCaptchaToken: [
+    validatePresence({
+      presence: true,
+      ignoreBlank: true,
+      description: 'captcha',
+    }),
+  ],
 };
 
 export { ContactForm, ContactFormValidations };
