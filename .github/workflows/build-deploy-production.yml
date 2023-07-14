@@ -74,7 +74,7 @@ jobs:
       - name: Persist distribution directory (/dist as 'build-prod')
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: build-prod
+          name: build-prod-${{ github.head_ref || github.ref }}
           path: build.tar
           retention-days: 1
 
@@ -87,8 +87,8 @@ jobs:
       - name: Retrieve distribution
         uses: actions/download-artifact@v3.0.2
         with:
-          name: build-prod
-          path: build.tar
+          name: build-prod-${{ github.head_ref || github.ref }}
+          path: dist
 
       - name: Extract distribution
         run: tar -xvf build.tar
