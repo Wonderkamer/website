@@ -68,6 +68,9 @@ jobs:
         with:
           args: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
 
+      - name: Archive distribution directory
+        run: tar -cvf dist.tar dist
+    
       - name: Persist distribution directory (/dist as 'build-prod')
         uses: actions/upload-artifact@v3.1.2
         with:
@@ -91,6 +94,9 @@ jobs:
         with:
           name: build-prod
           path: dist
+
+      - name: Extract distribution
+        run: tar -C dist -xvf dist.tar
 
       - name: Deploy
         uses: contention/rsync-deployments@v2.0.0
