@@ -1,0 +1,298 @@
+{
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": [
+    {
+      "id": 0,
+      "type": "member",
+      "attributes": {
+        "title": "Bas",
+        "slug": "bas-kamer",
+        "is-active": true,
+        "tag-line": "Developer slash Designer"
+      }
+    },
+    {
+      "id": 1,
+      "type": "member",
+      "attributes": {
+        "title": "Tom",
+        "slug": "tom-akkermans",
+        "is-active": true,
+        "tag-line": "Fintech Developer"
+      }
+    },
+    {
+      "id": 2,
+      "type": "member",
+      "attributes": {
+        "title": "Eric",
+        "slug": "eric-haas",
+        "is-active": false,
+        "tag-line": "Sociaal ondernemer / business development"
+      }
+    },
+    {
+      "id": 3,
+      "type": "member",
+      "attributes": {
+        "title": "Masja",
+        "slug": "masja-ros",
+        "is-active": false,
+        "tag-line": "Social media entrepreneur"
+      }
+    },
+    {
+      "id": 4,
+      "type": "member",
+      "attributes": {
+        "title": "Moniek",
+        "slug": "moniek-wester",
+        "is-active": true,
+        "tag-line": "Video vrouw"
+      }
+    },
+    {
+      "id": 5,
+      "type": "member",
+      "attributes": {
+        "title": "Michaël",
+        "slug": "michael-dommershuizen",
+        "is-active": false,
+        "tag-line": "Product Designer"
+      }
+    },
+    {
+      "id": 6,
+      "type": "member",
+      "attributes": {
+        "title": "Joanne",
+        "slug": "joanne-wienen",
+        "is-active": false,
+        "tag-line": "Freelance journalist"
+      }
+    },
+    {
+      "id": 7,
+      "type": "member",
+      "attributes": {
+        "title": "Nienke",
+        "slug": "nienke-schachtschabel",
+        "is-active": false,
+        "tag-line": "Design Researcher"
+      }
+    },
+    {
+      "id": 8,
+      "type": "member",
+      "attributes": {
+        "title": "Femke",
+        "slug": "femke-deckers",
+        "is-active": false,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 9,
+      "type": "member",
+      "attributes": {
+        "title": "Maaike",
+        "slug": "maaike-wijdema",
+        "is-active": false,
+        "tag-line": "Docent NT2"
+      }
+    },
+    {
+      "id": 10,
+      "type": "member",
+      "attributes": {
+        "title": "Kaoutar",
+        "slug": "kaoutar-beni-driss",
+        "is-active": false,
+        "tag-line": "Verbinder"
+      }
+    },
+    {
+      "id": 11,
+      "type": "member",
+      "attributes": {
+        "title": "Christine",
+        "slug": "christine-van-rossum",
+        "is-active": false,
+        "tag-line": ""
+      }
+    },
+    {
+      "id": 12,
+      "type": "member",
+      "attributes": {
+        "title": "Liesbeth",
+        "slug": "liesbeth-scholten",
+        "is-active": false,
+        "tag-line": "Co-creator, facilitator en onderzoeker"
+      }
+    },
+    {
+      "id": 13,
+      "type": "member",
+      "attributes": {
+        "title": "Piero",
+        "slug": "piero-zagami",
+        "is-active": true,
+        "tag-line": "Information designer"
+      }
+    },
+    {
+      "id": 14,
+      "type": "member",
+      "attributes": {
+        "title": "Bas",
+        "slug": "bas-mijling",
+        "is-active": false,
+        "tag-line": "Onderzoeker luchtkwaliteit"
+      }
+    },
+    {
+      "id": 15,
+      "type": "member",
+      "attributes": {
+        "title": "Maria",
+        "slug": "maria",
+        "is-active": false,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 16,
+      "type": "member",
+      "attributes": {
+        "title": "Trudy",
+        "slug": "trudy-westby",
+        "is-active": false,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 17,
+      "type": "member",
+      "attributes": {
+        "title": "Jan",
+        "slug": "jan-bruin",
+        "is-active": true,
+        "tag-line": "Freelance Strateeg, Programmamaker en Schrijver"
+      }
+    },
+    {
+      "id": 18,
+      "type": "member",
+      "attributes": {
+        "title": "An",
+        "slug": "an-tonen",
+        "is-active": false,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 19,
+      "type": "member",
+      "attributes": {
+        "title": "Selm",
+        "slug": "selm-wenselaar",
+        "is-active": false,
+        "tag-line": "Dramaturg, Schrijver, Curator"
+      }
+    },
+    {
+      "id": 20,
+      "type": "member",
+      "attributes": {
+        "title": "Manuel",
+        "slug": "manuel-schipper",
+        "is-active": false,
+        "tag-line": "...",
+        "note": "prefers not to have a bio and picture present, is ok with anonynmous presence"
+      }
+    },
+    {
+      "id": 21,
+      "type": "member",
+      "attributes": {
+        "title": "Michaël",
+        "slug": "michael-kiliaan",
+        "is-active": false,
+        "tag-line": "Frontend developer"
+      }
+    },
+    {
+      "id": 22,
+      "type": "member",
+      "attributes": {
+        "title": "Ares Driessen",
+        "slug": "ares-driessen",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 23,
+      "type": "member",
+      "attributes": {
+        "title": "Katherine Decker",
+        "slug": "katherine-decker",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 24,
+      "type": "member",
+      "attributes": {
+        "title": "Martijn De Vries",
+        "slug": "martijn-de-vries",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 25,
+      "type": "member",
+      "attributes": {
+        "title": "Ramses Dali",
+        "slug": "ramses-dali",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 26,
+      "type": "member",
+      "attributes": {
+        "title": "Kenny Held",
+        "slug": "kenny-held",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 27,
+      "type": "member",
+      "attributes": {
+        "title": "Thomas Tilkema",
+        "slug": "thomas-tilkema",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 28,
+      "type": "member",
+      "attributes": {
+        "title": "Paul Brouwer",
+        "slug": "paul-brouwer",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+  ]
+}
