@@ -32,8 +32,8 @@ module.exports = function (environment) {
         environments: ['testing', 'production'],
         config: {
           id:
-            googleTrackingIdsPerEnvironment[environment] ||
-            googleTrackingIdsPerEnvironment['testing'],
+            googleTrackingIdsPerEnvironment[environment] ??
+            googleTrackingIdsPerEnvironment['development'],
           options: {
             send_page_view: false,
             anonymize_ip: true,
@@ -80,26 +80,6 @@ module.exports = function (environment) {
     includeTimezone: 'all',
     includeLocales: ['nl'],
   };
-
-  // ENV['metricsAdapters'] = [
-  //   {
-  //     name: 'GoogleAnalytics',
-  //     environments: ['development', 'testing', 'production'],
-  //     config: {
-  //       id:
-  //         googleTrackingIdsPerEnvironment[environment] ||
-  //         googleTrackingIdsPerEnvironment['testing'],
-  //       // Use `analytics_debug.js` in development
-  //       debug: environment !== 'production',
-  //       // Use verbose tracing of GA events
-  //       trace: environment !== 'production',
-  //       // Ensure development env hits aren't sent to GA
-  //       sendHitTask: environment !== 'development',
-  //       // Specify Google Analytics plugins
-  //       require: [], //['ecommerce']
-  //     },
-  //   },
-  // ];
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

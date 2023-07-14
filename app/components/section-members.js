@@ -13,7 +13,7 @@ export default class SectionMembersComponent extends Component {
     return this.args.activeMembers;
   }
 
-  get styles() {
+  get style() {
     return {
       maxWidth: '4rem',
       maxHeight: '4rem',

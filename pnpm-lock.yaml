@@ -231,8 +231,8 @@ devDependencies:
     specifier: 3.0.0
     version: 3.0.0
   ember-metrics:
-    specifier: 1.5.2
-    version: 1.5.2
+    specifier: 2.0.0-beta.2
+    version: 2.0.0-beta.2
   ember-modifier:
     specifier: ^4.1.0
     version: 4.1.0(ember-source@5.1.1)
@@ -10004,13 +10004,13 @@ packages:
       - supports-color
     dev: true
 
-  /ember-metrics@1.5.2:
-    resolution: {integrity: sha512-6QUg3XcGQ/wnMHxT4T+QXQs9NlojJ+ai/055sQWdmLrxep4w2fyy/spn9wxAkokdwEjj0nV5MPfTOTq5OS748w==}
+  /ember-metrics@2.0.0-beta.2:
+    resolution: {integrity: sha512-vKPVfY4IIO5KszCsExUkxwqUgnuiUpvacNhzudms4JKZy0zeoU5tyXscPngW8vpqcGF6q8ZbaNTxw1OIVKd+xw==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
-      ember-cli-typescript: 4.2.1
+      ember-cli-typescript: 5.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
