@@ -30,7 +30,7 @@
     "release": "standard-version --commit-all --tag-prefix=\"\"",
     "start": "ember serve",
     "test:ember": "ember test",
-    "test": "npm-run-all lint:* test:*"
+    "test": "npm-run-all test:*"
   },
   "standard-version": {
     "scripts": {}
