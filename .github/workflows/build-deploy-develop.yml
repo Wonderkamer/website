@@ -90,14 +90,11 @@ jobs:
         uses: actions/download-artifact@v3.0.2
         with:
           name: build-dev-${{ github.sha }}
-          path: build-dev-${{ github.sha }}
+          path: dist
 
       - name: List
         run: ls -la && pwd
   
-      - name: Extract distribution
-        run: tar -xvf build-dev-${{ github.sha }} -C .
-
       - name: Deploy
         uses: contention/rsync-deployments@v2.0.0
         with:
