@@ -90,6 +90,7 @@ jobs:
         uses: actions/download-artifact@v3.0.2
         with:
           name: build-dev-${{ github.sha }}
+          path: build-dev-${{ github.sha }}
           
       - name: Extract distribution
         run: tar -xvf build-dev-${{ github.sha }}
