@@ -91,6 +91,10 @@ jobs:
         with:
           name: build-dev-${{ github.sha }}
 
+      - name: List
+        run: |
+          ls -laR
+
       - name: Deploy
         uses: contention/rsync-deployments@v2.0.0
         with:
