@@ -90,7 +90,10 @@ jobs:
         uses: actions/download-artifact@v3.0.2
         with:
           name: build-dev-${{ github.sha }}
-          path: dist
+          path: .
+
+      - name: Unpack distribution
+        run: tar -xvf build.tar
 
       - name: List
         run: ls -la && pwd
