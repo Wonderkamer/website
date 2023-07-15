@@ -91,10 +91,6 @@ jobs:
         uses: actions/download-artifact@v3.0.2
         with:
           name: build-prod-${{ github.sha }}
-          path: build.tar
-
-      - name: Extract distribution
-        run: tar -xvf build.tar
 
       - name: Deploy
         uses: contention/rsync-deployments@v2.0.0
