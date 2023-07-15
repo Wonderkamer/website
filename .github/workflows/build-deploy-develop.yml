@@ -91,7 +91,10 @@ jobs:
         with:
           name: build-dev-${{ github.sha }}
           path: build-dev-${{ github.sha }}
-          
+
+      - name: List
+        run: ls -la && pwd
+  
       - name: Extract distribution
         run: tar -xvf build-dev-${{ github.sha }} -C .
 
