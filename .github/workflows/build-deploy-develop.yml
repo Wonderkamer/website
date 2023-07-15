@@ -93,7 +93,7 @@ jobs:
           path: build-dev-${{ github.sha }}
           
       - name: Extract distribution
-        run: tar -xvf build-dev-${{ github.sha }}
+        run: tar -xvf build-dev-${{ github.sha }} -C .
 
       - name: Deploy
         uses: contention/rsync-deployments@v2.0.0
