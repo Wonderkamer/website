@@ -7,20 +7,10 @@ module('Integration | Component | section-contact', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
     await render(hbs`<SectionContact />`);
 
-    assert.strictEqual(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <SectionContact>
-        template block text
-      </SectionContact>
-    `);
-
-    assert.strictEqual(this.element.textContent.trim(), 'template block text');
+    assert.true(
+      this.element.textContent.trim().includes('Stichting Wonderkamer')
+    );
   });
 });

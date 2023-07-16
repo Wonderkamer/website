@@ -7,12 +7,12 @@ module('Integration | Component | section', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
     await render(hbs`<Section />`);
 
-    assert.strictEqual(this.element.textContent.trim(), '');
+    assert.strictEqual(
+      this.element.textContent.trim(),
+      'use a block component!'
+    );
 
     // Template block usage:
     await render(hbs`

@@ -13,6 +13,7 @@ const {
 
 export default class UtilMarkdownFromUrlComponent extends Component {
   @tracked markdown;
+  @tracked currentUrl;
 
   @action
   initiateLoad(_element, [url]) {

@@ -1,12 +1,8 @@
 import Component from '@glimmer/component';
-import { task, timeout } from 'ember-concurrency';
-import { tracked } from '@glimmer/tracking';
+import { localCopy } from 'tracked-toolbox';
 
 export default class SectionImpressionsComponent extends Component {
-  advanceDelay = 4500;
-  @tracked currentIndex = 0;
-
-  images = [
+  imageList = [
     {
       src: '/assets/images/impressions/cc71f6cb-7560-479b-bb59-03d00e18b780.jpg',
     },
@@ -28,23 +24,25 @@ export default class SectionImpressionsComponent extends Component {
     { src: '/assets/images/impressions/IMG_9205.jpeg' },
   ];
 
+  @localCopy('args.currentImage', 0) currentImage;
+
   constructor(...rest) {
     super(...rest);
 
-    this.animateTask.perform();
+    setInterval(() => {
+      this.currentImage++;
+    }, 4500);
   }
 
-  animateTask = task(this, async () => {
-    await timeout(this.advanceDelay);
+  get images() {
+    return (this.imageList || []).map((obj) => {
+      return Object.assign({}, obj, {
+        style: { backgroundImage: `url(${obj.src})` },
+      });
+    });
+  }
 
-    this.currentIndex = (this.currentIndex + 1) % this.images.length;
-
-    this.animateTask.perform();
-  });
-
-  get cssProperties() {
-    return this.images.map((obj) =>
-      Object.assign({}, { backgroundImage: `url(${obj.src})` })
-    );
+  get currentIndex() {
+    return this.currentImage % this.images.length;
   }
 }
