@@ -21,7 +21,7 @@ export default class HomeNavService extends Service {
     if (routeInfo && routeInfo.name !== 'home.index') {
       const sectionName = routeInfo.name.split('.').slice(1).shift();
       const sectionElement = element.querySelector(
-        `section.section-${sectionName}`
+        `section.section-${sectionName}`,
       ) as HTMLElement;
 
       if (sectionElement) {

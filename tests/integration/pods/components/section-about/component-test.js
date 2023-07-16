@@ -12,7 +12,7 @@ module('Integration | Component | section-about', function (hooks) {
     assert.true(
       this.element.textContent
         .trim()
-        .includes('We zitten in de voormalige St. Vincentius jongensschool')
+        .includes('We zitten in de voormalige St. Vincentius jongensschool'),
     );
   });
 });

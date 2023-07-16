@@ -8,11 +8,11 @@ module('Integration | Component | util/markdown-from-url', function (hooks) {
 
   test('it renders', async function (assert) {
     await render(
-      hbs`<Util::MarkdownFromUrl @url="/sections/about-the-place.md" />`
+      hbs`<Util::MarkdownFromUrl @url="/sections/about-the-place.md" />`,
     );
 
     assert.ok(
-      this.element.textContent.trim().includes('We zitten in de voormalige')
+      this.element.textContent.trim().includes('We zitten in de voormalige'),
     );
   });
 });

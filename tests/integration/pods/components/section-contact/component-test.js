@@ -10,7 +10,7 @@ module('Integration | Component | section-contact', function (hooks) {
     await render(hbs`<SectionContact />`);
 
     assert.true(
-      this.element.textContent.trim().includes('Stichting Wonderkamer')
+      this.element.textContent.trim().includes('Stichting Wonderkamer'),
     );
   });
 });

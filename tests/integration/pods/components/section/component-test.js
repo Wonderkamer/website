@@ -11,7 +11,7 @@ module('Integration | Component | section', function (hooks) {
 
     assert.strictEqual(
       this.element.textContent.trim(),
-      'use a block component!'
+      'use a block component!',
     );
 
     // Template block usage:
