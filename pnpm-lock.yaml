@@ -216,8 +216,8 @@ devDependencies:
     specifier: 5.7.2
     version: 5.7.2(typescript@5.1.6)
   ember-keyboard:
-    specifier: 6.0.4
-    version: 6.0.4(@babel/core@7.22.9)
+    specifier: 8.2.0
+    version: 8.2.0(@babel/core@7.22.9)(@ember/test-helpers@3.1.0)(ember-source@5.1.1)
   ember-leaflet:
     specifier: 5.1.1
     version: 5.1.1(@babel/core@7.22.9)(@glint/template@1.0.2)(ember-source@5.1.1)(leaflet@1.9.4)
@@ -9946,17 +9946,23 @@ packages:
       - webpack-command
     dev: true
 
-  /ember-keyboard@6.0.4(@babel/core@7.22.9):
-    resolution: {integrity: sha512-Mkg5TG6KBTtxjOUBdyLADajyj/mJo3ua2mSHw20UtG2MxKxMyO+Bs4tttMlEmmrR3XMrQ9qVBLkq2dIuuQku3w==}
+  /ember-keyboard@8.2.0(@babel/core@7.22.9)(@ember/test-helpers@3.1.0)(ember-source@5.1.1):
+    resolution: {integrity: sha512-h2kuS2irtIyvNbAMkGDlDTB4TPXwgmC6Nu9bIuGWoCjkGdgJbUg0VegfyRJ1TlxbIHlAelbqVpE8UhfgY5wEag==}
     engines: {node: 12.* || 14.* || >= 16}
+    peerDependencies:
+      '@ember/test-helpers': ^2.6.0
+    peerDependenciesMeta:
+      '@ember/test-helpers':
+        optional: true
     dependencies:
-      ember-cli-babel: 7.26.11
-      ember-cli-htmlbars: 5.7.2
-      ember-compatibility-helpers: 1.2.6(@babel/core@7.22.9)
-      ember-modifier: 3.2.7(@babel/core@7.22.9)
+      '@ember/test-helpers': 3.1.0(@glint/template@1.0.2)(ember-source@5.1.1)(webpack@5.88.1)
+      '@embroider/addon-shim': 1.8.5
+      ember-destroyable-polyfill: 2.0.3(@babel/core@7.22.9)
+      ember-modifier: 4.1.0(ember-source@5.1.1)
       ember-modifier-manager-polyfill: 1.2.0(@babel/core@7.22.9)
     transitivePeerDependencies:
       - '@babel/core'
+      - ember-source
       - supports-color
     dev: true
 
