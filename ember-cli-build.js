@@ -10,11 +10,20 @@ module.exports = function (defaults) {
       bootstrapVersion: 5,
       importBootstrapCSS: false,
     },
+    'ember-cli-terser': {
+      enabled: isProductionLikeBuild,
+
+      exclude: ['favicon-*.png', 'members/**/*.jpg', 'assets'],
+
+      // Tell broccoli-terser-sourcemap to not add sourcemap URLs
+      hiddenSourceMap: true,
+    },
+
     fingerprint: {
-      // https://github.com/rickharrison/broccoli-asset-rev
       enabled: isProductionLikeBuild,
       exclude: ['favicon-*.png', 'members', 'assets'],
     },
+
     'ember-math-helpers': {
       only: ['mod', 'mult'],
     },
