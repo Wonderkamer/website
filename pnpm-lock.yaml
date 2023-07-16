@@ -45,16 +45,16 @@ devDependencies:
     specifier: ^4.4.11
     version: 4.4.11(@babel/core@7.22.9)
   '@types/ember-data__adapter':
-    specifier: ^4.0.2
+    specifier: 4.0.2
     version: 4.0.2(@babel/core@7.22.9)
   '@types/ember-data__model':
-    specifier: ^4.0.1
+    specifier: 4.0.1
     version: 4.0.1(@babel/core@7.22.9)
   '@types/ember-data__serializer':
-    specifier: ^4.0.2
+    specifier: 4.0.2
     version: 4.0.2(@babel/core@7.22.9)
   '@types/ember-data__store':
-    specifier: ^4.0.3
+    specifier: 4.0.3
     version: 4.0.3(@babel/core@7.22.9)
   '@types/ember-qunit':
     specifier: ^6.1.1
