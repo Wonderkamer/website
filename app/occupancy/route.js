@@ -2,6 +2,7 @@ import Route from '@ember/routing/route';
 import fetch from 'fetch';
 import { inject as service } from '@ember/service';
 import { task, timeout } from 'ember-concurrency';
+import config from 'ember-get-config';
 
 export default class BezettingRoute extends Route {
   @service headData;
@@ -11,7 +12,12 @@ export default class BezettingRoute extends Route {
   }
 
   model() {
-    return fetch('/occupancy.php').then((response) => {
+    const url =
+      config.environment === 'production'
+        ? '/occupancy.php'
+        : '/data/occupancy.json';
+
+    return fetch(url).then((response) => {
       this.refreshTask.perform();
 
       if (response.ok) {
