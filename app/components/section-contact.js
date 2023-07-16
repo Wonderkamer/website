@@ -23,7 +23,7 @@ export default class SectionContactComponent extends Component {
     this.changeset = new Changeset(
       new ContactForm(),
       lookupValidator(ContactFormValidations),
-      ContactFormValidations
+      ContactFormValidations,
     );
   }
 

@@ -13,6 +13,7 @@ const {
 
 export default class UtilMarkdownFromUrlComponent extends Component {
   @tracked markdown;
+  @tracked currentUrl;
 
   @action
   initiateLoad(_element, [url]) {
@@ -30,7 +31,7 @@ export default class UtilMarkdownFromUrlComponent extends Component {
           for (let key in this.replaceHash) {
             markdownOrError = markdownOrError.replace(
               new RegExp(`\\[${key}\\]`, 'g'),
-              this.replaceHash[key]
+              this.replaceHash[key],
             );
           }
         }
@@ -45,7 +46,7 @@ export default class UtilMarkdownFromUrlComponent extends Component {
       return Object.assign(
         {},
         this.args.cssWhileIdle || {},
-        this.args.cssWhileLoading || {}
+        this.args.cssWhileLoading || {},
       );
     }
     return this.args.cssWhileIdle || {};

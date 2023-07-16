@@ -7,20 +7,15 @@ module('Integration | Component | occupancy/averages', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
     await render(hbs`<Occupancy::Averages />`);
+    const text = String(this.element.textContent.trim());
 
-    assert.strictEqual(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <Occupancy::Averages>
-        template block text
-      </Occupancy::Averages>
-    `);
-
-    assert.strictEqual(this.element.textContent.trim(), 'template block text');
+    assert.true(text.includes('zo'));
+    assert.true(text.includes('ma'));
+    assert.true(text.includes('di'));
+    assert.true(text.includes('wo'));
+    assert.true(text.includes('do'));
+    assert.true(text.includes('vr'));
+    assert.true(text.includes('za'));
   });
 });

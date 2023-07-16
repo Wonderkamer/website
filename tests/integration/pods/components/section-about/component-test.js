@@ -7,20 +7,12 @@ module('Integration | Component | section-about', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
-
     await render(hbs`<SectionAbout />`);
 
-    assert.strictEqual(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <SectionAbout>
-        template block text
-      </SectionAbout>
-    `);
-
-    assert.strictEqual(this.element.textContent.trim(), 'template block text');
+    assert.true(
+      this.element.textContent
+        .trim()
+        .includes('We zitten in de voormalige St. Vincentius jongensschool'),
+    );
   });
 });

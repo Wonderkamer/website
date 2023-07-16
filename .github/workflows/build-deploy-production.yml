@@ -47,7 +47,7 @@ jobs:
         run: |
           pnpm install --frozen-lockfile --ignore-scripts
 
-      - name: Install dependencies and build
+      - name: Build
         run: |
           pnpm run build
 
@@ -69,13 +69,13 @@ jobs:
           args: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
 
       - name: Archive distribution directory
-        run: tar -cvf build.tar dist
+        run: tar -cvf dist.tar dist
     
       - name: Persist distribution directory (/dist as 'build-prod')
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: build-prod-${{ github.sha }}
-          path: build.tar
+          name: build-${{ github.sha }}
+          path: dist.tar
           retention-days: 1
 
   deploy-to-production:
@@ -84,14 +84,17 @@ jobs:
     needs: build
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Retrieve distribution
         uses: actions/download-artifact@v3.0.2
         with:
-          name: build-prod-${{ github.sha }}
-          path: dist
+          name: build-${{ github.sha }}
+          path: .
 
-      - name: Extract distribution
-        run: tar -xvf build.tar
+      - name: Unpack distribution
+        run: tar -xvf dist.tar
 
       - name: Deploy
         uses: contention/rsync-deployments@v2.0.0

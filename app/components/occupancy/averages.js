@@ -64,7 +64,7 @@ export default class OccupancyAveragesComponent extends Component {
         Math,
         averageOccupancySplitByDay.map(function (o) {
           return o.average;
-        })
+        }),
       );
 
       return averageOccupancySplitByDay.map((entry) => {
@@ -83,7 +83,7 @@ export default class OccupancyAveragesComponent extends Component {
         Math,
         averageOccupancySplitByHour.map(function (o) {
           return o.average;
-        })
+        }),
       );
 
       return averageOccupancySplitByHour.map((entry) => {
@@ -109,7 +109,7 @@ export default class OccupancyAveragesComponent extends Component {
       this.day = value;
       this.title = this.intl.t(
         'occupancy.days.' +
-          moment.localeData('en')._weekdays[value].toString().toLowerCase()
+          moment.localeData('en')._weekdays[value].toString().toLowerCase(),
       );
     }
 
