@@ -220,7 +220,7 @@ devDependencies:
     version: 6.0.4(@babel/core@7.22.9)
   ember-leaflet:
     specifier: 5.1.1
-    version: 5.1.1(@babel/core@7.22.9)(@glint/template@1.0.2)(ember-source@5.1.1)(leaflet@1.9.1)
+    version: 5.1.1(@babel/core@7.22.9)(@glint/template@1.0.2)(ember-source@5.1.1)(leaflet@1.9.4)
   ember-leaflet-gesture-handling:
     specifier: ^0.1.1
     version: 0.1.1
@@ -297,8 +297,8 @@ devDependencies:
     specifier: 8.0.3
     version: 8.0.3
   leaflet:
-    specifier: 1.9.1
-    version: 1.9.1
+    specifier: 1.9.4
+    version: 1.9.4
   leaflet-gesture-handling:
     specifier: ^1.2.2
     version: 1.2.2
@@ -9974,7 +9974,7 @@ packages:
       - webpack-command
     dev: true
 
-  /ember-leaflet@5.1.1(@babel/core@7.22.9)(@glint/template@1.0.2)(ember-source@5.1.1)(leaflet@1.9.1):
+  /ember-leaflet@5.1.1(@babel/core@7.22.9)(@glint/template@1.0.2)(ember-source@5.1.1)(leaflet@1.9.4):
     resolution: {integrity: sha512-tyFKhNoS2b0QG/NXpWUZ3ogSPp59Qc+37raFWJdb+GgUXWU2uxCGCrDtrOyCYtWUlP8nX/drIYSOvqnNSLBspQ==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
@@ -9992,7 +9992,7 @@ packages:
       ember-render-helpers: 0.2.0
       ember-source: 5.1.1(@babel/core@7.22.9)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(rsvp@4.8.5)(webpack@5.88.1)
       fastboot-transform: 0.1.3
-      leaflet: 1.9.1
+      leaflet: 1.9.4
       resolve: 1.22.2
     transitivePeerDependencies:
       - '@babel/core'
@@ -13345,8 +13345,8 @@ packages:
     resolution: {integrity: sha512-Blf5V4PoNphWkzL7Y1qge+Spkd4OCQ2atjwUNhMhLIcjKzPcBH++x/lwOinaR9jSqLWqJ6oKYO8d0XdTffy4hQ==}
     dev: true
 
-  /leaflet@1.9.1:
-    resolution: {integrity: sha512-5FcDAMTLAuOq0RisQQbTFatl8Sl4bM0gMrBfuHbl7CYbYJv45BfCS8oU3T644MLjleBq1Ncq541QEA1pqUGTFA==}
+  /leaflet@1.9.4:
+    resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
     dev: true
 
   /leek@0.0.24:
