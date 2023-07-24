@@ -249,8 +249,8 @@ devDependencies:
     specifier: 10.1.1
     version: 10.1.1(@ember/string@3.1.1)(ember-source@5.1.2)
   ember-resources:
-    specifier: 6.2.2
-    version: 6.2.2(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2)
+    specifier: 6.3.0
+    version: 6.3.0(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2)
   ember-source:
     specifier: 5.1.2
     version: 5.1.2(@babel/core@7.22.9)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(rsvp@4.8.5)(webpack@5.88.2)
@@ -10294,8 +10294,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-resources@6.2.2(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2):
-    resolution: {integrity: sha512-KAYIyJdCrFyRuMr+FO/FjoEjr6fGhDk2sOwIANamos2lezieGLLiGxx44QiEHD8yYe0CqVw6LBbvQUY/7C/GKw==}
+  /ember-resources@6.3.0(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2):
+    resolution: {integrity: sha512-aRWKHHoBZY8dUKnzaZRSFOKN6wlbCrhNEdiWg+l+vpJrN2SJaPAcmJYscxpzwHwPTdFFaTDOXV3bhVVe3P4olw==}
     peerDependencies:
       '@ember/test-waiters': ^3.0.0
       '@glimmer/component': ^1.1.2
@@ -10313,7 +10313,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.6
       '@embroider/addon-shim': 1.8.5
-      '@embroider/macros': 1.12.2(@glint/template@1.0.2)
+      '@embroider/macros': 1.12.3(@glint/template@1.0.2)
       '@glimmer/component': 1.1.2(@babel/core@7.22.9)
       '@glimmer/tracking': 1.1.2
       '@glint/template': 1.0.2
