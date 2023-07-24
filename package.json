@@ -119,7 +119,7 @@
     "ember-resolver": "10.1.1",
     "ember-resources": "6.3.0",
     "ember-source": "5.1.2",
-    "ember-stargate": "0.4.3",
+    "ember-stargate": "0.5.0",
     "ember-style-modifier": "3.0.1",
     "ember-template-lint": "5.11.1",
     "ember-template-lint-plugin-prettier": "5.0.0",
