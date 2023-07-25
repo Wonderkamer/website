@@ -1,1 +1,1 @@
-Het is een puzzel
+Martijn de Vries is lead researcher at Populytics and a PhD candidate at TU Delft University. Martijn graduated as a philosopher from the University of Amsterdam and as an environmental scientist from the Vrije Universiteit Amsterdam. Combining these disciplines, his current research focuses on participatory value evaluation of public policy. At Populytics, he leads the organization of large-scale online citizen consultations about environment, energy and transport policy.
