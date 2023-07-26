@@ -61,7 +61,7 @@ devDependencies:
     version: 6.1.1(@ember/test-helpers@3.2.0)(@glint/template@1.0.2)(ember-source@5.1.2)(qunit@2.19.4)(webpack@5.88.2)
   '@types/ember-resolver':
     specifier: 9.0.0
-    version: 9.0.0(@ember/string@3.1.1)(ember-source@5.1.2)
+    version: 9.0.0(ember-source@5.1.2)
   '@types/ember__application':
     specifier: 4.0.6
     version: 4.0.6(@babel/core@7.22.9)
@@ -246,8 +246,8 @@ devDependencies:
     specifier: 7.0.0
     version: 7.0.0(@ember/test-helpers@3.2.0)(@glint/template@1.0.2)(ember-source@5.1.2)(qunit@2.19.4)(webpack@5.88.2)
   ember-resolver:
-    specifier: 10.1.1
-    version: 10.1.1(@ember/string@3.1.1)(ember-source@5.1.2)
+    specifier: 11.0.0
+    version: 11.0.0(ember-source@5.1.2)
   ember-resources:
     specifier: 6.3.0
     version: 6.3.0(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2)
@@ -4401,13 +4401,12 @@ packages:
       - webpack
     dev: true
 
-  /@types/ember-resolver@9.0.0(@ember/string@3.1.1)(ember-source@5.1.2):
+  /@types/ember-resolver@9.0.0(ember-source@5.1.2):
     resolution: {integrity: sha512-lEuC2QD8K6rRAbELMejrALFBgelRPt6OQtapny4Oke07ZtK/Lbf9zn5KIDl7PNkirxMD0AStsQTdUqFu6eVbVw==}
     deprecated: This is a stub types definition. ember-resolver provides its own type definitions, so you do not need this installed.
     dependencies:
-      ember-resolver: 10.1.1(@ember/string@3.1.1)(ember-source@5.1.2)
+      ember-resolver: 11.0.0(ember-source@5.1.2)
     transitivePeerDependencies:
-      - '@ember/string'
       - ember-source
       - supports-color
     dev: true
@@ -10248,17 +10247,15 @@ packages:
       - supports-color
     dev: true
 
-  /ember-resolver@10.1.1(@ember/string@3.1.1)(ember-source@5.1.2):
-    resolution: {integrity: sha512-y1zzn6C4YGJui+tJzcCKlsf1oSOSVAkRrvmg8OwqVIKnALKKb9ihx2qLCslHg8x0wJvJgMtDMXgrczvQrZW0Lw==}
+  /ember-resolver@11.0.0(ember-source@5.1.2):
+    resolution: {integrity: sha512-TOc685OnGEMMNEt04BukmQHOYVXnRJc+sGZij/vzWdxXRq+Wpsu1Nw2nLFo6fbMqqVLATk5oLKAQ1eKQwte2wQ==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
-      '@ember/string': ^3.0.1
       ember-source: ^4.8.3 || >= 5.0.0
     peerDependenciesMeta:
       ember-source:
         optional: true
     dependencies:
-      '@ember/string': 3.1.1
       ember-cli-babel: 7.26.11
       ember-source: 5.1.2(@babel/core@7.22.9)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(rsvp@4.8.5)(webpack@5.88.2)
     transitivePeerDependencies:
