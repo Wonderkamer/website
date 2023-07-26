@@ -14,7 +14,7 @@
     "build-dev": "ember build --environment=testing",
     "build": "ember build --environment=production",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
-    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css": "stylelint --allow-empty-input \"**/*.css\"",
     "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\"",
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:hbs": "ember-template-lint .",
