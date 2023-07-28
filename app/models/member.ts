@@ -14,14 +14,10 @@ export default class MemberModel extends Model {
   isActive!: boolean;
 
   get profileImgLargeSrc() {
-    return (
-      '/' + ['members', this.slug, ['profile-large', 'jpg'].join('.')].join('/')
-    );
+    return '/' + ['members', this.slug, ['profile-large', 'jpg'].join('.')].join('/');
   }
   get profileImgSmallSrc() {
-    return (
-      '/' + ['members', this.slug, ['profile-small', 'jpg'].join('.')].join('/')
-    );
+    return '/' + ['members', this.slug, ['profile-small', 'jpg'].join('.')].join('/');
   }
   get profileTextSrc() {
     return '/' + ['members', this.slug, ['about', 'md'].join('.')].join('/');

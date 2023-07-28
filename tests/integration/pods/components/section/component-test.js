@@ -9,10 +9,7 @@ module('Integration | Component | section', function (hooks) {
   test('it renders', async function (assert) {
     await render(hbs`<Section />`);
 
-    assert.strictEqual(
-      this.element.textContent.trim(),
-      'use a block component!',
-    );
+    assert.strictEqual(this.element.textContent.trim(), 'use a block component!');
 
     // Template block usage:
     await render(hbs`

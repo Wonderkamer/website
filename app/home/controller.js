@@ -32,9 +32,7 @@ export default class HomeController extends Controller {
       members.push(this.store.peekRecord(element.type, element.id));
     });
 
-    return members
-      .filter((member) => member.isActive)
-      .sort(() => Math.random() - 0.5);
+    return members.filter((member) => member.isActive).sort(() => Math.random() - 0.5);
   }
 
   @action

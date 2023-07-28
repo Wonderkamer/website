@@ -9,8 +9,6 @@ module('Integration | Component | section-contact', function (hooks) {
   test('it renders', async function (assert) {
     await render(hbs`<SectionContact />`);
 
-    assert.true(
-      this.element.textContent.trim().includes('Stichting Wonderkamer'),
-    );
+    assert.true(this.element.textContent.trim().includes('Stichting Wonderkamer'));
   });
 });

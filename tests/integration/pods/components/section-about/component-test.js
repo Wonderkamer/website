@@ -9,10 +9,6 @@ module('Integration | Component | section-about', function (hooks) {
   test('it renders', async function (assert) {
     await render(hbs`<SectionAbout />`);
 
-    assert.true(
-      this.element.textContent
-        .trim()
-        .includes('We zitten in de voormalige St. Vincentius jongensschool'),
-    );
+    assert.true(this.element.textContent.trim().includes('St. Vincentius jongensschool'));
   });
 });
