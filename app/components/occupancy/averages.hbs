@@ -1,15 +1,8 @@
 {{! template-lint-disable no-invalid-interactive }}
 <div {{on "click" (fn this.clicked null)}} ...attributes>
-  <div
-    class="graph graph-{{this.mode}}
-      d-flex w-100 justify-content-between align-items-end"
-  >
+  <div class="graph graph-{{this.mode}} d-flex w-100 justify-content-between align-items-end">
     {{#each this.listOfNormalizedAverages as |entry|}}
-      <div
-        class="position-relative"
-        {{on "click" (fn this.clicked (if this.day null entry.value))}}
-        role="button"
-      >
+      <div class="position-relative" {{on "click" (fn this.clicked (if this.day null entry.value))}} role="button">
         <div class="bar" {{did-insert this.didInsertBar entry.average}}></div>
         <div class="label">{{entry.label}}</div>
       </div>
