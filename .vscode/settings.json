@@ -1,7 +1,6 @@
 {
     "eslint.alwaysShowStatus": true,
     "eslint.format.enable": true,
-    "eslint.packageManager": "pnpm",
     "editor.formatOnSave": true,
     "prettier.documentSelectors": ["**/*.hbs"],
     "[handlebars]": {

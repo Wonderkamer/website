@@ -5,7 +5,6 @@ import { inject as service } from '@ember/service';
 export default class ApplicationRoute extends Route {
   @service metrics: any;
   @service router!: RouterService;
-  @service moment!: any;
   @service intl!: any;
 
   private sourceParam?: string;
@@ -37,7 +36,6 @@ export default class ApplicationRoute extends Route {
     super.beforeModel(transition);
 
     this.intl.setLocale(['nl-nl']);
-    this.moment.setLocale('nl');
   }
 
   afterModel() {

@@ -13,12 +13,7 @@ export default class TextDate extends BaseControl {
   sizeClass;
 
   get classNamesProxy() {
-    return [
-      'pe-2',
-      this.classTypePrefix,
-      this.sizeClass,
-      this.formValidationClass,
-    ].join(' ');
+    return ['pe-2', this.classTypePrefix, this.sizeClass, this.formValidationClass].join(' ');
   }
 
   get value() {

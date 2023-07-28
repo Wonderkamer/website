@@ -31,9 +31,7 @@ module.exports = function (environment) {
         name: 'GoogleAnalyticsFour',
         environments: ['testing', 'production'],
         config: {
-          id:
-            googleTrackingIdsPerEnvironment[environment] ??
-            googleTrackingIdsPerEnvironment['development'],
+          id: googleTrackingIdsPerEnvironment[environment] ?? googleTrackingIdsPerEnvironment['development'],
           options: {
             send_page_view: false,
             anonymize_ip: true,
@@ -64,21 +62,11 @@ module.exports = function (environment) {
   };
   ENV['contentSecurityPolicy'] = {
     'default-src': "'none'",
-    'script-src':
-      "'self' 'unsafe-eval' *.googleapis.com www.google-analytics.com",
+    'script-src': "'self' 'unsafe-eval' *.googleapis.com www.google-analytics.com",
     'font-src': "'self' fonts.gstatic.com",
     'img-src': "'self' data: *.googleapis.com maps.gstatic.com *.gstatic.com",
     'connect-src': "'self' www.google-analytics.com",
     'style-src': "'self' 'unsafe-inline' *.googleapis.com",
-  };
-
-  ENV['moment'] = {
-    // Options:
-    // 'all' - all years, all timezones
-    // 'subset' - 2012-2022, all timezones
-    // 'none' - no data, just timezone API
-    includeTimezone: 'all',
-    includeLocales: ['nl'],
   };
 
   if (environment === 'development') {

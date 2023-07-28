@@ -1,4 +1,6 @@
 <div ...attributes>
   <span class="current">{{this.lastOccupancy.occupancy}}</span>
-  <span class="last-update">{{moment-from-now this.lastOccupancy.on}}</span>
+  <span class="last-update">
+    {{format-relative this.lastOccupancy.ago unit=this.lastOccupancy.unit numeric="auto" style="long"}}
+  </span>
 </div>

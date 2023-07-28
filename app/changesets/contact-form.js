@@ -1,8 +1,4 @@
-import {
-  validateLength,
-  validatePresence,
-  validateFormat,
-} from 'ember-changeset-validations/validators';
+import { validateLength, validatePresence, validateFormat } from 'ember-changeset-validations/validators';
 import fetch from 'fetch';
 
 class ContactForm {

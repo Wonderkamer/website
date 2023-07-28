@@ -12,10 +12,7 @@ export default class BezettingRoute extends Route {
   }
 
   model() {
-    const url =
-      config.environment === 'production'
-        ? '/occupancy.php'
-        : '/data/occupancy.json';
+    const url = config.environment === 'production' ? '/occupancy.php' : '/data/occupancy.json';
 
     return fetch(url).then((response) => {
       this.refreshTask.perform();

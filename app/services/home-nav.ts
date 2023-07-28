@@ -1,7 +1,7 @@
+import type RouterService from '@ember/routing/router-service';
+import { debounce } from '@ember/runloop';
 import Service, { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
-import { debounce } from '@ember/runloop';
-import type RouterService from '@ember/routing/router-service';
 
 export default class HomeNavService extends Service {
   @service private router!: RouterService;
@@ -20,9 +20,7 @@ export default class HomeNavService extends Service {
 
     if (routeInfo && routeInfo.name !== 'home.index') {
       const sectionName = routeInfo.name.split('.').slice(1).shift();
-      const sectionElement = element.querySelector(
-        `section.section-${sectionName}`,
-      ) as HTMLElement;
+      const sectionElement = element.querySelector(`section.section-${sectionName}`) as HTMLElement;
 
       if (sectionElement) {
         window.scrollTo({ top: sectionElement.offsetTop });
@@ -52,9 +50,7 @@ export default class HomeNavService extends Service {
   }
 
   sectionWentOutOfView(id: string) {
-    this._sectionsInViewPort = [
-      ...this._sectionsInViewPort.filter((i) => i !== id),
-    ];
+    this._sectionsInViewPort = [...this._sectionsInViewPort.filter((i) => i !== id)];
   }
 
   private get activeRoute() {

@@ -5,8 +5,7 @@ export default class MembersMemberRoute extends Route {
   @service store;
 
   model(params) {
-    return this.store.peekAll('member').filterBy('slug', params.slug)
-      .firstObject;
+    return this.store.peekAll('member').filterBy('slug', params.slug).firstObject;
   }
 
   setupController(controler, model) {
