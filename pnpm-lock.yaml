@@ -186,8 +186,8 @@ devDependencies:
     specifier: 5.2.1
     version: 5.2.1
   ember-concurrency:
-    specifier: 3.0.0
-    version: 3.0.0(@babel/core@7.22.9)
+    specifier: 3.1.0
+    version: 3.1.0(@babel/core@7.22.9)(ember-source@5.1.2)
   ember-data:
     specifier: 5.1.1
     version: 5.1.1(@babel/core@7.22.9)(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-source@5.1.2)
@@ -235,13 +235,13 @@ devDependencies:
     version: 11.0.0(ember-source@5.1.2)
   ember-resources:
     specifier: 6.3.1
-    version: 6.3.1(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2)
+    version: 6.3.1(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.1.0)(ember-source@5.1.2)
   ember-source:
     specifier: 5.1.2
     version: 5.1.2(@babel/core@7.22.9)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(rsvp@4.8.5)(webpack@5.88.2)
   ember-stargate:
     specifier: 0.5.0
-    version: 0.5.0(@babel/core@7.22.9)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2)
+    version: 0.5.0(@babel/core@7.22.9)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.1.0)(ember-source@5.1.2)
   ember-style-modifier:
     specifier: 3.0.1
     version: 3.0.1(@ember/string@3.1.1)(@glint/template@1.0.2)(ember-source@5.1.2)(webpack@5.88.2)
@@ -9698,18 +9698,20 @@ packages:
       - supports-color
     dev: true
 
-  /ember-concurrency@3.0.0(@babel/core@7.22.9):
-    resolution: {integrity: sha512-MUsOgl4qLkINxrY+9FuohSOsn7Ytd3xCxu9mThSrMPatxomscZz/0lT4M95S7xy2aNO4o/zGfAEULECQ09YkWA==}
-    engines: {node: 10.* || 12.* || 14.* || >= 16}
+  /ember-concurrency@3.1.0(@babel/core@7.22.9)(ember-source@5.1.2):
+    resolution: {integrity: sha512-vJrP+awbiYJvm2y9xYIYO96n2Jx1FXp7mbM7ucjSp+hPuNwNw9i7xXVrgxBYIuJ/0zlbSMF0P2XJoyi4A0XCrQ==}
+    engines: {node: 16.* || >= 18}
+    peerDependencies:
+      ember-source: ^3.28.0 || ^4.0.0
     dependencies:
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/types': 7.22.5
       '@glimmer/tracking': 1.1.2
       ember-cli-babel: 7.26.11
       ember-cli-babel-plugin-helpers: 1.1.1
-      ember-cli-htmlbars: 5.7.2
+      ember-cli-htmlbars: 6.2.0
       ember-compatibility-helpers: 1.2.6(@babel/core@7.22.9)
-      ember-destroyable-polyfill: 2.0.3(@babel/core@7.22.9)
+      ember-source: 5.1.2(@babel/core@7.22.9)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(rsvp@4.8.5)(webpack@5.88.2)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -10174,7 +10176,7 @@ packages:
       - supports-color
     dev: true
 
-  /ember-resources@6.3.1(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2):
+  /ember-resources@6.3.1(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.1.0)(ember-source@5.1.2):
     resolution: {integrity: sha512-DcLW/j/ffnPwmOunNM45gi3221kxIdiYk3pR879OWxmQXHjGk8uL5ACwD/0IrwjTpbO8/H+6fwOKg+GqFM7NBQ==}
     peerDependencies:
       '@ember/test-waiters': ^3.0.0
@@ -10198,7 +10200,7 @@ packages:
       '@glimmer/tracking': 1.1.2
       '@glint/template': 1.0.2
       ember-async-data: 1.0.1(ember-source@5.1.2)
-      ember-concurrency: 3.0.0(@babel/core@7.22.9)
+      ember-concurrency: 3.1.0(@babel/core@7.22.9)(ember-source@5.1.2)
       ember-source: 5.1.2(@babel/core@7.22.9)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(rsvp@4.8.5)(webpack@5.88.2)
     transitivePeerDependencies:
       - supports-color
@@ -10278,13 +10280,13 @@ packages:
       - webpack
     dev: true
 
-  /ember-stargate@0.5.0(@babel/core@7.22.9)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2):
+  /ember-stargate@0.5.0(@babel/core@7.22.9)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.1.0)(ember-source@5.1.2):
     resolution: {integrity: sha512-HYUww+s1M5X4nmErc3VxsCmGAelBrp8AecObadEvO3u6c9cF8RpsMciWpjfvcD94gy0sneIg61S91S4XJaormQ==}
     dependencies:
       '@ember/render-modifiers': 2.1.0(@babel/core@7.22.9)(@glint/template@1.0.2)(ember-source@5.1.2)
       '@embroider/addon-shim': 1.8.5
       '@glimmer/component': 1.1.2(@babel/core@7.22.9)
-      ember-resources: 6.3.1(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.0.0)(ember-source@5.1.2)
+      ember-resources: 6.3.1(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.1.0)(ember-source@5.1.2)
       tracked-maps-and-sets: 3.0.2
     transitivePeerDependencies:
       - '@babel/core'

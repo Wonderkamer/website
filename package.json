@@ -96,7 +96,7 @@
     "ember-cli-string-helpers": "6.1.0",
     "ember-cli-terser": "4.0.2",
     "ember-cli-typescript": "5.2.1",
-    "ember-concurrency": "3.0.0",
+    "ember-concurrency": "3.1.0",
     "ember-data": "5.1.1",
     "ember-fetch": "8.1.2",
     "ember-g-recaptcha": "2.1.0",
