@@ -309,8 +309,8 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   sass:
-    specifier: 1.64.1
-    version: 1.64.1
+    specifier: 1.65.1
+    version: 1.65.1
   standard-version:
     specifier: 9.5.0
     version: 9.5.0
@@ -15986,8 +15986,8 @@ packages:
       walker: 1.0.8
     dev: true
 
-  /sass@1.64.1:
-    resolution: {integrity: sha512-16rRACSOFEE8VN7SCgBu1MpYCyN7urj9At898tyzdXFhC+a+yOX5dXwAR7L8/IdPJ1NB8OYoXmD55DM30B2kEQ==}
+  /sass@1.65.1:
+    resolution: {integrity: sha512-9DINwtHmA41SEd36eVPQ9BJKpn7eKDQmUHmpI0y5Zv2Rcorrh0zS+cFrt050hdNbmmCNKTW3hV5mWfuegNRsEA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
