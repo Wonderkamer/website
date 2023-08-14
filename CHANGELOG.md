@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/Wonderkamer/website/compare/1.4.1...1.4.2) (2023-08-14)
+
+
+### Bug Fixes
+
+* dark variables for bootstrap ([d6cd30e](https://github.com/Wonderkamer/website/commits/d6cd30e3e5746d09fcb591350341d6bb8011d90b))
+
+
+### Miscellaneous
+
+* chonfig renovate auto merge ([1e953b9](https://github.com/Wonderkamer/website/commits/1e953b933f0db1eef0b9482437c80b7731eae9cf))
+* config renovate auto merge ([13fe301](https://github.com/Wonderkamer/website/commits/13fe30119471d9df7b4a6cefe81f03c937ef5b60))
+* **deps:** update commitlint monorepo ([8027bfe](https://github.com/Wonderkamer/website/commits/8027bfe669ebba04e0fb35b8c00c08026139b0a0))
+* **deps:** update dependency @types/ember__controller to v4.0.6 ([f88632e](https://github.com/Wonderkamer/website/commits/f88632e1d3b7a8930b32a2b590108cb69b71c85c))
+* **deps:** update dependency bootstrap to v5.3.1 ([db0a373](https://github.com/Wonderkamer/website/commits/db0a3732eef169ddffd167cce18fc7a7a9608979))
+* **deps:** update dependency ember-cli-htmlbars to v6.3.0 ([3d5b562](https://github.com/Wonderkamer/website/commits/3d5b562b5b6cddb3f65eac12e9b27c159fa9fb55))
+* **deps:** update dependency ember-concurrency to v3.1.0 ([33a25e5](https://github.com/Wonderkamer/website/commits/33a25e50c48e30b4d7052df933f5cd2b1b4017e3))
+* **deps:** update dependency ember-resources to v6.4.0 ([30f2bc3](https://github.com/Wonderkamer/website/commits/30f2bc3faf25edcccb0f64ca7adf8054a81cf409))
+* **deps:** update dependency ember-source to v5.2.0 ([40d8f51](https://github.com/Wonderkamer/website/commits/40d8f512f0e27a691d7fe576583707866a81f48c))
+* **deps:** update dependency ember-template-lint to v5.11.2 ([e2f29c9](https://github.com/Wonderkamer/website/commits/e2f29c91d12fdcf3f4d29cc33c20020ae9b1011b))
+* **deps:** update dependency eslint to v8.47.0 ([85dce5d](https://github.com/Wonderkamer/website/commits/85dce5d49bda1061a58e128116e3400026f328df))
+* **deps:** update dependency eslint-config-prettier to v8.10.0 ([b75e3af](https://github.com/Wonderkamer/website/commits/b75e3af305a625f8f06b461720260c9126a45095))
+* **deps:** update dependency eslint-config-prettier to v9 ([41760f6](https://github.com/Wonderkamer/website/commits/41760f697b93fd6bffb8a36e18b60fda8215488d))
+* **deps:** update dependency lint-staged to v13.3.0 ([ce6647a](https://github.com/Wonderkamer/website/commits/ce6647ad9d6d0fc9cdaf5d57a7519e473cb43b93))
+* **deps:** update dependency lint-staged to v14 ([5de8e6f](https://github.com/Wonderkamer/website/commits/5de8e6f45d6952331533a3b7ab0b4fa1fd89fc02))
+* **deps:** update dependency prettier to v3.0.1 ([761d6d4](https://github.com/Wonderkamer/website/commits/761d6d485a990aa07af71722b98aaca46b9f72a3))
+* **deps:** update dependency sass to v1.65.1 ([188d63f](https://github.com/Wonderkamer/website/commits/188d63fd543d104a795320fbb827a8b54b34b6fb))
+* **deps:** update embroider monorepo ([2081892](https://github.com/Wonderkamer/website/commits/2081892504040badb1fdb5b8de2fd05fe9d5047f))
+* **deps:** update typescript-eslint monorepo to v6.3.0 ([a064489](https://github.com/Wonderkamer/website/commits/a06448951fb80a1010e2fc07b6454ab07a0f8d13))
+* lockfile fixed ([79e5903](https://github.com/Wonderkamer/website/commits/79e59034ffb3a1927d0fb3cd28bddb3e02660358))
+
+
+### Content Changes
+
+* member content ([b41c7d6](https://github.com/Wonderkamer/website/commits/b41c7d659efb3b33f30d3b133a65614a50ea665c))
+* member update ([df7239f](https://github.com/Wonderkamer/website/commits/df7239f16f9f3aaba9029db9212cdee6ee7de55c))
+
 ### [1.4.1](https://github.com/Wonderkamer/website/compare/1.4.0...1.4.1) (2023-07-28)
 
 
