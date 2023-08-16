@@ -204,8 +204,8 @@ devDependencies:
     specifier: 5.7.2
     version: 5.7.2(typescript@5.1.6)
   ember-keyboard:
-    specifier: 8.2.0
-    version: 8.2.0(@babel/core@7.22.9)(@ember/test-helpers@3.2.0)(ember-source@5.2.0)
+    specifier: 8.2.1
+    version: 8.2.1(@babel/core@7.22.9)(@ember/test-helpers@3.2.0)(ember-source@5.2.0)
   ember-leaflet:
     specifier: 5.1.1
     version: 5.1.1(@babel/core@7.22.9)(@glint/template@1.0.2)(ember-source@5.2.0)(leaflet@1.9.4)
@@ -9959,11 +9959,10 @@ packages:
       - webpack-command
     dev: true
 
-  /ember-keyboard@8.2.0(@babel/core@7.22.9)(@ember/test-helpers@3.2.0)(ember-source@5.2.0):
-    resolution: {integrity: sha512-h2kuS2irtIyvNbAMkGDlDTB4TPXwgmC6Nu9bIuGWoCjkGdgJbUg0VegfyRJ1TlxbIHlAelbqVpE8UhfgY5wEag==}
-    engines: {node: 12.* || 14.* || >= 16}
+  /ember-keyboard@8.2.1(@babel/core@7.22.9)(@ember/test-helpers@3.2.0)(ember-source@5.2.0):
+    resolution: {integrity: sha512-wT9xpt3GKsiodGZoifKU4OyeRjXWlmKV9ZHHsp6wJBwMFpl4wWPjTNdINxivk2qg/WFNIh8nUiwuG4+soWXPdw==}
     peerDependencies:
-      '@ember/test-helpers': ^2.6.0
+      '@ember/test-helpers': ^2.6.0 || ^3.0.0
     peerDependenciesMeta:
       '@ember/test-helpers':
         optional: true
