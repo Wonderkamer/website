@@ -82,7 +82,7 @@
     "ember-bootstrap-changeset-validations": "5.0.0",
     "ember-changeset": "4.1.2",
     "ember-changeset-validations": "4.1.1",
-    "ember-cli": "5.1.0",
+    "ember-cli": "5.2.0",
     "ember-cli-app-version": "6.0.1",
     "ember-cli-babel": "7.26.11",
     "ember-cli-clean-css": "2.0.0",
