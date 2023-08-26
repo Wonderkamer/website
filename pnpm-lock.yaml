@@ -144,8 +144,8 @@ devDependencies:
     specifier: 4.1.1
     version: 4.1.1(@glint/template@1.0.2)(webpack@5.88.2)
   ember-cli:
-    specifier: 5.2.0
-    version: 5.2.0
+    specifier: 5.2.1
+    version: 5.2.1
   ember-cli-app-version:
     specifier: 6.0.1
     version: 6.0.1(ember-source@5.2.0)
@@ -157,7 +157,7 @@ devDependencies:
     version: 2.0.0
   ember-cli-dependency-checker:
     specifier: 3.3.2
-    version: 3.3.2(ember-cli@5.2.0)
+    version: 3.3.2(ember-cli@5.2.1)
   ember-cli-head:
     specifier: 2.0.0
     version: 2.0.0
@@ -2481,20 +2481,6 @@ packages:
       - supports-color
     dev: true
 
-  /@babel/plugin-transform-typescript@7.16.8(@babel/core@7.22.9):
-    resolution: {integrity: sha512-bHdQ9k7YpBDO2d0NVfkj51DpQcvwIzIusJ7mEUaMlbZq3Kt/U47j24inXZHQ5MDiYpCs+oZiwnXyKedE8+q7AQ==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.22.9(supports-color@8.1.1)
-      '@babel/helper-create-class-features-plugin': 7.22.6(@babel/core@7.22.9)
-      '@babel/helper-plugin-utils': 7.22.5
-      '@babel/plugin-syntax-typescript': 7.16.7(@babel/core@7.22.9)
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@babel/plugin-transform-typescript@7.22.10(@babel/core@7.22.9):
     resolution: {integrity: sha512-7++c8I/ymsDo4QQBAgbraXLzIM6jmfao11KgIBEYZRReWzNWH9NtNgJcyrZiXsOPh523FQm6LfpLyy/U5fn46A==}
     engines: {node: '>=6.9.0'}
@@ -4705,7 +4691,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 17.0.23
+      '@types/node': 20.4.7
     dev: true
 
   /@types/htmlbars-inline-precompile@3.0.0:
@@ -4760,7 +4746,7 @@ packages:
     resolution: {integrity: sha512-YyP+VfeaqAyFmXoTh3HChxOQMyjByRMsHU7kc5KOJkSlXudhMhQIALbYV7rHh/l8d2lX3VUQzprrcAgWdRuU8g==}
     dependencies:
       '@types/glob': 7.2.0
-      '@types/node': 17.0.23
+      '@types/node': 20.4.7
     dev: true
 
   /@types/rsvp@4.0.4:
@@ -9335,14 +9321,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli-dependency-checker@3.3.2(ember-cli@5.2.0):
+  /ember-cli-dependency-checker@3.3.2(ember-cli@5.2.1):
     resolution: {integrity: sha512-PwkrW5oYsdPWwt+0Tojufmv/hxVETTjkrEdK7ANQB2VSnqpA5UcYubwpQM9ONuR2J8wyNDMwEHlqIrk/FYtBsQ==}
     engines: {node: '>= 6'}
     peerDependencies:
       ember-cli: ^3.2.0 || >=4.0.0
     dependencies:
       chalk: 2.4.2
-      ember-cli: 5.2.0
+      ember-cli: 5.2.1
       find-yarn-workspace-root: 1.2.1
       is-git-url: 1.0.0
       resolve: 1.22.2
@@ -9675,8 +9661,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-cli@5.2.0:
-    resolution: {integrity: sha512-VZ/yhnM9tNWxZQQ+3dGe0MkUhkcS51W7WQWxlIr+NxlqG+WLe6qi8IKHElXwI3nY/Gbh5kSU5rF31WmGeGXjbg==}
+  /ember-cli@5.2.1:
+    resolution: {integrity: sha512-TYojG0uxyvX0rEgb3GkOVVUPCtfLmQbw2YHnAdZxHTJ1d45oRaDHlJmPfsaY8suVbP4EjXOiPR1CkFKoOvAuXg==}
     engines: {node: '>= 16'}
     hasBin: true
     dependencies:
@@ -15819,7 +15805,7 @@ packages:
     dependencies:
       '@babel/core': 7.22.9(supports-color@8.1.1)
       '@babel/plugin-syntax-decorators': 7.22.5(@babel/core@7.22.9)
-      '@babel/plugin-transform-typescript': 7.16.8(@babel/core@7.22.9)
+      '@babel/plugin-transform-typescript': 7.22.10(@babel/core@7.22.9)
       prettier: 2.8.8
     transitivePeerDependencies:
       - supports-color
