@@ -153,8 +153,8 @@ devDependencies:
     specifier: 8.0.0
     version: 8.0.0(@babel/core@7.22.9)
   ember-cli-clean-css:
-    specifier: 2.0.0
-    version: 2.0.0
+    specifier: 2.0.1
+    version: 2.0.1
   ember-cli-dependency-checker:
     specifier: 3.3.2
     version: 3.3.2(ember-cli@5.2.1)
@@ -9321,8 +9321,8 @@ packages:
       recast: 0.12.9
     dev: true
 
-  /ember-cli-clean-css@2.0.0:
-    resolution: {integrity: sha512-je5QnB/Ms5641Oh8tv2CWKXGWeeiXxOGpqIuLq/XybERV6CdRGrQ7jNiAWBc4/P6vdoIqw5kjrC9nxVGwWWs9Q==}
+  /ember-cli-clean-css@2.0.1:
+    resolution: {integrity: sha512-djUYfFZvMGa+/h74E83lWS255AUFS2A+Kp3pupQaqUSa7i9g9PXhbOqOgC03T6D/rASxgSpl+Mh3knDvhAJ7MQ==}
     engines: {node: 16.* || >= 18}
     dependencies:
       broccoli-persistent-filter: 3.1.3
