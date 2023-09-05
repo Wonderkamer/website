@@ -324,8 +324,8 @@ devDependencies:
     specifier: 4.0.2
     version: 4.0.2(prettier@3.0.3)(stylelint@15.10.3)
   tracked-built-ins:
-    specifier: 3.1.1
-    version: 3.1.1
+    specifier: 3.2.0
+    version: 3.2.0
   typescript:
     specifier: 5.2.2
     version: 5.2.2
@@ -8959,7 +8959,7 @@ packages:
       ember-source: ^4.8.4
     dependencies:
       '@ember/test-waiters': 3.0.2
-      '@embroider/addon-shim': 1.8.5
+      '@embroider/addon-shim': 1.8.6
       ember-source: 5.2.0(@babel/core@7.22.9)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(rsvp@4.8.5)(webpack@5.88.2)
     transitivePeerDependencies:
       - supports-color
@@ -9993,7 +9993,7 @@ packages:
     resolution: {integrity: sha512-/8Cx9KI7uqoMaNN4Iyxc24P2JIvAcCL3cI1tYdZRHTwTd1sG6esEZWOnpxZOSE7m4xHww8HVUSiXzgyqD8YIhA==}
     engines: {node: 12.* || >= 14}
     dependencies:
-      '@embroider/addon-shim': 1.8.5
+      '@embroider/addon-shim': 1.8.6
       focus-trap: 6.9.4
     transitivePeerDependencies:
       - supports-color
@@ -17548,12 +17548,11 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /tracked-built-ins@3.1.1:
-    resolution: {integrity: sha512-W8qLBxZzeC2zhEDdbPKi2GTffsiFn8PRbgal/2Fl6E/84CMvnpS6cPMmkvUmSLgKbqcAxl/RhyjWnhIZ9iPQjQ==}
-    engines: {node: 14.* || 16.* || >= 18.*}
+  /tracked-built-ins@3.2.0:
+    resolution: {integrity: sha512-dB8cFBpyJco3tmMO0w/+K8GYaL4iBjff4avLmNju0q6o8VvKLPpvPk/JHiwSXgX6aDCcOQv4J5JUBCAXBHaiGQ==}
+    engines: {node: 14.* || 16.* || >= 18}
     dependencies:
-      ember-cli-babel: 7.26.11
-      ember-cli-typescript: 5.2.1
+      '@embroider/addon-shim': 1.8.6
       ember-tracked-storage-polyfill: 1.0.0
     transitivePeerDependencies:
       - supports-color
