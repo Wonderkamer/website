@@ -44,7 +44,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Installing Dependencies
         env:
@@ -89,7 +89,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Installing Dependencies
         env:
