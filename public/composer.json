@@ -5,7 +5,7 @@
 		"optimize-autoloader": true,
 		"prepend-autoloader": false,
 		"platform": {
-			"php": "8.0.13"
+			"php": "8.2.9"
 		}
 	},
     "require": {

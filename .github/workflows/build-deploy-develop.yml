@@ -63,7 +63,7 @@ jobs:
           echo "CONTACT_FORM_RECIPIENT=\"hallo@wonderkamer.com\"" >> dist/.env
 
       - name: Install PHP dependencies (into /dist/vendor)
-        uses: mileschou/composer-action/8.0/install@master
+        uses: mileschou/composer-action/8.1/install@master
         with:
           args: 'install --working-dir=./dist --prefer-dist --no-interaction --no-progress'
 
@@ -94,7 +94,7 @@ jobs:
 
       - name: Unpack distribution
         run: tar -xvf dist.tar
-  
+
       - name: Deploy
         uses: contention/rsync-deployments@v2.0.0
         with:

@@ -64,13 +64,13 @@ jobs:
           echo "CONTACT_FORM_RECIPIENT=\"hallo@wonderkamer.com\"" >> dist/.env
 
       - name: Install PHP dependencies (into /dist/vendor)
-        uses: mileschou/composer-action/8.0/install@master
+        uses: mileschou/composer-action/8.1/install@master
         with:
           args: 'install --working-dir=./dist --no-suggest --prefer-dist --no-interaction --no-progress'
 
       - name: Archive distribution directory
         run: tar -cvf dist.tar dist
-    
+
       - name: Persist distribution directory (/dist as 'build-prod')
         uses: actions/upload-artifact@v3.1.2
         with:
