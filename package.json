@@ -118,7 +118,7 @@
     "ember-style-modifier": "3.0.1",
     "ember-template-lint": "5.11.2",
     "ember-template-lint-plugin-prettier": "5.0.0",
-    "ember-truth-helpers": "4.0.0",
+    "ember-truth-helpers": "4.0.2",
     "ember-welcome-page": "7.0.2",
     "eslint": "8.48.0",
     "eslint-config-prettier": "9.0.0",
