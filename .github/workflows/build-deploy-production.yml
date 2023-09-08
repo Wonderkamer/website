@@ -72,7 +72,7 @@ jobs:
         run: tar -cvf dist.tar dist
 
       - name: Persist distribution directory (/dist as 'build-prod')
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v3.1.3
         with:
           name: build-${{ github.sha }}
           path: dist.tar
