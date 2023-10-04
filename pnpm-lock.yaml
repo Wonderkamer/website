@@ -111,8 +111,8 @@ devDependencies:
     specifier: 2.19.6
     version: 2.19.6
   '@types/rsvp':
-    specifier: 4.0.4
-    version: 4.0.4
+    specifier: 4.0.5
+    version: 4.0.5
   '@typescript-eslint/eslint-plugin':
     specifier: 6.7.2
     version: 6.7.2(@typescript-eslint/parser@6.7.2)(eslint@8.50.0)(typescript@5.2.2)
@@ -5799,7 +5799,7 @@ packages:
       '@types/ember': 4.0.6(@babel/core@7.22.20)
       '@types/ember__error': 4.0.3
       '@types/ember__object': 4.0.8(@babel/core@7.22.20)
-      '@types/rsvp': 4.0.4
+      '@types/rsvp': 4.0.5
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -5860,7 +5860,7 @@ packages:
       '@types/ember__template': 4.0.3
       '@types/ember__test': 4.0.3(@babel/core@7.22.20)
       '@types/ember__utils': 4.0.4(@babel/core@7.22.20)
-      '@types/rsvp': 4.0.4
+      '@types/rsvp': 4.0.5
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -5941,7 +5941,7 @@ packages:
     resolution: {integrity: sha512-ZpMUVWnOr/FespCyriI2I3PvvJLUVkVZx8tlCFql9Cd3dqMF1O4RN4IdaFTWHcT/4rNdjAFKF5CxzoVSzKU/9A==}
     dependencies:
       '@types/ember': 4.0.6(@babel/core@7.22.20)
-      '@types/rsvp': 4.0.4
+      '@types/rsvp': 4.0.5
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -6123,8 +6123,8 @@ packages:
       '@types/node': 20.4.7
     dev: true
 
-  /@types/rsvp@4.0.4:
-    resolution: {integrity: sha512-J3Ol++HCC7/hwZhanDvggFYU/GtxHxE/e7cGRWxR04BF7Tt3TqJZ84BkzQgDxmX0uu8IagiyfmfoUlBACh2Ilg==}
+  /@types/rsvp@4.0.5:
+    resolution: {integrity: sha512-Vhmt0IASo026ZU20O3KP1nBZOCXduQ/Ei+vpgs0hfDZHysSIfhnMc61ZMIUuaazfYS0J9EhLz+jJsft6iYX4Kw==}
     dev: true
 
   /@types/semver@7.5.0:
@@ -11221,7 +11221,7 @@ packages:
       '@ember/render-modifiers': 2.1.0(@babel/core@7.22.20)(@glint/template@1.0.2)(ember-source@5.3.0)
       '@glimmer/component': 1.1.2(@babel/core@7.22.20)
       ember-auto-import: 2.6.3(@glint/template@1.0.2)(webpack@5.88.2)
-      ember-cli-babel: 8.0.0(@babel/core@7.22.20)
+      ember-cli-babel: 8.1.0(@babel/core@7.22.20)
       ember-cli-htmlbars: 6.3.0
       ember-element-helper: 0.8.4(@glint/template@1.0.2)(ember-source@5.3.0)
       ember-source: 5.3.0(@babel/core@7.22.20)(@glimmer/component@1.1.2)(@glint/template@1.0.2)(rsvp@4.8.5)(webpack@5.88.2)
