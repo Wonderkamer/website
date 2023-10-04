@@ -45,17 +45,17 @@ devDependencies:
     specifier: 4.4.11
     version: 4.4.11(@babel/core@7.22.20)
   '@types/ember-data__adapter':
-    specifier: 4.0.2
-    version: 4.0.2(@babel/core@7.22.20)
-  '@types/ember-data__model':
-    specifier: 4.0.1
-    version: 4.0.1(@babel/core@7.22.20)
-  '@types/ember-data__serializer':
-    specifier: 4.0.2
-    version: 4.0.2(@babel/core@7.22.20)
-  '@types/ember-data__store':
     specifier: 4.0.3
     version: 4.0.3(@babel/core@7.22.20)
+  '@types/ember-data__model':
+    specifier: 4.0.2
+    version: 4.0.2(@babel/core@7.22.20)
+  '@types/ember-data__serializer':
+    specifier: 4.0.3
+    version: 4.0.3(@babel/core@7.22.20)
+  '@types/ember-data__store':
+    specifier: 4.0.4
+    version: 4.0.4(@babel/core@7.22.20)
   '@types/ember__application':
     specifier: 4.0.8
     version: 4.0.8(@babel/core@7.22.20)
@@ -5805,8 +5805,8 @@ packages:
       - supports-color
     dev: true
 
-  /@types/ember-data__adapter@4.0.2(@babel/core@7.22.20):
-    resolution: {integrity: sha512-CCz5VeNstBHLeHo3l1n9J8Z765Xa0c+q5XQNEPxswHEHtiFdygUEmc1sBfLWRLw/fJLN0wTCbusjXuB/meJ49w==}
+  /@types/ember-data__adapter@4.0.3(@babel/core@7.22.20):
+    resolution: {integrity: sha512-6R9C+fH6BHW++qjCYcDhgYcZKx1CnV3ZLFFT8M33oQ2Dm+4K0/0f4yVLCz8BBfFiMDWaLXQipMsSUwUexMr5lQ==}
     dependencies:
       '@types/ember-data': 4.4.11(@babel/core@7.22.20)
     transitivePeerDependencies:
@@ -5814,8 +5814,8 @@ packages:
       - supports-color
     dev: true
 
-  /@types/ember-data__model@4.0.1(@babel/core@7.22.20):
-    resolution: {integrity: sha512-n7ZfFQ5nUNpTGF2bjwoNg59Vr7CYGt7Y40qbffpWWsQPL6UpI8ieFZEuK4tL9FGTbvGK2DCmoUv2S94TC9Cz/A==}
+  /@types/ember-data__model@4.0.2(@babel/core@7.22.20):
+    resolution: {integrity: sha512-FmqYaJFf3PKQlT7k/WEGiz87Nn+ZmeXRSw+2P5pBu2AVMRFSltguM1Ch4pDSoL8y+L5ZXwGgehnJlgK3qecAGA==}
     dependencies:
       '@types/ember-data': 4.4.11(@babel/core@7.22.20)
     transitivePeerDependencies:
@@ -5823,8 +5823,8 @@ packages:
       - supports-color
     dev: true
 
-  /@types/ember-data__serializer@4.0.2(@babel/core@7.22.20):
-    resolution: {integrity: sha512-QayXyMizZToClxYQwwAleHQf/Cxi/VFg09LMyrFKUIHZ4mvZJaUNlU2Sigt/xcVYrE9JcKAigzJCtqfigz03CQ==}
+  /@types/ember-data__serializer@4.0.3(@babel/core@7.22.20):
+    resolution: {integrity: sha512-b/XjvqcwBjdrAJm907rEBbIc2THHElKh6aCmkYwopnwhmPYuTnCc601l70I6VXqblB7PbLxGqXMXx4cPk+z5QA==}
     dependencies:
       '@types/ember-data': 4.4.11(@babel/core@7.22.20)
     transitivePeerDependencies:
@@ -5832,8 +5832,8 @@ packages:
       - supports-color
     dev: true
 
-  /@types/ember-data__store@4.0.3(@babel/core@7.22.20):
-    resolution: {integrity: sha512-i4U3C0p5Gh3T13ZStIEc38KM1vfu8nXMNrpkrL61I29VsGBAkuSUZTYHHsF2s4bkuUaqFoiD/5x0zF3mVvfkCw==}
+  /@types/ember-data__store@4.0.4(@babel/core@7.22.20):
+    resolution: {integrity: sha512-j/BwadKYS+G9uYvMiQ3y3kCyRFx3nFhlT3zy7qmT9to2ez4bzxNp6mybL/XnkiGPf1ZZCV9dg7eUT5oJISLEfA==}
     dependencies:
       '@types/ember-data': 4.4.11(@babel/core@7.22.20)
     transitivePeerDependencies:
