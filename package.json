@@ -146,7 +146,7 @@
     "stylelint-prettier": "4.0.2",
     "tracked-built-ins": "3.3.0",
     "typescript": "5.2.2",
-    "webpack": "5.88.2"
+    "webpack": "5.89.0"
   },
   "resolutions": {
     "ember-element-helper": "0.6.0"
