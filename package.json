@@ -79,7 +79,7 @@
     "@typescript-eslint/parser": "6.8.0",
     "bootstrap": "5.3.2",
     "broccoli-asset-rev": "3.0.0",
-    "concurrently": "8.2.1",
+    "concurrently": "8.2.2",
     "ember-auto-import": "2.6.3",
     "ember-bootstrap": "5.1.1",
     "ember-bootstrap-changeset-validations": "5.0.0",
