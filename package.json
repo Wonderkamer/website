@@ -51,7 +51,7 @@
     "@glimmer/tracking": "1.1.2",
     "@tsconfig/ember": "3.0.1",
     "@types/ember": "4.0.9",
-    "@types/ember-data": "4.4.13",
+    "@types/ember-data": "4.4.14",
     "@types/ember-data__adapter": "4.0.4",
     "@types/ember-data__model": "4.0.3",
     "@types/ember-data__serializer": "4.0.4",
