@@ -26,6 +26,10 @@ module.exports = function (defaults) {
     'ember-math-helpers': {
       only: ['mod', 'mult'],
     },
+
+    'ember-cli-babel': {
+      enableTypeScriptTransform: true,
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -41,14 +45,14 @@ module.exports = function (defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  // const { Webpack } = require('@embroider/webpack');
-  // return require('@embroider/compat').compatBuild(app, Webpack, {
-  //   skipBabel: [
-  //     {
-  //       package: 'qunit',
-  //     },
-  //   ],
-  // });
+  const { Webpack } = require('@embroider/webpack');
+  return require('@embroider/compat').compatBuild(app, Webpack, {
+    skipBabel: [
+      {
+        package: 'qunit',
+      },
+    ],
+  });
 
-  return app.toTree();
+  // return app.toTree();
 };

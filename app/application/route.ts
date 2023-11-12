@@ -35,7 +35,7 @@ export default class ApplicationRoute extends Route {
   beforeModel(transition: any) {
     super.beforeModel(transition);
 
-    this.intl.setLocale(['nl-nl']);
+    this.intl.setLocale('nl-nl');
   }
 
   afterModel() {
