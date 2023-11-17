@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e2865cec616d17b8fd0b30a8e30c04c",
+    "content-hash": "b8db7a0a81d43349b8bfda9f2d7b3ebd",
     "packages": [
         {
             "name": "google/recaptcha",
@@ -239,7 +239,7 @@
         },
         {
             "name": "laminas/laminas-mail",
-            "version": "2.25.0",
+            "version": "2.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-mail.git",
