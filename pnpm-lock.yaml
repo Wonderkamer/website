@@ -206,8 +206,8 @@ devDependencies:
     specifier: 4.1.0
     version: 4.1.0(@babel/core@7.22.20)(@glint/template@1.0.2)(ember-source@5.4.0)(webpack@5.89.0)
   ember-intl:
-    specifier: 6.3.1
-    version: 6.3.1(@babel/core@7.22.20)(@glint/template@1.0.2)(typescript@5.3.2)(webpack@5.89.0)
+    specifier: 6.3.2
+    version: 6.3.2(@babel/core@7.22.20)(@glint/template@1.0.2)(typescript@5.3.2)(webpack@5.89.0)
   ember-keyboard:
     specifier: 8.2.1
     version: 8.2.1(@babel/core@7.22.20)(@ember/test-helpers@3.2.1)(ember-source@5.4.0)
@@ -7052,7 +7052,7 @@ packages:
     resolution: {integrity: sha512-Quw8a6y8CPmRd6eU+mwypktYCwUcf8yVFIRbNZ6tPQEckX9yd+EBVEPC/GSZZrMWH9e7Vz4pT7XhpmyApRByLQ==}
     engines: {node: 6.* || 8.* || >= 10.*}
     dependencies:
-      json-stable-stringify: 1.0.2
+      json-stable-stringify: 1.1.0
 
   /call-bind@1.0.2:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
@@ -9593,8 +9593,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-intl@6.3.1(@babel/core@7.22.20)(@glint/template@1.0.2)(typescript@5.3.2)(webpack@5.89.0):
-    resolution: {integrity: sha512-Yw44Gjn0ae4yArVHFzTdPxWIe8RRtiH03aI/FsiZzWxpZ4PYLPaUsEWa6gLzgwGMa/xR87LptfTNB0w0mk7GYw==}
+  /ember-intl@6.3.2(@babel/core@7.22.20)(@glint/template@1.0.2)(typescript@5.3.2)(webpack@5.89.0):
+    resolution: {integrity: sha512-UJ91JjlY3z6fjajoHhhJtKUbgqEr/l6Ie4Viqn0B3Lrbavxg5IgAIvyZZ9fOVtq05MDtCuc610zV6vLOc71G0w==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
       typescript: ^4.8.0 || ^5.0.0
@@ -12671,7 +12671,6 @@ packages:
 
   /isarray@2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
-    dev: true
 
   /isbinaryfile@5.0.0:
     resolution: {integrity: sha512-UDdnyGvMajJUWCkib7Cei/dvyJrrvo4FIrsvSFWdPpXSUorzXrDJ0S+X5Q4ZlasfPjca4yqCNNsjbCeiy8FFeg==}
@@ -12848,7 +12847,6 @@ packages:
       isarray: 2.0.5
       jsonify: 0.0.1
       object-keys: 1.1.1
-    dev: true
 
   /json-stringify-safe@5.0.1:
     resolution: {integrity: sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==}
