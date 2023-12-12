@@ -206,8 +206,8 @@ devDependencies:
     specifier: 4.1.0
     version: 4.1.0(@babel/core@7.22.20)(@glint/template@1.0.2)(ember-source@5.5.0)(webpack@5.89.0)
   ember-intl:
-    specifier: 6.3.2
-    version: 6.3.2(@babel/core@7.22.20)(@glint/template@1.0.2)(typescript@5.3.3)(webpack@5.89.0)
+    specifier: 6.4.0
+    version: 6.4.0(@babel/core@7.22.20)(@glint/template@1.0.2)(typescript@5.3.3)(webpack@5.89.0)
   ember-keyboard:
     specifier: 8.2.1
     version: 8.2.1(@babel/core@7.22.20)(@ember/test-helpers@3.2.1)(ember-source@5.5.0)
@@ -6362,7 +6362,7 @@ packages:
       hash-for-dep: 1.5.1
       heimdalljs: 0.2.6
       heimdalljs-logger: 0.1.10
-      json-stable-stringify: 1.0.2
+      json-stable-stringify: 1.1.0
       rsvp: 4.8.5
       workerpool: 3.1.2
     transitivePeerDependencies:
@@ -6380,7 +6380,7 @@ packages:
       hash-for-dep: 1.5.1
       heimdalljs: 0.2.6
       heimdalljs-logger: 0.1.10
-      json-stable-stringify: 1.0.2
+      json-stable-stringify: 1.1.0
       rsvp: 4.8.5
       workerpool: 6.4.0
     transitivePeerDependencies:
@@ -7097,13 +7097,6 @@ packages:
     engines: {node: 6.* || 8.* || >= 10.*}
     dependencies:
       json-stable-stringify: 1.1.0
-
-  /call-bind@1.0.2:
-    resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
-    dependencies:
-      function-bind: 1.1.2
-      get-intrinsic: 1.2.1
-    dev: true
 
   /call-bind@1.0.5:
     resolution: {integrity: sha512-C3nQxfFZxFRVoJoGKKI8y3MOEo129NQ+FgQ08iye+Mk4zNZZGdjfs06bVTr+DBSlA66Q2VEcMki/cUCP4SercQ==}
@@ -8942,7 +8935,7 @@ packages:
       fs-tree-diff: 2.0.1
       hash-for-dep: 1.5.1
       heimdalljs-logger: 0.1.10
-      json-stable-stringify: 1.0.2
+      json-stable-stringify: 1.1.0
       semver: 6.3.1
       strip-bom: 4.0.0
       walk-sync: 2.2.0
@@ -8965,7 +8958,7 @@ packages:
       fs-tree-diff: 2.0.1
       hash-for-dep: 1.5.1
       heimdalljs-logger: 0.1.10
-      json-stable-stringify: 1.0.2
+      json-stable-stringify: 1.1.0
       semver: 7.5.4
       silent-error: 1.1.1
       strip-bom: 4.0.0
@@ -9634,8 +9627,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-intl@6.3.2(@babel/core@7.22.20)(@glint/template@1.0.2)(typescript@5.3.3)(webpack@5.89.0):
-    resolution: {integrity: sha512-UJ91JjlY3z6fjajoHhhJtKUbgqEr/l6Ie4Viqn0B3Lrbavxg5IgAIvyZZ9fOVtq05MDtCuc610zV6vLOc71G0w==}
+  /ember-intl@6.4.0(@babel/core@7.22.20)(@glint/template@1.0.2)(typescript@5.3.3)(webpack@5.89.0):
+    resolution: {integrity: sha512-BXxscjgoqzXQ6tUSV8aJsQcUAIcfqLJnNjegarFWdBBHLEOffQ8xARhvQC0hW40zGi/RHFEyTTx7vbiCPGtP1A==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
       typescript: ^4.8.0 || ^5.0.0
@@ -12907,11 +12900,6 @@ packages:
     dependencies:
       jsonify: 0.0.0
     dev: true
-
-  /json-stable-stringify@1.0.2:
-    resolution: {integrity: sha512-eunSSaEnxV12z+Z73y/j5N37/In40GK4GmsSy+tEHJMxknvqnA7/djeYtAgW0GsWHUfg+847WJjKaEylk2y09g==}
-    dependencies:
-      jsonify: 0.0.1
 
   /json-stable-stringify@1.1.0:
     resolution: {integrity: sha512-zfA+5SuwYN2VWqN1/5HZaDzQKLJHaBVMZIIM+wuYjdptkaQsqzDdqjqf+lZZJUuJq1aanHiY8LhH8LmH+qBYJA==}
@@ -16219,7 +16207,7 @@ packages:
     resolution: {integrity: sha512-jNIIeokznm8SD/TZISQsZKYu7RJyheFNt84DUPrh482GC8RVp2MKqm2O5oBRdGxbDQoXrhhWtPIWQOiy20svUg==}
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: 1.0.2
+      call-bind: 1.0.5
       define-properties: 1.2.0
       es-abstract: 1.21.3
     dev: true
