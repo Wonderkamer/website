@@ -248,8 +248,8 @@ devDependencies:
     specifier: 0.5.0
     version: 0.5.0(@babel/core@7.22.20)(@glimmer/tracking@1.1.2)(@glint/template@1.0.2)(ember-concurrency@3.1.1)(ember-source@5.5.0)
   ember-style-modifier:
-    specifier: 3.0.1
-    version: 3.0.1(@ember/string@3.1.1)(@glint/template@1.0.2)(ember-source@5.5.0)(webpack@5.89.0)
+    specifier: 3.1.1
+    version: 3.1.1(@ember/string@3.1.1)(@glint/template@1.0.2)(ember-source@5.5.0)(webpack@5.89.0)
   ember-template-lint:
     specifier: 5.13.0
     version: 5.13.0
@@ -10059,8 +10059,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-style-modifier@3.0.1(@ember/string@3.1.1)(@glint/template@1.0.2)(ember-source@5.5.0)(webpack@5.89.0):
-    resolution: {integrity: sha512-WHRVIiqY/dpwDtVWlnHW0P4Z+Jha8QEwfaQdIF2ckJL77ZKdjbV2j1XZymS0Nzj61EGx5BM+YEsGL16r3hLv2A==}
+  /ember-style-modifier@3.1.1(@ember/string@3.1.1)(@glint/template@1.0.2)(ember-source@5.5.0)(webpack@5.89.0):
+    resolution: {integrity: sha512-J91YLKVp3/m7LrcLEWNSG2sJlSFhE5Ny75empU048qYJtdJMe788Ks/EpKEi953o1mJujVRg792YGrwbrpTzNA==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
       '@ember/string': ^3.0.1
