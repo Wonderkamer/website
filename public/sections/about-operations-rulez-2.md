@@ -10,15 +10,15 @@
 - Doe de lichten op de gang uit. Het lampje bij de meterkast blijft altijd aan.
 - Doe de voordeur op het slot na zes uur ‘s avonds!
 
-**Meldingen van storingen en tekorten**
+**Melding van storingen en/of tekorten**
 
-Wanneer iets het niet meer doet of iets niet meer op voorraad is dan kun je dat bij ons melden. Voor contact met de beheerders kan je gebruik maken van e-mail hallo@wonderkamer.com of de chatgroep Wonderkamer op Signal. Stuur a.j.b. zo min mogelijk privéberichten...
+Wanneer iets het niet meer doet of iets niet meer op voorraad is dan kun je dat bij ons melden. Voor contact met de beheerders kan je gebruik maken van e-mail hallo@wonderkamer.com of de chatgroep Wonderkamer op Signal.
 
-**Het is _niet_ toegestaan om**
+**Het is helaas _niet_ toegestaan om**
 
 - Het adres te gebruiken als vestigings- (kvk inschrijving) of postadres.
 - Een eigen bel of naambordje aan te brengen.
 - Een vaste telefoonlijn aan te laten leggen.
 - In de ruimte te roken.
 - In de ruimte te overnachten.
-- Huisdieren mee te nemen, de enige uitzondering hierop is Smik.
+- Huisdieren mee te nemen.
