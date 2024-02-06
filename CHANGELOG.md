@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.4](https://github.com/Wonderkamer/website/compare/1.4.3...1.4.4) (2024-02-06)
+
+
+### Content Changes
+
+* added movie nights ([045600e](https://github.com/Wonderkamer/website/commits/045600eeb4e124a4ac202d5948d32eed1e9134fd))
+
 ### [1.4.3](https://github.com/Wonderkamer/website/compare/1.4.2...1.4.3) (2024-02-06)
 
 
