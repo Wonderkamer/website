@@ -260,7 +260,7 @@
       "attributes": {
         "title": "Ramses Dali",
         "slug": "ramses-dali",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -270,7 +270,7 @@
       "attributes": {
         "title": "Kenny Held",
         "slug": "kenny-held",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -290,8 +290,38 @@
       "attributes": {
         "title": "Paul Brouwer",
         "slug": "paul-brouwer",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "digital product designer"
+      }
+    },
+    {
+      "id": 29,
+      "type": "member",
+      "attributes": {
+        "title": "Erik Prins",
+        "slug": "erik-prins",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 30,
+      "type": "member",
+      "attributes": {
+        "title": "Marine Rabier",
+        "slug": "marine-rabier",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 31,
+      "type": "member",
+      "attributes": {
+        "title": "Michael Siega",
+        "slug": "michael-siega",
+        "is-active": true,
+        "tag-line": "..."
       }
     }
   ]
