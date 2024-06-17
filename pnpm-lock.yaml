@@ -190,8 +190,8 @@ importers:
         specifier: 11.0.1
         version: 11.0.1
       ember-cli-showdown:
-        specifier: 7.0.0
-        version: 7.0.0(@glint/template@1.4.0)(ember-source@5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0))(webpack@5.92.0)
+        specifier: 9.0.1
+        version: 9.0.1(@glint/template@1.4.0)(ember-source@5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0))(webpack@5.92.0)
       ember-cli-sri:
         specifier: 2.1.1
         version: 2.1.1
@@ -281,7 +281,7 @@ importers:
         version: 9.1.0(eslint@8.57.0)
       eslint-plugin-ember:
         specifier: 12.1.1
-        version: 12.1.1(@babel/core@7.23.9)(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)
+        version: 12.1.1(@babel/core@7.24.7)(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)
       eslint-plugin-n:
         specifier: 17.9.0
         version: 17.9.0(eslint@8.57.0)
@@ -2962,9 +2962,6 @@ packages:
     resolution: {integrity: sha512-ZksGS2xpa/bYkNzN3BAw1wEjsLV/ZKOf/CCrJ/QOBsxx6fOARIkwTutxp1XIOIohi6HKmOFjMoK/XaqDVUpEEw==}
     engines: {node: '>= 12'}
 
-  cliui@5.0.0:
-    resolution: {integrity: sha512-PYeGSEmmHM6zvoef2w8TPzlrnNpXIjTipYK780YswmIP9vjxmd6Y2a3CB2Ks6/AU8NHjZugXvo8w3oWM2qnwXA==}
-
   cliui@7.0.4:
     resolution: {integrity: sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ==}
 
@@ -3037,6 +3034,10 @@ packages:
   commander@8.3.0:
     resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
     engines: {node: '>= 12'}
+
+  commander@9.5.0:
+    resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
+    engines: {node: ^12.20.0 || >=14}
 
   common-ancestor-path@1.0.1:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
@@ -3829,11 +3830,11 @@ packages:
     resolution: {integrity: sha512-RMlFPMK4kaB+67seF/IIoY3EC4rRd+L58q+lyElrxB3FcQTgph/qmGwtqf9Up7m3SDbPiA7cccCOSmgReMgCXA==}
     engines: {node: '>= 10.*'}
 
-  ember-cli-showdown@7.0.0:
-    resolution: {integrity: sha512-xpmqv+pSK1hMG50CD8DqClS0uEyTGF+jE1c/32otiZTslDMcISQC1xysdtdx2RHC+Uu0EpiS+WGp0oDznrH+WA==}
-    engines: {node: 14.* || 16.* || >= 18}
+  ember-cli-showdown@9.0.1:
+    resolution: {integrity: sha512-m7CtTlWP/8E4T2hr6fayXqqWuuUGibwdwCF5a/Y/W2juDkHk+yQnVllZuwg4gFa4xNcyFkN10Ly28flFsz0CFw==}
+    engines: {node: '>= 18'}
     peerDependencies:
-      ember-source: ^3.12.0 || >4.0.0
+      ember-source: '>= 3.12.0'
 
   ember-cli-sri@2.1.1:
     resolution: {integrity: sha512-YG/lojDxkur9Bnskt7xB6gUOtJ6aPl/+JyGYm9HNDk3GECVHB3SMN3rlGhDKHa1ndS5NK2W2TSLb9bzRbGlMdg==}
@@ -4184,9 +4185,6 @@ packages:
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
-
-  emoji-regex@7.0.3:
-    resolution: {integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -6994,9 +6992,6 @@ packages:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
 
-  require-main-filename@2.0.0:
-    resolution: {integrity: sha512-NKN5kMDylKuldxYLSUfrbo5Tuzh4hd+2E8NPPX02mZtn1VuREQToYe/ZdlJy+J3uCpfaiGF05e7B8W0iXbQHmg==}
-
   require-relative@0.8.7:
     resolution: {integrity: sha512-AKGr4qvHiryxRb19m3PsLRGuKVAbJLUD7E6eOaHkfKhwc+vSgVOCY5xNvm9EkolBKTOf0GrQAZKLimOCz81Khg==}
 
@@ -7289,8 +7284,8 @@ packages:
   shellwords@0.1.1:
     resolution: {integrity: sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==}
 
-  showdown@1.9.1:
-    resolution: {integrity: sha512-9cGuS382HcvExtf5AHk7Cb4pAeQQ+h0eTr33V1mu+crYWV4KvWAw6el92bDrqGEk5d46Ai/fhbEUwqJ/mTCNEA==}
+  showdown@2.1.0:
+    resolution: {integrity: sha512-/6NVYu4U819R2pUIk79n67SYgJHWCce0a5xTP979WbNp0FL9MN1I1QK662IDU1b6JzKTvmhgI7T7JYIxBi3kMQ==}
     hasBin: true
 
   side-channel@1.0.4:
@@ -7503,10 +7498,6 @@ packages:
   string-width@2.1.1:
     resolution: {integrity: sha512-nOqH59deCq9SRHlxq1Aw85Jnt4w6KvLKqWVik6oA9ZklXLNIOlqg4F2yrT1MVaTjAqvVwdfeZ7w7aCvJD7ugkw==}
     engines: {node: '>=4'}
-
-  string-width@3.1.0:
-    resolution: {integrity: sha512-vafcv6KjVZKSgz06oM/H6GDBrAtz8vdhQakGjFIvNrHA6y3HCF1CInLy+QLq8dTJPQ1b+KDUqDFctkdRW44e1w==}
-    engines: {node: '>=6'}
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -8211,9 +8202,6 @@ packages:
   which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
 
-  which-module@2.0.1:
-    resolution: {integrity: sha512-iBdZ57RDvnOR9AGBhML2vFZf7h8vmBjhoaZqODJBFWHVtKkDmKuHai3cx5PgVMrX5YDNp27AofYbAwctSS+vhQ==}
-
   which-typed-array@1.1.10:
     resolution: {integrity: sha512-uxoA5vLUfRPdjCuJ1h5LlYdmTLbYfums398v3WLkM+i/Wltl2/XyZpQWKbN++ck5L64SR/grOHqtXCUKmlZPNA==}
     engines: {node: '>= 0.4'}
@@ -8241,10 +8229,6 @@ packages:
 
   workerpool@6.4.0:
     resolution: {integrity: sha512-i3KR1mQMNwY2wx20ozq2EjISGtQWDIfV56We+yGJ5yDs8jTwQiLLaqHlkBHITlCuJnYlVRmXegxFxZg7gqI++A==}
-
-  wrap-ansi@5.1.0:
-    resolution: {integrity: sha512-QC1/iN/2/RPVJ5jYK8BGttj5z83LmSKmvbvrXPNCLZSEb32KKVDJDl/MOt2N01qU2H/FkzEa9PKto1BqDjtd7Q==}
-    engines: {node: '>=6'}
 
   wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
@@ -8328,9 +8312,6 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
-  yargs-parser@15.0.3:
-    resolution: {integrity: sha512-/MVEVjTXy/cGAjdtQf8dW3V9b97bPN7rNn8ETj6BmAQL7ibC7O1Q9SPJbGjgh3SlwoBNXMzj/ZGIj8mBgl12YA==}
-
   yargs-parser@20.2.9:
     resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
     engines: {node: '>=10'}
@@ -8338,9 +8319,6 @@ packages:
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
-
-  yargs@14.2.3:
-    resolution: {integrity: sha512-ZbotRWhF+lkjijC/VhmOT9wSgyBQ7+zr13+YLkhfsSiTriYsMzkTUFP18pFhWwBeMa5gUc1MzbhrO6/VB7c9Xg==}
 
   yargs@16.2.0:
     resolution: {integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==}
@@ -8441,9 +8419,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/eslint-parser@7.23.10(@babel/core@7.23.9)(eslint@8.57.0)':
+  '@babel/eslint-parser@7.23.10(@babel/core@7.24.7)(eslint@8.57.0)':
     dependencies:
-      '@babel/core': 7.23.9
+      '@babel/core': 7.24.7
       '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
       eslint: 8.57.0
       eslint-visitor-keys: 2.1.0
@@ -12879,7 +12857,7 @@ snapshots:
 
   broccoli-babel-transpiler@7.8.0:
     dependencies:
-      '@babel/core': 7.23.9
+      '@babel/core': 7.24.7
       '@babel/polyfill': 7.12.1
       broccoli-funnel: 2.0.2
       broccoli-merge-trees: 3.0.2
@@ -13621,12 +13599,6 @@ snapshots:
 
   cli-width@4.0.0: {}
 
-  cliui@5.0.0:
-    dependencies:
-      string-width: 3.1.0
-      strip-ansi: 5.2.0
-      wrap-ansi: 5.1.0
-
   cliui@7.0.4:
     dependencies:
       string-width: 4.2.3
@@ -13683,6 +13655,8 @@ snapshots:
   commander@7.2.0: {}
 
   commander@8.3.0: {}
+
+  commander@9.5.0: {}
 
   common-ancestor-path@1.0.1: {}
 
@@ -14694,13 +14668,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-showdown@7.0.0(@glint/template@1.4.0)(ember-source@5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0))(webpack@5.92.0):
+  ember-cli-showdown@9.0.1(@glint/template@1.4.0)(ember-source@5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0))(webpack@5.92.0):
     dependencies:
+      '@babel/core': 7.24.7
       ember-auto-import: 2.7.3(@glint/template@1.4.0)(webpack@5.92.0)
-      ember-cli-babel: 7.26.11
+      ember-cli-babel: 8.2.0(@babel/core@7.24.7)
       ember-cli-htmlbars: 6.3.0
       ember-source: 5.9.0(@babel/core@7.24.7)(@glimmer/component@1.1.2(@babel/core@7.24.7))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.92.0)
-      showdown: 1.9.1
+      showdown: 2.1.0
     transitivePeerDependencies:
       - '@glint/template'
       - supports-color
@@ -15133,10 +15108,10 @@ snapshots:
       - '@glint/template'
       - supports-color
 
-  ember-eslint-parser@0.4.3(@babel/core@7.23.9)(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0):
+  ember-eslint-parser@0.4.3(@babel/core@7.24.7)(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0):
     dependencies:
-      '@babel/core': 7.23.9
-      '@babel/eslint-parser': 7.23.10(@babel/core@7.23.9)(eslint@8.57.0)
+      '@babel/core': 7.24.7
+      '@babel/eslint-parser': 7.23.10(@babel/core@7.24.7)(eslint@8.57.0)
       '@glimmer/syntax': 0.92.0
       content-tag: 1.2.2
       eslint-scope: 7.2.2
@@ -15645,8 +15620,6 @@ snapshots:
 
   emoji-regex@10.3.0: {}
 
-  emoji-regex@7.0.3: {}
-
   emoji-regex@8.0.0: {}
 
   emojis-list@3.0.0: {}
@@ -15791,11 +15764,11 @@ snapshots:
 
   eslint-formatter-kakoune@1.0.0: {}
 
-  eslint-plugin-ember@12.1.1(@babel/core@7.23.9)(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0):
+  eslint-plugin-ember@12.1.1(@babel/core@7.24.7)(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0):
     dependencies:
       '@ember-data/rfc395-data': 0.0.4
       css-tree: 2.3.1
-      ember-eslint-parser: 0.4.3(@babel/core@7.23.9)(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)
+      ember-eslint-parser: 0.4.3(@babel/core@7.24.7)(@typescript-eslint/parser@7.13.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)
       ember-rfc176-data: 0.3.18
       eslint: 8.57.0
       eslint-utils: 3.0.0(eslint@8.57.0)
@@ -18748,8 +18721,6 @@ snapshots:
 
   require-from-string@2.0.2: {}
 
-  require-main-filename@2.0.0: {}
-
   require-relative@0.8.7: {}
 
   requireindex@1.2.0: {}
@@ -19068,9 +19039,9 @@ snapshots:
 
   shellwords@0.1.1: {}
 
-  showdown@1.9.1:
+  showdown@2.1.0:
     dependencies:
-      yargs: 14.2.3
+      commander: 9.5.0
 
   side-channel@1.0.4:
     dependencies:
@@ -19322,12 +19293,6 @@ snapshots:
     dependencies:
       is-fullwidth-code-point: 2.0.0
       strip-ansi: 4.0.0
-
-  string-width@3.1.0:
-    dependencies:
-      emoji-regex: 7.0.3
-      is-fullwidth-code-point: 2.0.0
-      strip-ansi: 5.2.0
 
   string-width@4.2.3:
     dependencies:
@@ -20241,8 +20206,6 @@ snapshots:
       is-string: 1.0.7
       is-symbol: 1.0.4
 
-  which-module@2.0.1: {}
-
   which-typed-array@1.1.10:
     dependencies:
       available-typed-arrays: 1.0.5
@@ -20272,19 +20235,13 @@ snapshots:
 
   workerpool@3.1.2:
     dependencies:
-      '@babel/core': 7.23.9
+      '@babel/core': 7.24.7
       object-assign: 4.1.1
       rsvp: 4.8.5
     transitivePeerDependencies:
       - supports-color
 
   workerpool@6.4.0: {}
-
-  wrap-ansi@5.1.0:
-    dependencies:
-      ansi-styles: 3.2.1
-      string-width: 3.1.0
-      strip-ansi: 5.2.0
 
   wrap-ansi@6.2.0:
     dependencies:
@@ -20345,28 +20302,9 @@ snapshots:
 
   yaml@2.4.5: {}
 
-  yargs-parser@15.0.3:
-    dependencies:
-      camelcase: 5.3.1
-      decamelize: 1.2.0
-
   yargs-parser@20.2.9: {}
 
   yargs-parser@21.1.1: {}
-
-  yargs@14.2.3:
-    dependencies:
-      cliui: 5.0.0
-      decamelize: 1.2.0
-      find-up: 3.0.0
-      get-caller-file: 2.0.5
-      require-directory: 2.1.1
-      require-main-filename: 2.0.0
-      set-blocking: 2.0.0
-      string-width: 3.1.0
-      which-module: 2.0.1
-      y18n: 4.0.3
-      yargs-parser: 15.0.3
 
   yargs@16.2.0:
     dependencies:
