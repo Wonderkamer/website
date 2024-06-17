@@ -247,8 +247,8 @@ importers:
         specifier: 5.9.0
         version: 5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0)
       ember-stargate:
-        specifier: 0.5.0
-        version: 0.5.0(@babel/core@7.23.9)(@ember/test-waiters@3.1.0)(@glimmer/tracking@1.1.2)(@glint/template@1.3.0)(ember-concurrency@3.1.1(@babel/core@7.23.9)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0)))(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0))
+        specifier: 0.6.0
+        version: 0.6.0(@babel/core@7.23.9)(@glimmer/tracking@1.1.2)(@glint/template@1.3.0)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0))
       ember-style-modifier:
         specifier: 4.3.1
         version: 4.3.1(@babel/core@7.23.9)(@ember/string@3.1.1)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0))
@@ -3375,6 +3375,7 @@ packages:
 
   copy-concurrently@1.0.5:
     resolution: {integrity: sha512-f2domd9fsVDFtaFcbaRZuYXwtdmnzqbADSwhSWYxYB/Q8zsdUUFMXVRwXGDMWmbEzAn1kdRrtI1T/KTFOL4X2A==}
+    deprecated: This package is no longer supported.
 
   copy-dereference@1.0.0:
     resolution: {integrity: sha512-40TSLuhhbiKeszZhK9LfNdazC67Ue4kq/gGwN5sdxEUWPXTIMmKmGmgD9mPfNKVAeecEW+NfEIpBaZoACCQLLw==}
@@ -4086,6 +4087,17 @@ packages:
       ember-concurrency:
         optional: true
 
+  ember-resources@7.0.1:
+    resolution: {integrity: sha512-dN/5QwNMjnx99+T/QPxDRceFF8lrqXEb6/7heO7QEpkA6Td5mB/mzSECsE7W3du93WM2NOSpInp0I6b4gmdp7Q==}
+    peerDependencies:
+      '@glimmer/component': '>= 1.1.2'
+      '@glimmer/tracking': '>= 1.1.2'
+      '@glint/template': '>= 1.0.0'
+      ember-source: ^3.28.0 || ^4.0.0 || >= 5.0.0
+    peerDependenciesMeta:
+      '@glimmer/component':
+        optional: true
+
   ember-rfc176-data@0.3.17:
     resolution: {integrity: sha512-EVzTTKqxv9FZbEh6Ktw56YyWRAA0MijKvl7H8C06wVF+8f/cRRz3dXxa4nkwjzyVwx4rzKGuIGq77hxJAQhWWw==}
 
@@ -4099,8 +4111,8 @@ packages:
     peerDependencies:
       '@glimmer/component': ^1.1.2
 
-  ember-stargate@0.5.0:
-    resolution: {integrity: sha512-HYUww+s1M5X4nmErc3VxsCmGAelBrp8AecObadEvO3u6c9cF8RpsMciWpjfvcD94gy0sneIg61S91S4XJaormQ==}
+  ember-stargate@0.6.0:
+    resolution: {integrity: sha512-oNMZj+eS6a82aQ8rbxlCjQwg+mK0lAIOQEylSGqBXhivi9smXPYVVnpN0vrC5SALa9C0S1EOvA2qc/59a+0w9w==}
 
   ember-style-modifier@0.8.0:
     resolution: {integrity: sha512-I7M+oZ+poYYOP7n521rYv7kkYZbxotL8VbtHYxLQ3tasRZYQJ21qfu3vVjydSjwyE3w7EZRgKngBoMhKSAEZnw==}
@@ -4739,6 +4751,7 @@ packages:
 
   fs-write-stream-atomic@1.0.10:
     resolution: {integrity: sha512-gehEzmPn2nAwr39eay+x3X34Ra+M2QlVUTLhkXPjWdeO8RF9kszk116avgBJM3ZyNHgHXBNx+VmPaFC36k0PzA==}
+    deprecated: This package is no longer supported.
 
   fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
@@ -6101,6 +6114,7 @@ packages:
 
   move-concurrently@1.0.1:
     resolution: {integrity: sha512-hdrFxZOycD/g6A6SoI2bB5NA/5NEqD0569+S47WZhPvm46sD50ZHdYaFmnua5lndde9rCHGjmfK7Z8BuCt/PcQ==}
+    deprecated: This package is no longer supported.
 
   ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
@@ -6768,6 +6782,10 @@ packages:
   q@1.5.1:
     resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
+    deprecated: |-
+      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
+      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
 
   qs@6.11.0:
     resolution: {integrity: sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==}
@@ -15294,6 +15312,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  ember-resources@7.0.1(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glimmer/tracking@1.1.2)(@glint/template@1.3.0)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0)):
+    dependencies:
+      '@embroider/addon-shim': 1.8.9
+      '@embroider/macros': 1.16.3(@glint/template@1.3.0)
+      '@glimmer/tracking': 1.1.2
+      '@glint/template': 1.3.0
+      ember-source: 5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0)
+    optionalDependencies:
+      '@glimmer/component': 1.1.2(@babel/core@7.23.9)
+    transitivePeerDependencies:
+      - supports-color
+
   ember-rfc176-data@0.3.17: {}
 
   ember-router-generator@2.0.0:
@@ -15360,19 +15390,17 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-stargate@0.5.0(@babel/core@7.23.9)(@ember/test-waiters@3.1.0)(@glimmer/tracking@1.1.2)(@glint/template@1.3.0)(ember-concurrency@3.1.1(@babel/core@7.23.9)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0)))(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0)):
+  ember-stargate@0.6.0(@babel/core@7.23.9)(@glimmer/tracking@1.1.2)(@glint/template@1.3.0)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0)):
     dependencies:
       '@ember/render-modifiers': 2.1.0(@babel/core@7.23.9)(@glint/template@1.3.0)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0))
-      '@embroider/addon-shim': 1.8.7
+      '@embroider/addon-shim': 1.8.9
       '@glimmer/component': 1.1.2(@babel/core@7.23.9)
-      ember-resources: 6.5.1(@ember/test-waiters@3.1.0)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glimmer/tracking@1.1.2)(@glint/template@1.3.0)(ember-concurrency@3.1.1(@babel/core@7.23.9)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0)))(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0))
+      ember-resources: 7.0.1(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glimmer/tracking@1.1.2)(@glint/template@1.3.0)(ember-source@5.9.0(@babel/core@7.23.9)(@glimmer/component@1.1.2(@babel/core@7.23.9))(@glint/template@1.3.0)(rsvp@4.8.5)(webpack@5.92.0))
       tracked-maps-and-sets: 3.0.2
     transitivePeerDependencies:
       - '@babel/core'
-      - '@ember/test-waiters'
       - '@glimmer/tracking'
       - '@glint/template'
-      - ember-concurrency
       - ember-source
       - supports-color
 
