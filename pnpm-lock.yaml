@@ -52,7 +52,7 @@ importers:
         specifier: 1.1.2
         version: 1.1.2
       '@glint/template':
-        specifier: ^1.4.0
+        specifier: 1.4.0
         version: 1.4.0
       '@tsconfig/ember':
         specifier: 3.0.1
