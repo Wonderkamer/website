@@ -1,16 +1,17 @@
 import BaseControl from 'ember-bootstrap/components/bs-form/element/control';
-import defaultValue from 'ember-bootstrap/utils/default-decorator';
-import sizeClass from 'ember-bootstrap/utils/cp/size-class';
+import sizeClass from 'ember-bootstrap/utils/size-class';
 import { action } from '@ember/object';
 
 export default class TextDate extends BaseControl {
   classTypePrefix = 'form-control';
 
-  @defaultValue
-  size = null;
+  get size() {
+    return this.args.size ?? 'md';
+  }
 
-  @sizeClass('form-control', 'size')
-  sizeClass;
+  get sizeClass() {
+    return sizeClass('form-control', this.size);
+  }
 
   get classNamesProxy() {
     return ['pe-2', this.classTypePrefix, this.sizeClass, this.formValidationClass].join(' ');
