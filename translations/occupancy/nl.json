@@ -1,0 +1,11 @@
+{
+  "days": {
+    "friday": "vrijdagen",
+    "monday": "maandagen",
+    "saturday": "zaterdagen",
+    "sunday": "zondagen",
+    "thursday": "donderdagen",
+    "tuesday": "dinsdagen",
+    "wednesday": "woensdagen"
+  }
+}

@@ -5,7 +5,6 @@ import { inject as service } from '@ember/service';
 export default class ApplicationRoute extends Route {
   @service metrics: any;
   @service router!: RouterService;
-  @service intl!: any;
 
   private sourceParam?: string;
 
@@ -30,12 +29,6 @@ export default class ApplicationRoute extends Route {
     if (params.source) {
       this.sourceParam = params.source;
     }
-  }
-
-  beforeModel(transition: any) {
-    super.beforeModel(transition);
-
-    this.intl.setLocale('nl-nl');
   }
 
   afterModel() {

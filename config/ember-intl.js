@@ -14,7 +14,7 @@ module.exports = function (/* environment */) {
      * @type {String?}
      * @default "null"
      */
-    fallbackLocale: null,
+    fallbackLocale: 'nl-nl',
 
     /**
      * Path where translations are stored.  This is relative to the project root.
@@ -47,7 +47,7 @@ module.exports = function (/* environment */) {
      * @type {Boolean}
      * @default "false"
      */
-    wrapTranslationsWithNamespace: false,
+    wrapTranslationsWithNamespace: true,
 
     /**
      * Cause a build error if ICU argument mismatches are detected between translations
@@ -57,7 +57,7 @@ module.exports = function (/* environment */) {
      * @type {Boolean}
      * @default "false"
      */
-    errorOnNamedArgumentMismatch: false,
+    errorOnNamedArgumentMismatch: true,
 
     /**
      * Cause a build error if missing translations are detected.
@@ -68,7 +68,7 @@ module.exports = function (/* environment */) {
      * @type {Boolean}
      * @default "false"
      */
-    errorOnMissingTranslations: false,
+    errorOnMissingTranslations: true,
 
     /**
      * removes empty translations from the build output.
