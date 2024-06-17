@@ -6,7 +6,7 @@ import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Component | occupancy/averages', function (hooks) {
   setupRenderingTest(hooks);
-  setupIntl(hooks, 'nl-nl');
+  setupIntl(hooks, 'nl');
 
   test('it renders', async function (assert) {
     await render(hbs`<Occupancy::Averages />`);

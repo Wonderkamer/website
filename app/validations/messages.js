@@ -1,11 +1,11 @@
+import { debug } from '@ember/debug';
 import application from '@wonderkamer/website/utils/application';
 import defaultMessages from 'ember-changeset-validations/utils/messages';
-import { debug } from '@ember/debug';
 
 /**
  * This is basicly ember-intl-changeset-validations but then working
  */
-const intl = application.instance.lookup('service:intl');
+const intl = application.inject('intl');
 
 const messages = Object.assign({}, defaultMessages);
 
@@ -18,9 +18,10 @@ Object.keys(messages).forEach((key) => {
     return;
   }
 
-  let lookupKey = `validations.${key}`;
+  const lookupKey = `validations.${key}`;
+
   if (intl.exists(lookupKey)) {
-    messages[key] = intl.lookup(lookupKey);
+    messages[key] = intl.getTranslation(lookupKey, intl.primaryLocale);
   } else {
     debug(`missing validation translation: ${lookupKey} (${messages[key]})`);
   }

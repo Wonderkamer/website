@@ -30,7 +30,7 @@ module.exports = {
     // node files
     {
       files: [
-        './.commitlintrc.js',
+        './.commitlintrc.mjs',
         './.ember-cli.js',
         './.eslintrc.js',
         './.prettierrc.js',

@@ -179,7 +179,7 @@
       "attributes": {
         "title": "Jan",
         "slug": "jan-bruin",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "Freelance Strateeg, Programmamaker en Schrijver"
       }
     },
@@ -240,7 +240,7 @@
       "attributes": {
         "title": "Katherine Decker",
         "slug": "katherine-decker",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -250,7 +250,7 @@
       "attributes": {
         "title": "Martijn De Vries",
         "slug": "martijn-de-vries",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "researcher"
       }
     },
@@ -300,7 +300,7 @@
       "attributes": {
         "title": "Erik Prins",
         "slug": "erik-prins",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },

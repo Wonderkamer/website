@@ -1,24 +1,24 @@
 {
-    "name": "wonderkamer/website",
-    "description": "stichting Wonderkamer website - backend",
-    "config": {
-		"optimize-autoloader": true,
-		"prepend-autoloader": false,
-		"platform": {
-			"php": "8.2.9"
-		}
-	},
-    "require": {
-        "google/recaptcha": "1.3.0",
-        "vlucas/phpdotenv": "5.6.0",
-        "laminas/laminas-mail": "2.25.1",
-        "laminas/laminas-servicemanager": "3.22.1",
-        "laminas/laminas-json": "3.6.0"
-    },
-    "authors": [
-        {
-            "name": "Bas Kamer",
-            "email": "baskamer@gmail.com"
-        }
-    ]
+  "name": "wonderkamer/website",
+  "description": "stichting Wonderkamer website - backend",
+  "config": {
+    "optimize-autoloader": true,
+    "prepend-autoloader": false,
+    "platform": {
+      "php": "8.2.9"
+    }
+  },
+  "require": {
+    "google/recaptcha": "1.3.0",
+    "vlucas/phpdotenv": "5.6.0",
+    "laminas/laminas-mail": "2.25.1",
+    "laminas/laminas-servicemanager": "3.22.1",
+    "laminas/laminas-json": "3.6.0"
+  },
+  "authors": [
+    {
+      "name": "Bas Kamer",
+      "email": "baskamer@gmail.com"
+    }
+  ]
 }

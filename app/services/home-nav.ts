@@ -1,7 +1,7 @@
 import type RouterService from '@ember/routing/router-service';
-import { debounce } from '@ember/runloop';
 import Service, { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
+import { debounceTask } from 'ember-lifeline';
 
 export default class HomeNavService extends Service {
   @service private router!: RouterService;
@@ -30,9 +30,13 @@ export default class HomeNavService extends Service {
     this._ignoreViewEvents = false;
   }
 
-  sectionWentIntoView(id: string) {
-    debounce(this, this._sectionWentIntoView, id, 250);
+  public sectionWentIntoView(id: string) {
+    debounceTask(this, '_sectionWentIntoViewDebouncer', id, 250);
   }
+
+  private _sectionWentIntoViewDebouncer = (id: string) => {
+    this._sectionWentIntoView(id);
+  };
 
   private _sectionWentIntoView(id: string) {
     this._sectionsInViewPort = [...this._sectionsInViewPort, id];
