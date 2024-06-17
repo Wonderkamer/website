@@ -1,7 +1,7 @@
 import type RouterService from '@ember/routing/router-service';
-import { debounceTask } from 'ember-lifeline';
 import Service, { inject as service } from '@ember/service';
 import { tracked } from '@glimmer/tracking';
+import { debounceTask } from 'ember-lifeline';
 
 export default class HomeNavService extends Service {
   @service private router!: RouterService;
