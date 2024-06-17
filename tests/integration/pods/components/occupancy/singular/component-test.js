@@ -6,7 +6,7 @@ import { setupIntl } from 'ember-intl/test-support';
 
 module('Integration | Component | occupancy/singular', function (hooks) {
   setupRenderingTest(hooks);
-  setupIntl(hooks);
+  setupIntl(hooks, 'nl');
 
   test('it renders', async function (assert) {
     await render(hbs`<Occupancy::Singular />`);
