@@ -2,6 +2,178 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.6](https://github.com/Wonderkamer/website/compare/1.4.4...1.4.6) (2024-06-17)
+
+
+### Bug Fixes
+
+* minor regresions due to various package updates ([1eefd64](https://github.com/Wonderkamer/website/commits/1eefd64a3eca24cccb71f3d5057ef161b5b52ede))
+
+
+### Content Changes
+
+* remove members ([bf0e2cf](https://github.com/Wonderkamer/website/commits/bf0e2cfa1a9dcb1127b3cd6897dca4c754e93361))
+
+
+### Miscellaneous
+
+* ci ([401a51b](https://github.com/Wonderkamer/website/commits/401a51b4ae1171dab88e0a1552890fb11ef7284d))
+* **ci:** checkout as first action ([a7c63ff](https://github.com/Wonderkamer/website/commits/a7c63ff56dd5a431178934fe7945f89d7fac6f13))
+* cs ([be2079b](https://github.com/Wonderkamer/website/commits/be2079bc96928c45baf083e46f12fe72dd3c6c4b))
+* **deps:** pin dependency @glint/template to 1.4.0 ([db95dbc](https://github.com/Wonderkamer/website/commits/db95dbc24d388c400df413a6d187f880ec431805))
+* **deps:** replace dependency npm-run-all with npm-run-all2 5.0.0 ([6bf0fc9](https://github.com/Wonderkamer/website/commits/6bf0fc9759315cb3b5cf3cdadf0781809f5a7973))
+* **deps:** update actions/cache action to v4 ([e0867c0](https://github.com/Wonderkamer/website/commits/e0867c096ca3807dc5ce88823a57e73ff35656b9))
+* **deps:** update commitlint monorepo ([9968546](https://github.com/Wonderkamer/website/commits/9968546b2791019920ed1aff1b3bcc7cfd9e1267))
+* **deps:** update commitlint monorepo to v19 ([aaa1f63](https://github.com/Wonderkamer/website/commits/aaa1f634438dcfab6c44a2080d989d65e8b7c3be))
+* **deps:** update dependency @ember/optional-features to v2.1.0 ([283b72f](https://github.com/Wonderkamer/website/commits/283b72f69cd3a63b543314b6af4bd95357b774cd))
+* **deps:** update dependency @ember/test-helpers to v3.3.0 ([7c32780](https://github.com/Wonderkamer/website/commits/7c327809cd34ec721fd381707c717069ba0aed88))
+* **deps:** update dependency @embroider/webpack to v4 ([55e6ee0](https://github.com/Wonderkamer/website/commits/55e6ee081bc96701c18ca7bafbcbaa0b50906716))
+* **deps:** update dependency @tsconfig/ember to v3.0.8 ([3350b4b](https://github.com/Wonderkamer/website/commits/3350b4b8104665ab8fef015753051f0af5e1fd05))
+* **deps:** update dependency @types/ember to v4.0.11 ([8413bf0](https://github.com/Wonderkamer/website/commits/8413bf06582932bb3244824015f680bdac41a124))
+* **deps:** update dependency @types/ember-data to v4.4.16 ([5ddaa08](https://github.com/Wonderkamer/website/commits/5ddaa08d5e37e3d6994664801385a35c4315bc75))
+* **deps:** update dependency @types/rsvp to v4.0.9 ([03c0983](https://github.com/Wonderkamer/website/commits/03c0983c5a46218f492a4a81ef5bd4fd1c2d2c77))
+* **deps:** update dependency bootstrap to v5.3.3 ([cf17691](https://github.com/Wonderkamer/website/commits/cf1769189c2bfcd4d90940289588c31400fe475b))
+* **deps:** update dependency ember-auto-import to v2.7.3 ([fd87b86](https://github.com/Wonderkamer/website/commits/fd87b8688c487a1c67b4e438493351b947a377f6))
+* **deps:** update dependency ember-cli to v5.9.0 ([97e7d25](https://github.com/Wonderkamer/website/commits/97e7d258464d09a6c9e34c1861a29ad21fb1d633))
+* **deps:** update dependency ember-cli-app-version to v7 ([7ca28c3](https://github.com/Wonderkamer/website/commits/7ca28c34b1d86118e2816400422e82906ca7869d))
+* **deps:** update dependency ember-cli-showdown to v9 ([6a4675e](https://github.com/Wonderkamer/website/commits/6a4675ed4ccdbe0a3e4bdfda957a1778a2020772))
+* **deps:** update dependency ember-data to v5.3.3 ([6e4db79](https://github.com/Wonderkamer/website/commits/6e4db79e80ada126ca778d67f83f609dd2516425))
+* **deps:** update dependency ember-data to v5.3.4 ([568450e](https://github.com/Wonderkamer/website/commits/568450e2e07f9948c0832366c22a624ffcb51b91))
+* **deps:** update dependency ember-element-helper to v0.8.6 ([2cca4b5](https://github.com/Wonderkamer/website/commits/2cca4b5adcf32d1165439e749a37a86b0f1ab7e4))
+* **deps:** update dependency ember-g-recaptcha to v2.1.1 ([7248f17](https://github.com/Wonderkamer/website/commits/7248f17ec1a5f5ed1e3e6ab606a119437c18487f))
+* **deps:** update dependency ember-intl to v6.5.5 ([c3275f5](https://github.com/Wonderkamer/website/commits/c3275f548c55ea1e4f5161e93c1624586c99c918))
+* **deps:** update dependency ember-page-title to v8.2.3 ([9053e7a](https://github.com/Wonderkamer/website/commits/9053e7a089c6db8b7b3d5e3b71e7734ca5a8075d))
+* **deps:** update dependency ember-qunit to v8.1.0 ([b1672a4](https://github.com/Wonderkamer/website/commits/b1672a4c7f27a7de51bcc369cefb0ea53ae119c5))
+* **deps:** update dependency ember-resolver to v12 ([897f1bc](https://github.com/Wonderkamer/website/commits/897f1bc41c1cf91d0c2a25ed47418a6bbd8f156d))
+* **deps:** update dependency ember-source to v5.9.0 ([fa33197](https://github.com/Wonderkamer/website/commits/fa3319732670e3a0ebf71df4f274e330171223f7))
+* **deps:** update dependency ember-style-modifier to v4 ([291aa1d](https://github.com/Wonderkamer/website/commits/291aa1d92a090f9e2a1e4b1085107832330e1f53))
+* **deps:** update dependency eslint to v8.57.0 ([3e71bef](https://github.com/Wonderkamer/website/commits/3e71befc48777f87b759eb974a4320291c44f790))
+* **deps:** update dependency eslint-plugin-ember to v12 ([38c6130](https://github.com/Wonderkamer/website/commits/38c61307f4ce2461fdee8c458331def3c0fc45f4))
+* **deps:** update dependency eslint-plugin-n to v17 ([3018af1](https://github.com/Wonderkamer/website/commits/3018af1c623c512cd5997bf0c49cf766692b05a6))
+* **deps:** update dependency eslint-plugin-qunit to v8.1.1 ([50ed5ef](https://github.com/Wonderkamer/website/commits/50ed5efc83fefe7ca3c7c151f9a6ab08370016dd))
+* **deps:** update dependency eslint-plugin-simple-import-sort to v12 ([ce23c7e](https://github.com/Wonderkamer/website/commits/ce23c7e968c8814bb61a829205d2f9d767fab141))
+* **deps:** update dependency husky to v9 ([191659c](https://github.com/Wonderkamer/website/commits/191659c1432753b5e92b52a2931c00a7e7c6cfcf))
+* **deps:** update dependency lint-staged to v15.2.7 ([59015e2](https://github.com/Wonderkamer/website/commits/59015e2fea172f5bfdfec3b6628a3672ec797921))
+* **deps:** update dependency npm-run-all2 to v5.0.2 ([284b599](https://github.com/Wonderkamer/website/commits/284b599cc22b1087ed324166665e98d62473e4db))
+* **deps:** update dependency npm-run-all2 to v6 ([1873f48](https://github.com/Wonderkamer/website/commits/1873f484cc5fdf5c31ddfc7f629e393f5050333e))
+* **deps:** update dependency prettier to v3.3.2 ([2784698](https://github.com/Wonderkamer/website/commits/278469856c91ea70b529f61d35d2789385ef8f11))
+* **deps:** update dependency qunit to v2.21.0 ([a158ad2](https://github.com/Wonderkamer/website/commits/a158ad2404d37c5044ff69e4b95b778e31a3299f))
+* **deps:** update dependency qunit-dom to v3.1.2 ([eea5cfa](https://github.com/Wonderkamer/website/commits/eea5cfa0443acdb4d161841afa48198725e8fb4f))
+* **deps:** update dependency sass to v1.77.5 ([416c15d](https://github.com/Wonderkamer/website/commits/416c15d0ba172fb7acd01d655673b5d86e823815))
+* **deps:** update dependency stylelint to v16 ([2c6ac5e](https://github.com/Wonderkamer/website/commits/2c6ac5ecde3d9e1dea15829dc0bf1e3f33e607f8))
+* **deps:** update dependency stylelint-config-standard to v36 ([3d27353](https://github.com/Wonderkamer/website/commits/3d2735380f668c74a8b94aba4ca9296eabb20239))
+* **deps:** update dependency stylelint-prettier to v5 ([03ad0e8](https://github.com/Wonderkamer/website/commits/03ad0e8e0275365211fef753086f126a5a6226df))
+* **deps:** update dependency typescript to v5.4.5 ([38d82aa](https://github.com/Wonderkamer/website/commits/38d82aa7bb83a9d649f79400bb201eacedfce0aa))
+* **deps:** update dependency webpack to v5.92.0 ([a759376](https://github.com/Wonderkamer/website/commits/a7593768dd613ca17bbb1879aa3ecc1880127ca8))
+* **deps:** update ember data types ([ecf0d88](https://github.com/Wonderkamer/website/commits/ecf0d8890e825463140d53426a6712340e827465))
+* **deps:** update ember types ([96d8571](https://github.com/Wonderkamer/website/commits/96d85719a2600359e8ea0a73fdd6ed309188e137))
+* **deps:** update embroider monorepo ([f0a7189](https://github.com/Wonderkamer/website/commits/f0a71896c2534fcae33627c1dc5319804d0a9de4))
+* **deps:** update github artifact actions to v4 ([60cc8e2](https://github.com/Wonderkamer/website/commits/60cc8e23b2471b4db522dfbf142a52492069afdd))
+* **deps:** update typescript-eslint monorepo to v7 ([e9391d9](https://github.com/Wonderkamer/website/commits/e9391d92b59e64b2afc8f801ba526656a6fc1ca2))
+* **deps:** updated to ember-concurrency v7 ([4f1139c](https://github.com/Wonderkamer/website/commits/4f1139c3b48dcab5616211623b77df4d859ea60e))
+* eslint-plugin-node ([289676a](https://github.com/Wonderkamer/website/commits/289676a36bf8bb75bc7682436a97edb2907bf1a8))
+* pnpm config ([cc20730](https://github.com/Wonderkamer/website/commits/cc20730fcec349e8edc9c93eede0f54a548d36d7))
+* set pnpm version ([62ea3d6](https://github.com/Wonderkamer/website/commits/62ea3d6c95f427b2cd88cd20d2821a95d0cb82fd))
+* types ([6f264e2](https://github.com/Wonderkamer/website/commits/6f264e2771b71fabed9c5f4c1a9ee33860df33fa))
+
+
+### Refactoring
+
+* added ember-lifeline to avoid @ember/runloop ([caa85dc](https://github.com/Wonderkamer/website/commits/caa85dc13939ebbd31aeb09c043cb8991535cd1f))
+* **deps:** due to update dependency ember-stargate to v0.6.0 ([989acc5](https://github.com/Wonderkamer/website/commits/989acc58f872e9a38b5f344850adb22121611bfa))
+* due to ember-intl v7 ([e23f2e3](https://github.com/Wonderkamer/website/commits/e23f2e33de9c12acc4f324c5fe9aaf9d84433c61))
+* due to update dependency ember-bootstrap to v6 ([0d74630](https://github.com/Wonderkamer/website/commits/0d74630e20cfb2a236a6f067d2cd2e3ea6bdb3aa))
+* **tools:** linting ([caf1778](https://github.com/Wonderkamer/website/commits/caf177895f0a6d8588dcf16f2d4157a0247627eb))
+
+### [1.4.5](https://github.com/Wonderkamer/website/compare/1.4.4...1.4.5) (2024-06-17)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([791e91d](https://github.com/Wonderkamer/website/commits/791e91dcd52c0c20bfea2e6556b2c3f163d7b747))
+* **deps:** update dependency ember-fetch to v8.1.2 ([4409bbf](https://github.com/Wonderkamer/website/commits/4409bbfe468af2fe2aaf3cb2e40506c0690a2bc4))
+* minor regresions due to various package updates ([1eefd64](https://github.com/Wonderkamer/website/commits/1eefd64a3eca24cccb71f3d5057ef161b5b52ede))
+
+
+### Content Changes
+
+* remove members ([bf0e2cf](https://github.com/Wonderkamer/website/commits/bf0e2cfa1a9dcb1127b3cd6897dca4c754e93361))
+
+
+### Miscellaneous
+
+* change deploy action ([cf76713](https://github.com/Wonderkamer/website/commits/cf767138a46270f6607845b9878b8f4cc9182a2c))
+* ci ([401a51b](https://github.com/Wonderkamer/website/commits/401a51b4ae1171dab88e0a1552890fb11ef7284d))
+* **ci:** checkout as first action ([a7c63ff](https://github.com/Wonderkamer/website/commits/a7c63ff56dd5a431178934fe7945f89d7fac6f13))
+* cs ([be2079b](https://github.com/Wonderkamer/website/commits/be2079bc96928c45baf083e46f12fe72dd3c6c4b))
+* **deps:** pin dependencies ([9297a95](https://github.com/Wonderkamer/website/commits/9297a95090171a88684c2247580eaf433bc052cb))
+* **deps:** pin dependency @glint/template to 1.4.0 ([db95dbc](https://github.com/Wonderkamer/website/commits/db95dbc24d388c400df413a6d187f880ec431805))
+* **deps:** replace dependency npm-run-all with npm-run-all2 5.0.0 ([6bf0fc9](https://github.com/Wonderkamer/website/commits/6bf0fc9759315cb3b5cf3cdadf0781809f5a7973))
+* **deps:** update actions/cache action to v4 ([e0867c0](https://github.com/Wonderkamer/website/commits/e0867c096ca3807dc5ce88823a57e73ff35656b9))
+* **deps:** update commitlint monorepo ([9968546](https://github.com/Wonderkamer/website/commits/9968546b2791019920ed1aff1b3bcc7cfd9e1267))
+* **deps:** update commitlint monorepo to v19 ([aaa1f63](https://github.com/Wonderkamer/website/commits/aaa1f634438dcfab6c44a2080d989d65e8b7c3be))
+* **deps:** update dependency @ember/optional-features to v2.1.0 ([283b72f](https://github.com/Wonderkamer/website/commits/283b72f69cd3a63b543314b6af4bd95357b774cd))
+* **deps:** update dependency @ember/test-helpers to v3.3.0 ([7c32780](https://github.com/Wonderkamer/website/commits/7c327809cd34ec721fd381707c717069ba0aed88))
+* **deps:** update dependency @embroider/webpack to v4 ([55e6ee0](https://github.com/Wonderkamer/website/commits/55e6ee081bc96701c18ca7bafbcbaa0b50906716))
+* **deps:** update dependency @tsconfig/ember to v3.0.8 ([3350b4b](https://github.com/Wonderkamer/website/commits/3350b4b8104665ab8fef015753051f0af5e1fd05))
+* **deps:** update dependency @types/ember to v4.0.11 ([8413bf0](https://github.com/Wonderkamer/website/commits/8413bf06582932bb3244824015f680bdac41a124))
+* **deps:** update dependency @types/ember-data to v4.4.16 ([5ddaa08](https://github.com/Wonderkamer/website/commits/5ddaa08d5e37e3d6994664801385a35c4315bc75))
+* **deps:** update dependency @types/rsvp to v4.0.9 ([03c0983](https://github.com/Wonderkamer/website/commits/03c0983c5a46218f492a4a81ef5bd4fd1c2d2c77))
+* **deps:** update dependency bootstrap to v5.3.3 ([cf17691](https://github.com/Wonderkamer/website/commits/cf1769189c2bfcd4d90940289588c31400fe475b))
+* **deps:** update dependency ember-auto-import to v2.7.3 ([fd87b86](https://github.com/Wonderkamer/website/commits/fd87b8688c487a1c67b4e438493351b947a377f6))
+* **deps:** update dependency ember-cli to v5.9.0 ([97e7d25](https://github.com/Wonderkamer/website/commits/97e7d258464d09a6c9e34c1861a29ad21fb1d633))
+* **deps:** update dependency ember-cli-app-version to v7 ([7ca28c3](https://github.com/Wonderkamer/website/commits/7ca28c34b1d86118e2816400422e82906ca7869d))
+* **deps:** update dependency ember-cli-showdown to v9 ([6a4675e](https://github.com/Wonderkamer/website/commits/6a4675ed4ccdbe0a3e4bdfda957a1778a2020772))
+* **deps:** update dependency ember-data to v5.3.3 ([6e4db79](https://github.com/Wonderkamer/website/commits/6e4db79e80ada126ca778d67f83f609dd2516425))
+* **deps:** update dependency ember-data to v5.3.4 ([568450e](https://github.com/Wonderkamer/website/commits/568450e2e07f9948c0832366c22a624ffcb51b91))
+* **deps:** update dependency ember-element-helper to v0.8.6 ([2cca4b5](https://github.com/Wonderkamer/website/commits/2cca4b5adcf32d1165439e749a37a86b0f1ab7e4))
+* **deps:** update dependency ember-g-recaptcha to v2.1.1 ([7248f17](https://github.com/Wonderkamer/website/commits/7248f17ec1a5f5ed1e3e6ab606a119437c18487f))
+* **deps:** update dependency ember-intl to v6.5.5 ([c3275f5](https://github.com/Wonderkamer/website/commits/c3275f548c55ea1e4f5161e93c1624586c99c918))
+* **deps:** update dependency ember-page-title to v8.2.3 ([9053e7a](https://github.com/Wonderkamer/website/commits/9053e7a089c6db8b7b3d5e3b71e7734ca5a8075d))
+* **deps:** update dependency ember-qunit to v8.1.0 ([b1672a4](https://github.com/Wonderkamer/website/commits/b1672a4c7f27a7de51bcc369cefb0ea53ae119c5))
+* **deps:** update dependency ember-resolver to v12 ([897f1bc](https://github.com/Wonderkamer/website/commits/897f1bc41c1cf91d0c2a25ed47418a6bbd8f156d))
+* **deps:** update dependency ember-source to v5.9.0 ([fa33197](https://github.com/Wonderkamer/website/commits/fa3319732670e3a0ebf71df4f274e330171223f7))
+* **deps:** update dependency ember-style-modifier to v4 ([291aa1d](https://github.com/Wonderkamer/website/commits/291aa1d92a090f9e2a1e4b1085107832330e1f53))
+* **deps:** update dependency eslint to v8.57.0 ([3e71bef](https://github.com/Wonderkamer/website/commits/3e71befc48777f87b759eb974a4320291c44f790))
+* **deps:** update dependency eslint-plugin-ember to v12 ([38c6130](https://github.com/Wonderkamer/website/commits/38c61307f4ce2461fdee8c458331def3c0fc45f4))
+* **deps:** update dependency eslint-plugin-n to v17 ([3018af1](https://github.com/Wonderkamer/website/commits/3018af1c623c512cd5997bf0c49cf766692b05a6))
+* **deps:** update dependency eslint-plugin-qunit to v8.1.1 ([50ed5ef](https://github.com/Wonderkamer/website/commits/50ed5efc83fefe7ca3c7c151f9a6ab08370016dd))
+* **deps:** update dependency eslint-plugin-simple-import-sort to v12 ([ce23c7e](https://github.com/Wonderkamer/website/commits/ce23c7e968c8814bb61a829205d2f9d767fab141))
+* **deps:** update dependency husky to v9 ([191659c](https://github.com/Wonderkamer/website/commits/191659c1432753b5e92b52a2931c00a7e7c6cfcf))
+* **deps:** update dependency lint-staged to v15.2.7 ([59015e2](https://github.com/Wonderkamer/website/commits/59015e2fea172f5bfdfec3b6628a3672ec797921))
+* **deps:** update dependency npm-run-all2 to v5.0.2 ([284b599](https://github.com/Wonderkamer/website/commits/284b599cc22b1087ed324166665e98d62473e4db))
+* **deps:** update dependency npm-run-all2 to v6 ([1873f48](https://github.com/Wonderkamer/website/commits/1873f484cc5fdf5c31ddfc7f629e393f5050333e))
+* **deps:** update dependency prettier to v3.3.2 ([2784698](https://github.com/Wonderkamer/website/commits/278469856c91ea70b529f61d35d2789385ef8f11))
+* **deps:** update dependency qunit to v2.21.0 ([a158ad2](https://github.com/Wonderkamer/website/commits/a158ad2404d37c5044ff69e4b95b778e31a3299f))
+* **deps:** update dependency qunit-dom to v3.1.2 ([eea5cfa](https://github.com/Wonderkamer/website/commits/eea5cfa0443acdb4d161841afa48198725e8fb4f))
+* **deps:** update dependency sass to v1.77.5 ([416c15d](https://github.com/Wonderkamer/website/commits/416c15d0ba172fb7acd01d655673b5d86e823815))
+* **deps:** update dependency stylelint to v16 ([2c6ac5e](https://github.com/Wonderkamer/website/commits/2c6ac5ecde3d9e1dea15829dc0bf1e3f33e607f8))
+* **deps:** update dependency stylelint-config-standard to v36 ([3d27353](https://github.com/Wonderkamer/website/commits/3d2735380f668c74a8b94aba4ca9296eabb20239))
+* **deps:** update dependency stylelint-prettier to v5 ([03ad0e8](https://github.com/Wonderkamer/website/commits/03ad0e8e0275365211fef753086f126a5a6226df))
+* **deps:** update dependency typescript to v5.4.5 ([38d82aa](https://github.com/Wonderkamer/website/commits/38d82aa7bb83a9d649f79400bb201eacedfce0aa))
+* **deps:** update dependency webpack to v5.92.0 ([a759376](https://github.com/Wonderkamer/website/commits/a7593768dd613ca17bbb1879aa3ecc1880127ca8))
+* **deps:** update ember data types ([ecf0d88](https://github.com/Wonderkamer/website/commits/ecf0d8890e825463140d53426a6712340e827465))
+* **deps:** update ember types ([96d8571](https://github.com/Wonderkamer/website/commits/96d85719a2600359e8ea0a73fdd6ed309188e137))
+* **deps:** update embroider monorepo ([f0a7189](https://github.com/Wonderkamer/website/commits/f0a71896c2534fcae33627c1dc5319804d0a9de4))
+* **deps:** update github artifact actions to v4 ([60cc8e2](https://github.com/Wonderkamer/website/commits/60cc8e23b2471b4db522dfbf142a52492069afdd))
+* **deps:** update typescript-eslint monorepo to v7 ([e9391d9](https://github.com/Wonderkamer/website/commits/e9391d92b59e64b2afc8f801ba526656a6fc1ca2))
+* **deps:** updated to ember-concurrency v7 ([4f1139c](https://github.com/Wonderkamer/website/commits/4f1139c3b48dcab5616211623b77df4d859ea60e))
+* eslint-plugin-node ([289676a](https://github.com/Wonderkamer/website/commits/289676a36bf8bb75bc7682436a97edb2907bf1a8))
+* pnpm config ([cc20730](https://github.com/Wonderkamer/website/commits/cc20730fcec349e8edc9c93eede0f54a548d36d7))
+* reconfigure github actions ([70f4d97](https://github.com/Wonderkamer/website/commits/70f4d979e15a73ad302bf870f2a76ed4bdbbf538))
+* renovate config ([169d33d](https://github.com/Wonderkamer/website/commits/169d33ddabe5a0cdf1bc2aca34866a4ced3afc8e))
+* set pnpm version ([62ea3d6](https://github.com/Wonderkamer/website/commits/62ea3d6c95f427b2cd88cd20d2821a95d0cb82fd))
+* types ([6f264e2](https://github.com/Wonderkamer/website/commits/6f264e2771b71fabed9c5f4c1a9ee33860df33fa))
+
+
+### Refactoring
+
+* added ember-lifeline to avoid @ember/runloop ([caa85dc](https://github.com/Wonderkamer/website/commits/caa85dc13939ebbd31aeb09c043cb8991535cd1f))
+* **deps:** due to update dependency ember-stargate to v0.6.0 ([989acc5](https://github.com/Wonderkamer/website/commits/989acc58f872e9a38b5f344850adb22121611bfa))
+* due to ember-intl v7 ([e23f2e3](https://github.com/Wonderkamer/website/commits/e23f2e33de9c12acc4f324c5fe9aaf9d84433c61))
+* due to update dependency ember-bootstrap to v6 ([0d74630](https://github.com/Wonderkamer/website/commits/0d74630e20cfb2a236a6f067d2cd2e3ea6bdb3aa))
+* **tools:** linting ([caf1778](https://github.com/Wonderkamer/website/commits/caf177895f0a6d8588dcf16f2d4157a0247627eb))
+
 ### [1.4.4](https://github.com/Wonderkamer/website/compare/1.4.3...1.4.4) (2024-02-06)
 
 
