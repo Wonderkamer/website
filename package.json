@@ -143,7 +143,7 @@
     "standard-version": "9.5.0",
     "stylelint": "16.6.1",
     "stylelint-config-standard": "34.0.0",
-    "stylelint-prettier": "4.1.0",
+    "stylelint-prettier": "5.0.0",
     "tracked-built-ins": "3.3.0",
     "typescript": "5.4.5",
     "webpack": "5.92.0"
