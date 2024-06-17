@@ -17,7 +17,11 @@ module.exports = function (defaults) {
       // Tell broccoli-terser-sourcemap to not add sourcemap URLs
       hiddenSourceMap: true,
     },
-
+    babel: {
+      plugins: [
+        require.resolve('ember-concurrency/async-arrow-task-transform'), // due to https://ember-concurrency.com/docs/v4-upgrade/
+      ],
+    },
     fingerprint: {
       enabled: isProductionLikeBuild,
       exclude: ['favicon-*.png', 'members', 'assets'],

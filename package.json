@@ -22,7 +22,6 @@
     "lint:js": "eslint . --cache",
     "lint:types": "tsc --noEmit",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
-    "postinstall": "husky install",
     "preinstall": "npx only-allow pnpm",
     "release:major": "standard-version --tag-prefix=\"\" --commit-all --release-as major",
     "release:minor": "standard-version --tag-prefix=\"\" --commit-all --release-as minor",
@@ -30,7 +29,8 @@
     "release": "standard-version --commit-all --tag-prefix=\"\"",
     "start": "ember serve",
     "test:ember": "ember test",
-    "test": "npm-run-all test:*"
+    "test": "npm-run-all test:*",
+    "prepare": "husky"
   },
   "standard-version": {
     "scripts": {}
@@ -51,6 +51,7 @@
     "@embroider/webpack": "4.0.3",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
+    "@glint/template": "^1.4.0",
     "@tsconfig/ember": "3.0.1",
     "@types/ember": "4.0.11",
     "@types/ember-data": "4.4.16",
@@ -100,7 +101,7 @@
     "ember-cli-sri": "2.1.1",
     "ember-cli-string-helpers": "6.1.0",
     "ember-cli-terser": "4.0.2",
-    "ember-concurrency": "3.1.1",
+    "ember-concurrency": "4.0.2",
     "ember-data": "5.3.4",
     "ember-fetch": "8.1.2",
     "ember-g-recaptcha": "2.1.1",
