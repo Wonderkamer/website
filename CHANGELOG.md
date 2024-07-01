@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.7](https://github.com/Wonderkamer/website/compare/1.4.6...1.4.7) (2024-07-01)
+
+
+### Bug Fixes
+
+* embroider ([3e55bb4](https://github.com/Wonderkamer/website/commits/3e55bb4fcaa6014b0330d226b92245b443ab1f88))
+* submit button ([0e04aa0](https://github.com/Wonderkamer/website/commits/0e04aa047bbd687c8232f67c452e2f9ecaceacb8))
+
+
+### Miscellaneous
+
+* **deps:** update dependency ember-auto-import to v2.7.4 ([68a4e3c](https://github.com/Wonderkamer/website/commits/68a4e3c1e809f9548f2e3221f589f83120ac7760))
+* **deps:** update dependency ember-data to v5.3.5 ([385d724](https://github.com/Wonderkamer/website/commits/385d724aaff6b63d21cf03ac99f5275998a0cdb1))
+* **deps:** update dependency ember-data to v5.3.6 ([67e9f47](https://github.com/Wonderkamer/website/commits/67e9f47d8cb0851b673327c29a4b4a4d030655d6))
+* **deps:** update dependency ember-data to v5.3.7 ([b4504d9](https://github.com/Wonderkamer/website/commits/b4504d9097080c8d6d7b40e9d0cfa823a7522c15))
+* **deps:** update dependency ember-data to v5.3.8 ([b1e311c](https://github.com/Wonderkamer/website/commits/b1e311c491fdbaf6230ad0f0137191a1f067da95))
+* **deps:** update dependency ember-intl to v7.0.3 ([873a041](https://github.com/Wonderkamer/website/commits/873a04167c21611adbef04b9d8870472ce5ad428))
+* **deps:** update dependency ember-resources to v7.0.2 ([fc55f12](https://github.com/Wonderkamer/website/commits/fc55f1230182bf03b8e19a2800afb4464e0f121b))
+* **deps:** update dependency qunit-dom to v3.2.0 ([870f648](https://github.com/Wonderkamer/website/commits/870f6488cf8783b793ed352b31d566c4bb6e5b7b))
+* **deps:** update dependency sass to v1.77.6 ([8e14976](https://github.com/Wonderkamer/website/commits/8e1497673684d2b97295844365708bfca2a21108))
+* **deps:** update dependency stylelint-config-standard to v36.0.1 ([b3bf860](https://github.com/Wonderkamer/website/commits/b3bf860f520338441d29050ae88ab87dde911e34))
+* **deps:** update dependency typescript to v5.5.2 ([14086b2](https://github.com/Wonderkamer/website/commits/14086b27383c7835ff7480d0a2ea6153d6b9fe46))
+* **deps:** update dependency webpack to v5.92.1 ([06b9f37](https://github.com/Wonderkamer/website/commits/06b9f370b44cfcbfe426b572a5a175b3c94b1130))
+* **deps:** update pnpm to v9.4.0 ([2f25b22](https://github.com/Wonderkamer/website/commits/2f25b22b527243a963f3622324256c03f0d59c1a))
+* **deps:** update typescript-eslint monorepo to v7.13.1 ([cd43b01](https://github.com/Wonderkamer/website/commits/cd43b0178a48020db22bdd1cbb83d5ea70418a68))
+* **deps:** update typescript-eslint monorepo to v7.14.1 ([5c99092](https://github.com/Wonderkamer/website/commits/5c99092efa1087b62f3b48c0b384caca1f603d53))
+* reconfigure eslint rule ([3d57ccf](https://github.com/Wonderkamer/website/commits/3d57ccf9dd4c980da198661bac4015023d34f72b))
+
 ### [1.4.6](https://github.com/Wonderkamer/website/compare/1.4.4...1.4.6) (2024-06-17)
 
 
