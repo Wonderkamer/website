@@ -3,7 +3,9 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const isProductionLikeBuild = ['production', 'testing'].indexOf(EmberApp.env()) > -1;
 
-module.exports = function (defaults) {
+module.exports = async function (defaults) {
+  const { setConfig } = await import('@warp-drive/build-config');
+
   let app = new EmberApp(defaults, {
     'ember-bootstrap': {
       bootstrapVersion: 5,
@@ -35,6 +37,11 @@ module.exports = function (defaults) {
     'ember-cli-babel': {
       enableTypeScriptTransform: true,
     },
+  });
+
+  setConfig(app, __dirname, {
+    // WarpDrive/EmberData settings go here (if any)
+    compatWith: process.env.EMBER_DATA_FULL_COMPAT ? '99.0' : null,
   });
 
   // Use `app.import` to add additional libraries to the generated

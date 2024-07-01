@@ -16,85 +16,28 @@
       {{/if}}
 
       {{#unless this.isSubmitted}}
-        <BsForm
-          @formLayout="vertical"
-          @model={{this.changeset}}
-          @submitOnEnter={{true}}
-          @onSubmit={{this.onSubmit}}
-          autocomplete="off"
-          as |form|
-        >
+        <BsForm @formLayout="vertical" @model={{this.changeset}} @submitOnEnter={{true}} @onSubmit={{this.onSubmit}} autocomplete="off" as |form|>
           <form.element @size="lg" @property="name" @label="Naam" as |element|>
-            <element.control
-              autocomplete="off"
-              data-lpignore="true"
-              class="bg-transparent"
-            />
+            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent" />
           </form.element>
-          <form.element
-            @size="lg"
-            @property="email"
-            @label="E-mail"
-            as |element|
-          >
-            <element.control
-              autocomplete="off"
-              data-lpignore="true"
-              class="bg-transparent"
-            />
+          <form.element @size="lg" @property="email" @label="E-mail" as |element|>
+            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent" />
           </form.element>
-          <form.element
-            @size="lg"
-            @property="phone"
-            @label="Telefoon"
-            as |element|
-          >
-            <element.control
-              autocomplete="off"
-              data-lpignore="true"
-              class="bg-transparent"
-            />
+          <form.element @size="lg" @property="phone" @label="Telefoon" as |element|>
+            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent" />
           </form.element>
-          <form.element
-            @size="lg"
-            @property="subject"
-            @label="Onderwerp"
-            as |element|
-          >
-            <element.control
-              autocomplete="off"
-              data-lpignore="true"
-              class="bg-transparent"
-            />
+          <form.element @size="lg" @property="subject" @label="Onderwerp" as |element|>
+            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent" />
           </form.element>
-          <form.element
-            @size="lg"
-            @controlType="textarea"
-            @property="message"
-            @label="Boodschap"
-            as |element|
-          >
-            <element.control
-              autocomplete="off"
-              data-lpignore="true"
-              class="bg-transparent"
-              rows="5"
-            />
+          <form.element @size="lg" @controlType="textarea" @property="message" @label="Boodschap" as |element|>
+            <element.control autocomplete="off" data-lpignore="true" class="bg-transparent" rows="5" />
           </form.element>
 
           <form.element @property="reCaptchaToken">
-            <GRecaptcha
-              @onSuccess={{this.onCaptchaResolved}}
-              @onExpired={{this.onCaptchaExpired}}
-              @ref={{mut this.reCaptchaReference}}
-            />
+            <GRecaptcha @onSuccess={{this.onCaptchaResolved}} @onExpired={{this.onCaptchaExpired}} @ref={{mut this.reCaptchaReference}} />
           </form.element>
 
-          <BsButton
-            @type="primary"
-            @buttonType="submit"
-            class="w-100 mt-5"
-          >verzend</BsButton>
+          <form.submitButton @type="primary" class="w-100 mt-5">verzend</form.submitButton>
         </BsForm>
       {{/unless}}
 
