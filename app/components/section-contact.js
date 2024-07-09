@@ -26,6 +26,7 @@ export default class SectionContactComponent extends Component {
       if (this.changeset.isInvalid) {
         return;
       }
+
       this.changeset.save().then((response) => {
         if (response['success'] === true) {
           this.metrics.trackEvent('GoogleAnalytics', {
