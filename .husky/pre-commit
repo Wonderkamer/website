@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
 if [ "$BRANCH" = "master" ]; then
@@ -12,10 +10,3 @@ fi
 # Run linting with lint-staged (see lint-staged.config.js)
 #
 npx lint-staged
-
-EXITCODE=$?
-if [ $EXITCODE -ne 0 ]; then
-    exit $EXITCODE
-fi
-
-exit 0

@@ -30,7 +30,7 @@
     "start": "ember serve",
     "test:ember": "ember test",
     "test": "npm-run-all test:*",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "standard-version": {
     "scripts": {}
