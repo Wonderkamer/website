@@ -32,7 +32,6 @@ export default class SectionImpressionsComponent extends Component<Args> {
   @tracked currentImage = 0;
 
   constructor(...args: any[]) {
-    console.log(args);
     super(...args);
 
     setInterval(() => {

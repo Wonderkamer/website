@@ -10,7 +10,6 @@ export default {
     intl.setLocale('nl');
 
     function missingMessage(key: string, locales: string[], options?: Record<string, unknown>): string {
-      console.log(key);
       const indexSubKey = '_';
 
       // retry with ._ added to the key
