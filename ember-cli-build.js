@@ -11,7 +11,7 @@ module.exports = async function (defaults) {
       bootstrapVersion: 5,
       importBootstrapCSS: false,
       insertEmberWormholeElementToDom: false,
-      include: ['bs-accordion'],
+      include: [],
     },
     'ember-cli-terser': {
       enabled: isProductionLikeBuild,
