@@ -1,7 +1,12 @@
 import Component from '@glimmer/component';
-import { localCopy } from 'tracked-toolbox';
+import { tracked } from '@glimmer/tracking';
 
-export default class SectionImpressionsComponent extends Component {
+interface Args {
+  element: HTMLElement;
+  Args: {};
+}
+
+export default class SectionImpressionsComponent extends Component<Args> {
   imageList = [
     {
       src: '/assets/images/impressions/cc71f6cb-7560-479b-bb59-03d00e18b780.jpg',
@@ -24,17 +29,18 @@ export default class SectionImpressionsComponent extends Component {
     { src: '/assets/images/impressions/IMG_9205.jpeg' },
   ];
 
-  @localCopy('args.currentImage', 0) currentImage;
+  @tracked currentImage = 0;
 
-  constructor(...rest) {
-    super(...rest);
+  constructor(...args: any[]) {
+    console.log(args);
+    super(...args);
 
     setInterval(() => {
       this.currentImage++;
     }, 4500);
   }
 
-  get images() {
+  public get images() {
     return (this.imageList || []).map((obj) => {
       return Object.assign({}, obj, {
         style: { backgroundImage: `url(${obj.src})` },
@@ -42,7 +48,13 @@ export default class SectionImpressionsComponent extends Component {
     });
   }
 
-  get currentIndex() {
+  public get currentIndex() {
     return this.currentImage % this.images.length;
+  }
+}
+
+declare module '@glint/environment-ember-loose/registry' {
+  export default interface Registry {
+    SectionImpressions: typeof SectionImpressionsComponent;
   }
 }

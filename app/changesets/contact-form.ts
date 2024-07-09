@@ -1,5 +1,4 @@
-import { validateLength, validatePresence, validateFormat } from 'ember-changeset-validations/validators';
-import fetch from 'fetch';
+import { validateFormat, validateLength, validatePresence } from 'ember-changeset-validations/validators';
 
 class ContactForm {
   name = '';
@@ -11,7 +10,7 @@ class ContactForm {
 
   async save() {
     const url = '/contact-form.php';
-    let headers = new Headers();
+    const headers = new Headers();
 
     //    headers.set('Authorization', 'Basic ' + btoa('pre' + ':' + 'view'));
     headers.set('Accept', 'application/json');
