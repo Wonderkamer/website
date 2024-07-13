@@ -1,5 +1,5 @@
 declare module 'ember-metrics/services/metrics' {
-  export default class Metrics extends Service {
+  export class Metrics extends Service {
     context: { [key: string]: any };
     enabled: boolean;
     appEnvironment: string | null;
