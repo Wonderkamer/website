@@ -5,7 +5,7 @@ interface Signature {
   Args: Record<string, never>;
 }
 
-export default class SectionImpressionsComponent extends Component<Args> {
+export default class SectionImpressionsComponent extends Component<Signature> {
   imageList = [
     {
       src: '/assets/images/impressions/cc71f6cb-7560-479b-bb59-03d00e18b780.jpg',
