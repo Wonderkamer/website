@@ -20,7 +20,7 @@
     },
     "scripts": {},
     "dependencies": {
-        "@types/ember__array": "*"
+        "@types/ember__array": "4.0.10"
     },
     "typesPublisherContentHash": "d37f3ecf2b85faa13150814f25ed07ffd7c54db459b3abbb3d4e04e1844d3105",
     "typeScriptVersion": "4.5"
