@@ -1,9 +1,8 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 
-interface Args {
-  element: HTMLElement;
-  Args: {};
+interface Signature {
+  Args: Record<string, never>;
 }
 
 export default class SectionImpressionsComponent extends Component<Args> {
@@ -31,8 +30,8 @@ export default class SectionImpressionsComponent extends Component<Args> {
 
   @tracked currentImage = 0;
 
-  constructor(...args: any[]) {
-    super(...args);
+  constructor(owner: unknown, args: Signature['Args']) {
+    super(owner, args);
 
     setInterval(() => {
       this.currentImage++;

@@ -8,50 +8,55 @@ import { Metrics } from 'ember-metrics/services/metrics';
 
 import { ContactForm, ContactFormValidations } from '../changesets/contact-form';
 
-export default class SectionContactComponent extends Component {
+interface Signature {
+  Args: Record<string, never>;
+}
+
+export default class SectionContactComponent extends Component<Signature> {
   @service metrics!: Metrics;
 
-  @tracked changeset;
+  @tracked changeset: any;
   @tracked isSubmitted = false;
 
-  @tracked reCaptchaReference;
+  @tracked reCaptchaReference: any;
 
-  constructor(...rest) {
-    super(...rest);
+  constructor(owner: unknown, args: Signature['Args']) {
+    super(owner, args);
 
-    this.changeset = new Changeset(new ContactForm(), lookupValidator(ContactFormValidations), ContactFormValidations);
+    this.changeset = Changeset(new ContactForm(), lookupValidator(ContactFormValidations), ContactFormValidations);
   }
 
   @action
-  onSubmit() {
-    this.changeset.validate().then(() => {
-      if (this.changeset.isInvalid) {
-        return;
+  async onSubmit() {
+    await this.changeset.validate();
+    if (this.changeset.isInvalid) {
+      return;
+    }
+
+    try {
+      const response = await this.changeset.save();
+      if (response.success === true) {
+        this.metrics.trackEvent('GoogleAnalytics', {
+          category: 'communication',
+          action: 'submitted-contact-form',
+        });
+        this.isSubmitted = true;
       }
-
-      this.changeset.save().then((response) => {
-        if (response['success'] === true) {
-          this.metrics.trackEvent('GoogleAnalytics', {
-            category: 'communication',
-            action: 'submitted-contact-form',
-          });
-
-          this.isSubmitted = true;
-        }
-      });
-    });
+    } catch (error) {
+      console.error('Error submitting the form', error);
+    }
   }
 
   @action
-  onCaptchaResolved(token) {
-    this.changeset.reCaptchaToken = token;
+  onCaptchaResolved(token: string) {
+    this.changeset['reCaptchaToken'] = token;
 
     this.changeset.validate();
   }
 
   @action
   onCaptchaExpired() {
-    this.changeset.reCaptchaToken = null;
+    this.changeset['reCaptchaToken'] = null;
 
     this.changeset.validate();
     this.reCaptchaReference.resetReCaptcha();

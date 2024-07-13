@@ -66,9 +66,6 @@ importers:
       '@types/ember':
         specifier: 4.0.11
         version: 4.0.11(@babel/core@7.24.7)
-      '@types/ember-changeset-validations':
-        specifier: 4.1.5
-        version: 4.1.5(@babel/core@7.24.7)
       '@types/ember-data':
         specifier: 4.4.16
         version: 4.4.16(@babel/core@7.24.7)
@@ -1607,9 +1604,6 @@ packages:
 
   '@types/cors@2.8.12':
     resolution: {integrity: sha512-vt+kDhq/M2ayberEtJcIN/hxXy1Pk+59g2FV/ZQceeaTyCtCucjL2Q7FXlFjtWn4n15KCr1NE2lNNFhp0lEThw==}
-
-  '@types/ember-changeset-validations@4.1.5':
-    resolution: {integrity: sha512-SY69aVhK6d1uhtX3yFCRRct63um7wEPpkwjO7YvqknrRoE9QG5HQeKorfNsdLJf7O2MseUiQ5+xeZ4fjL7MjYw==}
 
   '@types/ember-data@4.4.16':
     resolution: {integrity: sha512-plFqPkgw7n4YlkzvApkQAIhvvYTERlx8PeI2J5gSFtMtsKuoaIo8fXm4w22ZdBQtTzeh/kwvpO2WY8R/d5Ttfg==}
@@ -10557,13 +10551,6 @@ snapshots:
   '@types/cookie@0.4.1': {}
 
   '@types/cors@2.8.12': {}
-
-  '@types/ember-changeset-validations@4.1.5(@babel/core@7.24.7)':
-    dependencies:
-      '@types/ember__array': 4.0.10(@babel/core@7.24.7)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - supports-color
 
   '@types/ember-data@4.4.16(@babel/core@7.24.7)':
     dependencies:
