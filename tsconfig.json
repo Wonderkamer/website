@@ -8,20 +8,13 @@
     "noEmitOnError": false,
     "baseUrl": ".",
     "paths": {
-      "@wonderkamer/website/tests/*": [
-        "tests/*"
-      ],
-      "@wonderkamer/website/*": [
-        "app/*"
-      ],
-      "*": [
-        "types/*"
-      ]
+      "@wonderkamer/website/tests/*": ["tests/*"],
+      "@wonderkamer/website/*": ["app/*"],
+      "*": ["types/*"]
     }
   },
-  "include": [
-    "app/**/*",
-    "tests/**/*",
-    "types/**/*"
-  ]
+  "include": ["app/**/*", "tests/**/*", "types/**/*"],
+  "glint": {
+    "environment": ["ember-loose", "ember-template-imports"]
+  }
 }
