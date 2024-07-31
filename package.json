@@ -91,7 +91,7 @@
     "@types/ember-data__store": "4.0.7",
     "@types/ember-data": "4.4.16",
     "@types/ember": "4.0.11",
-    "@types/markdown-it": "14.1.1",
+    "@types/markdown-it": "14.1.2",
     "@types/qunit": "2.19.10",
     "@types/rsvp": "4.0.9",
     "@typescript-eslint/eslint-plugin": "7.16.0",
