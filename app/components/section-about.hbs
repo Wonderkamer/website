@@ -1,103 +1,113 @@
-<div class="container small" ...attributes>
-  <div class="row mb-5">
-    <div class="col-12 col-sm-6">
+<div class="container mx-auto py-4 px-4 lg:px-16 space-y-5">
+  <div class="prose-lg">
+    <h3>Locatie</h3>
+  </div>
+  <div class="grid md:grid-cols-5 gap-4">
+    <div class="prose prose-xl md:col-span-3">
       <Util::MarkdownFromUrl @url="/sections/about-the-place.md" />
     </div>
-    <div class="col-12 col-sm-6">
-      <img src="/assets/images/about-img-1.jpg" class="mt-5 img-fluid" alt="" role="none" />
+    <div class="md:col-span-2">
+      <img src="/assets/images/about-img-1.jpg" class="w-full" alt="" role="none" />
     </div>
   </div>
-  <div class="row mb-5 flex-sm-row-reverse">
-    <div class="col-12 col-sm-6">
+  <div class="prose-lg">
+    <h3>Over de faciliteiten</h3>
+  </div>
+  <div class="grid md:grid-cols-5 gap-4">
+    <div class="prose-lg md:col-span-3 order-last">
       <Util::MarkdownFromUrl @url="/sections/about-the-facilities.md" />
     </div>
-    <div class="col-12 col-sm-6">
-      <img src="/assets/images/about-img-genius.jpg" class="mt-5 img-fluid" alt="" role="none" />
+    <div class="md:col-span-2">
+      <img src="/assets/images/about-img-genius.jpg" class="w-full" alt="" role="none" />
     </div>
   </div>
-  <div class="row mb-5">
-    <div class="col-12 col-sm-6">
+  <div class="prose-lg">
+    <h3>Stichting Wonderkamer</h3>
+  </div>
+  <div class="grid md:grid-cols-5 gap-4">
+    <div class="prose-lg md:col-span-3">
       <Util::MarkdownFromUrl @url="/sections/about-wonderkamer.md" />
     </div>
-    <div class="col-12 col-sm-6">
-      <img src="/assets/images/about-img-color.jpg" class="mt-5 img-fluid" alt="" role="none" />
+    <div class="md:col-span-2">
+      <img src="/assets/images/about-img-color.jpg" class="w-full" alt="" role="none" />
     </div>
   </div>
-  <div class="row mb-5">
-    <div class="col-12 col-sm-3">
+
+  <div class="mb-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
+    <div>
       <p class="lead text-center">
-        <span class="text-uppercase">FLEX1</span>
+        <span class="text-3xl uppercase">FLEX1</span>
       </p>
-      <hr />
-      <ul class="list-unstyled">
-        <li><span class="badge bg-primary">€120 per maand</span></li>
-        <li><span class="badge bg-primary">gebruik tot ~1 dag per week</span></li>
-        <li><span class="badge bg-primary">clean desk policy</span></li>
+      <hr class="h-px my-8 bg-gray-300 border-0" />
+      <ul class="flex flex-wrap">
+        <li class="badge">€120 per maand</li>
+        <li class="badge">gebruik tot ~1 dag per week</li>
+        <li class="badge">clean desk policy</li>
       </ul>
     </div>
-    <div class="col-12 col-sm-3">
-      <p class="lead text-center">
-        <span class="text-uppercase">FLEX3</span>
+    <div>
+      <p class="text-center">
+        <span class="text-3xl uppercase">FLEX3</span>
       </p>
-      <hr />
-      <ul class="list-unstyled">
-        <li><span class="badge bg-primary">€190 per maand</span></li>
-        <li><span class="badge bg-primary">gebruik tot ~3 dagen per week</span></li>
-        <li><span class="badge bg-primary">clean desk policy</span></li>
+      <hr class="h-px my-8 bg-gray-300 border-0" />
+      <ul class="flex flex-wrap">
+        <li><span class="badge">€190 per maand</span></li>
+        <li><span class="badge">gebruik tot ~3 dagen per week</span></li>
+        <li><span class="badge">clean desk policy</span></li>
       </ul>
     </div>
-    <div class="col-12 col-sm-3">
-      <p class="lead text-center">
-        <span class="text-uppercase">VAST</span>
+    <div>
+      <p class="text-center">
+        <span class="text-3xl uppercase">VAST</span>
       </p>
-      <hr />
-      <ul class="list-unstyled">
-        <li><span class="badge bg-primary">€275 per maand</span></li>
-        <li><span class="badge bg-primary">gebruik onbeperkt</span></li>
-        <li><span class="badge bg-primary">eigen bureau en bureaustoel</span></li>
-        <li><span class="badge bg-primary">bekabeld internet</span></li>
+      <hr class="h-px my-8 bg-gray-300 border-0" />
+      <ul class="flex flex-wrap">
+        <li><span class="badge">€275 per maand</span></li>
+        <li><span class="badge">gebruik onbeperkt</span></li>
+        <li><span class="badge">eigen bureau en bureaustoel</span></li>
+        <li><span class="badge">bekabeld internet</span></li>
       </ul>
     </div>
-    <div class="col-12 col-sm-3">
-      <p class="lead text-center">
-        <span class="text-uppercase">EVENT</span>
+    <div>
+      <p class="text-center">
+        <span class="text-3xl uppercase">EVENT</span>
       </p>
-      <hr />
-      <ul class="list-unstyled">
-        <li><span class="badge bg-primary">in overleg</span></li>
-        <li><span class="badge bg-primary">weekend of s'avonds</span></li>
-        <li><span class="badge bg-primary">voorrang voor leden</span></li>
+      <hr class="h-px my-8 bg-gray-300 border-0" />
+      <ul class="flex flex-wrap">
+        <li><span class="badge">in overleg</span></li>
+        <li><span class="badge">weekend of s'avonds</span></li>
+        <li><span class="badge">voorrang voor leden</span></li>
       </ul>
     </div>
-    <div class="col-12">
-      <p class="lead text-center">
-        <span class="text-uppercase">elk pakket</span>
+    <div class="col-span-2 lg:col-span-4">
+      <p class="text-lg text-center">
+        <span class="text-3xl uppercase">elk pakket</span>
       </p>
-      <hr />
-      <ul class="list-inline">
-        <li class="list-inline-item badge bg-primary text-uppercase">eerste maand proef</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">twee maanden opzegtermijn</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">24/7 toegang</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">koffie en thee inbegrepen</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">sta bureau</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">kastruimte</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">draadloos internet</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">overleg/bel ruimtes</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">word schoongemaakt</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">printen en scannen</li>
-        <li class="list-inline-item badge bg-primary text-uppercase">borrels / film avond</li>
+      <hr class="h-px my-8 bg-gray-300 border-0" />
+      <ul class="flex flex-wrap">
+        <li class="badge">eerste maand proef</li>
+        <li class="badge">twee maanden opzegtermijn</li>
+        <li class="badge">24/7 toegang</li>
+        <li class="badge">koffie en thee inbegrepen</li>
+        <li class="badge">sta bureau</li>
+        <li class="badge">kastruimte</li>
+        <li class="badge">draadloos internet</li>
+        <li class="badge">overleg/bel ruimtes</li>
+        <li class="badge">word schoongemaakt</li>
+        <li class="badge">printen en scannen</li>
+        <li class="badge">borrels / film avond</li>
       </ul>
     </div>
   </div>
 
-  <div class="row mb-5">
-    <div class="col-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="prose-lg md:col-span-2">
       <Util::MarkdownFromUrl @url="/sections/about-operations-rulez-intro.md" />
     </div>
-    <div class="col-12 col-sm-6">
+    <div class="prose-lg">
       <Util::MarkdownFromUrl @url="/sections/about-operations-rulez-1.md" />
     </div>
-    <div class="col-12 col-sm-6">
+    <div class="prose-lg">
       <Util::MarkdownFromUrl @url="/sections/about-operations-rulez-2.md" />
     </div>
   </div>

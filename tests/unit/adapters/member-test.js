@@ -8,6 +8,7 @@ module('Unit | Adapter | member', function (hooks) {
   // Replace this with your real tests.
   test('it exists', function (assert) {
     let adapter = this.owner.lookup('adapter:member');
+
     assert.ok(adapter);
   });
 });

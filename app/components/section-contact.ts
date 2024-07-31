@@ -1,12 +1,14 @@
-import { action } from '@ember/object';
-import { inject as service } from '@ember/service';
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
+import { inject as service } from '@ember/service';
+
 import { Changeset } from 'ember-changeset';
 import lookupValidator from 'ember-changeset-validations';
-import { Metrics } from 'ember-metrics/services/metrics';
 
 import { ContactForm, ContactFormValidations } from '../changesets/contact-form';
+
+import type { Metrics } from 'ember-metrics/services/metrics';
 
 interface Signature {
   Args: Record<string, never>;
@@ -29,12 +31,14 @@ export default class SectionContactComponent extends Component<Signature> {
   @action
   async onSubmit() {
     await this.changeset.validate();
+
     if (this.changeset.isInvalid) {
       return;
     }
 
     try {
       const response = await this.changeset.save();
+
       if (response.success === true) {
         this.metrics.trackEvent('GoogleAnalytics', {
           category: 'communication',

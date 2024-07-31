@@ -1,4 +1,5 @@
 import { debug } from '@ember/debug';
+
 import application from '@wonderkamer/website/utils/application';
 import defaultMessages from 'ember-changeset-validations/utils/messages';
 

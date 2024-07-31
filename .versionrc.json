@@ -1,43 +1,43 @@
 {
-    "types": [
-        {
-            "type": "feat",
-            "section": "Features"
-        },
-        {
-            "type": "fix",
-            "section": "Bug Fixes"
-        },
-        {
-            "type": "chore",
-            "section": "Miscellaneous"
-        },
-        {
-            "type": "docs",
-            "section": "Documentation"
-        },
-        {
-            "type": "style",
-            "section": "Miscellaneous"
-        },
-        {
-            "type": "refactor",
-            "section": "Refactoring"
-        },
-        {
-            "type": "perf",
-            "section": "Miscellaneous"
-        },
-        {
-            "type": "test",
-            "section": "Miscellaneous"
-        },
-        {
-            "type": "content",
-            "hidden": false,
-            "section": "Content Changes"
-        }
-    ],
-    "commitUrlFormat": "https://github.com/Wonderkamer/website/commits/{{hash}}",
-    "compareUrlFormat": "https://github.com/Wonderkamer/website/compare/{{previousTag}}...{{currentTag}}"
+  "types": [
+    {
+      "type": "feat",
+      "section": "Features"
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes"
+    },
+    {
+      "type": "chore",
+      "section": "Miscellaneous"
+    },
+    {
+      "type": "docs",
+      "section": "Documentation"
+    },
+    {
+      "type": "style",
+      "section": "Miscellaneous"
+    },
+    {
+      "type": "refactor",
+      "section": "Refactoring"
+    },
+    {
+      "type": "perf",
+      "section": "Miscellaneous"
+    },
+    {
+      "type": "test",
+      "section": "Miscellaneous"
+    },
+    {
+      "type": "content",
+      "hidden": false,
+      "section": "Content Changes"
+    }
+  ],
+  "commitUrlFormat": "https://github.com/Wonderkamer/website/commits/{{hash}}",
+  "compareUrlFormat": "https://github.com/Wonderkamer/website/compare/{{previousTag}}...{{currentTag}}"
 }

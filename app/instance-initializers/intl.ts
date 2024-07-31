@@ -1,4 +1,4 @@
-import Application from '@ember/application';
+import type Application from '@ember/application';
 import type IntlService from 'ember-intl/services/intl';
 
 export default {

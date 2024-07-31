@@ -1,15 +1,13 @@
-<div class="container align-self-center" ...attributes>
-  <div class="row">
-    <div class="col-12 col-sm-5">
-      <h2>Contact</h2>
-    </div>
+<div class="container mx-auto align-self-center" ...attributes>
+  <div>
+    <h2 class="text-3xl py-5">Contact</h2>
   </div>
 
-  <div class="row text-responsive">
-    <div class="col-12 col-sm-5">
+  <div class="grid grid-cols-12 gap-4">
+    <div class="prose col-span-5">
       <Util::MarkdownFromUrl @url="/sections/contact.md" />
     </div>
-    <div class="col-12 col-sm-7">
+    <div class="col-span-7">
 
       {{#if this.isSubmitted}}
         <p>Bedankt voor je reactie, we nemen contact met je op...</p>
@@ -19,60 +17,87 @@
 
         <HeadlessForm @data={{this.changeset}} @dataMode="mutable" @onSubmit={{this.onSubmit}} @validate={{(validate-changeset)}} autocomplete="off" as |form|>
           <form.Field @name="name" as |field|>
-            <div class="mb-3">
-              <field.Label class="form-label">Naam</field.Label>
-              <field.Input class="form-control form-control-lg bg-transparent" />
-              <field.Errors class="invalid-feedback d-block" as |errors|>
-                {{get (get errors 0) "message"}}
+            <field.Label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">Naam</span>
+              </div>
+              <field.Input class="input input-bordered w-full max-w-xs" />
+              <field.Errors class="label" as |errors|>
+                <span class="label-text-alt"></span>
+                <span class="label-text-alt text-orange-600">{{get (get errors 0) "message"}}</span>
               </field.Errors>
-            </div>
+            </field.Label>
+
           </form.Field>
 
           <form.Field @name="email" as |field|>
-            <div class="mb-3">
-              <field.Label class="form-label">E-mail</field.Label>
-              <field.Input @type="email" class="form-control form-control-lg bg-transparent" />
-              <field.Errors class="invalid-feedback d-block" as |errors|>
-                {{get (get errors 0) "message"}}
+            <field.Label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">E-mail</span>
+              </div>
+              <field.Input @type="email" class="input input-bordered w-full max-w-xs" />
+              <field.Errors class="label" as |errors|>
+                <span class="label-text-alt"></span>
+                <span class="label-text-alt text-orange-600">{{get (get errors 0) "message"}}</span>
               </field.Errors>
-            </div>
+            </field.Label>
+
           </form.Field>
 
           <form.Field @name="phone" as |field|>
-            <div class="mb-3">
-              <field.Label class="form-label">Telefoon</field.Label>
-              <field.Input @type="phone" class="form-control form-control-lg bg-transparent" />
-              <field.Errors class="invalid-feedback d-block" as |errors|>
-                {{get (get errors 0) "message"}}
+            <field.Label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">Telefoon</span>
+              </div>
+              <field.Input @type="phone" class="input input-bordered w-full max-w-xs" />
+              <field.Errors class="label" as |errors|>
+                <span class="label-text-alt"></span>
+                <span class="label-text-alt text-orange-600">{{get (get errors 0) "message"}}</span>
               </field.Errors>
-            </div>
+            </field.Label>
+
           </form.Field>
 
           <form.Field @name="subject" as |field|>
-            <div class="mb-3">
-              <field.Label class="form-label">Onderwerp</field.Label>
-              <field.Input class="form-control form-control-lg bg-transparent" />
-              <field.Errors class="invalid-feedback d-block" as |errors|>
-                {{get (get errors 0) "message"}}
+            <field.Label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">Onderwerp</span>
+              </div>
+              <field.Input class="input input-bordered w-full max-w-xs" />
+              <field.Errors class="label" as |errors|>
+                <span class="label-text-alt"></span>
+                <span class="label-text-alt text-orange-600">{{get (get errors 0) "message"}}</span>
               </field.Errors>
-            </div>
+            </field.Label>
+
           </form.Field>
 
           <form.Field @name="message" as |field|>
-            <div class="mb-3">
-              <field.Label class="form-label">Boodschap</field.Label>
-              <field.Textarea class="form-control form-control-lg bg-transparent" rows="5" />
-              <field.Errors class="invalid-feedback d-block" as |errors|>
-                {{get (get errors 0) "message"}}
-              </field.Errors>
-            </div>
-          </form.Field>
-          <form.Field @name="reCaptchaToken" as |field|>
-            <GRecaptcha @onSuccess={{this.onCaptchaResolved}} @onExpired={{this.onCaptchaExpired}} @ref={{mut this.reCaptchaReference}} />
+            <field.Label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">Boodschap</span>
+              </div>
+              <field.Textarea class="textarea textarea-bordered w-full max-w-xs" rows="5" />
 
-            <field.Errors class="invalid-feedback d-block" as |errors|>
-              {{get (get errors 0) "message"}}
-            </field.Errors>
+              <field.Errors class="label" as |errors|>
+                <span class="label-text-alt"></span>
+                <span class="label-text-alt text-orange-600">{{get (get errors 0) "message"}}</span>
+              </field.Errors>
+            </field.Label>
+          </form.Field>
+
+          <form.Field @name="reCaptchaToken" as |field|>
+            <field.Label class="form-control w-full max-w-xs">
+              <div class="label">
+                <span class="label-text">"Are you real?"</span>
+              </div>
+              <GRecaptcha @onSuccess={{this.onCaptchaResolved}} @onExpired={{this.onCaptchaExpired}} @ref={{mut this.reCaptchaReference}} />
+
+              <field.Errors class="label" as |errors|>
+                <span class="label-text-alt"></span>
+                <span class="label-text-alt text-orange-600">{{get (get errors 0) "message"}}</span>
+              </field.Errors>
+            </field.Label>
           </form.Field>
 
           <button type="submit" class="btn btn-primary w-100 mt-5">verzend</button>

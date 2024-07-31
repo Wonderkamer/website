@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Dosis-ExtraLight;
+  src: url('./fonts/Dosis-ExtraLight.eot');
+  src:
+    url('./fonts/Dosis-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Dosis-ExtraLight.svg#Dosis-ExtraLight') format('svg'),
+    url('./fonts/Dosis-ExtraLight.ttf') format('truetype'),
+    url('./fonts/Dosis-ExtraLight.woff') format('woff'),
+    url('./fonts/Dosis-ExtraLight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Dosis-Regular;
+  src: url('./fonts/Dosis-Regular.eot');
+  src:
+    url('./fonts/Dosis-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Dosis-Regular.svg#Dosis-Regular') format('svg'),
+    url('./fonts/Dosis-Regular.ttf') format('truetype'),
+    url('./fonts/Dosis-Regular.woff') format('woff'),
+    url('./fonts/Dosis-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Dosis-Medium;
+  src: url('./fonts/Dosis-Medium.eot');
+  src:
+    url('./fonts/Dosis-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Dosis-Medium.svg#Dosis-Medium') format('svg'),
+    url('./fonts/Dosis-Medium.ttf') format('truetype'),
+    url('./fonts/Dosis-Medium.woff') format('woff'),
+    url('./fonts/Dosis-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Dosis-SemiBold;
+  src: url('./fonts/Dosis-SemiBold.eot');
+  src:
+    url('./fonts/Dosis-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Dosis-SemiBold.svg#Dosis-SemiBold') format('svg'),
+    url('./fonts/Dosis-SemiBold.ttf') format('truetype'),
+    url('./fonts/Dosis-SemiBold.woff') format('woff'),
+    url('./fonts/Dosis-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Dosis-ExtraBold;
+  src: url('./fonts/Dosis-ExtraBold.eot');
+  src:
+    url('./fonts/Dosis-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Dosis-ExtraBold.svg#Dosis-ExtraBold') format('svg'),
+    url('./fonts/Dosis-ExtraBold.ttf') format('truetype'),
+    url('./fonts/Dosis-ExtraBold.woff') format('woff'),
+    url('./fonts/Dosis-ExtraBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Dosis-Bold;
+  src: url('./fonts/Dosis-Bold.eot');
+  src:
+    url('./fonts/Dosis-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Dosis-Bold.svg#Dosis-Bold') format('svg'),
+    url('./fonts/Dosis-Bold.ttf') format('truetype'),
+    url('./fonts/Dosis-Bold.woff') format('woff'),
+    url('./fonts/Dosis-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

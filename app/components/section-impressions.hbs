@@ -1,8 +1,5 @@
-<div class="flex-grow-1 position-relative">
+<div class="flex grow bg-red-100 relative">
   {{#each this.images as |image index|}}
-    <div
-      class="image-container {{if (eq index this.currentIndex) 'show'}}"
-      {{style (get image "style")}}
-    ></div>
+    <div class="image-container {{if (eq index this.currentIndex) 'show'}}" {{style (get image "style")}}></div>
   {{/each}}
 </div>

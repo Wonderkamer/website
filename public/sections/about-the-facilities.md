@@ -1,24 +1,22 @@
-### Over de faciliteiten
-
 Je hebt beschikking over oa.
 
-<span class="badge bg-primary">stabiel WiFi</span>
-<span class="badge bg-primary">bekabeld internet (tot 700 Mbit/s)</span>
-<span class="badge bg-primary">laserprinter (z/w)</span>
-<span class="badge bg-primary">document scanner</span>
-<span class="badge bg-primary">diverse kantoorbenodigdheden</span>
-<span class="badge bg-primary">veel groen binnen</span>
-<span class="badge bg-primary">twee stille bel- en/of overlegruimtes</span>
-<span class="badge bg-primary">kastruimte voor je spullen</span>
-<span class="badge bg-primary">locker</span>
-<span class="badge bg-primary">pantry, met koelkast & vaatwasser, tosti apparaat & oven</span>
-<span class="badge bg-primary">een lunchtafel</span>
-<span class="badge bg-primary">relax hoek</span>
-<span class="badge bg-primary">heerlijke binnenplaats</span>
-<span class="badge bg-primary">CO2 meter</span>
-<span class="badge bg-primary">exclusief gebruik vd ruimte voor eigen event</span>
-
-<!-- <span class="badge bg-primary">drukte meter</span> -->
+<ul class="flex flex-wrap text-sm my-0 ps-0">
+  <li class="badge">stabiel WiFi</li>
+  <li class="badge">bekabeld internet (tot 700 Mbit/s)</li>
+  <li class="badge">laserprinter (z/w)</li>
+  <li class="badge">document scanner</li>
+  <li class="badge">diverse kantoorbenodigdheden</li>
+  <li class="badge">veel groen binnen</li>
+  <li class="badge">twee stille bel- en/of overlegruimtes</li>
+  <li class="badge">kastruimte voor je spullen</li>
+  <li class="badge">locker</li>
+  <li class="badge">pantry, met koelkast & vaatwasser, tosti apparaat & oven</li>
+  <li class="badge">een lunchtafel</li>
+  <li class="badge">relax hoek</li>
+  <li class="badge">heerlijke binnenplaats</li>
+  <li class="badge">CO2 meter</li>
+  <li class="badge">exclusief gebruik vd ruimte voor eigen event</li>
+</ul>
 
 In de buurt vind je diverse lunch- en koffietentjes, cafes en terrasjes, diverse supermarkten en het Vondelpark.
 

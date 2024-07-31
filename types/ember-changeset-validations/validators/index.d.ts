@@ -1,4 +1,4 @@
-import { ValidatorMapFunc } from '../index';
+import type { ValidatorMapFunc } from '../index';
 
 export function validateFormat(options: {
   allowBlank?: boolean;

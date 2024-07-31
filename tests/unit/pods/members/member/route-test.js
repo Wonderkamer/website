@@ -6,6 +6,7 @@ module('Unit | Route | members/member', function (hooks) {
 
   test('it exists', function (assert) {
     let route = this.owner.lookup('route:home/members/member');
+
     assert.ok(route);
   });
 });

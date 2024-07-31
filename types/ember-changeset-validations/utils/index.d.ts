@@ -1,6 +1,5 @@
+import type { ValidatorMapFunc } from '../index';
 import type EmberArray from '@ember/array';
-
-import { ValidatorMapFunc } from '../index';
 
 export function getMessages(options?: { moduleMap: Record<string, unknown>; useCache: boolean }): Record<string, unknown>;
 
