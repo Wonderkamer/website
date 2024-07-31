@@ -170,7 +170,7 @@
     "tracked-built-ins": "3.3.0",
     "typescript": "5.5.4",
     "url-loader": "4.1.1",
-    "webpack": "5.92.1"
+    "webpack": "5.93.0"
   },
   "resolutions": {
     "ember-element-helper": "0.8.6"
