@@ -182,13 +182,6 @@ section {
   }
 }
 
-.badge {
-  color: unset !important;
-  &.bg-primary {
-    color: map-get($colors, 'dark') !important;
-  }
-}
-
 :root {
   /* Define the inverse of the screen width as a CSS variable */
   --inverse-width: calc(100 / 100vw);

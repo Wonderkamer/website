@@ -20,7 +20,7 @@ section {
 }
 
 .badge {
-  @apply self-start place-self-start justify-self-start font-bold ms-2 mt-2 mb-0 px-2 py-1 rounded-md bg-primary inline-block w-auto;
+  @apply badge-info self-start place-self-start justify-self-start font-bold ms-2 rounded-md bg-primary inline-block w-auto;
 }
 
 /* section impression */

@@ -20,14 +20,9 @@ module.exports = {
         sans: ['Dosis-Regular', 'sans-serif'],
       },
     },
+    daisyui: {
+      themes: ['light'],
+    },
   },
-  plugins: [
-    require('@tailwindcss/typography')(),
-    // require('@tailwindcss/aspect-ratio'),
-    // require('tailwindcss-animate'),
-    // require('flowbite/plugin'),
-    // require('rippleui'),
-    // require('tailwind-scrollbar-hide'), // https://github.com/reslear/tailwind-scrollbar-hide
-    require('daisyui'),
-  ],
+  plugins: [require('@tailwindcss/typography')(), require('daisyui')],
 };
