@@ -370,26 +370,26 @@ importers:
         specifier: 9.5.0
         version: 9.5.0
       stylelint:
-        specifier: 16.7.0
-        version: 16.7.0(typescript@5.5.3)
+        specifier: 16.8.1
+        version: 16.8.1(typescript@5.5.3)
       stylelint-config-recommended:
         specifier: 14.0.1
-        version: 14.0.1(stylelint@16.7.0(typescript@5.5.3))
+        version: 14.0.1(stylelint@16.8.1(typescript@5.5.3))
       stylelint-config-sass-guidelines:
         specifier: 12.0.0
-        version: 12.0.0(postcss@8.4.39)(stylelint@16.7.0(typescript@5.5.3))
+        version: 12.0.0(postcss@8.4.39)(stylelint@16.8.1(typescript@5.5.3))
       stylelint-config-standard:
         specifier: 36.0.1
-        version: 36.0.1(stylelint@16.7.0(typescript@5.5.3))
+        version: 36.0.1(stylelint@16.8.1(typescript@5.5.3))
       stylelint-config-tailwindcss:
         specifier: 0.0.7
-        version: 0.0.7(stylelint@16.7.0(typescript@5.5.3))(tailwindcss@3.4.7)
+        version: 0.0.7(stylelint@16.8.1(typescript@5.5.3))(tailwindcss@3.4.7)
       stylelint-prettier:
         specifier: 5.0.2
-        version: 5.0.2(prettier@3.3.2)(stylelint@16.7.0(typescript@5.5.3))
+        version: 5.0.2(prettier@3.3.2)(stylelint@16.8.1(typescript@5.5.3))
       stylelint-scss:
         specifier: 6.4.1
-        version: 6.4.1(stylelint@16.7.0(typescript@5.5.3))
+        version: 6.4.1(stylelint@16.8.1(typescript@5.5.3))
       tailwindcss:
         specifier: 3.4.7
         version: 3.4.7
@@ -6599,6 +6599,9 @@ packages:
   postcss-resolve-nested-selector@0.1.1:
     resolution: {integrity: sha512-HvExULSwLqHLgUy1rl3ANIqCsvMS0WHss2UOsXhXnQaZ9VCc2oBvIpXrl00IUFT5ZDITME0o6oiXeiHr2SAIfw==}
 
+  postcss-resolve-nested-selector@0.1.4:
+    resolution: {integrity: sha512-R6vHqZWgVnTAPq0C+xjyHfEZqfIYboCBVSy24MjxEDm+tIh1BU4O6o7DP7AA7kHzf136d+Qc5duI4tlpHjixDw==}
+
   postcss-safe-parser@7.0.0:
     resolution: {integrity: sha512-ovehqRNVCpuFzbXoTb4qLtyzK3xn3t/CUBxOs8LsnQjQrShaB4lKiHoVqY8ANaC0hBMHq5QVWk77rwGklFUDrg==}
     engines: {node: '>=18.0'}
@@ -6636,6 +6639,10 @@ packages:
 
   postcss@8.4.39:
     resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.4.40:
+    resolution: {integrity: sha512-YF2kKIUzAofPMpfH6hOi2cGnv/HrUlfucspc7pDyvv7kGdqXrfj8SCl/t8owkEgKEuu8ZcRjSOxFxVLqwChZ2Q==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -7455,8 +7462,8 @@ packages:
     peerDependencies:
       stylelint: ^16.0.2
 
-  stylelint@16.7.0:
-    resolution: {integrity: sha512-Q1ATiXlz+wYr37a7TGsfvqYn2nSR3T/isw3IWlZQzFzCNoACHuGBb6xBplZXz56/uDRJHIygxjh7jbV/8isewA==}
+  stylelint@16.8.1:
+    resolution: {integrity: sha512-O8aDyfdODSDNz/B3gW2HQ+8kv8pfhSu7ZR7xskQ93+vI6FhKKGUJMQ03Ydu+w3OvXXE0/u4hWU4hCPNOyld+OA==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -10610,7 +10617,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@stylistic/stylelint-plugin@2.1.2(stylelint@16.7.0(typescript@5.5.3))':
+  '@stylistic/stylelint-plugin@2.1.2(stylelint@16.8.1(typescript@5.5.3))':
     dependencies:
       '@csstools/css-parser-algorithms': 2.7.1(@csstools/css-tokenizer@2.4.1)
       '@csstools/css-tokenizer': 2.4.1
@@ -10619,7 +10626,7 @@ snapshots:
       postcss-selector-parser: 6.1.1
       postcss-value-parser: 4.2.0
       style-search: 0.1.0
-      stylelint: 16.7.0(typescript@5.5.3)
+      stylelint: 16.8.1(typescript@5.5.3)
 
   '@tailwindcss/typography@0.5.13(tailwindcss@3.4.7)':
     dependencies:
@@ -10700,6 +10707,26 @@ snapshots:
       - '@babel/core'
       - supports-color
 
+  '@types/ember@4.0.11':
+    dependencies:
+      '@types/ember__application': 4.0.11(@babel/core@7.24.9)
+      '@types/ember__array': 4.0.10(@babel/core@7.24.9)
+      '@types/ember__component': 4.0.22(@babel/core@7.24.9)
+      '@types/ember__controller': 4.0.12(@babel/core@7.24.9)
+      '@types/ember__debug': 4.0.8(@babel/core@7.24.9)
+      '@types/ember__engine': 4.0.11(@babel/core@7.24.9)
+      '@types/ember__error': 4.0.6
+      '@types/ember__object': 4.0.12(@babel/core@7.24.9)
+      '@types/ember__polyfills': 4.0.6
+      '@types/ember__routing': 4.0.22(@babel/core@7.24.9)
+      '@types/ember__runloop': 4.0.10
+      '@types/ember__service': 4.0.9(@babel/core@7.24.9)
+      '@types/ember__string': 3.0.15
+      '@types/ember__template': 4.0.7
+      '@types/ember__test': 4.0.6(@babel/core@7.24.9)
+      '@types/ember__utils': 4.0.7
+      '@types/rsvp': 4.0.9
+
   '@types/ember@4.0.11(@babel/core@7.24.9)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.24.9)
@@ -10726,7 +10753,7 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.24.9)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.24.9)
-      '@types/ember': 4.0.11(@babel/core@7.24.9)
+      '@types/ember': 4.0.11
       '@types/ember__engine': 4.0.11(@babel/core@7.24.9)
       '@types/ember__object': 4.0.12(@babel/core@7.24.9)
       '@types/ember__owner': 4.0.4
@@ -10809,6 +10836,10 @@ snapshots:
       - '@babel/core'
       - supports-color
 
+  '@types/ember__runloop@4.0.10':
+    dependencies:
+      '@types/ember': 4.0.11
+
   '@types/ember__runloop@4.0.10(@babel/core@7.24.9)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.24.9)
@@ -10833,6 +10864,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__utils@4.0.7':
+    dependencies:
+      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.24.9)':
     dependencies:
@@ -16736,9 +16771,11 @@ snapshots:
 
   postcss-resolve-nested-selector@0.1.1: {}
 
-  postcss-safe-parser@7.0.0(postcss@8.4.39):
+  postcss-resolve-nested-selector@0.1.4: {}
+
+  postcss-safe-parser@7.0.0(postcss@8.4.40):
     dependencies:
-      postcss: 8.4.39
+      postcss: 8.4.40
 
   postcss-scss@4.0.9(postcss@8.4.39):
     dependencies:
@@ -16768,6 +16805,12 @@ snapshots:
   postcss-value-parser@4.2.0: {}
 
   postcss@8.4.39:
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.1
+      source-map-js: 1.2.0
+
+  postcss@8.4.40:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
@@ -17631,44 +17674,44 @@ snapshots:
       postcss: 8.4.39
       postcss-selector-parser: 6.1.1
 
-  stylelint-config-recommended@14.0.1(stylelint@16.7.0(typescript@5.5.3)):
+  stylelint-config-recommended@14.0.1(stylelint@16.8.1(typescript@5.5.3)):
     dependencies:
-      stylelint: 16.7.0(typescript@5.5.3)
+      stylelint: 16.8.1(typescript@5.5.3)
 
-  stylelint-config-sass-guidelines@12.0.0(postcss@8.4.39)(stylelint@16.7.0(typescript@5.5.3)):
+  stylelint-config-sass-guidelines@12.0.0(postcss@8.4.39)(stylelint@16.8.1(typescript@5.5.3)):
     dependencies:
-      '@stylistic/stylelint-plugin': 2.1.2(stylelint@16.7.0(typescript@5.5.3))
+      '@stylistic/stylelint-plugin': 2.1.2(stylelint@16.8.1(typescript@5.5.3))
       postcss: 8.4.39
       postcss-scss: 4.0.9(postcss@8.4.39)
-      stylelint: 16.7.0(typescript@5.5.3)
-      stylelint-scss: 6.4.1(stylelint@16.7.0(typescript@5.5.3))
+      stylelint: 16.8.1(typescript@5.5.3)
+      stylelint-scss: 6.4.1(stylelint@16.8.1(typescript@5.5.3))
 
-  stylelint-config-standard@36.0.1(stylelint@16.7.0(typescript@5.5.3)):
+  stylelint-config-standard@36.0.1(stylelint@16.8.1(typescript@5.5.3)):
     dependencies:
-      stylelint: 16.7.0(typescript@5.5.3)
-      stylelint-config-recommended: 14.0.1(stylelint@16.7.0(typescript@5.5.3))
+      stylelint: 16.8.1(typescript@5.5.3)
+      stylelint-config-recommended: 14.0.1(stylelint@16.8.1(typescript@5.5.3))
 
-  stylelint-config-tailwindcss@0.0.7(stylelint@16.7.0(typescript@5.5.3))(tailwindcss@3.4.7):
+  stylelint-config-tailwindcss@0.0.7(stylelint@16.8.1(typescript@5.5.3))(tailwindcss@3.4.7):
     dependencies:
-      stylelint: 16.7.0(typescript@5.5.3)
+      stylelint: 16.8.1(typescript@5.5.3)
       tailwindcss: 3.4.7
 
-  stylelint-prettier@5.0.2(prettier@3.3.2)(stylelint@16.7.0(typescript@5.5.3)):
+  stylelint-prettier@5.0.2(prettier@3.3.2)(stylelint@16.8.1(typescript@5.5.3)):
     dependencies:
       prettier: 3.3.2
       prettier-linter-helpers: 1.0.0
-      stylelint: 16.7.0(typescript@5.5.3)
+      stylelint: 16.8.1(typescript@5.5.3)
 
-  stylelint-scss@6.4.1(stylelint@16.7.0(typescript@5.5.3)):
+  stylelint-scss@6.4.1(stylelint@16.8.1(typescript@5.5.3)):
     dependencies:
       known-css-properties: 0.34.0
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.1.1
       postcss-value-parser: 4.2.0
-      stylelint: 16.7.0(typescript@5.5.3)
+      stylelint: 16.8.1(typescript@5.5.3)
 
-  stylelint@16.7.0(typescript@5.5.3):
+  stylelint@16.8.1(typescript@5.5.3):
     dependencies:
       '@csstools/css-parser-algorithms': 2.7.1(@csstools/css-tokenizer@2.4.1)
       '@csstools/css-tokenizer': 2.4.1
@@ -17697,9 +17740,9 @@ snapshots:
       micromatch: 4.0.7
       normalize-path: 3.0.0
       picocolors: 1.0.1
-      postcss: 8.4.39
-      postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 7.0.0(postcss@8.4.39)
+      postcss: 8.4.40
+      postcss-resolve-nested-selector: 0.1.4
+      postcss-safe-parser: 7.0.0(postcss@8.4.40)
       postcss-selector-parser: 6.1.1
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
