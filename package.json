@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "ember-element-helper": "0.8.6",
-    "ember-headless-form": "1.0.0",
+    "ember-headless-form": "1.0.1",
     "ember-headless-form-changeset": "1.0.0",
     "ember-lifeline": "7.0.0",
     "reactiveweb": "1.3.0"
