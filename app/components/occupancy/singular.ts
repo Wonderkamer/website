@@ -35,3 +35,9 @@ function daysBetween(startDate: Date, endDate: Date = new Date()) {
   // so it's safe to divide by 24 hours
   return (start - end) / oneDay;
 }
+
+declare module '@glint/environment-ember-loose/registry' {
+  export default interface Registry {
+    'Occupancy::Singular': typeof OccupancySingularComponent;
+  }
+}

@@ -1,9 +1,5 @@
-<section
-  class="d-flex {{this.classes}}"
-  {{in-viewport onEnter=this.onViewIn onExit=this.onViewOut viewportSpy=true}}
-  ...attributes
->
-  <div class="d-flex flex-grow-1">
+<section class="flex {{this.classes}}" {{in-viewport onEnter=this.onViewIn onExit=this.onViewOut viewportSpy=true}} ...attributes>
+  <div class="flex grow">
     {{#if (has-block)}}
       {{yield}}
     {{else}}

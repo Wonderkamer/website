@@ -1,5 +1,7 @@
-import Application from '@ember/application';
 import application from '@wonderkamer/website/utils/application';
+
+import type Application from '@ember/application';
+
 /**
  * initialize runs upon app instance initialization. It simply set the instance.
  * `application.instance` is used by `app/validations/messages` to lookup the

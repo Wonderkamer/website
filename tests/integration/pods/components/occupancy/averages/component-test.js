@@ -1,8 +1,9 @@
+import { render } from '@ember/test-helpers';
+import { hbs } from 'ember-cli-htmlbars';
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+
 import { setupIntl } from 'ember-intl/test-support';
-import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Component | occupancy/averages', function (hooks) {
   setupRenderingTest(hooks);
@@ -10,6 +11,7 @@ module('Integration | Component | occupancy/averages', function (hooks) {
 
   test('it renders', async function (assert) {
     await render(hbs`<Occupancy::Averages />`);
+
     const text = String(this.element.textContent.trim());
 
     assert.true(text.includes('zo'));

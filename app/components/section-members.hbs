@@ -1,66 +1,41 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12 py-5">
-      <h2>Leden</h2>
-    </div>
+<div class="container mx-auto px-4">
+  <div>
+    <h2 class="text-3xl py-5">Leden</h2>
   </div>
+  <div>
+    {{#each @activeMembers as |member index|}}
+      <div>
 
-  <div class="row">
-    <div class="col-12">
-      <BsAccordion
-        @onChange={{this.onChange}}
-        @selected={{this.selectedMember}}
-        as |acc|
-      >
-        {{#each @activeMembers as |member index|}}
-          <acc.item @value={{member}} as |item|>
+        <div class="py-4" data-slug={{member.slug}}>
+          <div class="flex justify-content-between w-100 {{if (mod index 2) 'flex-row' 'flex-row-reverse'}}">
+            <img
+              src={{member.profileImgSmallSrc}}
+              class="img-fluid rounded-full {{if (mod index 2) 'mr-auto' 'ml-auto'}}"
+              alt=""
+              role="none"
+              {{style this.style}}
+            />
+            <div class="{{if (mod index 2) 'text-end' 'text-start'}}">
+              <h5 class="mb-0 text-xl">{{member.title}}</h5>
+              <p class="mb-0 font-italic">{{lowercase member.tagLine}}</p>
+            </div>
+          </div>
+        </div>
 
-            <item.title class="py-4" data-slug={{member.slug}}>
-              <div
-                class="d-flex justify-content-between w-100
-                  {{if (mod index 2) 'flex-row' 'flex-row-reverse'}}"
-              >
-                <img
-                  src={{member.profileImgSmallSrc}}
-                  class="img-fluid rounded-circle
-                    {{if (mod index 2) 'ml-auto' 'ml-auto'}}"
-                  alt=""
-                  role="none"
-                  {{style this.style}}
-                />
-                <div class="{{if (mod index 2) 'text-end' 'text-start'}}">
-                  <h5 class="mb-0">{{member.title}}</h5>
-                  <p class="mb-0 font-italic">{{lowercase member.tagLine}}</p>
-                </div>
-              </div>
-            </item.title>
+        <div class="grid grid-cols-3 gap-4">
+          <figure class="max-w-lg col-span-1 {{if (mod index 2) ' order-last' ''}}">
+            <img class="h-auto max-w-full mb-0" src="{{member.profileImgLargeSrc}}" alt={{member.title}} />
+            <figcaption class="mt-2 text-sm {{if (mod index 2) 'text-right' 'text-left'}}">{{member.title}}{{#if member.tagLine}},
+                {{member.tagLine}}{{/if}}</figcaption>
 
-            <item.body class="accordion-body">
-              <div
-                class="row {{if (mod index 2) 'flex-row-reverse' 'flex-row'}}"
-              >
-                <div class="col-12 col-sm-6 col-md-5">
-                  <img
-                    class="img-fluid mb-0"
-                    src="{{member.profileImgLargeSrc}}"
-                    alt={{member.title}}
-                  />
-                  <p
-                    class="small mb-0
-                      {{if (mod index 2) 'text-right' 'text-left'}}"
-                  >{{member.title}}{{#if member.tagLine}},
-                      {{member.tagLine}}{{/if}}</p>
-                </div>
+          </figure>
 
-                <div class="col-12 col-sm-6 col-md-7">
-                  <Util::MarkdownFromUrl @url={{member.profileTextSrc}} />
-                </div>
-              </div>
-            </item.body>
+          <div class="col-span-2 {{if (mod index 2) '' 'order-last'}} prose md:prose-xl">
+            <Util::MarkdownFromUrl @url={{member.profileTextSrc}} />
+          </div>
+        </div>
 
-          </acc.item>
-        {{/each}}
-      </BsAccordion>
-    </div>
+      </div>
+    {{/each}}
   </div>
 </div>

@@ -7,11 +7,6 @@ module.exports = async function (defaults) {
   const { setConfig } = await import('@warp-drive/build-config');
 
   let app = new EmberApp(defaults, {
-    'ember-bootstrap': {
-      bootstrapVersion: 5,
-      importBootstrapCSS: false,
-      insertEmberWormholeElementToDom: false,
-    },
     'ember-cli-terser': {
       enabled: isProductionLikeBuild,
 
@@ -58,12 +53,58 @@ module.exports = async function (defaults) {
   // along with the exports of each module as its value.
 
   const { Webpack } = require('@embroider/webpack');
+
   return require('@embroider/compat').compatBuild(app, Webpack, {
     skipBabel: [
       {
         package: 'qunit',
       },
     ],
+
+    packagerOptions: {
+      webpackConfig: {
+        module: {
+          rules: [
+            {
+              test: /.css$/i,
+              use: [
+                {
+                  loader: 'postcss-loader',
+                  options: {
+                    postcssOptions: {
+                      config: 'config/postcss.config.js',
+                    },
+                  },
+                },
+              ],
+            },
+            {
+              test: /\.(png|jpe?g|gif)$/i,
+              use: [
+                {
+                  loader: 'file-loader',
+                  options: {
+                    name: 'assets/images/[name].[ext]',
+                  },
+                },
+              ],
+            },
+            {
+              test: /\.(woff|woff2|eot|ttf|svg)$/,
+              use: [
+                {
+                  loader: 'url-loader',
+                  options: {
+                    limit: 1000,
+                    name: 'assets/fonts/[name].[ext]',
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      },
+    },
   });
 
   // return app.toTree();

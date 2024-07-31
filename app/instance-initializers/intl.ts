@@ -1,4 +1,4 @@
-import Application from '@ember/application';
+import type Application from '@ember/application';
 import type IntlService from 'ember-intl/services/intl';
 
 export default {
@@ -10,7 +10,6 @@ export default {
     intl.setLocale('nl');
 
     function missingMessage(key: string, locales: string[], options?: Record<string, unknown>): string {
-      console.log(key);
       const indexSubKey = '_';
 
       // retry with ._ added to the key

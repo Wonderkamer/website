@@ -1,0 +1,33 @@
+:local(.container) {
+  width: 100%;
+  background-image: url('./../assets/images/map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @keyframes bounceZoom {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    10%,
+    90% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(4);
+    }
+  }
+
+  &.animate-bounce-zoom {
+    animation: bounceZoom 0.8s ease-in-out;
+  }
+}
+/* section.section-map { */
+/* Apply the background image */
+
+/* Set the background size using the inverse width variable */
+/*
+
+
+} */

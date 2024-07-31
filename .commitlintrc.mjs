@@ -1,7 +1,7 @@
-import config from "@commitlint/config-conventional";
+import config from '@commitlint/config-conventional';
 
-config.rules["type-enum"][2].push("content");
+config.rules['type-enum'][2].push('content');
 
 export default {
-  extends: ["@commitlint/config-conventional"],
+  extends: ['@commitlint/config-conventional'],
 };

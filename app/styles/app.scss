@@ -1,5 +1,5 @@
-@import "bootstrap";
-@import "app/fonts";
+@import 'app/fonts';
+
 section {
   min-height: 100vh;
 
@@ -72,53 +72,9 @@ section {
   //}
 }
 
-.g-recaptcha { margin-left: auto; display: table; }
-
-div.invalid-feedback {
-  padding: $badge-padding-y $badge-padding-x;
-
-  font-weight: $badge-font-weight;
-  line-height: 1;
-  float: right;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-
-  @include border-radius($badge-border-radius);
-  @include transition($transition-base);
-
-  // Empty badges collapse automatically
-  &:empty {
-    display: none;
-  }
-
-  background-color: map-get($theme-colors, "primary") !important;
-  color: map-get($theme-colors, "dark") !important;
-  font-size: $font-size-sm * 0.8 !important;
-}
-
-.form-control {
-  &.is-valid,
-  &.is-invalid {
-    border-color: transparent;
-    background-image: none;
-  }
-}
-
-textarea:focus,
-textarea.form-control:focus,
-input.form-control:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-[type="text"].form-control:focus,
-[type="password"].form-control:focus,
-[type="email"].form-control:focus,
-[type="tel"].form-control:focus,
-[contenteditable].form-control:focus {
-  box-shadow: inset 0 -1px 0 #ddd;
-  border: transparent;
+.g-recaptcha {
+  margin-left: auto;
+  display: table;
 }
 
 .occupancy {
@@ -142,7 +98,7 @@ input[type="number"]:focus,
       height: 1rem;
       text-align: right;
       font-size: $font-size-sm * 0.8;
-      color: map-get($grays, "700");
+      color: map-get($grays, '700');
       line-height: 0;
     }
   }
@@ -159,7 +115,7 @@ input[type="number"]:focus,
     .title,
     .label {
       font-size: $font-size-sm * 0.8;
-      color: map-get($grays, "700");
+      color: map-get($grays, '700');
     }
 
     .label {
@@ -170,7 +126,7 @@ input[type="number"]:focus,
       height: 20vh;
 
       .bar {
-        background-color: map-get($theme-colors, "dark");
+        background-color: map-get($theme-colors, 'dark');
         line-height: 0;
 
         margin-right: 2px;
@@ -193,7 +149,7 @@ input[type="number"]:focus,
 
 .section-members .accordion {
   .rounded-circle {
-    border: 2px solid map-get($theme-colors, "primary");
+    border: 2px solid map-get($theme-colors, 'primary');
   }
 
   .card {
@@ -226,9 +182,7 @@ input[type="number"]:focus,
   }
 }
 
-.badge {
-  color: unset !important;
-  &.bg-primary {
-    color: map-get($colors, "dark") !important;
-  }
+:root {
+  /* Define the inverse of the screen width as a CSS variable */
+  --inverse-width: calc(100 / 100vw);
 }

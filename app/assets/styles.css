@@ -1,0 +1,49 @@
+:root {
+  --bs-primary-rgb: 255, 230, 7;
+  --bs-secondary-rgb: 218, 229, 236;
+}
+
+section {
+  min-height: 100vh;
+
+  &:not(:last-of-type) {
+    margin-bottom: 40vh;
+  }
+}
+
+.bg-primary {
+  background-color: rgb(var(--bs-primary-rgb));
+}
+
+.bg-secondary {
+  background-color: rgb(var(--bs-secondary-rgb));
+}
+
+.badge {
+  @apply badge-info self-start place-self-start justify-self-start font-bold ms-2 rounded-md bg-primary inline-block w-auto;
+}
+
+/* section impression */
+.image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  &.show {
+    opacity: 1;
+  }
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
