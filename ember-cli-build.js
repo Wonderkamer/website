@@ -7,12 +7,6 @@ module.exports = async function (defaults) {
   const { setConfig } = await import('@warp-drive/build-config');
 
   let app = new EmberApp(defaults, {
-    'ember-bootstrap': {
-      bootstrapVersion: 5,
-      importBootstrapCSS: false,
-      insertEmberWormholeElementToDom: false,
-      include: [],
-    },
     'ember-cli-terser': {
       enabled: isProductionLikeBuild,
 
