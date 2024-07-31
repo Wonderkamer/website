@@ -364,8 +364,8 @@ importers:
         specifier: 3.2.0
         version: 3.2.0
       sass:
-        specifier: 1.77.6
-        version: 1.77.6
+        specifier: 1.77.8
+        version: 1.77.8
       standard-version:
         specifier: 9.5.0
         version: 9.5.0
@@ -7049,8 +7049,8 @@ packages:
     engines: {node: 10.* || >= 12.*}
     hasBin: true
 
-  sass@1.77.6:
-    resolution: {integrity: sha512-ByXE1oLD79GVq9Ht1PeHWCPMPB8XHpBuz1r85oByKHjZY6qV6rWnQovQzXJXuQ/XyE1Oj3iPk3lo28uzaRA2/Q==}
+  sass@1.77.8:
+    resolution: {integrity: sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -10700,6 +10700,26 @@ snapshots:
       - '@babel/core'
       - supports-color
 
+  '@types/ember@4.0.11':
+    dependencies:
+      '@types/ember__application': 4.0.11(@babel/core@7.24.9)
+      '@types/ember__array': 4.0.10(@babel/core@7.24.9)
+      '@types/ember__component': 4.0.22(@babel/core@7.24.9)
+      '@types/ember__controller': 4.0.12(@babel/core@7.24.9)
+      '@types/ember__debug': 4.0.8(@babel/core@7.24.9)
+      '@types/ember__engine': 4.0.11(@babel/core@7.24.9)
+      '@types/ember__error': 4.0.6
+      '@types/ember__object': 4.0.12(@babel/core@7.24.9)
+      '@types/ember__polyfills': 4.0.6
+      '@types/ember__routing': 4.0.22(@babel/core@7.24.9)
+      '@types/ember__runloop': 4.0.10
+      '@types/ember__service': 4.0.9(@babel/core@7.24.9)
+      '@types/ember__string': 3.0.15
+      '@types/ember__template': 4.0.7
+      '@types/ember__test': 4.0.6(@babel/core@7.24.9)
+      '@types/ember__utils': 4.0.7
+      '@types/rsvp': 4.0.9
+
   '@types/ember@4.0.11(@babel/core@7.24.9)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.24.9)
@@ -10726,7 +10746,7 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.24.9)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.24.9)
-      '@types/ember': 4.0.11(@babel/core@7.24.9)
+      '@types/ember': 4.0.11
       '@types/ember__engine': 4.0.11(@babel/core@7.24.9)
       '@types/ember__object': 4.0.12(@babel/core@7.24.9)
       '@types/ember__owner': 4.0.4
@@ -10809,6 +10829,10 @@ snapshots:
       - '@babel/core'
       - supports-color
 
+  '@types/ember__runloop@4.0.10':
+    dependencies:
+      '@types/ember': 4.0.11
+
   '@types/ember__runloop@4.0.10(@babel/core@7.24.9)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.24.9)
@@ -10833,6 +10857,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__utils@4.0.7':
+    dependencies:
+      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.24.9)':
     dependencies:
@@ -17203,7 +17231,7 @@ snapshots:
       minimist: 1.2.8
       walker: 1.0.8
 
-  sass@1.77.6:
+  sass@1.77.8:
     dependencies:
       chokidar: 3.5.3
       immutable: 4.0.0
