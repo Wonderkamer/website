@@ -2,10 +2,11 @@
   <div>
     <h2 class="text-3xl py-5">Leden</h2>
   </div>
-  <div>
-    {{#each @activeMembers as |member index|}}
-      <div>
-
+  {{#each @activeMembers as |member index|}}
+    <div class="collapse">
+      <label for="checktoggle{{index}}" class="hidden"></label>
+      <input type="radio" id="checktoggle{{index}}" name="checktoggle" />
+      <div class="collapse-title text-xl font-medium">
         <div class="py-4" data-slug={{member.slug}}>
           <div class="flex justify-content-between w-100 {{if (mod index 2) 'flex-row' 'flex-row-reverse'}}">
             <img
@@ -21,7 +22,8 @@
             </div>
           </div>
         </div>
-
+      </div>
+      <div class="collapse-content">
         <div class="grid grid-cols-3 gap-4">
           <figure class="max-w-lg col-span-1 {{if (mod index 2) ' order-last' ''}}">
             <img class="h-auto max-w-full mb-0" src="{{member.profileImgLargeSrc}}" alt={{member.title}} />
@@ -34,8 +36,8 @@
             <Util::MarkdownFromUrl @url={{member.profileTextSrc}} />
           </div>
         </div>
-
       </div>
-    {{/each}}
-  </div>
+    </div>
+  {{/each}}
+
 </div>
