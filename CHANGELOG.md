@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/Wonderkamer/website/compare/1.5.0...1.5.1) (2024-08-01)
+
+
+### Bug Fixes
+
+* some visual issues ([d386e04](https://github.com/Wonderkamer/website/commits/d386e04019b682349f49aea523ae05dfa10345ea))
+
 ## [1.5.0](https://github.com/Wonderkamer/website/compare/1.4.7...1.5.0) (2024-08-01)
 
 
