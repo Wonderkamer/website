@@ -1,13 +1,13 @@
-<div class="container mx-auto align-self-center" ...attributes>
+<div class="container mx-auto align-self-center px-4" ...attributes>
   <div>
     <h2 class="text-3xl py-5">Contact</h2>
   </div>
 
   <div class="grid grid-cols-12 gap-4">
-    <div class="prose col-span-5">
+    <div class="prose col-span-12 md:col-span-5">
       <Util::MarkdownFromUrl @url="/sections/contact.md" />
     </div>
-    <div class="col-span-7">
+    <div class="col-span-12 md:col-span-7">
 
       {{#if this.isSubmitted}}
         <p>Bedankt voor je reactie, we nemen contact met je op...</p>
