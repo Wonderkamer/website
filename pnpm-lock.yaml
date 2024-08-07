@@ -89,7 +89,7 @@ importers:
         version: 4.0.0(@babel/core@7.25.2)(@babel/eslint-parser@7.25.1(@babel/core@7.25.2)(eslint@8.57.0))(@babel/plugin-proposal-decorators@7.24.7(@babel/core@7.25.2))(@types/eslint@8.56.10)(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4))(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint-plugin-ember@12.1.1(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(eslint-plugin-qunit@8.1.1(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)(typescript@5.5.4)
       '@tailwindcss/typography':
         specifier: 0.5.13
-        version: 0.5.13(tailwindcss@3.4.7)
+        version: 0.5.13(tailwindcss@3.4.8)
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -383,7 +383,7 @@ importers:
         version: 36.0.1(stylelint@16.8.1(typescript@5.5.4))
       stylelint-config-tailwindcss:
         specifier: 0.0.7
-        version: 0.0.7(stylelint@16.8.1(typescript@5.5.4))(tailwindcss@3.4.7)
+        version: 0.0.7(stylelint@16.8.1(typescript@5.5.4))(tailwindcss@3.4.8)
       stylelint-prettier:
         specifier: 5.0.2
         version: 5.0.2(prettier@3.3.3)(stylelint@16.8.1(typescript@5.5.4))
@@ -391,8 +391,8 @@ importers:
         specifier: 6.5.0
         version: 6.5.0(stylelint@16.8.1(typescript@5.5.4))
       tailwindcss:
-        specifier: 3.4.7
-        version: 3.4.7
+        specifier: 3.4.8
+        version: 3.4.8
       tracked-built-ins:
         specifier: 3.3.0
         version: 3.3.0
@@ -7517,8 +7517,8 @@ packages:
     resolution: {integrity: sha512-w2sfv80nrAh2VCbqR5AK27wswXhqcck2AhfnNW76beQXskGZ1V12GwS//yYVa3d3fcvAip2OUnbDAjW2k3v9fA==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@3.4.7:
-    resolution: {integrity: sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ==}
+  tailwindcss@3.4.8:
+    resolution: {integrity: sha512-GkP17r9GQkxgZ9FKHJQEnjJuKBcbFhMFzKu5slmN6NjlCuFnYJMQ8N4AZ6VrUyiRXlDtPKHkesuQ/MS913Nvdg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -8108,11 +8108,6 @@ packages:
   yam@1.0.0:
     resolution: {integrity: sha512-Hv9xxHtsJ9228wNhk03xnlDReUuWVvHwM4rIbjdAXYvHLs17xjuyF50N6XXFMN6N0omBaqgOok/MCK3At9fTAg==}
     engines: {node: ^4.5 || 6.* || >= 7.*}
-
-  yaml@2.4.5:
-    resolution: {integrity: sha512-aBx2bnqDzVOyNKfsysjA2ms5ZlnjSAW2eG3/L5G/CSujfjLJTJsEw1bGw8kCf04KodQWk1pxlGnZ56CRxiawmg==}
-    engines: {node: '>= 14'}
-    hasBin: true
 
   yaml@2.5.0:
     resolution: {integrity: sha512-2wWLbGbYDiSqqIKoPjar3MPgB94ErzCtrNE1FdqGuaO0pi2JGjmE8aW8TDZwzU7vuxcGRdL/4gPQwQ7hD5AMSw==}
@@ -10665,13 +10660,13 @@ snapshots:
       style-search: 0.1.0
       stylelint: 16.8.1(typescript@5.5.4)
 
-  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.7)':
+  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.8)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.7
+      tailwindcss: 3.4.8
 
   '@tootallnate/once@1.1.2': {}
 
@@ -16625,7 +16620,7 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.41):
     dependencies:
       lilconfig: 3.1.2
-      yaml: 2.4.5
+      yaml: 2.5.0
     optionalDependencies:
       postcss: 8.4.41
 
@@ -17679,10 +17674,10 @@ snapshots:
       stylelint: 16.8.1(typescript@5.5.4)
       stylelint-config-recommended: 14.0.1(stylelint@16.8.1(typescript@5.5.4))
 
-  stylelint-config-tailwindcss@0.0.7(stylelint@16.8.1(typescript@5.5.4))(tailwindcss@3.4.7):
+  stylelint-config-tailwindcss@0.0.7(stylelint@16.8.1(typescript@5.5.4))(tailwindcss@3.4.8):
     dependencies:
       stylelint: 16.8.1(typescript@5.5.4)
-      tailwindcss: 3.4.7
+      tailwindcss: 3.4.8
 
   stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.8.1(typescript@5.5.4)):
     dependencies:
@@ -17824,7 +17819,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@3.4.7:
+  tailwindcss@3.4.8:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -18571,8 +18566,6 @@ snapshots:
     dependencies:
       fs-extra: 4.0.3
       lodash.merge: 4.6.2
-
-  yaml@2.4.5: {}
 
   yaml@2.5.0: {}
 
