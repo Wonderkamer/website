@@ -89,7 +89,7 @@ importers:
         version: 4.2.0(@babel/core@7.25.2)(@babel/eslint-parser@7.25.1(@babel/core@7.25.2)(eslint@8.57.0))(@babel/plugin-proposal-decorators@7.24.7(@babel/core@7.25.2))(@types/eslint@8.56.12)(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4))(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint-plugin-ember@12.2.0(@babel/core@7.25.2)(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))(eslint-plugin-qunit@8.1.2(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.3)(typescript@5.5.4)
       '@tailwindcss/typography':
         specifier: 0.5.15
-        version: 0.5.15(tailwindcss@3.4.10)
+        version: 0.5.15(tailwindcss@3.4.11)
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -383,7 +383,7 @@ importers:
         version: 36.0.1(stylelint@16.9.0(typescript@5.5.4))
       stylelint-config-tailwindcss:
         specifier: 0.0.7
-        version: 0.0.7(stylelint@16.9.0(typescript@5.5.4))(tailwindcss@3.4.10)
+        version: 0.0.7(stylelint@16.9.0(typescript@5.5.4))(tailwindcss@3.4.11)
       stylelint-prettier:
         specifier: 5.0.2
         version: 5.0.2(prettier@3.3.3)(stylelint@16.9.0(typescript@5.5.4))
@@ -391,8 +391,8 @@ importers:
         specifier: 6.5.0
         version: 6.5.0(stylelint@16.9.0(typescript@5.5.4))
       tailwindcss:
-        specifier: 3.4.10
-        version: 3.4.10
+        specifier: 3.4.11
+        version: 3.4.11
       tracked-built-ins:
         specifier: 3.3.0
         version: 3.3.0
@@ -7566,8 +7566,8 @@ packages:
     resolution: {integrity: sha512-w2sfv80nrAh2VCbqR5AK27wswXhqcck2AhfnNW76beQXskGZ1V12GwS//yYVa3d3fcvAip2OUnbDAjW2k3v9fA==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@3.4.10:
-    resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
+  tailwindcss@3.4.11:
+    resolution: {integrity: sha512-qhEuBcLemjSJk5ajccN9xJFtM/h0AVCPaA6C92jNP+M2J8kX+eMJHI7R2HFKUvvAsMpcfLILMCFYSeDwpMmlUg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -10130,13 +10130,13 @@ snapshots:
       style-search: 0.1.0
       stylelint: 16.9.0(typescript@5.5.4)
 
-  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.10)':
+  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.11)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.10
+      tailwindcss: 3.4.11
 
   '@tootallnate/once@1.1.2': {}
 
@@ -17126,10 +17126,10 @@ snapshots:
       stylelint: 16.9.0(typescript@5.5.4)
       stylelint-config-recommended: 14.0.1(stylelint@16.9.0(typescript@5.5.4))
 
-  stylelint-config-tailwindcss@0.0.7(stylelint@16.9.0(typescript@5.5.4))(tailwindcss@3.4.10):
+  stylelint-config-tailwindcss@0.0.7(stylelint@16.9.0(typescript@5.5.4))(tailwindcss@3.4.11):
     dependencies:
       stylelint: 16.9.0(typescript@5.5.4)
-      tailwindcss: 3.4.10
+      tailwindcss: 3.4.11
 
   stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.9.0(typescript@5.5.4)):
     dependencies:
@@ -17271,7 +17271,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@3.4.10:
+  tailwindcss@3.4.11:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -17283,7 +17283,7 @@ snapshots:
       is-glob: 4.0.3
       jiti: 1.21.0
       lilconfig: 2.1.0
-      micromatch: 4.0.7
+      micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.1
@@ -17292,7 +17292,7 @@ snapshots:
       postcss-js: 4.0.1(postcss@8.4.45)
       postcss-load-config: 4.0.2(postcss@8.4.45)
       postcss-nested: 6.2.0(postcss@8.4.45)
-      postcss-selector-parser: 6.1.1
+      postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
     transitivePeerDependencies:
