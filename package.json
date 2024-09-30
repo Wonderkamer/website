@@ -56,7 +56,7 @@
     "@ember/test-helpers": "3.3.1",
     "@ember/render-modifiers": "2.1.0",
     "@embroider/compat": "3.6.1",
-    "@embroider/core": "3.4.15",
+    "@embroider/core": "3.4.16",
     "@embroider/webpack": "4.0.5",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
