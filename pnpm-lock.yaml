@@ -196,8 +196,8 @@ importers:
         specifier: 7.0.6
         version: 7.0.6(postcss@8.4.45)
       daisyui:
-        specifier: 4.12.10
-        version: 4.12.10(postcss@8.4.45)
+        specifier: 4.12.11
+        version: 4.12.11(postcss@8.4.45)
       ember-auto-import:
         specifier: 2.7.4
         version: 2.7.4(@glint/template@1.4.0)(webpack@5.94.0)
@@ -3518,8 +3518,8 @@ packages:
   dag-map@2.0.2:
     resolution: {integrity: sha512-xnsprIzYuDeiyu5zSKwilV/ajRHxnoMlAhEREfyfTgTSViMVY2fGP1ZcHJbtwup26oCkofySU/m6oKJ3HrkW7w==}
 
-  daisyui@4.12.10:
-    resolution: {integrity: sha512-jp1RAuzbHhGdXmn957Z2XsTZStXGHzFfF0FgIOZj3Wv9sH7OZgLfXTRZNfKVYxltGUOBsG1kbWAdF5SrqjebvA==}
+  daisyui@4.12.11:
+    resolution: {integrity: sha512-D9OJTlnU1ATiDsKkw5/TB0997Hm73zu9SFeUTthDtKd06OEJQlOLoYrGXlP2YhHZDW4VAcQnmhEphTgPFUYqSw==}
     engines: {node: '>=16.9.0'}
 
   dargs@7.0.0:
@@ -12409,7 +12409,7 @@ snapshots:
 
   dag-map@2.0.2: {}
 
-  daisyui@4.12.10(postcss@8.4.45):
+  daisyui@4.12.11(postcss@8.4.45):
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
