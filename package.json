@@ -102,7 +102,7 @@
     "concurrently": "8.2.2",
     "cssnano": "7.0.6",
     "daisyui": "4.12.11",
-    "ember-auto-import": "2.7.4",
+    "ember-auto-import": "2.8.1",
     "ember-changeset-validations": "4.1.1",
     "ember-changeset": "4.1.2",
     "ember-cli-app-version": "7.0.0",
