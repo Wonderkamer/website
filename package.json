@@ -114,7 +114,7 @@
     "ember-cli-sri": "2.1.1",
     "ember-cli-string-helpers": "6.1.0",
     "ember-cli-terser": "4.0.2",
-    "ember-cli": "5.11.0",
+    "ember-cli": "5.12.0",
     "ember-concurrency": "4.0.2",
     "ember-data": "5.3.8",
     "ember-g-recaptcha": "2.1.1",
