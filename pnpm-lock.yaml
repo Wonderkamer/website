@@ -196,8 +196,8 @@ importers:
         specifier: 7.0.6
         version: 7.0.6(postcss@8.4.47)
       daisyui:
-        specifier: 4.12.11
-        version: 4.12.11(postcss@8.4.47)
+        specifier: 4.12.12
+        version: 4.12.12(postcss@8.4.47)
       ember-auto-import:
         specifier: 2.8.1
         version: 2.8.1(@glint/template@1.4.0)(webpack@5.95.0)
@@ -3497,8 +3497,8 @@ packages:
   dag-map@2.0.2:
     resolution: {integrity: sha512-xnsprIzYuDeiyu5zSKwilV/ajRHxnoMlAhEREfyfTgTSViMVY2fGP1ZcHJbtwup26oCkofySU/m6oKJ3HrkW7w==}
 
-  daisyui@4.12.11:
-    resolution: {integrity: sha512-D9OJTlnU1ATiDsKkw5/TB0997Hm73zu9SFeUTthDtKd06OEJQlOLoYrGXlP2YhHZDW4VAcQnmhEphTgPFUYqSw==}
+  daisyui@4.12.12:
+    resolution: {integrity: sha512-xmCZ4piuWOjhNyB0VDKczB5vKFCipTA7UxaZNOzCz6cT8kvWgv5BDtUo+Hk9gOFufByOlfuBdzLpfhY5GsebTQ==}
     engines: {node: '>=16.9.0'}
 
   dargs@7.0.0:
@@ -8570,7 +8570,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.25.7
       chalk: 2.4.2
       js-tokens: 4.0.0
-      picocolors: 1.0.1
+      picocolors: 1.1.0
 
   '@babel/parser@7.25.7':
     dependencies:
@@ -12451,11 +12451,11 @@ snapshots:
 
   dag-map@2.0.2: {}
 
-  daisyui@4.12.11(postcss@8.4.47):
+  daisyui@4.12.12(postcss@8.4.47):
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
-      picocolors: 1.0.1
+      picocolors: 1.1.0
       postcss-js: 4.0.1(postcss@8.4.47)
     transitivePeerDependencies:
       - postcss
@@ -13845,7 +13845,7 @@ snapshots:
       debug: 4.3.6(supports-color@8.1.1)
       enhanced-resolve: 5.17.0
       eslint: 8.57.1
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-plugin-import@2.29.1)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.1)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.1)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.0
@@ -13857,7 +13857,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-plugin-import@2.29.1)(eslint@8.57.1))(eslint@8.57.1):
+  eslint-module-utils@2.8.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -13916,7 +13916,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-plugin-import@2.29.1)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.14.0
       is-glob: 4.0.3
