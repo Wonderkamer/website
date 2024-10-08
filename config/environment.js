@@ -29,7 +29,7 @@ module.exports = function (environment) {
     metricsAdapters: [
       {
         name: 'GoogleAnalyticsFour',
-        environments: ['testing', 'production'],
+        environments: ['development', 'testing', 'production'],
         config: {
           id: googleTrackingIdsPerEnvironment[environment] ?? googleTrackingIdsPerEnvironment['development'],
           options: {
