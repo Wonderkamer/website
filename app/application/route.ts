@@ -18,12 +18,14 @@ export default class ApplicationRoute extends Route {
   constructor(...args: any[]) {
     super(...args);
 
-    this.router.on('routeDidChange', () => {
-      const page = this.router.currentURL.split('?').shift();
-      const title = this.router.currentRouteName || 'unknown';
+    // the page_view event is automatically tracked by ga4
 
-      this.metrics.trackPage({ page, title });
-    });
+    // this.router.on('routeDidChange', () => {
+    //   const page = this.router.currentURL.split('?').shift();
+    //   const title = this.router.currentRouteName || 'unknown';
+
+    //   this.metrics.trackPage({ page, title });
+    // });
   }
 
   model(params: any) {
@@ -47,7 +49,7 @@ export default class ApplicationRoute extends Route {
       setTimeout(() => {
         delete this.sourceParam;
         this.router.transitionTo('home', { queryParams: { source: null } });
-      }, 1000);
+      }, 500);
     }
   }
 }
