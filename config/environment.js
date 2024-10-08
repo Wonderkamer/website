@@ -17,7 +17,7 @@ module.exports = function (environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
-      EXTEND_PROTOTYPES: true,
+      EXTEND_PROTOTYPES: false,
     },
 
     APP: {
@@ -29,7 +29,7 @@ module.exports = function (environment) {
     metricsAdapters: [
       {
         name: 'GoogleAnalyticsFour',
-        environments: ['testing', 'production'],
+        environments: ['development', 'testing', 'production'],
         config: {
           id: googleTrackingIdsPerEnvironment[environment] ?? googleTrackingIdsPerEnvironment['development'],
           options: {

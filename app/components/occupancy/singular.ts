@@ -11,13 +11,13 @@ export default class OccupancySingularComponent extends Component<Args> {
 
   get lastOccupancy() {
     const lastOccupancy = this.occupancies
-      .map((occupancy) => {
+      .map((occupancy): { on: Date; occupancy: number } => {
         return {
           on: new Date(occupancy.on),
           occupancy: occupancy.occupancy,
         };
       })
-      .sortBy('on')
+      .sort((a, b) => a.on.getTime() - b.on.getTime())
       .pop() ?? { on: new Date() };
 
     return { ...lastOccupancy, ago: -daysBetween(lastOccupancy.on), unit: 'day' };

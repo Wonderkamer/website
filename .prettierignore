@@ -12,3 +12,4 @@
 # ember-try
 /.node_modules.ember-try/
 pnpm-lock.yaml
+CHANGELOG.md

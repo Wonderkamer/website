@@ -34,12 +34,17 @@ export default class ApplicationRoute extends Route {
 
   afterModel() {
     if (this.sourceParam) {
+      // gtag('event', '<event_name>', {<event_parameters>});
+      // ‘event’: This is the command and will remain unchanged.
+      // ‘<event_name>’: The event name is a string and will be what you see in reports, so ensure it clearly and concisely identifies what the event is doing.
+      // {<event_parameters>}: The event parameters are extra information you want to collect related to the event, provided as a key-value pair. There are some automatically tracked parameters, like language, page_location, page_referrer, page_title and screen_resolution
+
+      this.metrics.trackEvent({
+        event: 'qr_code_hit',
+        source: this.sourceParam,
+      });
+
       setTimeout(() => {
-        this.metrics.trackEvent('GoogleAnalytics', {
-          category: 'landing',
-          action: 'qr-code',
-          label: this.sourceParam,
-        });
         delete this.sourceParam;
         this.router.transitionTo('home', { queryParams: { source: null } });
       }, 1000);

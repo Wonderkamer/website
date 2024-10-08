@@ -1,6 +1,7 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
 const isProductionLikeBuild = ['production', 'testing'].indexOf(EmberApp.env()) > -1;
 
 module.exports = async function (defaults) {
