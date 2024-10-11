@@ -157,7 +157,7 @@
     "prettier": "3.3.3",
     "qunit-dom": "3.2.1",
     "qunit": "2.22.0",
-    "sass": "1.79.4",
+    "sass": "1.79.5",
     "standard-version": "9.5.0",
     "stylelint-config-recommended": "14.0.1",
     "stylelint-config-sass-guidelines": "12.1.0",
