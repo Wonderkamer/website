@@ -149,7 +149,7 @@
     "markdown-it-deflist": "3.0.0",
     "markdown-it-task-lists": "2.1.1",
     "markdown-it": "14.1.0",
-    "npm-run-all2": "6.2.3",
+    "npm-run-all2": "6.2.4",
     "postcss-loader": "8.1.1",
     "postcss-scss": "4.0.9",
     "postcss": "8.4.47",
