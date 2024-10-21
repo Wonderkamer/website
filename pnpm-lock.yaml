@@ -181,8 +181,8 @@ importers:
         specifier: 7.18.0
         version: 7.18.0(eslint@8.57.1)(typescript@5.6.3)
       '@warp-drive/build-config':
-        specifier: 0.0.0-beta.6
-        version: 0.0.0-beta.6(@glint/template@1.5.0)
+        specifier: 0.0.0-beta.7
+        version: 0.0.0-beta.7(@glint/template@1.5.0)
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -2215,6 +2215,10 @@ packages:
   '@warp-drive/build-config@0.0.0-beta.6':
     resolution: {integrity: sha512-ANSjWRV5kSJyIIO+5rRv7/lqfwYazQ9wDpi4vr1rjGogsmVteRCnflV5qYqt9W9T4JXRjSimjSfKwCgEwl+jUA==}
     engines: {node: '>= 18.20.3'}
+
+  '@warp-drive/build-config@0.0.0-beta.7':
+    resolution: {integrity: sha512-EHBWwNTv62OA9C24VEEeU04A2JNkMYiJjkA/cXnuQeM0/HSYyki4vtHtCjFXGG397KUpS0bkFBzzfXivHof9yA==}
+    engines: {node: '>= 18.20.4'}
 
   '@warp-drive/core-types@0.0.0-beta.11':
     resolution: {integrity: sha512-GHQE+woaGdRDGj6VG3Qt0uGBNog1zq5XO2Ccce35cYPpM3FOCOdmqB4Wt0miD1bBdbAuWQZmmQOIYAMSMCOdZQ==}
@@ -7321,6 +7325,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.6.3:
+    resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
@@ -11025,6 +11034,17 @@ snapshots:
       babel-import-util: 2.1.1
       broccoli-funnel: 3.0.8
       semver: 7.6.2
+    transitivePeerDependencies:
+      - '@glint/template'
+      - supports-color
+
+  '@warp-drive/build-config@0.0.0-beta.7(@glint/template@1.5.0)':
+    dependencies:
+      '@embroider/addon-shim': 1.8.9
+      '@embroider/macros': 1.16.9(@glint/template@1.5.0)
+      babel-import-util: 2.1.1
+      broccoli-funnel: 3.0.8
+      semver: 7.6.3
     transitivePeerDependencies:
       - '@glint/template'
       - supports-color
@@ -17186,6 +17206,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.6.2: {}
+
+  semver@7.6.3: {}
 
   send@0.18.0:
     dependencies:
