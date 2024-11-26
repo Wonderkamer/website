@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/Wonderkamer/website/compare/1.5.4...1.5.5) (2024-11-26)
+
+
+### Miscellaneous
+
+* fix build name ([7327ecb](https://github.com/Wonderkamer/website/commits/7327ecb187690f1721ab2f5fd250ebb53db7f9f8))
+
+
+### Content Changes
+
+* edit members ([d4de127](https://github.com/Wonderkamer/website/commits/d4de12767bfaf54081c55cdb93d09eb33d1ad120))
+
 ### [1.5.4](https://github.com/Wonderkamer/website/compare/1.5.3...1.5.4) (2024-11-26)
 
 
