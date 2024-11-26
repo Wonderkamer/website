@@ -19,93 +19,66 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup NodeJS
-        uses: actions/setup-node@v4
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
         with:
-          node-version: 20
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        id: pnpm-install
-        with:
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
+      - name: Build and Push Docker Image
         run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+          LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          docker build -f docker/Dockerfile \
+                       -t ghcr.io/${LOWERCASE_OWNER}/website:develop .
+          docker push ghcr.io/${LOWERCASE_OWNER}/website:develop
 
-      - name: Setup pnpm cache
-        uses: actions/cache@v4
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Installing Dependencies
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          pnpm install --frozen-lockfile --ignore-scripts
-
-      - name: Build
-        run: |
-          pnpm run build-dev
-
-      - name: Copy development htaccess
-        uses: canastro/copy-file-action@master
-        with:
-          source: 'public/htaccess-development.txt'
-          target: 'dist/.htaccess'
-
-      - name: Install dotenv file
-        run: |
-          echo "GOOGLE_RECAPTCHA_SECRET=\"${{ secrets.GOOGLE_RECAPTCHA_SECRET }}\"" > dist/.env
-          echo "SMTP_PASSWORD=\"${{ secrets.SMTP_PASSWORD }}\"" >> dist/.env
-          echo "CONTACT_FORM_RECIPIENT=\"hallo@wonderkamer.com\"" >> dist/.env
-
-      - name: Install PHP dependencies (into /dist/vendor)
-        uses: mileschou/composer-action/8.2/install@master
-        with:
-          args: 'install --working-dir=./dist --prefer-dist --no-interaction --no-progress'
-
-      - name: Archive distribution directory
-        run: tar -cvf dist.tar dist
-
-      - name: Persist distribution directory (/dist as 'build-dev')
-        uses: actions/upload-artifact@v4.4.1
-        with:
-          name: build-${{ github.sha }}
-          path: dist.tar
-          retention-days: 1
-
-  deploy-to-develop:
+  deploy:
     runs-on: ubuntu-latest
 
     needs: build
 
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Retrieve distribution
-        uses: actions/download-artifact@v4.1.8
-        with:
-          name: build-${{ github.sha }}
-          path: .
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H bb1.bushbaby.dev >> ~/.ssh/known_hosts
+          # eval $(ssh-agent -s)
+          # ssh-add ~/.ssh/id_ed25519
 
-      - name: Unpack distribution
-        run: tar -xvf dist.tar
-
-      - name: Deploy
-        uses: contention/rsync-deployments@v2.0.0
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
         with:
-          flags: -avzr --delete-after
-          excludes:
-          user: wonderkamercom
-          host: wondey.ssh.transip.me
-          localpath: /dist/
-          remotepath: /data/sites/web/wonderkamercom/subdomains/dev
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Docker Context
+        run: |
+          # Check if the context exists
+          if ! docker context inspect bushbaby >/dev/null 2>&1; then
+            docker context create bushbaby --docker "host=ssh://root@bb1.bushbaby.dev"
+          fi
+          docker context use bushbaby
+
+      - name: Deploy to Docker Swarm
+        env:
+          APP_VERSION: 'develop'
+          GOOGLE_RECAPTCHA_SECRET: ${{ secrets.GOOGLE_RECAPTCHA_SECRET }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          CONTACT_FORM_RECIPIENT: hallo@wonderkamer.com
+        run: |
+          docker stack deploy \
+            --detach=true \
+            --compose-file docker/docker-compose-development.yml \
+            --with-registry-auth \
+            wonderkamer-dev
+
+      - name: Clean Up Private Key
+        if: always()
+        run: rm -f ~/.ssh/id_ed25519

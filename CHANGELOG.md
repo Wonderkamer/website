@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.3](https://github.com/Wonderkamer/website/compare/1.5.2...1.5.3) (2024-10-08)
+
+
+### Miscellaneous
+
+* **config:** do not track page_view events as ga4 does that automaticly ([56c3193](https://github.com/Wonderkamer/website/commits/56c3193a5811d8823e46c294f128ad87053b9c03))
+
 ### [1.5.2](https://github.com/Wonderkamer/website/compare/1.5.1...1.5.2) (2024-10-08)
 
 
