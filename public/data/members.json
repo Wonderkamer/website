@@ -230,7 +230,7 @@
       "attributes": {
         "title": "Ares Driessen",
         "slug": "ares-driessen",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
