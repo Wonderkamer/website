@@ -30,8 +30,8 @@ jobs:
         run: |
           LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           docker build -f docker/Dockerfile \
-                       -t ghcr.io/${LOWERCASE_OWNER}/website:develop .
-          docker push ghcr.io/${LOWERCASE_OWNER}/website:develop
+                       -t ghcr.io/${LOWERCASE_OWNER}/website:${{ github.ref_name }} .
+          docker push ghcr.io/${LOWERCASE_OWNER}/website:${{ github.ref_name }}
 
   deploy:
     runs-on: ubuntu-latest
@@ -68,13 +68,13 @@ jobs:
 
       - name: Deploy to Docker Swarm
         env:
-          APP_VERSION: 'develop'
+          APP_VERSION: ${{ github.ref_name }}
           GOOGLE_RECAPTCHA_SECRET: ${{ secrets.GOOGLE_RECAPTCHA_SECRET }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           CONTACT_FORM_RECIPIENT: hallo@wonderkamer.com
         run: |
           LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          docker pull ghcr.io/${LOWERCASE_OWNER}/website:develop
+          docker pull ghcr.io/${LOWERCASE_OWNER}/website:${{ github.ref_name }}
           docker stack deploy \
             --detach=true \
             --compose-file docker/docker-compose-development.yml \
