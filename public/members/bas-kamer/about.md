@@ -19,4 +19,4 @@ Samen met Tom en Moniek zit ik in het bestuur van stichting Wonderkamer.
 
 [bushbaby.nl](https://bushbaby.nl) • [baskamer.nl](https://baskamer.nl)
 
-[github](https://github.com/basz) • [twitter](https://twitter.com/baskamer) • [linked-in](https://www.linkedin.com/in/baskamer/)
+[github](https://github.com/basz) • [bluesky](https://bsky.app/profile/baskamer.bsky.social) • [linked-in](https://www.linkedin.com/in/baskamer/)

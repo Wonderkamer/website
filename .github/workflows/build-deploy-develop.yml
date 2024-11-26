@@ -73,6 +73,8 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           CONTACT_FORM_RECIPIENT: hallo@wonderkamer.com
         run: |
+          LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          docker pull ghcr.io/${LOWERCASE_OWNER}/website:develop
           docker stack deploy \
             --detach=true \
             --compose-file docker/docker-compose-development.yml \
