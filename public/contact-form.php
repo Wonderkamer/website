@@ -50,7 +50,7 @@ $transport->setOptions(new SmtpOptions([
 $data = json_decode(file_get_contents('php://input'), true);
 
 $reCaptchaResponse = (new ReCaptcha($_ENV['GOOGLE_RECAPTCHA_SECRET']))
-    ->setExpectedHostname($_SERVER['VIRTUAL_HOST'])
+    ->setExpectedHostname($_SERVER['SERVER_NAME'])
     ->verify($data['reCaptchaToken'], $_SERVER['REMOTE_ADDR']);
 
 if (! $reCaptchaResponse->isSuccess()) {
