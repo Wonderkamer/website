@@ -11,9 +11,9 @@ require_once('vendor/autoload.php');
 (function (): void {
     try {
         $env = Dotenv::createImmutable( __DIR__);
-        $env->load();
+        $env->safeLoad();
 
-    } catch (\RuntimeException $e) {
+    } catch (\Exception $e) {
         $responseJson = [];
         $responseJson['error'] = 'Er kon helaas geen e-mail verzonden worden';
         $responseJson['detail'] = $e->getMessage();
@@ -50,7 +50,7 @@ $transport->setOptions(new SmtpOptions([
 $data = json_decode(file_get_contents('php://input'), true);
 
 $reCaptchaResponse = (new ReCaptcha($_ENV['GOOGLE_RECAPTCHA_SECRET']))
-    ->setExpectedHostname($_SERVER['SERVER_NAME'])
+    ->setExpectedHostname($_ENV['VIRTUAL_HOST'])
     ->verify($data['reCaptchaToken'], $_SERVER['REMOTE_ADDR']);
 
 if (! $reCaptchaResponse->isSuccess()) {
