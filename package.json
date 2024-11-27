@@ -28,7 +28,7 @@
     "release:major": "standard-version --tag-prefix=\"\" --commit-all --release-as major",
     "release:minor": "standard-version --tag-prefix=\"\" --commit-all --release-as minor",
     "release:patch": "standard-version --tag-prefix=\"\" --commit-all --release-as patch",
-    "release": "standard-version --commit-all --tag-prefix=\"\"",
+    "release": "standard-version --commit-all --tag-prefix=\"v\"",
     "start": "ember serve",
     "test:ember": "ember test",
     "test": "npm-run-all test:*",
