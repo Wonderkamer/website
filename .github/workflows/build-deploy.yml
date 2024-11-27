@@ -1,0 +1,143 @@
+name: Build & Deploy
+
+on:
+  workflow_dispatch: # -> a manual trigger. will be deployed to wonderkamer.com
+  push:
+    tags:
+      - 'v*' # -> will be deployed to wonderkamer.com and dev.wonderkamer.com
+    branches:
+      - develop # -> will be deployed to dev.wonderkamer.com
+
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-variant:
+    runs-on: ubuntu-latest
+    outputs:
+      deploy_type: ${{ steps.set-deploy-type.outputs.deploy_type }}
+    steps:
+      - name: Determine Trigger Reason
+        id: set-deploy-type
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "deploy_type=production" >> $GITHUB_OUTPUT
+          elif [[ "${{ github.ref }}" == refs/tags/v* ]]; then
+            echo "deploy_type=production" >> $GITHUB_OUTPUT
+          elif [[ "${{ github.ref }}" == refs/heads/develop ]]; then
+            echo "deploy_type=staging" >> $GITHUB_OUTPUT
+          else
+            echo "Unknown trigger"
+            exit 1
+          fi
+
+  get-version:
+    runs-on: ubuntu-latest
+    outputs:
+      semver_version: ${{ steps.git-describe-semver.outputs.version }}
+    steps:
+      - name: Checkout full Git history
+        uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+          fetch-depth: 0 # Fetch all history and tags
+
+      - name: Get Git Semver Tag
+        id: git-describe-semver
+        uses: choffmeister/git-describe-semver@main
+        with:
+          version: latest
+          dir: .
+          fallback: v0.0.0
+          drop-prefix: true
+
+  build:
+    runs-on: ubuntu-latest
+    needs: get-version
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        env:
+          SEMVER_TAG: ${{ needs.get-version.outputs.semver_version }}
+        run: |
+          LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          docker build -f docker/Dockerfile \
+                       -t ghcr.io/${LOWERCASE_OWNER}/website:${{ needs.get-version.outputs.semver_version }} .
+          docker push ghcr.io/${LOWERCASE_OWNER}/website:${{ needs.get-version.outputs.semver_version }}
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    needs: [get-version, deploy-variant, build]
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H bb1.bushbaby.dev >> ~/.ssh/known_hosts
+          # eval $(ssh-agent -s)
+          # ssh-add ~/.ssh/id_ed25519
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Docker Context
+        run: |
+          # Check if the context exists
+          if ! docker context inspect bushbaby >/dev/null 2>&1; then
+            docker context create bushbaby --docker "host=ssh://root@bb1.bushbaby.dev"
+          fi
+          docker context use bushbaby
+
+      - name: Deploy to Docker Swarm
+        env:
+          SEMVER_TAG: ${{ needs.get-version.outputs.semver_version }}
+          GOOGLE_RECAPTCHA_SECRET: ${{ secrets.GOOGLE_RECAPTCHA_SECRET }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          CONTACT_FORM_RECIPIENT: hallo@wonderkamer.com
+        run: |
+          LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          docker pull ghcr.io/${LOWERCASE_OWNER}/website:${{ needs.get-version.outputs.semver_version }}
+
+          if [[ "${{ needs.deploy-variant.outputs.deploy_type }}" == "production" ]]; then
+            echo "Deploying to wonderkamer.com..."
+
+            docker stack deploy \
+              --detach=true \
+              --compose-file docker/docker-compose-production.yml \
+              --with-registry-auth \
+              wonderkamer-production
+          elif [[ "${{ needs.deploy-variant.outputs.deploy_type }}" == "staging" ]]; then
+            echo "Deploying to dev.wonderkamer.com..."
+
+            docker stack deploy \
+              --detach=true \
+              --compose-file docker/docker-compose-development.yml \
+              --with-registry-auth \
+              wonderkamer-dev
+
+          else
+            echo "Skipping deployment."
+          fi
+      - name: Clean Up Private Key
+        if: always()
+        run: rm -f ~/.ssh/id_ed25519

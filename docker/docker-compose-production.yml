@@ -6,10 +6,10 @@ networks:
 
 services:
   www:
-    image: ghcr.io/wonderkamer/website:${APP_VERSION}
+    image: ghcr.io/wonderkamer/website:${SEMVER_TAG}
     container_name: wonderkamer-production
     environment:
-      APP_VERSION: '${APP_VERSION}'
+      SEMVER_TAG: '${SEMVER_TAG}'
       VIRTUAL_HOST: 'wonderkamer.com,www.wonderkamer.com'
       VIRTUAL_PORT: 80
       LETSENCRYPT_HOST: 'wonderkamer.com,www.wonderkamer.com'

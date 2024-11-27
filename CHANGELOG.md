@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.6](https://github.com/Wonderkamer/website/compare/1.5.5...1.5.6) (2024-11-26)
+
+
+### Bug Fixes
+
+* contact ([0715df4](https://github.com/Wonderkamer/website/commits/0715df420d686d4cb712dbccad9206650c92edb7))
+* contact form ([a0ad8a2](https://github.com/Wonderkamer/website/commits/a0ad8a2a19d3e60c6b62de088827314ac20d7ed7))
+
+
+### Miscellaneous
+
+* ci build ([5e1d521](https://github.com/Wonderkamer/website/commits/5e1d521c62d17994964d6a3a80f41a2326dfba81))
+* **deps:** update dependency npm-run-all2 to v7 ([7018483](https://github.com/Wonderkamer/website/commits/70184835cc3e2cd8e9d2b9d27e84eb2617b0c559))
+* info ([c02f23e](https://github.com/Wonderkamer/website/commits/c02f23ee0283e4e9029c3aeebae02a6ad93d233a))
+* needed ([422bd59](https://github.com/Wonderkamer/website/commits/422bd59f22b8015d2dbbdc6d9641229f9c1d32f9))
+* reconfig ngix ([9a55fd9](https://github.com/Wonderkamer/website/commits/9a55fd9341d59580d9fa9d685bd1b1756c34174f))
+* reconfig ngix ([a966e87](https://github.com/Wonderkamer/website/commits/a966e87e7c8ae678030efe6a02d8da1fc6afac8c))
+* reconfig ngix/deploy ([eaa1b78](https://github.com/Wonderkamer/website/commits/eaa1b787798a18ea6a37baa822352e953814091b))
+* remove ([1ba67d1](https://github.com/Wonderkamer/website/commits/1ba67d10fe7c2a057965f4f27479773f9ebefb09))
+* typo ([1608edc](https://github.com/Wonderkamer/website/commits/1608edcef77e8e86e6d511e19a49d88de8088382))
+
 ### [1.5.5](https://github.com/Wonderkamer/website/compare/1.5.4...1.5.5) (2024-11-26)
 
 
