@@ -1,8 +1,22 @@
-**/node_modules
-/public/vendor
-**/dist
-**/.git
-**/.DS_Store
+# Environment and config files
 .dockerignore
 .env
+.git/
+.github/
 .gitignore
+.husky/
+.renovate.json
+.vscode/
+
+# System-specific files
+**/.DS_Store
+
+# Build artifacts and caches
+**/node_modules
+.turbo/
+
+# Exclude dist directories not needed in production
+**/dist
+
+# Docker-specific files
+/docker/

@@ -1,66 +1,100 @@
-# Stage 1: Node.js Build
-FROM node:20-alpine AS node-builder
+# Stage 0: Node.js install the node dependencies
+FROM node:20-alpine AS base-installer
 
-# Install pnpm
-RUN npm install -g pnpm
+# Installs pnpm
+RUN corepack enable
 
 # Set working directory
 WORKDIR /app
 
-# Copy application code
-COPY package.json pnpm-lock.yaml .npmrc ./
+# Stage 1: Node.js install the node dependencies
+FROM base-installer AS node-installer
+
+COPY apps/frontend/package.json                 /app/apps/frontend/
+COPY apps/backend/package.json                  /app/apps/backend/
+COPY apps/email-templates/package.json          /app/apps/email-templates/
+COPY packages/@wonderkamer-common/package.json  /app/packages/@wonderkamer-common/
+COPY packages/tsconfig/package.json             /app/packages/tsconfig/
+COPY package.json                               /app/
+COPY pnpm-workspace.yaml                        /app/
+COPY pnpm-lock.yaml                             /app/
+COPY .npmrc                                     /app/
+COPY turbo.json                                 /app/
 
 # Install Node.js dependencies
-RUN pnpm install --frozen-lockfile --ignore-scripts
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --ignore-scripts
 
-COPY app/ /app/app/
-COPY public/ /app/public/
-COPY config/ /app/config/
-COPY tests/ /app/tests/
-COPY translations/ /app/translations/
-COPY types/ /app/types/
-COPY vendor/ /app/vendor/
-COPY .ember-cli .eslintrc.cjs tsconfig.json ember-cli-build.js /app/
+#
+# Stage 2.1: Building the backend
+#
+FROM node-installer AS backend-builder
 
-# Build the frontend
-RUN pnpm run build
+# Copy installed from node-installer
+COPY apps/backend/ /app/apps/backend/
+COPY packages/ /app/packages/
 
+COPY --from=node-installer /app /app/
 
-# Stage 2: PHP Build
-FROM composer:2 AS php-builder
+# Build the all packages
+RUN pnpm run build:backend
+
+#
+# Stage 2.2: Building the frontend
+#
+FROM node-installer AS frontend-builder
+
+COPY apps/frontend/ /app/apps/frontend/
+COPY packages/ /app/packages/
+COPY --from=node-installer /app /app/
+
+# Build the all packages
+RUN pnpm run build:frontend
+
+#
+# Stage 2.3: Building the email templates
+#
+FROM node-installer AS email-template-builder
+
+COPY --from=node-installer /app /app/
+COPY apps/email-templates/ /app/apps/email-templates/
+
+# Build the all packages
+RUN pnpm run build:email-templates
+
+#
+# Stage 3: Assemble the runtime
+#
+FROM base-installer AS node-runtime
+
+# Copy pnpm stuff for to build the backend in production
+COPY apps/backend/package.json /app/apps/backend/
+COPY packages/@wonderkamer-common/package.json /app/packages/@wonderkamer-common/
+COPY package.json /app/
+COPY pnpm-workspace.yaml /app/
+COPY pnpm-lock.yaml /app/
+COPY .npmrc /app/
+
+# Copy dist/** files from the builders
+COPY --from=frontend-builder /app/apps/frontend/dist/ /app/apps/frontend/dist/
+COPY --from=backend-builder /app/apps/backend/dist/ /app/apps/backend/dist/
+COPY --from=backend-builder /app/packages/@wonderkamer-common/dist/ /app/packages/@wonderkamer-common/dist/
+COPY --from=email-template-builder /app/apps/email-templates/dist/ /app/apps/email-templates/dist/
+
+# Install pnpm
+RUN corepack prepare
+
+# Install Node.js dependencies for production
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --filter=@wonderkamer/backend --frozen-lockfile --ignore-scripts --prod
 
 # Set working directory
-WORKDIR /app
-
-# Copy application code
-# COPY ./ /app
-
-# Copy built frontend files from the Node.js stage
-COPY --from=node-builder /app/dist /app/dist
-
-# Install PHP dependencies
-RUN composer install --working-dir=/app/dist --prefer-dist --no-dev --no-interaction --no-progress
-
-
-# Stage 3: Final Runtime Image
-FROM php:8.2-fpm-alpine
-
-# Install necessary tools
-RUN apk add --no-cache nginx
-
-# Set working directory
-WORKDIR /app
-
-# Copy built application from PHP Builder
-COPY --from=php-builder /app/dist /app
-
-# Configure Nginx
-COPY docker/nginx/default.conf /etc/nginx/http.d/default.conf
+WORKDIR /app/apps/backend
 
 # Expose the necessary ports
-EXPOSE 80
+EXPOSE 3000
 
-LABEL org.opencontainers.image.source https://github.com/wonderkamer/website
+LABEL org.opencontainers.image.source=https://github.com/wonderkamer/website
 
-# Start PHP and Nginx
-CMD ["sh", "-c", "php-fpm & nginx -g 'daemon off;'"]
+ENV NODE_ENV=production
+
+# Start the Nest.js server
+CMD ["sh", "-c", "/usr/local/bin/pnpm run start:docker"]

@@ -1,0 +1,34 @@
+/* Your custom CSS resets for email */
+@import "resets";
+
+/* Tailwind CSS components */
+@import "tailwindcss/components";
+
+/**
+ * @import here any custom CSS components - that is, CSS that
+ * you'd want loaded before the Tailwind utilities, so the
+ * utilities can still override them.
+*/
+
+/* Tailwind CSS utility classes */
+@import "tailwindcss/utilities";
+
+/* Your custom utility classes */
+@import "utilities";
+
+:root {
+  --bs-primary-rgb: 255, 230, 7;
+  --bs-secondary-rgb: 218, 229, 236;
+}
+
+.bg-primary {
+  background-color: rgb(var(--bs-primary-rgb));
+}
+
+.bg-secondary {
+  background-color: rgb(var(--bs-secondary-rgb));
+}
+
+.text-primary {
+  color: rgb(var(--bs-primary-rgb));
+}

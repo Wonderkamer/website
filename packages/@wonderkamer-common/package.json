@@ -1,0 +1,104 @@
+{
+  "name": "@wonderkamer/common",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./data-structure/fifo-list": "./dist/data-structure/fifo-list.js",
+    "./profiles": "./dist/profiles/index.js",
+    "./profiles/machine-profile-key": "./dist/profiles/machine-profile-key.js",
+    "./profiles/mcu-profile-key": "./dist/profiles/mcu-profile-key.js",
+    "./profiles/screen-profile-key": "./dist/profiles/screen-profile-key.js",
+    "./settings": "./dist/settings/index.js",
+    "./settings/definitions/dashboard-settings": "./dist/settings/definitions/dashboard-settings.js",
+    "./settings/definitions/organisation-preferences": "./dist/settings/definitions/organisation-preferences.js",
+    "./settings/definitions/user-preferences": "./dist/settings/definitions/user-preferences.js",
+    "./settings/enums/dashboard-setting-key": "./dist/settings/enums/dashboard-setting-key.js",
+    "./settings/enums/organisation-preference-key": "./dist/settings/enums/organisation-preference-key.js",
+    "./settings/enums/user-preference-key": "./dist/settings/enums/user-preference-key.js",
+    "./settings/types": "./dist/settings/types.js",
+    "./state": "./dist/state/index.js",
+    "./state/state": "./dist/state/state.js",
+    "./util/change-case": "./dist/util/change-case.js",
+    "./util/deep-merge": "./dist/util/deep-merge.js",
+    "./util/diff-object": "./dist/util/diff-object.js",
+    "./util/flatten-object-for-query": "./dist/util/flatten-object-for-query.js",
+    "./util/order-object-keys": "./dist/util/order-object-keys.js",
+    "./util/settle": "./dist/util/settle.js",
+    "./util/to-boolean": "./dist/util/to-boolean.js",
+    "./value-object": "./dist/value-object.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:dev": "jest --watch",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "build": "npm-run-all build:*",
+    "build:exports": "node scripts/generate-exports.js",
+    "build:tsc": "tsc",
+    "start:dev": "concurrently --kill-others  'tsc --watch --preserveWatchOutput'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glimmer/tracking": "1.1.2",
+    "axios": "1.7.7",
+    "balena-sdk": "20.3.2",
+    "eventemitter3": "5.0.1",
+    "rpc-websockets": "9.0.4",
+    "three": "0.162.0"
+  },
+  "devDependencies": {
+    "@golevelup/ts-jest": "0.5.6",
+    "@jest/globals": "29.7.0",
+    "@nullvoxpopuli/eslint-configs": "4.2.0",
+    "@types/jest": "29.5.14",
+    "@types/node": "20.17.3",
+    "@types/three": "0.162.0",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "eslint": "8.57.1",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "jest": "29.7.0",
+    "npm-run-all2": "7.0.1",
+    "prettier": "3.3.3",
+    "ts-jest": "29.2.5",
+    "ts-loader": "9.5.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.6.3",
+    "webpack": "5.95.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.ts"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  },
+  "turbo": {
+    "tasks": {
+      "build": {
+        "outputs": [
+          "dist/**"
+        ]
+      }
+    }
+  }
+}

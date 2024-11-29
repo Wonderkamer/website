@@ -1,0 +1,16 @@
+---
+title: "Invitation to a team on wonderkamer.com"
+preheader: "You were invited to join a team on wonderkamer.com"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <p>Hello @{{nameOrEmail}},</p>
+    <p class="text-2xl sm:leading-8 font-semibold m-0 mb-6">Team invitation</p>
+    <p class="m-0 mb-6">
+      You've been invited by @{{invitingParty}} to join the @{{invitedTo}} team
+      on wonderkamer.com.
+    </p>
+    <x-button href="@{{url}}">Accept invitation</x-button>
+  </block>
+</extends>

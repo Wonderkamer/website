@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # -> a manual trigger. will be deployed to wonderkamer.com
   push:
     tags:
-      - 'v*' # -> will be deployed to wonderkamer.com and dev.wonderkamer.com
+      - "v*" # -> will be deployed to wonderkamer.com and dev.wonderkamer.com
     branches:
       - develop # -> will be deployed to dev.wonderkamer.com
 
@@ -112,8 +112,10 @@ jobs:
         env:
           SEMVER_TAG: ${{ needs.get-version.outputs.semver_version }}
           GOOGLE_RECAPTCHA_SECRET: ${{ secrets.GOOGLE_RECAPTCHA_SECRET }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          CONTACT_FORM_RECIPIENT: hallo@wonderkamer.com
+          SMTP_PASS: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_USER: hallo@wonderkamer.com
+          SMTP_HOST: smtp.transip.email
+          SMTP_PORT: 465
         run: |
           LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           docker pull ghcr.io/${LOWERCASE_OWNER}/website:${{ needs.get-version.outputs.semver_version }}
