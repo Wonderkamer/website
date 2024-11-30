@@ -16,7 +16,7 @@ services:
 
       SEMVER_TAG: "${SEMVER_TAG}"
       GOOGLE_RECAPTCHA_SECRET: "${GOOGLE_RECAPTCHA_SECRET}"
-      SERVER_PUBLIC_URL: "wonderkamer.com"
+      SERVER_PUBLIC_URL: "https://wonderkamer.com"
       REDIS_HOST: "redis"
       SMTP_PASS: "${SMTP_PASS}"
       SMTP_USER: "${SMTP_USER}"
@@ -24,6 +24,7 @@ services:
       SMTP_PORT: "${SMTP_PORT}"
     networks:
       - proxy-tier
+      - stack
     deploy:
       replicas: 2
       resources:
