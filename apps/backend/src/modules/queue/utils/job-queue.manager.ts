@@ -9,6 +9,7 @@ export default class JobQueueManager {
 
   static getQueue<T>(name: string): Queue<T> {
     const queue = this.queues.get(name);
+
     if (!queue) {
       throw new Error(`Queue ${name} not found`);
     }
