@@ -50,8 +50,7 @@
     "axios": "1.7.7",
     "balena-sdk": "20.3.2",
     "eventemitter3": "5.0.1",
-    "rpc-websockets": "9.0.4",
-    "three": "0.162.0"
+    "rpc-websockets": "9.0.4"
   },
   "devDependencies": {
     "@golevelup/ts-jest": "0.5.6",
@@ -59,7 +58,6 @@
     "@nullvoxpopuli/eslint-configs": "4.2.0",
     "@types/jest": "29.5.14",
     "@types/node": "20.17.3",
-    "@types/three": "0.162.0",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.1",
