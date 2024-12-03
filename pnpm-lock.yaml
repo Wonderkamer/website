@@ -400,8 +400,8 @@ importers:
         specifier: 3.0.2
         version: 3.0.2(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
       tailwindcss-mso:
-        specifier: 1.4.3
-        version: 1.4.3(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
+        specifier: 1.4.4
+        version: 1.4.4(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
     devDependencies:
       '@types/node':
         specifier: 20.17.9
@@ -11424,8 +11424,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.4.0'
 
-  tailwindcss-mso@1.4.3:
-    resolution: {integrity: sha512-8YfZ4xnIComDrhoSr8FUwm7EGz1FkxsZy07Fs4Jm/JxHrFiubdiZjyxLuHMc3S8o02+U4fjRGHPOzoVXRus10A==}
+  tailwindcss-mso@1.4.4:
+    resolution: {integrity: sha512-bSA7vLRhkaHjFhKkKNgr1RyOn2YhaEJ2hQQOCV7MgRtQOvYkqfAYMTSoZ2Z1YgCvOD02W4Tazsz+ym6FiPFIjQ==}
     peerDependencies:
       tailwindcss: '>=3.4.0'
 
@@ -26455,7 +26455,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
 
-  tailwindcss-mso@1.4.3(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))):
+  tailwindcss-mso@1.4.4(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))):
     dependencies:
       tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
 
