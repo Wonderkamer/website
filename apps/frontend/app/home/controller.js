@@ -3,6 +3,7 @@ import Controller from '@ember/controller';
 import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
 
+import { task, timeout } from 'ember-concurrency';
 import { use } from 'ember-resources';
 import { RemoteData } from 'reactiveweb/remote-data';
 
@@ -13,6 +14,19 @@ export default class HomeController extends Controller {
 
   @tracked activeMember;
   @use membersRemoteData = RemoteData(() => `/data/members.json`);
+
+  showExtendedVersionTask = task(async () => {
+    await timeout(8000);
+  });
+
+  @action
+  onClick() {
+    if (this.showExtendedVersionTask.isIdle) {
+      this.showExtendedVersionTask.perform();
+    } else {
+      this.showExtendedVersionTask.cancelAll();
+    }
+  }
 
   get activeMembers() {
     if (this.membersRemoteData.isLoading) {
