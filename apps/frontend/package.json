@@ -171,7 +171,7 @@
     "tracked-built-ins": "3.3.0",
     "typescript": "5.6.3",
     "url-loader": "4.1.1",
-    "webpack": "5.95.0"
+    "webpack": "5.96.1"
   },
   "engines": {
     "node": ">= 20.*"
