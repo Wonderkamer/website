@@ -456,8 +456,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0
       '@embroider/compat':
-        specifier: 3.6.5
-        version: 3.6.5(@embroider/core@3.4.19(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10)
+        specifier: 3.7.0
+        version: 3.7.0(@embroider/core@3.4.19(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@embroider/core':
         specifier: 3.4.19
         version: 3.4.19(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -2094,8 +2094,8 @@ packages:
     peerDependencies:
       '@embroider/core': ^3.4.0
 
-  '@embroider/compat@3.6.5':
-    resolution: {integrity: sha512-h4ZeE28IXMU3JjVZuO3D0ZhKDz0TZxNjkrSWw6VZ3YEyX5fMcIxJTYf6sS362STsTjvIaPHZxG2t3CXmh7ct6Q==}
+  '@embroider/compat@3.7.0':
+    resolution: {integrity: sha512-hv9BNWB278NgxGkpLaKT6VSaGckTX17EiddQpNGlqFEPw4jNuqpEeUGUgFBrSUBsO64wOGrY0U8pbRJsvGGE+Q==}
     engines: {node: 12.* || 14.* || >= 16}
     hasBin: true
     peerDependencies:
@@ -14247,7 +14247,7 @@ snapshots:
       - supports-color
       - webpack
 
-  '@embroider/compat@3.6.5(@embroider/core@3.4.19(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10)':
+  '@embroider/compat@3.7.0(@embroider/core@3.4.19(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@glint/template@1.5.0)(bufferutil@4.0.8)(utf-8-validate@5.0.10)':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@babel/core': 7.26.0(supports-color@8.1.1)
