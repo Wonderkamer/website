@@ -48,7 +48,6 @@
   "dependencies": {
     "@glimmer/tracking": "1.1.2",
     "axios": "1.7.7",
-    "balena-sdk": "20.3.2",
     "eventemitter3": "5.0.1",
     "rpc-websockets": "9.0.4"
   },
