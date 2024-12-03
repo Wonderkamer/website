@@ -1,17 +1,18 @@
 import { Queue } from 'bullmq';
 
 export default class JobQueueManager {
-  private static queues = new Map<string, Queue>();
+  private static queues = new Map<string, Queue<any>>(); // Allow any type of Queue here
 
-  static addQueue(name: string, queue: Queue) {
+  static addQueue(name: string, queue: Queue<any>) {
     this.queues.set(name, queue);
   }
 
   static getQueue<T>(name: string): Queue<T> {
-    if (!this.queues.has(name)) {
+    const queue = this.queues.get(name);
+    if (!queue) {
       throw new Error(`Queue ${name} not found`);
     }
 
-    return this.queues.get(name) as Queue;
+    return queue as Queue<T>;
   }
 }
