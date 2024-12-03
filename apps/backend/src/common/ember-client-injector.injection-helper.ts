@@ -6,6 +6,7 @@ import { HTMLElement } from 'node-html-parser';
 import { EnvConfig } from '../config/environment.config';
 import { FeaturesConfig } from '../config/features.config';
 import { ServerConfig } from '../config/server.config';
+import { RecaptchaConfig } from '../config/recaptcha.config';
 
 type EmberAppConfig = {
   [key: string]: any;
@@ -35,24 +36,39 @@ export class EmberClientConfigInjector extends AbstractInjectionHelper {
     }
 
     let clientConfig = JSON.parse(decodeURIComponent(content)) as Partial<EmberAppConfig>;
-
+    console.log(clientConfig);
     const configMap: any = this.configMap;
 
     for (const key in configMap) {
       clientConfig = replaceValues(clientConfig, configMap, key);
     }
-
     clientConfig['environment'] = this.configService.get<EnvConfig>('env.name', { infer: true });
-
+    // clientConfig['ember-g-recaptcha'] ??= {};
+    // clientConfig['ember-g-recaptcha'] = {
+    //   ...clientConfig['ember-g-recaptcha'],
+    //   sitekey: this.configService.get<RecaptchaConfig>('recaptcha.secretKey', { infer: true }),
+    // };
     clientConfig['featureFlags'] ??= {};
-    clientConfig['featureFlags'] = { ...clientConfig['featureFlags'], ...this.configService.get<FeaturesConfig>('features', { infer: true }) };
 
+    clientConfig['featureFlags'] = { ...clientConfig['featureFlags'], ...this.configService.get<FeaturesConfig>('features', { infer: true }) };
+    // clientConfig['ember-cli-app-version'] ??= {};
+    // clientConfig['ember-cli-app-version'] = {
+    //   version: this.configService.get<EnvConfig>('env.stackVersion', { infer: true }),
+    // };
+
+    // clientConfig ??= {};
+    // clientConfig['APP'] = {
+    // version: this.configService.get<EnvConfig>('env.stackVersion', { infer: true }),
+    // apiHost: this.configService.get<ServerConfig>('server.publicUrl', { infer: true }).replace(/\/$/, ''),
+    // };
+    console.log(clientConfig);
     metaTag.setAttribute('content', encodeURIComponent(JSON.stringify(clientConfig)));
   }
 
   private get configMap(): Partial<EmberAppConfig> {
     return {
       'env.version': this.configService.get<EnvConfig>('env.stackVersion', { infer: true }),
+      'env.recaptcha.siteKey': this.configService.get<RecaptchaConfig>('recaptcha.secretKey', { infer: true }),
       'app.apiHost': this.configService.get<ServerConfig>('server.publicUrl', { infer: true }).replace(/\/$/, ''),
     };
   }

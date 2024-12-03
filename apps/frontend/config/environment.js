@@ -21,7 +21,9 @@ module.exports = function (environment) {
     },
 
     APP: {
-      baseUrlApi: 'localhost:3000',
+      version: '[env.version]',
+      apiHost: '[app.apiHost]',
+      buildTime: new Date().toISOString(),
     },
 
     emberKeyboard: { disableInputsInitializer: true },
@@ -50,16 +52,11 @@ module.exports = function (environment) {
     ],
   };
 
-  ENV['googleMutantLeaflet'] = {
-    apiKey: 'AIzaSyCzKKPg9tJyLo4MqB3quf4PPjKgTMwJ7Rk',
-    libraries: [],
-    include: true,
-  };
-
   ENV['ember-g-recaptcha'] = {
     jsUrl: 'https://www.google.com/recaptcha/api.js', // default
-    sitekey: '6LfxAKwZAAAAAMRHZAx0NYh6Mr0rzHnQOwzgL8-4', // secret is is stored in github action keys, and placed into /public/.htaccess
+    sitekey: '[env.recaptcha.siteKey]', // secret is is stored in github action keys, and placed into /public/.htaccess
   };
+
   ENV['contentSecurityPolicy'] = {
     'default-src': "'none'",
     'script-src': "'self' 'unsafe-eval' *.googleapis.com www.google-analytics.com",
