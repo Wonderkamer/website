@@ -1,0 +1,67 @@
+import { tracked } from '@glimmer/tracking';
+import Controller from '@ember/controller';
+import { action } from '@ember/object';
+import { inject as service } from '@ember/service';
+
+import { task, timeout } from 'ember-concurrency';
+import { use } from 'ember-resources';
+import { RemoteData } from 'reactiveweb/remote-data';
+
+export default class HomeController extends Controller {
+  @service router;
+  @service store;
+  @service homeNav;
+
+  @tracked activeMember;
+  @use membersRemoteData = RemoteData(() => `/data/members.json`);
+
+  showExtendedVersionTask = task(async () => {
+    await timeout(8000);
+  });
+
+  @action
+  onClick() {
+    if (this.showExtendedVersionTask.isIdle) {
+      this.showExtendedVersionTask.perform();
+    } else {
+      this.showExtendedVersionTask.cancelAll();
+    }
+  }
+
+  get activeMembers() {
+    if (this.membersRemoteData.isLoading) {
+      return [];
+    }
+
+    const { data } = this.membersRemoteData.value ?? {};
+
+    if (!data) {
+      return [];
+    }
+
+    this.store.pushPayload('member', this.membersRemoteData.value);
+
+    const members = [];
+
+    data.forEach((element) => {
+      members.push(this.store.peekRecord(element.type, element.id));
+    });
+
+    return members.filter((member) => member.isActive).sort(() => Math.random() - 0.5);
+  }
+
+  @action
+  sectionInserted(element) {
+    this.homeNav.sectionInserted(element);
+  }
+
+  @action
+  previousSection() {
+    //event.preventDefault();
+  }
+
+  @action
+  nextSection() {
+    //event.preventDefault();
+  }
+}

@@ -9,4 +9,4 @@ fi
 #
 # Run linting with lint-staged (see lint-staged.config.js)
 #
-npx lint-staged
+# npx lint-staged

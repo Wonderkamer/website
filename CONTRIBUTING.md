@@ -7,8 +7,8 @@ You will need the following things properly installed on your computer.
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/)
 - [pnpm](https://pnpm.io/)
-- [Ember CLI](https://ember-cli.com/)
 - [Google Chrome](https://google.com/chrome/)
+- [Docker](https://www.docker.com/get-started/)
 
 ## Installation
 
@@ -18,38 +18,55 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-- `ember serve --proxy https://dev.wonderkamer.com`
-- Visit your app at [http://localhost:4200](http://localhost:4200).
-- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+- `docker compose -f docker/docker-compose.yml up` => this will start additional services such as a redis instance for queing
+- `pnpm run start:dev` => this will start the backend NestJS application and an EmberJS frontend application. The later is served by the backend and has hot reloading enabled.
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
+- Visit your app at [http://localhost:3000](http://localhost:3000).
+- Visit your tests at [http://localhost:3000/tests](http://localhost:3000/tests).
 
 ### Running Tests
 
-- `ember test`
-- `ember test --server`
+- `pnpm run test`
 
 ### Linting
 
-- `pnpm lint:hbs`
-- `pnpm lint:js`
-- `pnpm lint:js --fix`
+- `pnpm run lint`
+- `pnpm run lint:fix`
 
 ### Building
 
-- `ember build` (development)
-- `ember build --environment production` (production)
+- `pnpm run build`
+
+### Releasing
+
+- `pnpm run release`
+
+Will update CHANGELOG and create a tag
 
 ### Deploying
 
 Specify what it takes to deploy your app.
 
-## Further Reading / Useful Links
+Simply push to the github repository. Tags will be deployed to production, the rest to dev.wonderkamer.com
 
-- [ember.js](https://emberjs.com/)
-- [ember-cli](https://ember-cli.com/)
-- Development Browser Extensions
-  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+### Docker
+
+Builds a docker image
+
+```
+docker buildx build -f docker/Dockerfile \
+                       -t ghcr.io/wonderkamer/website:develop .
+```
+
+Tests the build image
+
+```
+docker compose -f docker/docker-compose.yml up        # starts additional services
+docker run  --rm \
+            --env-file=.env \
+            --env REDIS_HOST=host.docker.internal \
+            --publish 3000:3000 \
+            ghcr.io/wonderkamer/website:develop
+```
+
+- Visit your app running inside a docker container at [http://localhost:3000](http://localhost:3000).

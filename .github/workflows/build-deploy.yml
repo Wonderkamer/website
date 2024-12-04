@@ -1,12 +1,12 @@
 name: Build & Deploy
 
 on:
-  workflow_dispatch: # -> a manual trigger. will be deployed to wonderkamer.com
-  push:
-    tags:
-      - 'v*' # -> will be deployed to wonderkamer.com and dev.wonderkamer.com
-    branches:
-      - develop # -> will be deployed to dev.wonderkamer.com
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to deploy from (e.g., develop or main)"
+        required: true
+        default: "develop"
 
 concurrency:
   group: ci-${{ github.head_ref || github.ref }}
@@ -18,17 +18,15 @@ jobs:
     outputs:
       deploy_type: ${{ steps.set-deploy-type.outputs.deploy_type }}
     steps:
-      - name: Determine Trigger Reason
+      - name: Determine Deployment Environment
         id: set-deploy-type
         run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          if [[ "${{ github.event.inputs.branch }}" == "main" ]]; then
             echo "deploy_type=production" >> $GITHUB_OUTPUT
-          elif [[ "${{ github.ref }}" == refs/tags/v* ]]; then
-            echo "deploy_type=production" >> $GITHUB_OUTPUT
-          elif [[ "${{ github.ref }}" == refs/heads/develop ]]; then
+          elif [[ "${{ github.event.inputs.branch }}" == "develop" ]]; then
             echo "deploy_type=staging" >> $GITHUB_OUTPUT
           else
-            echo "Unknown trigger"
+            echo "Invalid branch: ${{ github.event.inputs.branch }}"
             exit 1
           fi
 
@@ -58,15 +56,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Check If Docker Image Exists
+        id: check-image
+        env:
+          SEMVER_TAG: ${{ needs.get-version.outputs.semver_version }}
+        run: |
+          LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          if docker manifest inspect ghcr.io/${LOWERCASE_OWNER}/website:${{ needs.get-version.outputs.semver_version }} > /dev/null 2>&1; then
+            echo "DOCKER_IMAGE_EXISTS=true" >> $GITHUB_ENV
+          else
+            echo "DOCKER_IMAGE_EXISTS=false" >> $GITHUB_ENV
+          fi
+
       - name: Build and Push Docker Image
+        if: env.DOCKER_IMAGE_EXISTS == 'false'
         env:
           SEMVER_TAG: ${{ needs.get-version.outputs.semver_version }}
         run: |
@@ -83,6 +96,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
 
       - name: Setup SSH Key
         run: |
@@ -94,7 +109,7 @@ jobs:
           # ssh-add ~/.ssh/id_ed25519
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -112,8 +127,10 @@ jobs:
         env:
           SEMVER_TAG: ${{ needs.get-version.outputs.semver_version }}
           GOOGLE_RECAPTCHA_SECRET: ${{ secrets.GOOGLE_RECAPTCHA_SECRET }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          CONTACT_FORM_RECIPIENT: hallo@wonderkamer.com
+          SMTP_PASS: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_USER: hallo@wonderkamer.com
+          SMTP_HOST: smtp.transip.email
+          SMTP_PORT: 465
         run: |
           LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           docker pull ghcr.io/${LOWERCASE_OWNER}/website:${{ needs.get-version.outputs.semver_version }}
@@ -138,6 +155,7 @@ jobs:
           else
             echo "Skipping deployment."
           fi
+
       - name: Clean Up Private Key
         if: always()
         run: rm -f ~/.ssh/id_ed25519

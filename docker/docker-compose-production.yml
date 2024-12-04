@@ -1,30 +1,46 @@
-version: '3.3'
-
 networks:
   proxy-tier:
     external: true
+  stack:
+    external: false
 
 services:
   www:
     image: ghcr.io/wonderkamer/website:${SEMVER_TAG}
     container_name: wonderkamer-production
     environment:
-      SEMVER_TAG: '${SEMVER_TAG}'
-      VIRTUAL_HOST: 'wonderkamer.com,www.wonderkamer.com'
-      VIRTUAL_PORT: 80
-      LETSENCRYPT_HOST: 'wonderkamer.com,www.wonderkamer.com'
-      LETSENCRYPT_EMAIL: 'hallo@wonderkamer.com'
-      GOOGLE_RECAPTCHA_SECRET: '${GOOGLE_RECAPTCHA_SECRET}'
-      SMTP_PASSWORD: '${SMTP_PASSWORD}'
-      CONTACT_FORM_RECIPIENT: '${CONTACT_FORM_RECIPIENT}'
+      VIRTUAL_HOST: "wonderkamer.com,www.wonderkamer.com"
+      VIRTUAL_PORT: 3000
+      LETSENCRYPT_HOST: "wonderkamer.com,www.wonderkamer.com"
+      LETSENCRYPT_EMAIL: "hallo@wonderkamer.com"
+
+      SEMVER_TAG: "${SEMVER_TAG}"
+      GOOGLE_RECAPTCHA_SECRET: "${GOOGLE_RECAPTCHA_SECRET}"
+      SERVER_PUBLIC_URL: "https://wonderkamer.com"
+      REDIS_HOST: "redis"
+      SMTP_PASS: "${SMTP_PASS}"
+      SMTP_USER: "${SMTP_USER}"
+      SMTP_HOST: "${SMTP_HOST}"
+      SMTP_PORT: "${SMTP_PORT}"
     networks:
       - proxy-tier
+      - stack
     deploy:
       replicas: 2
       resources:
         limits:
-          cpus: '0.50'
-          memory: 20M
-        reservations:
-          cpus: '0.50'
-          memory: 10M
+          cpus: "0.50"
+          memory: 150M
+
+  redis:
+    image: redis:7.4-alpine
+    # ports:
+    #   - 6379:6379
+    volumes:
+      - redis:/data
+    networks:
+      - stack
+
+volumes:
+  redis:
+    driver: local
