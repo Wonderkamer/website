@@ -2,11 +2,6 @@ name: Build & Deploy
 
 on:
   workflow_dispatch:
-    inputs:
-      branch:
-        description: "Branch to deploy from (e.g., develop or main)"
-        required: true
-        default: "develop"
 
 concurrency:
   group: ci-${{ github.head_ref || github.ref }}
@@ -21,9 +16,9 @@ jobs:
       - name: Determine Deployment Environment
         id: set-deploy-type
         run: |
-          if [[ "${{ github.event.inputs.branch }}" == "main" ]]; then
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
             echo "deploy_type=production" >> $GITHUB_OUTPUT
-          elif [[ "${{ github.event.inputs.branch }}" == "develop" ]]; then
+          elif [[ "${{ github.ref }}" == "refs/heads/develop" ]]; then
             echo "deploy_type=staging" >> $GITHUB_OUTPUT
           else
             echo "Invalid branch: ${{ github.event.inputs.branch }}"
