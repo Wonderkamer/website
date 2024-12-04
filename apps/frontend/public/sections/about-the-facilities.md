@@ -24,4 +24,6 @@ Parkeren is altijd lastig in Amsterdam, maar de lokatie is goed bereikbaar met h
 
 #### Evenementen
 
-Wij bieden graag arrangementen om jou vergadering, workshop of brainstormsessie tot een succes te maken. Zo maakt het [Huiskamerfestival Amsterdam](https://www.huiskamerfestival.nl/) dit jaar van onze lokatie gebruik. Terbeschikkingstelling zal altijd in overleg gaan en gecommuniceerd worden omdat de ruimte dan niet gebruikt kan worden door de reguliere leden.
+Wij bieden graag arrangementen om jou vergadering, workshop of brainstormsessie tot een succes te maken. Zo organiseren we een periodieke vintage kleding markt en maakt het [Huiskamerfestival Amsterdam](https://www.huiskamerfestival.nl/) dit jaar van onze lokatie gebruik.
+
+Evenementen worden gecommuniceerd naar leden toe. De ruimte is dan immers niet of minder te gebruiken.
