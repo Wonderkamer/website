@@ -591,8 +591,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       commit-and-tag-version:
-        specifier: 9.5.0
-        version: 9.5.0
+        specifier: 9.6.0
+        version: 9.6.0
       concurrently:
         specifier: 9.1.0
         version: 9.1.0
@@ -4933,8 +4933,8 @@ packages:
     resolution: {integrity: sha512-bKw/r35jR3HGt5PEPm1ljsQQGyCrR8sFGNiN5L+ykDHdpO8Smxkrkla9Yi6NkQyUrb8V54PGhfMs6NrIwtxtdw==}
     engines: {node: '>= 6'}
 
-  commit-and-tag-version@9.5.0:
-    resolution: {integrity: sha512-XpYAhoa87HfrVY2B9Rle3XbxFNI8eVusMF66H49oom2UNYAU0u5JbLL6x5MuCJw8wfac4KKpoJmUWCYuLHDdUw==}
+  commit-and-tag-version@9.6.0:
+    resolution: {integrity: sha512-5tuYV9lFqV9rYDMJhF+HDp46S11je7XwzD/tvGT8LJM2lzXv33eeEetqpZ8Z0e9OSo0nS/67+JIH0cKJXB1Dpw==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -16199,6 +16199,26 @@ snapshots:
       - '@babel/core'
       - supports-color
 
+  '@types/ember@4.0.11':
+    dependencies:
+      '@types/ember__application': 4.0.11(@babel/core@7.26.0)
+      '@types/ember__array': 4.0.10(@babel/core@7.26.0)
+      '@types/ember__component': 4.0.22(@babel/core@7.26.0)
+      '@types/ember__controller': 4.0.12(@babel/core@7.26.0)
+      '@types/ember__debug': 4.0.8(@babel/core@7.26.0)
+      '@types/ember__engine': 4.0.11(@babel/core@7.26.0)
+      '@types/ember__error': 4.0.6
+      '@types/ember__object': 4.0.12(@babel/core@7.26.0)
+      '@types/ember__polyfills': 4.0.6
+      '@types/ember__routing': 4.0.22(@babel/core@7.26.0)
+      '@types/ember__runloop': 4.0.10
+      '@types/ember__service': 4.0.9(@babel/core@7.26.0)
+      '@types/ember__string': 3.0.15
+      '@types/ember__template': 4.0.7
+      '@types/ember__test': 4.0.6(@babel/core@7.26.0)
+      '@types/ember__utils': 4.0.7
+      '@types/rsvp': 4.0.9
+
   '@types/ember@4.0.11(@babel/core@7.26.0)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.26.0)
@@ -16225,7 +16245,7 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.26.0)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.26.0)
-      '@types/ember': 4.0.11(@babel/core@7.26.0)
+      '@types/ember': 4.0.11
       '@types/ember__engine': 4.0.11(@babel/core@7.26.0)
       '@types/ember__object': 4.0.12(@babel/core@7.26.0)
       '@types/ember__owner': 4.0.9
@@ -16308,6 +16328,10 @@ snapshots:
       - '@babel/core'
       - supports-color
 
+  '@types/ember__runloop@4.0.10':
+    dependencies:
+      '@types/ember': 4.0.11
+
   '@types/ember__runloop@4.0.10(@babel/core@7.26.0)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.26.0)
@@ -16332,6 +16356,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+
+  '@types/ember__utils@4.0.7':
+    dependencies:
+      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.26.0)':
     dependencies:
@@ -18284,7 +18312,7 @@ snapshots:
       has-own-prop: 2.0.0
       repeat-string: 1.6.1
 
-  commit-and-tag-version@9.5.0:
+  commit-and-tag-version@9.6.0:
     dependencies:
       chalk: 2.4.2
       conventional-changelog: 3.1.25
