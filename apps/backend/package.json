@@ -104,7 +104,7 @@
     "uuid": "11.0.3"
   },
   "devDependencies": {
-    "@golevelup/ts-jest": "0.5.6",
+    "@golevelup/ts-jest": "0.6.1",
     "@nestjs/cli": "10.4.8",
     "@nestjs/schematics": "10.2.3",
     "@nestjs/testing": "10.4.13",
