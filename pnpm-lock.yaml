@@ -391,17 +391,17 @@ importers:
         specifier: 4.8.9
         version: 4.8.9(bufferutil@4.0.8)(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))(typescript@5.7.2)(utf-8-validate@5.0.10)
       tailwindcss:
-        specifier: 3.4.15
-        version: 3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
+        specifier: 3.4.16
+        version: 3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
       tailwindcss-box-shadow:
         specifier: 2.0.3
-        version: 2.0.3(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
+        version: 2.0.3(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
       tailwindcss-email-variants:
         specifier: 3.0.2
-        version: 3.0.2(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
+        version: 3.0.2(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
       tailwindcss-mso:
         specifier: 1.4.4
-        version: 1.4.4(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
+        version: 1.4.4(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)))
     devDependencies:
       '@types/node':
         specifier: 20.17.9
@@ -487,7 +487,7 @@ importers:
         version: 4.3.0(@babel/core@7.26.0)(@babel/eslint-parser@7.25.9(@babel/core@7.26.0)(eslint@8.57.1))(@babel/plugin-proposal-decorators@7.25.9(@babel/core@7.26.0))(@types/eslint@8.56.12)(@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2))(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint-config-prettier@9.1.0(eslint@8.57.1))(eslint-plugin-ember@12.3.3(@babel/core@7.26.0)(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1))(eslint-plugin-qunit@8.1.2(eslint@8.57.1))(eslint@8.57.1)(prettier@3.3.3)(typescript@5.7.2)
       '@tailwindcss/typography':
         specifier: 0.5.15
-        version: 0.5.15(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)))
+        version: 0.5.15(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)))
       '@tsconfig/ember':
         specifier: 3.0.8
         version: 3.0.8
@@ -784,7 +784,7 @@ importers:
         version: 36.0.1(stylelint@16.11.0(typescript@5.7.2))
       stylelint-config-tailwindcss:
         specifier: 0.0.7
-        version: 0.0.7(stylelint@16.11.0(typescript@5.7.2))(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)))
+        version: 0.0.7(stylelint@16.11.0(typescript@5.7.2))(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)))
       stylelint-prettier:
         specifier: 5.0.2
         version: 5.0.2(prettier@3.3.3)(stylelint@16.11.0(typescript@5.7.2))
@@ -792,8 +792,8 @@ importers:
         specifier: 6.10.0
         version: 6.10.0(stylelint@16.11.0(typescript@5.7.2))
       tailwindcss:
-        specifier: 3.4.15
-        version: 3.4.15(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))
+        specifier: 3.4.16
+        version: 3.4.16(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))
       tracked-built-ins:
         specifier: 3.4.0
         version: 3.4.0(@babel/core@7.26.0)
@@ -8345,12 +8345,12 @@ packages:
   libqp@2.1.0:
     resolution: {integrity: sha512-O6O6/fsG5jiUVbvdgT7YX3xY3uIadR6wEZ7+vy9u7PKHAlSEB6blvC1o5pHBjgsi95Uo0aiBBdkyFecj6jtb7A==}
 
-  lilconfig@2.1.0:
-    resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
-    engines: {node: '>=10'}
-
   lilconfig@3.1.2:
     resolution: {integrity: sha512-eop+wDAvpItUys0FWkHIKeC9ybYrTGbU41U5K7+bttZZeohvnY7M9dZ5kB21GNWiFT2q1OoPTvncPCgSOVO5ow==}
+    engines: {node: '>=14'}
+
+  lilconfig@3.1.3:
+    resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
 
   limiter@1.1.5:
@@ -11441,8 +11441,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.4.0'
 
-  tailwindcss@3.4.15:
-    resolution: {integrity: sha512-r4MeXnfBmSOuKUWmXe6h2CcyfzJCEk4F0pptO5jlnYSIViUkVmsawj80N5h2lO3gwcmSb4n3PuN+e+GC1Guylw==}
+  tailwindcss@3.4.16:
+    resolution: {integrity: sha512-TI4Cyx7gDiZ6r44ewaJmt0o6BrMCT5aK5e0rmJ/G9Xq3w7CX/5VXl/zIPEJZFUK5VEqwByyhqNPycPlvcK4ZNw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -15128,7 +15128,7 @@ snapshots:
       query-string: 7.1.3
       string-remove-widows: 2.1.0
       string-strip-html: 8.5.0
-      tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
+      tailwindcss: 3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -16071,13 +16071,13 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)))':
+  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)))':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))
+      tailwindcss: 3.4.16(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))
 
   '@trysound/sax@0.2.0': {}
 
@@ -22911,9 +22911,9 @@ snapshots:
   libqp@2.1.0:
     optional: true
 
-  lilconfig@2.1.0: {}
-
   lilconfig@3.1.2: {}
+
+  lilconfig@3.1.3: {}
 
   limiter@1.1.5: {}
 
@@ -24634,30 +24634,32 @@ snapshots:
       read-cache: 1.0.0
       resolve: 1.22.8
 
-  postcss-js@4.0.1(postcss@8.4.47):
+  postcss-import@15.1.0(postcss@8.4.49):
     dependencies:
-      camelcase-css: 2.0.1
-      postcss: 8.4.47
+      postcss: 8.4.49
+      postcss-value-parser: 4.2.0
+      read-cache: 1.0.0
+      resolve: 1.22.8
 
   postcss-js@4.0.1(postcss@8.4.49):
     dependencies:
       camelcase-css: 2.0.1
       postcss: 8.4.49
 
-  postcss-load-config@4.0.2(postcss@8.4.47)(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)):
+  postcss-load-config@4.0.2(postcss@8.4.49)(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)):
     dependencies:
-      lilconfig: 3.1.2
+      lilconfig: 3.1.3
       yaml: 2.6.1
     optionalDependencies:
-      postcss: 8.4.47
+      postcss: 8.4.49
       ts-node: 10.9.2(@types/node@20.17.9)(typescript@5.7.2)
 
-  postcss-load-config@4.0.2(postcss@8.4.47)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)):
+  postcss-load-config@4.0.2(postcss@8.4.49)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)):
     dependencies:
-      lilconfig: 3.1.2
+      lilconfig: 3.1.3
       yaml: 2.6.1
     optionalDependencies:
-      postcss: 8.4.47
+      postcss: 8.4.49
       ts-node: 10.9.2(@types/node@22.10.0)(typescript@5.7.2)
 
   postcss-loader@8.1.1(postcss@8.4.49)(typescript@5.7.2)(webpack@5.97.0):
@@ -24739,9 +24741,9 @@ snapshots:
       icss-utils: 5.1.0(postcss@8.4.49)
       postcss: 8.4.49
 
-  postcss-nested@6.2.0(postcss@8.4.47):
+  postcss-nested@6.2.0(postcss@8.4.49):
     dependencies:
-      postcss: 8.4.47
+      postcss: 8.4.49
       postcss-selector-parser: 6.1.2
 
   postcss-normalize-charset@7.0.0(postcss@8.4.49):
@@ -26294,10 +26296,10 @@ snapshots:
       stylelint: 16.11.0(typescript@5.7.2)
       stylelint-config-recommended: 14.0.1(stylelint@16.11.0(typescript@5.7.2))
 
-  stylelint-config-tailwindcss@0.0.7(stylelint@16.11.0(typescript@5.7.2))(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))):
+  stylelint-config-tailwindcss@0.0.7(stylelint@16.11.0(typescript@5.7.2))(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))):
     dependencies:
       stylelint: 16.11.0(typescript@5.7.2)
-      tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))
+      tailwindcss: 3.4.16(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))
 
   stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.11.0(typescript@5.7.2)):
     dependencies:
@@ -26471,19 +26473,19 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss-box-shadow@2.0.3(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))):
+  tailwindcss-box-shadow@2.0.3(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))):
     dependencies:
-      tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
+      tailwindcss: 3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
 
-  tailwindcss-email-variants@3.0.2(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))):
+  tailwindcss-email-variants@3.0.2(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))):
     dependencies:
-      tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
+      tailwindcss: 3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
 
-  tailwindcss-mso@1.4.4(tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))):
+  tailwindcss-mso@1.4.4(tailwindcss@3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))):
     dependencies:
-      tailwindcss: 3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
+      tailwindcss: 3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
 
-  tailwindcss@3.4.15(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)):
+  tailwindcss@3.4.16(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2)):
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -26494,23 +26496,23 @@ snapshots:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.6
-      lilconfig: 2.1.0
+      lilconfig: 3.1.3
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.4.47
-      postcss-import: 15.1.0(postcss@8.4.47)
-      postcss-js: 4.0.1(postcss@8.4.47)
-      postcss-load-config: 4.0.2(postcss@8.4.47)(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
-      postcss-nested: 6.2.0(postcss@8.4.47)
+      postcss: 8.4.49
+      postcss-import: 15.1.0(postcss@8.4.49)
+      postcss-js: 4.0.1(postcss@8.4.49)
+      postcss-load-config: 4.0.2(postcss@8.4.49)(ts-node@10.9.2(@types/node@20.17.9)(typescript@5.7.2))
+      postcss-nested: 6.2.0(postcss@8.4.49)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
     transitivePeerDependencies:
       - ts-node
 
-  tailwindcss@3.4.15(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)):
+  tailwindcss@3.4.16(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2)):
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -26521,16 +26523,16 @@ snapshots:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.6
-      lilconfig: 2.1.0
+      lilconfig: 3.1.3
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.4.47
-      postcss-import: 15.1.0(postcss@8.4.47)
-      postcss-js: 4.0.1(postcss@8.4.47)
-      postcss-load-config: 4.0.2(postcss@8.4.47)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))
-      postcss-nested: 6.2.0(postcss@8.4.47)
+      postcss: 8.4.49
+      postcss-import: 15.1.0(postcss@8.4.49)
+      postcss-js: 4.0.1(postcss@8.4.49)
+      postcss-load-config: 4.0.2(postcss@8.4.49)(ts-node@10.9.2(@types/node@22.10.0)(typescript@5.7.2))
+      postcss-nested: 6.2.0(postcss@8.4.49)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.8
       sucrase: 3.35.0
