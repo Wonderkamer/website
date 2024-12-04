@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        package-name: ["wonderkamer/website"]
+        package-name: ["Wonderkamer/website"]
 
     steps:
       - name: Login to GitHub Container Registry with PAT_TOKEN
@@ -23,7 +23,15 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: "Purge"
+      - name: "Purge all untagged versions"
+        uses: actions/delete-package-versions@v5
+        with:
+          package-name: ${{ matrix.package-name }}
+          package-type: "container"
+          min-versions-to-keep: 0
+          delete-only-untagged-versions: "true"
+
+      - name: "Purge tagged versions exept the latest 5"
         uses: actions/delete-package-versions@v5
         with:
           # Can be a single package version id, or a comma separated list of package version ids.
@@ -41,7 +49,7 @@ jobs:
 
           # Type of the package. Can be one of container, maven, npm, nuget, or rubygems.
           # Required
-          package-type: container
+          package-type: "container"
 
           # The number of old versions to delete starting from the oldest version.
           # Defaults to 1.
@@ -71,7 +79,7 @@ jobs:
           # When `min-versions-to-keep` is 0, all untagged versions get deleted.
           # Defaults to false.
           # Cannot be used with `num-old-versions-to-delete`.
-          # delete-only-untagged-versions: true
+          delete-only-untagged-versions: "false"
 
           # The token used to authenticate with GitHub Packages.
           # Defaults to github.token.
