@@ -590,6 +590,9 @@ importers:
       broccoli-asset-rev:
         specifier: 3.0.0
         version: 3.0.0
+      commit-and-tag-version:
+        specifier: 9.5.0
+        version: 9.5.0
       concurrently:
         specifier: 9.1.0
         version: 9.1.0
@@ -764,9 +767,6 @@ importers:
       sass:
         specifier: 1.82.0
         version: 1.82.0
-      standard-version:
-        specifier: 9.5.0
-        version: 9.5.0
       stylelint:
         specifier: 16.11.0
         version: 16.11.0(typescript@5.7.2)
@@ -4932,6 +4932,11 @@ packages:
   comment-json@4.2.5:
     resolution: {integrity: sha512-bKw/r35jR3HGt5PEPm1ljsQQGyCrR8sFGNiN5L+ykDHdpO8Smxkrkla9Yi6NkQyUrb8V54PGhfMs6NrIwtxtdw==}
     engines: {node: '>= 6'}
+
+  commit-and-tag-version@9.5.0:
+    resolution: {integrity: sha512-XpYAhoa87HfrVY2B9Rle3XbxFNI8eVusMF66H49oom2UNYAU0u5JbLL6x5MuCJw8wfac4KKpoJmUWCYuLHDdUw==}
+    engines: {node: '>=10'}
+    hasBin: true
 
   common-ancestor-path@1.0.1:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
@@ -11102,11 +11107,6 @@ packages:
   standard-as-callback@2.1.0:
     resolution: {integrity: sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==}
 
-  standard-version@9.5.0:
-    resolution: {integrity: sha512-3zWJ/mmZQsOaO+fOlsa0+QK90pwhNd042qEcw6hKFNoLFs7peGyvPffpEBbK/DSGPbyOvli0mUIFv5A4qTjh2Q==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   static-extend@0.1.2:
     resolution: {integrity: sha512-72E9+uLc27Mt718pMHt9VMNiAL4LMsmDbBva8mxWUCkT07fSzEGMYUCk0XWY6lp0j6RBAG4cJ3mWuZv2OE3s0g==}
     engines: {node: '>=0.10.0'}
@@ -16199,26 +16199,6 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@types/ember@4.0.11':
-    dependencies:
-      '@types/ember__application': 4.0.11(@babel/core@7.26.0)
-      '@types/ember__array': 4.0.10(@babel/core@7.26.0)
-      '@types/ember__component': 4.0.22(@babel/core@7.26.0)
-      '@types/ember__controller': 4.0.12(@babel/core@7.26.0)
-      '@types/ember__debug': 4.0.8(@babel/core@7.26.0)
-      '@types/ember__engine': 4.0.11(@babel/core@7.26.0)
-      '@types/ember__error': 4.0.6
-      '@types/ember__object': 4.0.12(@babel/core@7.26.0)
-      '@types/ember__polyfills': 4.0.6
-      '@types/ember__routing': 4.0.22(@babel/core@7.26.0)
-      '@types/ember__runloop': 4.0.10
-      '@types/ember__service': 4.0.9(@babel/core@7.26.0)
-      '@types/ember__string': 3.0.15
-      '@types/ember__template': 4.0.7
-      '@types/ember__test': 4.0.6(@babel/core@7.26.0)
-      '@types/ember__utils': 4.0.7
-      '@types/rsvp': 4.0.9
-
   '@types/ember@4.0.11(@babel/core@7.26.0)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.26.0)
@@ -16245,7 +16225,7 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.26.0)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.26.0)
-      '@types/ember': 4.0.11
+      '@types/ember': 4.0.11(@babel/core@7.26.0)
       '@types/ember__engine': 4.0.11(@babel/core@7.26.0)
       '@types/ember__object': 4.0.12(@babel/core@7.26.0)
       '@types/ember__owner': 4.0.9
@@ -16328,10 +16308,6 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@types/ember__runloop@4.0.10':
-    dependencies:
-      '@types/ember': 4.0.11
-
   '@types/ember__runloop@4.0.10(@babel/core@7.26.0)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.26.0)
@@ -16356,10 +16332,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
-
-  '@types/ember__utils@4.0.7':
-    dependencies:
-      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.26.0)':
     dependencies:
@@ -18311,6 +18283,23 @@ snapshots:
       esprima: 4.0.1
       has-own-prop: 2.0.0
       repeat-string: 1.6.1
+
+  commit-and-tag-version@9.5.0:
+    dependencies:
+      chalk: 2.4.2
+      conventional-changelog: 3.1.25
+      conventional-changelog-config-spec: 2.1.0
+      conventional-changelog-conventionalcommits: 4.6.3
+      conventional-recommended-bump: 6.1.0
+      detect-indent: 6.1.0
+      detect-newline: 3.1.0
+      dotgitignore: 2.1.0
+      figures: 3.2.0
+      find-up: 5.0.0
+      git-semver-tags: 4.1.1
+      semver: 7.6.3
+      stringify-package: 1.0.1
+      yargs: 16.2.0
 
   common-ancestor-path@1.0.1: {}
 
@@ -26003,23 +25992,6 @@ snapshots:
       - supports-color
 
   standard-as-callback@2.1.0: {}
-
-  standard-version@9.5.0:
-    dependencies:
-      chalk: 2.4.2
-      conventional-changelog: 3.1.25
-      conventional-changelog-config-spec: 2.1.0
-      conventional-changelog-conventionalcommits: 4.6.3
-      conventional-recommended-bump: 6.1.0
-      detect-indent: 6.1.0
-      detect-newline: 3.1.0
-      dotgitignore: 2.1.0
-      figures: 3.2.0
-      find-up: 5.0.0
-      git-semver-tags: 4.1.1
-      semver: 7.6.3
-      stringify-package: 1.0.1
-      yargs: 16.2.0
 
   static-extend@0.1.2:
     dependencies:

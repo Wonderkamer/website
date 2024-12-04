@@ -25,15 +25,15 @@
     "lint:prettier": "prettier . --list-different",
     "lint:prettier:fix": "prettier . --write",
     "preinstall": "npx only-allow pnpm",
-    "release:major": "standard-version --tag-prefix=\"\" --commit-all --release-as major",
-    "release:minor": "standard-version --tag-prefix=\"\" --commit-all --release-as minor",
-    "release:patch": "standard-version --tag-prefix=\"\" --commit-all --release-as patch",
-    "release": "standard-version --commit-all --tag-prefix=\"v\"",
+    "release:major": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as major",
+    "release:minor": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as minor",
+    "release:patch": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as patch",
+    "release": "commit-and-tag-version --commit-all --tag-prefix=\"v\"",
     "start": "ember serve",
     "test:ember": "ember test",
     "test": "npm-run-all test:*"
   },
-  "standard-version": {
+  "commit-and-tag-version": {
     "scripts": {}
   },
   "dependencies": {
@@ -159,7 +159,7 @@
     "qunit-dom": "3.4.0",
     "qunit": "2.23.0",
     "sass": "1.82.0",
-    "standard-version": "9.5.0",
+    "commit-and-tag-version": "9.5.0",
     "stylelint-config-recommended": "14.0.1",
     "stylelint-config-sass-guidelines": "12.1.0",
     "stylelint-config-standard": "36.0.1",
