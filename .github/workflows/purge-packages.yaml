@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        package-name: ["Wonderkamer/website"]
+        package-name: ["wonderkamer/website"]
 
     steps:
       - name: Login to GitHub Container Registry with PAT_TOKEN
@@ -21,7 +21,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.PAT_TOKEN }}
 
       - name: "Purge all untagged versions"
         uses: actions/delete-package-versions@v5
@@ -88,4 +88,4 @@ jobs:
           #   For container, npm and nuget package, repo has access if assigned **Admin** role under Package Settings > Manage Actions Access.
           #   If `package-version-ids` is given the token only needs the delete packages scope.
           #   If `package-version-ids` is not given the token needs the delete packages scope and the read packages scope
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
