@@ -133,7 +133,7 @@
     "ember-resolver": "13.1.0",
     "ember-resources": "7.0.3",
     "ember-source": "5.12.0",
-    "ember-stargate": "0.6.0",
+    "ember-stargate": "1.0.1",
     "ember-style-modifier": "4.4.0",
     "ember-template-imports": "4.2.0",
     "ember-template-lint": "6.0.0",
