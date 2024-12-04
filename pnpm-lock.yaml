@@ -28,7 +28,7 @@ importers:
         version: 7.0.1
       prettier:
         specifier: latest
-        version: 3.4.1
+        version: 3.4.2
       rimraf:
         specifier: 6.0.1
         version: 6.0.1
@@ -612,8 +612,8 @@ importers:
         specifier: 4.1.1
         version: 4.1.1(@glint/template@1.5.0)(webpack@5.97.0)
       ember-cli:
-        specifier: 5.12.0
-        version: 5.12.0(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10)
+        specifier: 6.0.1
+        version: 6.0.1(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10)
       ember-cli-app-version:
         specifier: 7.0.0
         version: 7.0.0(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.26.0))(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.0))
@@ -622,7 +622,7 @@ importers:
         version: 8.2.0(@babel/core@7.26.0)
       ember-cli-dependency-checker:
         specifier: 3.3.3
-        version: 3.3.3(ember-cli@5.12.0(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10))
+        version: 3.3.3(ember-cli@6.0.1(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10))
       ember-cli-head:
         specifier: 2.0.0
         version: 2.0.0
@@ -4300,6 +4300,9 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0
 
+  babel-remove-types@1.0.0:
+    resolution: {integrity: sha512-Kg+NZLwfe1E+LoGrkX9I9nFDM1FVBoiIdyW4bjNGGvrqWhvgcdauqijOFn5/WYkdoGXpUEDRWvU4X100ghVx4A==}
+
   babel-walk@3.0.0-canary-5:
     resolution: {integrity: sha512-GAwkz0AihzY5bkwIY5QDR+LvsRQgB/B+1foMPvi0FZPMl5fjD7ICiznUiBdLYMH1QYe6vqu4gWYytZOccLouFw==}
     engines: {node: '>= 10.0.0'}
@@ -5971,8 +5974,8 @@ packages:
     resolution: {integrity: sha512-rk7GY+FmLn/2e22HsZs0Ycrz8HQ1W3Fv+2TFOuEFW9optnDXDgkntPBIl6gact/LHsfBM5RKbM3dHsIIeLgl0Q==}
     engines: {node: 10.* || >= 12.*}
 
-  ember-cli@5.12.0:
-    resolution: {integrity: sha512-48ZOoUZTXsav37RIYY9gyCR35yo64mhzfv5YHtTbsZZwLv/HjvTz27X0CTvkfVQaOWHYDFekxdp9ppaKz84VNA==}
+  ember-cli@6.0.1:
+    resolution: {integrity: sha512-UD9szFnZS27uC66iaFMBPEHcDDmtEy7+mwzjoCmDnYT85ZIXsEh5r+aEry2NSJnTXayOItbhDtSbd0eTqKPyUQ==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -10238,8 +10241,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  prettier@3.4.1:
-    resolution: {integrity: sha512-G+YdqtITVZmOJje6QkXQWzl3fSfMxFwm1tjTyo9exhkmWSqC4Yhd1+lug++IlR2mvRVAxEDDWYkQdeSztajqgg==}
+  prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -17321,6 +17324,15 @@ snapshots:
       babel-plugin-jest-hoist: 29.6.3
       babel-preset-current-node-syntax: 1.1.0(@babel/core@7.26.0)
 
+  babel-remove-types@1.0.0:
+    dependencies:
+      '@babel/core': 7.26.0(supports-color@8.1.1)
+      '@babel/plugin-syntax-decorators': 7.25.9(@babel/core@7.26.0)
+      '@babel/plugin-transform-typescript': 7.25.9(@babel/core@7.26.0)
+      prettier: 2.8.8
+    transitivePeerDependencies:
+      - supports-color
+
   babel-walk@3.0.0-canary-5:
     dependencies:
       '@babel/types': 7.26.0
@@ -19321,10 +19333,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-dependency-checker@3.3.3(ember-cli@5.12.0(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10)):
+  ember-cli-dependency-checker@3.3.3(ember-cli@6.0.1(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10)):
     dependencies:
       chalk: 2.4.2
-      ember-cli: 5.12.0(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10)
+      ember-cli: 6.0.1(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10)
       find-yarn-workspace-root: 2.0.0
       is-git-url: 1.0.0
       resolve: 1.22.8
@@ -19517,9 +19529,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli@5.12.0(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10):
+  ember-cli@6.0.1(bufferutil@4.0.8)(ejs@3.1.10)(handlebars@4.7.8)(pug@3.0.3)(underscore@1.13.7)(utf-8-validate@5.0.10):
     dependencies:
       '@pnpm/find-workspace-dir': 6.0.3
+      babel-remove-types: 1.0.0
       broccoli: 3.5.2
       broccoli-builder: 0.18.14
       broccoli-concat: 4.2.5
@@ -19586,7 +19599,6 @@ snapshots:
       promise-map-series: 0.3.0
       promise.hash.helper: 1.0.8
       quick-temp: 0.1.8
-      remove-types: 1.0.0
       resolve: 1.22.8
       resolve-package-path: 4.0.3
       safe-stable-stringify: 2.5.0
@@ -25009,7 +25021,7 @@ snapshots:
 
   prettier@3.3.3: {}
 
-  prettier@3.4.1: {}
+  prettier@3.4.2: {}
 
   pretty-format@29.7.0:
     dependencies:
