@@ -1,5 +1,5 @@
 # Stage 0: Node.js install the node dependencies
-FROM node:20.18.1-alpine AS base-installer
+FROM node:22.12.0-alpine AS base-installer
 
 # Installs pnpm
 RUN corepack enable
