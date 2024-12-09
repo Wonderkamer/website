@@ -5,7 +5,6 @@ import { HTMLElement } from 'node-html-parser';
 
 import { EnvConfig } from '../config/environment.config';
 import { FeaturesConfig } from '../config/features.config';
-import { RecaptchaConfig } from '../config/recaptcha.config';
 import { ServerConfig } from '../config/server.config';
 
 type EmberAppConfig = {
