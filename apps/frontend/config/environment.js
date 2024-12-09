@@ -54,7 +54,7 @@ module.exports = function (environment) {
 
   ENV['ember-g-recaptcha'] = {
     jsUrl: 'https://www.google.com/recaptcha/api.js', // default
-    sitekey: '[env.recaptcha.siteKey]', // secret is is stored in github action keys, and placed into /public/.htaccess
+    sitekey: '6LerhZYqAAAAANfm-33_Yx-YxyO4fcYrGrUbLBJl', // the public key
   };
 
   ENV['contentSecurityPolicy'] = {
