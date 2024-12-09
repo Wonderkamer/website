@@ -145,7 +145,7 @@ jobs:
               --detach=true \
               --compose-file docker/docker-compose-development.yml \
               --with-registry-auth \
-              wonderkamer-dev
+              wonderkamer-development
 
           else
             echo "Skipping deployment."
