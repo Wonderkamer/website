@@ -55,7 +55,6 @@ export class EmberClientConfigInjector extends AbstractInjectionHelper {
   private get configMap(): Partial<EmberAppConfig> {
     return {
       'env.version': this.configService.get<EnvConfig>('env.stackVersion', { infer: true }),
-      'env.recaptcha.siteKey': this.configService.get<RecaptchaConfig>('recaptcha.secretKey', { infer: true }),
       'app.apiHost': this.configService.get<ServerConfig>('server.publicUrl', { infer: true }).replace(/\/$/, ''),
     };
   }
