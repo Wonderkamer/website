@@ -94,7 +94,5 @@ EXPOSE 3000
 
 LABEL org.opencontainers.image.source=https://github.com/wonderkamer/website
 
-ENV NODE_ENV=production
-
 # Start the Nest.js server
 CMD ["sh", "-c", "/usr/local/bin/pnpm run start:docker"]
