@@ -1,14 +1,14 @@
 /**
  * Type declarations for
- *    import config from '@wonderkamer/frontend/config/environment'
+ *    import config from 'testing-vite-and-typescript/config/environment'
  */
 declare const config: {
   environment: string;
   modulePrefix: string;
   podModulePrefix: string;
-  locationType: 'history' | 'hash' | 'none' | 'auto';
+  locationType: 'history' | 'hash' | 'none';
   rootURL: string;
-  APP: { baseUrlApi: string; version: string };
+  APP: Record<string, unknown>;
 };
 
 export default config;

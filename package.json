@@ -7,7 +7,7 @@
   "author": "bas@bushbaby.nl",
   "scripts": {
     "build": "turbo run build",
-    "build:frontend": "turbo run build --filter=@wonderkamer/frontend",
+    "build:frontend": "turbo run build --filter=wonderkamer-frontend",
     "build:backend": "turbo run build --filter=@wonderkamer/backend",
     "build:email-templates": "turbo run build --filter=@wonderkamer/email-templates",
     "lint:fix": "pnpm --filter '*' lint:fix",

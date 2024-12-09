@@ -26,7 +26,7 @@ import { SupportModule } from './modules/support/support.module';
       extraProviders: [
         {
           provide: EMBER_INJECTION_HELPERS,
-          useFactory: (configService: ConfigService) => [new EmberClientConfigInjector('@wonderkamer/frontend/config/environment', configService)],
+          useFactory: (configService: ConfigService) => [new EmberClientConfigInjector('wonderkamer-frontend/config/environment', configService)],
           inject: [ConfigService],
         },
       ],

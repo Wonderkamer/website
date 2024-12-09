@@ -35,7 +35,17 @@ module.exports = {
         'n/no-unpublished-require': [
           'error',
           {
-            allowModules: ['@embroider/compat', '@embroider/webpack', '@nullvoxpopuli/eslint-configs', 'autoprefixer', 'ember-cli'],
+            allowModules: [
+              '@nullvoxpopuli/eslint-configs',
+              'dotenv',
+              'ember-cli',
+              'postcss-scss',
+              '@csstools/postcss-sass',
+              'autoprefixer',
+              'tailwindcss',
+              '@embroider/webpack',
+              '@embroider/compat',
+            ],
           },
         ],
       },

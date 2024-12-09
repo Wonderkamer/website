@@ -1,13 +1,14 @@
-import { setApplication } from '@ember/test-helpers';
+import Application from 'testing-vite-and-typescript/app';
+import config from 'testing-vite-and-typescript/config/environment';
 import * as QUnit from 'qunit';
+import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';
-import { start } from 'ember-qunit';
+import { start as qunitStart } from 'ember-qunit';
 
-import Application from '@wonderkamer/frontend/app';
-import config from '@wonderkamer/frontend/config/environment';
+export function start() {
+  setApplication(Application.create(config.APP));
 
-setApplication(Application.create(config.APP));
+  setup(QUnit.assert);
 
-setup(QUnit.assert);
-
-start();
+  qunitStart();
+}

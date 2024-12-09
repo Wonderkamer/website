@@ -1,20 +1,32 @@
 {
   "extends": "@tsconfig/ember/tsconfig.json",
-  "compilerOptions": {
-    // The combination of `baseUrl` with `paths` allows Ember's classic package
-    // layout, which is not resolvable with the Node resolution algorithm, to
-    // work with TypeScript.
-    "skipLibCheck": true,
-    "noEmitOnError": false,
-    "baseUrl": ".",
-    "paths": {
-      "@wonderkamer/frontend/tests/*": ["tests/*"],
-      "@wonderkamer/frontend/*": ["app/*"],
-      "*": ["types/*"]
-    }
-  },
-  "include": ["app/**/*", "tests/**/*", "types/**/*"],
+  "include": ["app", "tests", "types", "tailwind.config.mjs", "postcss.config.cjs"],
   "glint": {
     "environment": ["ember-loose", "ember-template-imports"]
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    /**
+      https://www.typescriptlang.org/tsconfig#noEmitOnError
+      Do not block emit on TS errors.
+    */
+    "noEmitOnError": false,
+
+    "declaration": false,
+    "declarationMap": false,
+
+    /**
+      https://www.typescriptlang.org/tsconfig#allowImportingTsExtensions
+
+      We want our tooling to know how to resolve our custom files so the appropriate plugins
+      can do the proper transformations on those files.
+    */
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "testing-vite-and-typescript/tests/*": ["./tests/*"],
+      "testing-vite-and-typescript/*": ["./app/*"],
+      "*": ["./types/*"]
+    },
+    "types": ["ember-source/types"]
   }
 }

@@ -1,69 +1,23 @@
 'use strict';
 
-const googleTrackingIdsPerEnvironment = {
-  development: 'G-P2DX3GTJYS',
-  testing: 'G-P2DX3GTJYS',
-  production: 'G-VNQGQ63HK5',
-};
-
 module.exports = function (environment) {
-  let ENV = {
-    modulePrefix: '@wonderkamer/frontend',
+  const ENV = {
+    modulePrefix: 'testing-vite-and-typescript',
     environment,
     rootURL: '/',
     locationType: 'history',
     EmberENV: {
+      EXTEND_PROTOTYPES: false,
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
-      EXTEND_PROTOTYPES: false,
     },
 
     APP: {
-      version: '[env.version]',
-      apiHost: '[app.apiHost]',
-      buildTime: new Date().toISOString(),
+      // Here you can pass flags/options to your application instance
+      // when it is created
     },
-
-    emberKeyboard: { disableInputsInitializer: true },
-
-    metricsAdapters: [
-      {
-        name: 'GoogleAnalyticsFour',
-        environments: ['development', 'testing', 'production'],
-        config: {
-          id: googleTrackingIdsPerEnvironment[environment] ?? googleTrackingIdsPerEnvironment['development'],
-          options: {
-            send_page_view: false,
-            anonymize_ip: true,
-            debug_mode: environment !== 'production',
-          },
-          // // Use `analytics_debug.js` in development
-          // debug: false, //environment === 'development',
-          // // Use verbose tracing of GA events
-          // trace: false, //environment === 'development',
-          // // Ensure development env hits aren't sent to GA
-          // sendHitTask: environment !== 'development',
-          // // Specify Google Analytics plugins
-          // require: [], //['ecommerce']
-        },
-      },
-    ],
-  };
-
-  ENV['ember-g-recaptcha'] = {
-    jsUrl: 'https://www.google.com/recaptcha/api.js', // default
-    sitekey: '[env.recaptcha.siteKey]', // secret is is stored in github action keys, and placed into /public/.htaccess
-  };
-
-  ENV['contentSecurityPolicy'] = {
-    'default-src': "'none'",
-    'script-src': "'self' 'unsafe-eval' *.googleapis.com www.google-analytics.com",
-    'font-src': "'self' fonts.gstatic.com",
-    'img-src': "'self' data: *.googleapis.com maps.gstatic.com *.gstatic.com",
-    'connect-src': "'self' www.google-analytics.com",
-    'style-src': "'self' 'unsafe-inline' *.googleapis.com",
   };
 
   if (environment === 'development') {
@@ -72,8 +26,6 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-
-    ENV.APP.baseUrlApi = 'http://localhost:3000';
   }
 
   if (environment === 'test') {
