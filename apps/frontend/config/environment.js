@@ -54,7 +54,7 @@ module.exports = function (environment) {
 
   ENV['ember-g-recaptcha'] = {
     jsUrl: 'https://www.google.com/recaptcha/api.js', // default
-    sitekey: '6LerhZYqAAAAANfm-33_Yx-YxyO4fcYrGrUbLBJl', // the public key
+    sitekey: '6LfxAKwZAAAAAMRHZAx0NYh6Mr0rzHnQOwzgL8-4', // the public key
   };
 
   ENV['contentSecurityPolicy'] = {
