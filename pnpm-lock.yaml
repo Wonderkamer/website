@@ -663,8 +663,8 @@ importers:
         specifier: 3.0.1
         version: 3.0.1(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.1))
       ember-math-helpers:
-        specifier: 4.1.1
-        version: 4.1.1(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.1))
+        specifier: 4.2.1
+        version: 4.2.1(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.1))
       ember-metrics:
         specifier: 2.0.0-beta.2
         version: 2.0.0-beta.2
@@ -6054,8 +6054,8 @@ packages:
     peerDependencies:
       ember-source: '>= 5'
 
-  ember-math-helpers@4.1.1:
-    resolution: {integrity: sha512-Q7SngkmclCpfud6vwpp+Sq7Qnu2TCzxex08DBxLm5lubbeWXWXLMdUr8HdSdre152kwilsXtO431oIoXzFnWzg==}
+  ember-math-helpers@4.2.1:
+    resolution: {integrity: sha512-/pOFz6tQ67mh0faiD7nzOCYRXHElg2d/SvQnYB8vdYoj7BLCkNHLjdo3F0oa5Qz/6J/+k3ie5ZGBjMumvlOeIw==}
     engines: {node: '>= 18'}
     peerDependencies:
       ember-source: '>= 4.0.0'
@@ -19586,7 +19586,7 @@ snapshots:
     dependencies:
       ember-source: 6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.1)
 
-  ember-math-helpers@4.1.1(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.1)):
+  ember-math-helpers@4.2.1(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.1)):
     dependencies:
       '@embroider/addon-shim': 1.9.0
       ember-source: 6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.1)
