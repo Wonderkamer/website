@@ -475,7 +475,7 @@ importers:
         version: 1.5.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(@types/ember__array@4.0.10(@babel/core@7.26.0))(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__controller@4.0.12(@babel/core@7.26.0))(@types/ember__object@4.0.12(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))(ember-cli-htmlbars@6.3.0)(ember-modifier@4.2.0(@babel/core@7.26.0)(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.0)))
       '@glint/environment-ember-template-imports':
         specifier: 1.5.0
-        version: 1.5.0(@glint/environment-ember-loose@1.5.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(@types/ember__array@4.0.10(@babel/core@7.26.0))(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__controller@4.0.12(@babel/core@7.26.0))(@types/ember__object@4.0.12(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))(ember-cli-htmlbars@6.3.0)(ember-modifier@4.2.0(@babel/core@7.26.0)(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.0))))(@glint/template@1.5.0)(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__helper@4.0.8(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))
+        version: 1.5.0(@glint/environment-ember-loose@1.5.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(@types/ember__array@4.0.10(@babel/core@7.26.0))(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__controller@4.0.12(@babel/core@7.26.0))(@types/ember__object@4.0.12(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))(ember-cli-htmlbars@6.3.0)(ember-modifier@4.2.0(@babel/core@7.26.0)(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.0))))(@glint/template@1.5.0)(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__helper@4.0.9(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))
       '@glint/template':
         specifier: 1.5.0
         version: 1.5.0
@@ -531,8 +531,8 @@ importers:
         specifier: 4.0.6
         version: 4.0.6
       '@types/ember__helper':
-        specifier: 4.0.8
-        version: 4.0.8(@babel/core@7.26.0)
+        specifier: 4.0.9
+        version: 4.0.9(@babel/core@7.26.0)
       '@types/ember__object':
         specifier: 4.0.12
         version: 4.0.12(@babel/core@7.26.0)
@@ -2194,17 +2194,11 @@ packages:
   '@glimmer/destroyable@0.92.3':
     resolution: {integrity: sha512-vQ+mzT9Vkf+JueY7L5XbZqK0WyEVTKv0HOLrw/zDw9F5Szn3F/8Ea/qbAClo3QK3oZeg+ulFTa/61rdjSFYHGA==}
 
-  '@glimmer/destroyable@0.93.0':
-    resolution: {integrity: sha512-IJQh94lSCNZz+2HNZ3nJ1GvLbOY0I8RclhiPCulm4/Lwp0ss86SVNqAVmMWFR5qNinCwAes899shNkI4fILZcw==}
-
   '@glimmer/di@0.1.11':
     resolution: {integrity: sha512-moRwafNDwHTnTHzyyZC9D+mUSvYrs1Ak0tRPjjmCghdoHHIvMshVbEnwKb/1WmW5CUlKc2eL9rlAV32n3GiItg==}
 
   '@glimmer/encoder@0.92.3':
     resolution: {integrity: sha512-DJ8DB33LxODjzCWRrxozHUaRqVyZj4p8jDLG42aCNmWo3smxrsjshcaVUwDmib24DW+dzR7kMc39ObMqT5zK0w==}
-
-  '@glimmer/encoder@0.92.4':
-    resolution: {integrity: sha512-96uWy5Twklm/OS9vrtSO0i3jTyn17SoFy9zGeC6EgC9f7i1NaPgqXhgU4M0gOvlpASftK3XH35hzHf8Ian8w1A==}
 
   '@glimmer/env@0.1.7':
     resolution: {integrity: sha512-JKF/a9I9jw6fGoz8kA7LEQslrwJ5jms5CXhu/aqkBWk+PmZ6pTl8mlb/eJ/5ujBGTiQzBhy5AIWF712iA+4/mw==}
@@ -2215,23 +2209,14 @@ packages:
   '@glimmer/global-context@0.92.3':
     resolution: {integrity: sha512-tvlK5pt6oSe3furJ1KsO9vG/KmF9S98HLrcR48XbfwXlkuxvUeS94cdQId4GCN5naeX4OC4xm6eEjZWdc2s+jw==}
 
-  '@glimmer/global-context@0.92.4':
-    resolution: {integrity: sha512-WCbiZXk1lSt3qLniOHpNC7d7yPTBnycgGBVTFW70niJOBmZr2A4NSUQP1kB1t0ljS2t765DHLMGSRny1zFK4Pw==}
-
   '@glimmer/interfaces@0.84.3':
     resolution: {integrity: sha512-dk32ykoNojt0mvEaIW6Vli5MGTbQo58uy3Epj7ahCgTHmWOKuw/0G83f2UmFprRwFx689YTXG38I/vbpltEjzg==}
 
   '@glimmer/interfaces@0.92.3':
     resolution: {integrity: sha512-QwQeA01N+0h+TAi/J7iUnZtRuJy+093hNyagxDQBA6b1wCBw+q+al9+O6gmbWlkWE7EifzmNE1nnrgcecJBlJQ==}
 
-  '@glimmer/interfaces@0.93.0':
-    resolution: {integrity: sha512-k2xUOMmB5e8/tH+LqiUqYnrV3f2RFxPvo0i62xNvfFnZMayJwonUz97i7+V5E5dv82rckzVHNg0bWyNmMyCnqg==}
-
   '@glimmer/manager@0.92.4':
     resolution: {integrity: sha512-YMoarZT/+Ft2YSd+Wuu5McVsdP9y6jeAdVQGYFpno3NlL3TXYbl7ELtK7OGxFLjzQE01BdiUZZRvcY+a/s9+CQ==}
-
-  '@glimmer/manager@0.93.0':
-    resolution: {integrity: sha512-FLndTPkg7Wfn1WQnctlsR7YGC8dPJ3dLqeR8CG7O1ghYQMLPwrDJ5Epo/in/kIhE3NRrG9v6hD5adi6TXuykCA==}
 
   '@glimmer/node@0.92.4':
     resolution: {integrity: sha512-a5GME7HQJZFJPQDdSetQI6jjKXXQi0Vdr3WuUrYwhienVTV5LG0uClbFE2yYWC7TX97YDHpRrNk1CC258rujkQ==}
@@ -2239,20 +2224,11 @@ packages:
   '@glimmer/opcode-compiler@0.92.4':
     resolution: {integrity: sha512-WnZSBwxNqW/PPD/zfxEg6BVR5tHwTm8fp76piix8BNCQ6CuzVn6HUJ5SlvBsOwyoRCmzt/pkKmBJn+I675KG4w==}
 
-  '@glimmer/opcode-compiler@0.93.0':
-    resolution: {integrity: sha512-wQ/dVi7YIy/wRwjSFJgv5cdrTIpGrDKgSmPl10757Zd/iGyxuPIm3381VUuktLLA+PgJ7JXyRFCmh+jyRVWwSA==}
-
   '@glimmer/owner@0.92.3':
     resolution: {integrity: sha512-ZxmXIUCy6DOobhGDhA6kMpaXZS7HAucEgIl/qcjV9crlzGOO8H4j+n2x6nA/8zpuqvO0gYaBzqdNdu+7EgOEmw==}
 
-  '@glimmer/owner@0.92.4':
-    resolution: {integrity: sha512-fSosnkOxa7GruS6/KYjIwPqy/dwYxAx8hc46cz7iF0zfdTYMXuQuUIkkSV/1nt0HrPXqClgNesBodUUrnI6MjQ==}
-
   '@glimmer/program@0.92.4':
     resolution: {integrity: sha512-fkquujQ11lsGCWl/+XpZW2E7bjHj/g6/Ht292A7pSoANBD8Bz/gPYiPM+XuMwes9MApEsTEMjV4EXlyk2/Cirg==}
-
-  '@glimmer/program@0.93.0':
-    resolution: {integrity: sha512-+Y5myZrpa2gcl815zC2iRLlr6BW4NWrh/AoQi4oYyj/x2FnBWfzn3NgFZNJBee7GRgf6uCIBrPynhnZJbsaguQ==}
 
   '@glimmer/reference@0.84.3':
     resolution: {integrity: sha512-lV+p/aWPVC8vUjmlvYVU7WQJsLh319SdXuAWoX/SE3pq340BJlAJiEcAc6q52y9JNhT57gMwtjMX96W5Xcx/qw==}
@@ -2260,14 +2236,8 @@ packages:
   '@glimmer/reference@0.92.3':
     resolution: {integrity: sha512-Ud4LE689mEXL6BJnJx0ZPt2dt/A540C+TAnBFXHpcAjROz5gT337RN+tgajwudEUqpufExhcPSMGzs1pvWYCJg==}
 
-  '@glimmer/reference@0.93.0':
-    resolution: {integrity: sha512-7XOQydl54GMOUg1i2VB6psyF7Ce2EDBgK6QStMuTTsA1RtMNizx8hrg0mWJWCROeqhPwE6tmwsR8zFYHLALqgg==}
-
   '@glimmer/runtime@0.92.4':
     resolution: {integrity: sha512-ISqM/8hVh+fY/gnLAAPKfts4CvnJBOyCYAXgGccIlzzQrSVLaz0NoRiWTLGj5B/3xyPbqLwYPDvlTsOjYtvPoA==}
-
-  '@glimmer/runtime@0.93.0':
-    resolution: {integrity: sha512-7FW9rQpc5P0fDV0Vg4Gf63nNyvMz/Gq3TJiyrba8oZ8vC6BrV+qL3+bjW8p8EutGA7gLrokL0lMNCvMXxBJWPw==}
 
   '@glimmer/syntax@0.84.3':
     resolution: {integrity: sha512-ioVbTic6ZisLxqTgRBL2PCjYZTFIwobifCustrozRU2xGDiYvVIL0vt25h2c1ioDsX59UgVlDkIK4YTAQQSd2A==}
@@ -2287,9 +2257,6 @@ packages:
   '@glimmer/util@0.92.3':
     resolution: {integrity: sha512-K1oH93gGU36slycxJ9CcFpUTsdOc4XQ6RuZFu5oRsxFYtEF5PSu7ik11h58fyeoaWOr1ebfkyAMawbeI2AJ5GA==}
 
-  '@glimmer/util@0.93.0':
-    resolution: {integrity: sha512-C0kJlyG2NKoBYC97xkrvR+imhxKEG4Pki6HdpaYvKk6h2EuOxw6fgBBW45DAPcEkjmNKeVuMGXPzd5nAJih0YQ==}
-
   '@glimmer/validator@0.44.0':
     resolution: {integrity: sha512-i01plR0EgFVz69GDrEuFgq1NheIjZcyTy3c7q+w7d096ddPVeVcRzU3LKaqCfovvLJ+6lJx40j45ecycASUUyw==}
 
@@ -2299,9 +2266,6 @@ packages:
   '@glimmer/validator@0.92.3':
     resolution: {integrity: sha512-HKrMYeW0YhiksSeKYqX2chUR/rz82j12DcY7p2dORQlTV3qlAfiE5zRTJH1KRA1X3ZMf7DI2/GOzkXwYp0o+3Q==}
 
-  '@glimmer/validator@0.93.0':
-    resolution: {integrity: sha512-bRxTAXS5iTpMxH2hqkkAs4GU/+KbHANz9bglpb0ZnO7DdYJOZCl+XlE1s/5fNk6KQ5x3EtKD0Ekn7dw62yLvLA==}
-
   '@glimmer/vm-babel-plugins@0.92.3':
     resolution: {integrity: sha512-VpkKsHc3oiq9ruiwT7sN4RuOIc5n10PCeWX7tYSNZ85S1bETcAFn0XbyNjI+G3uFshQGEK0T8Fn3+/8VTNIQIg==}
     engines: {node: '>=16'}
@@ -2309,14 +2273,8 @@ packages:
   '@glimmer/vm@0.92.3':
     resolution: {integrity: sha512-DNMQz7nn2zRwKO1irVZ4alg1lH+VInwR3vkWVgobUs0yh7OoHVGXKMd5uxzIksqJEUw1XOX9Qgu/GYZB1PiH3w==}
 
-  '@glimmer/vm@0.93.0':
-    resolution: {integrity: sha512-l1TYex4h3jAPQG+y2aFFfE952rF/TEpW3k+AAHwTLb81dlTsQRIt3BWmBCnJ7f71qvW0oSRukeLFE3VaLMf4ag==}
-
   '@glimmer/wire-format@0.92.3':
     resolution: {integrity: sha512-gFz81Q9+V7Xs0X8mSq6y8qacHm0dPaGJo2/Bfcsdow1hLOKNgTCLr4XeDBhRML8f6I6Gk9ugH4QDxyIOXOpC4w==}
-
-  '@glimmer/wire-format@0.93.0':
-    resolution: {integrity: sha512-7OxOmiikXcyEJXw44OSYfpUTy877ZiKd0TON/GJpb/Xjb+oX8YQj97nrANMMuw2VnHA94o3qvuQosTXEAC6mrw==}
 
   '@glint/core@1.5.0':
     resolution: {integrity: sha512-oo6ZDwX2S0Qqjai/CJH72LHg1U6rvzH1IyiFlWofaFiu/nSg04CDWZuJNPC3r47jz1+SaSI+mVMUaKJznzxzzQ==}
@@ -3466,8 +3424,8 @@ packages:
   '@types/ember__error@4.0.6':
     resolution: {integrity: sha512-vYrLaGGjHkN14K89Vm8yqB2mkpJQefE5w7QJkkgYyV+smzns1vKlPbvuFevRtoeYNn4u4yY0JyF7HceNkm3H0Q==}
 
-  '@types/ember__helper@4.0.8':
-    resolution: {integrity: sha512-IhHkZHmwPx7zjabIr315qpQwgje+ASq5y6If1ZtRSwjm/0rL2Qa9FQu+h4cYW5jWdn2ptJ1pZZJTCe2uEVxsIQ==}
+  '@types/ember__helper@4.0.9':
+    resolution: {integrity: sha512-vs7ye+DDXBm4bmqS+StUXoH0B7DzVs9eAnUlyy5Y9Y+IP7STGaKf/6oFMBBsJRVTbvv91zZXTwpGvDcTD1JP6w==}
 
   '@types/ember__object@4.0.12':
     resolution: {integrity: sha512-ZEpikPjZ02m1QCBiTPTayMJwVwF4UBlHlGDoScRB3IP/SUS1O5mmn1/CnSQDxzzF3ctfmhNuTZzVBBc1Y8OC1A==}
@@ -14497,24 +14455,12 @@ snapshots:
       '@glimmer/interfaces': 0.92.3
       '@glimmer/util': 0.92.3
 
-  '@glimmer/destroyable@0.93.0':
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.92.4
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/util': 0.93.0
-
   '@glimmer/di@0.1.11': {}
 
   '@glimmer/encoder@0.92.3':
     dependencies:
       '@glimmer/interfaces': 0.92.3
       '@glimmer/vm': 0.92.3
-
-  '@glimmer/encoder@0.92.4':
-    dependencies:
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/vm': 0.93.0
 
   '@glimmer/env@0.1.7': {}
 
@@ -14524,17 +14470,11 @@ snapshots:
 
   '@glimmer/global-context@0.92.3': {}
 
-  '@glimmer/global-context@0.92.4': {}
-
   '@glimmer/interfaces@0.84.3':
     dependencies:
       '@simple-dom/interface': 1.4.0
 
   '@glimmer/interfaces@0.92.3':
-    dependencies:
-      '@simple-dom/interface': 1.4.0
-
-  '@glimmer/interfaces@0.93.0':
     dependencies:
       '@simple-dom/interface': 1.4.0
 
@@ -14549,17 +14489,6 @@ snapshots:
       '@glimmer/util': 0.92.3
       '@glimmer/validator': 0.92.3
       '@glimmer/vm': 0.92.3
-
-  '@glimmer/manager@0.93.0':
-    dependencies:
-      '@glimmer/destroyable': 0.93.0
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.92.4
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/reference': 0.93.0
-      '@glimmer/util': 0.93.0
-      '@glimmer/validator': 0.93.0
-      '@glimmer/vm': 0.93.0
 
   '@glimmer/node@0.92.4':
     dependencies:
@@ -14581,25 +14510,9 @@ snapshots:
       '@glimmer/vm': 0.92.3
       '@glimmer/wire-format': 0.92.3
 
-  '@glimmer/opcode-compiler@0.93.0':
-    dependencies:
-      '@glimmer/encoder': 0.92.4
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.92.4
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/manager': 0.93.0
-      '@glimmer/reference': 0.93.0
-      '@glimmer/util': 0.93.0
-      '@glimmer/vm': 0.93.0
-      '@glimmer/wire-format': 0.93.0
-
   '@glimmer/owner@0.92.3':
     dependencies:
       '@glimmer/util': 0.92.3
-
-  '@glimmer/owner@0.92.4':
-    dependencies:
-      '@glimmer/util': 0.93.0
 
   '@glimmer/program@0.92.4':
     dependencies:
@@ -14611,17 +14524,6 @@ snapshots:
       '@glimmer/util': 0.92.3
       '@glimmer/vm': 0.92.3
       '@glimmer/wire-format': 0.92.3
-
-  '@glimmer/program@0.93.0':
-    dependencies:
-      '@glimmer/encoder': 0.92.4
-      '@glimmer/env': 0.1.7
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/manager': 0.93.0
-      '@glimmer/opcode-compiler': 0.93.0
-      '@glimmer/util': 0.93.0
-      '@glimmer/vm': 0.93.0
-      '@glimmer/wire-format': 0.93.0
 
   '@glimmer/reference@0.84.3':
     dependencies:
@@ -14639,14 +14541,6 @@ snapshots:
       '@glimmer/util': 0.92.3
       '@glimmer/validator': 0.92.3
 
-  '@glimmer/reference@0.93.0':
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.92.4
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/util': 0.93.0
-      '@glimmer/validator': 0.93.0
-
   '@glimmer/runtime@0.92.4':
     dependencies:
       '@glimmer/destroyable': 0.92.3
@@ -14661,21 +14555,6 @@ snapshots:
       '@glimmer/validator': 0.92.3
       '@glimmer/vm': 0.92.3
       '@glimmer/wire-format': 0.92.3
-
-  '@glimmer/runtime@0.93.0':
-    dependencies:
-      '@glimmer/destroyable': 0.93.0
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.92.4
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/manager': 0.93.0
-      '@glimmer/owner': 0.92.4
-      '@glimmer/program': 0.93.0
-      '@glimmer/reference': 0.93.0
-      '@glimmer/util': 0.93.0
-      '@glimmer/validator': 0.93.0
-      '@glimmer/vm': 0.93.0
-      '@glimmer/wire-format': 0.93.0
 
   '@glimmer/syntax@0.84.3':
     dependencies:
@@ -14710,11 +14589,6 @@ snapshots:
       '@glimmer/env': 0.1.7
       '@glimmer/interfaces': 0.92.3
 
-  '@glimmer/util@0.93.0':
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/interfaces': 0.93.0
-
   '@glimmer/validator@0.44.0': {}
 
   '@glimmer/validator@0.84.3':
@@ -14729,13 +14603,6 @@ snapshots:
       '@glimmer/interfaces': 0.92.3
       '@glimmer/util': 0.92.3
 
-  '@glimmer/validator@0.93.0':
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.92.4
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/util': 0.93.0
-
   '@glimmer/vm-babel-plugins@0.92.3(@babel/core@7.26.0)':
     dependencies:
       babel-plugin-debug-macros: 0.3.4(@babel/core@7.26.0)
@@ -14747,20 +14614,10 @@ snapshots:
       '@glimmer/interfaces': 0.92.3
       '@glimmer/util': 0.92.3
 
-  '@glimmer/vm@0.93.0':
-    dependencies:
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/util': 0.93.0
-
   '@glimmer/wire-format@0.92.3':
     dependencies:
       '@glimmer/interfaces': 0.92.3
       '@glimmer/util': 0.92.3
-
-  '@glimmer/wire-format@0.93.0':
-    dependencies:
-      '@glimmer/interfaces': 0.93.0
-      '@glimmer/util': 0.93.0
 
   '@glint/core@1.5.0(typescript@5.7.2)':
     dependencies:
@@ -14790,14 +14647,14 @@ snapshots:
       ember-cli-htmlbars: 6.3.0
       ember-modifier: 4.2.0(@babel/core@7.26.0)(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.0))
 
-  '@glint/environment-ember-template-imports@1.5.0(@glint/environment-ember-loose@1.5.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(@types/ember__array@4.0.10(@babel/core@7.26.0))(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__controller@4.0.12(@babel/core@7.26.0))(@types/ember__object@4.0.12(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))(ember-cli-htmlbars@6.3.0)(ember-modifier@4.2.0(@babel/core@7.26.0)(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.0))))(@glint/template@1.5.0)(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__helper@4.0.8(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))':
+  '@glint/environment-ember-template-imports@1.5.0(@glint/environment-ember-loose@1.5.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(@types/ember__array@4.0.10(@babel/core@7.26.0))(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__controller@4.0.12(@babel/core@7.26.0))(@types/ember__object@4.0.12(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))(ember-cli-htmlbars@6.3.0)(ember-modifier@4.2.0(@babel/core@7.26.0)(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.0))))(@glint/template@1.5.0)(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__helper@4.0.9(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))':
     dependencies:
       '@glint/environment-ember-loose': 1.5.0(@glimmer/component@2.0.0)(@glint/template@1.5.0)(@types/ember__array@4.0.10(@babel/core@7.26.0))(@types/ember__component@4.0.22(@babel/core@7.26.0))(@types/ember__controller@4.0.12(@babel/core@7.26.0))(@types/ember__object@4.0.12(@babel/core@7.26.0))(@types/ember__routing@4.0.22(@babel/core@7.26.0))(ember-cli-htmlbars@6.3.0)(ember-modifier@4.2.0(@babel/core@7.26.0)(ember-source@6.0.1(@glimmer/component@2.0.0)(@glint/template@1.5.0)(rsvp@4.8.5)(webpack@5.97.0)))
       '@glint/template': 1.5.0
       content-tag: 2.0.3
     optionalDependencies:
       '@types/ember__component': 4.0.22(@babel/core@7.26.0)
-      '@types/ember__helper': 4.0.8(@babel/core@7.26.0)
+      '@types/ember__helper': 4.0.9(@babel/core@7.26.0)
       '@types/ember__routing': 4.0.22(@babel/core@7.26.0)
 
   '@glint/template@1.5.0': {}
@@ -16282,10 +16139,10 @@ snapshots:
 
   '@types/ember__error@4.0.6': {}
 
-  '@types/ember__helper@4.0.8(@babel/core@7.26.0)':
+  '@types/ember__helper@4.0.9(@babel/core@7.26.0)':
     dependencies:
-      '@glimmer/manager': 0.93.0
-      '@glimmer/runtime': 0.93.0
+      '@glimmer/manager': 0.92.4
+      '@glimmer/runtime': 0.92.4
       '@types/ember': 4.0.11(@babel/core@7.26.0)
     transitivePeerDependencies:
       - '@babel/core'
