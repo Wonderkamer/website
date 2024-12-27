@@ -98,7 +98,7 @@
     "@warp-drive/build-config": "0.0.0-beta.7",
     "autoprefixer": "10.4.20",
     "broccoli-asset-rev": "3.0.0",
-    "concurrently": "9.1.0",
+    "concurrently": "9.1.1",
     "cssnano": "7.0.6",
     "daisyui": "4.12.23",
     "ember-auto-import": "2.10.0",
