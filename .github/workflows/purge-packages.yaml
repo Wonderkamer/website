@@ -19,7 +19,7 @@ jobs:
         uses: dataaxiom/ghcr-cleanup-action@v1
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          owner: Wonderkamer
+          owner: wonderkamer
           repository: website
           dry-run: false
           keep-n-tagged: 15
@@ -28,4 +28,4 @@ jobs:
           delete-orphaned-images: true
           validate: true
           log-level: "debug"
-          packages: "wonderkamer/website"
+          packages: "website"
