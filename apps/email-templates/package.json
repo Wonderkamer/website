@@ -6,14 +6,14 @@
     "build": "maizzle build production"
   },
   "devDependencies": {
-    "@types/node": "22.10.1"
+    "@types/node": "22.10.2"
   },
   "dependencies": {
-    "@maizzle/framework": "4.8.9",
-    "tailwindcss": "3.4.16",
+    "@maizzle/framework": "5.0.0",
+    "tailwindcss": "3.4.17",
     "tailwindcss-box-shadow": "2.0.3",
-    "tailwindcss-email-variants": "3.0.2",
-    "tailwindcss-mso": "2.0.0"
+    "tailwindcss-email-variants": "3.0.3",
+    "tailwindcss-mso": "2.0.1"
   },
   "turbo": {
     "tasks": {
