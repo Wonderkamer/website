@@ -19,7 +19,7 @@ jobs:
         uses: dataaxiom/ghcr-cleanup-action@v1
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          owner: wonderkamer
+          owner: Wonderkamer
           repository: website
           dry-run: false
           keep-n-tagged: 15
