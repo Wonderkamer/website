@@ -1,52 +1,31 @@
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 0,3"
+    - cron: "11 3 */7 * *"
 
 name: "Purge Packages"
 
 jobs:
-  purge-oldest-packages:
-    name: "Purge Older Tagged Packages"
+  purge-packages:
+    name: "Purge Packages"
+
+    permissions:
+      packages: write
 
     runs-on: "ubuntu-latest"
 
-    strategy:
-      matrix:
-        package-name: ["website"]
-
     steps:
-      - name: Login to GitHub Container Registry with PAT_TOKEN
-        uses: docker/login-action@v3
+      - name: "Purge"
+        uses: dataaxiom/ghcr-cleanup-action@v1
         with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.PAT_TOKEN }}
-
-      - name: "Purge all untagged versions"
-        uses: actions/delete-package-versions@v5
-        with:
-          package-name: ${{ matrix.package-name }}
-          package-type: "container"
-          min-versions-to-keep: 0
-          delete-only-untagged-versions: "true"
-
-      - name: "Purge prelease versions except the latest 5"
-        uses: actions/delete-package-versions@v5
-        with:
-          package-name: ${{ matrix.package-name }}
-          package-type: "container"
-          min-versions-to-keep: 5
-          # ignore x.x.x versions.
-          ignore-versions: '^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$'
-          delete-only-untagged-versions: "false"
-
-      - name: "Purge full versions except the latest 5"
-        uses: actions/delete-package-versions@v5
-        with:
-          package-name: ${{ matrix.package-name }}
-          package-type: "container"
-          min-versions-to-keep: 5
-          # ignore x.x.x-dev.xx.g24b164f versions.
-          ignore-versions: '^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)-'
-          delete-only-untagged-versions: "false"
+          token: ${{ secrets.PAT_TOKEN }}
+          owner: Wonderkamer
+          repository: website
+          dry-run: false
+          keep-n-tagged: 15
+          delete-untagged: true
+          delete-partial-images: true
+          delete-orphaned-images: true
+          validate: true
+          log-level: "debug"
+          packages: "wonderkamer/website"
