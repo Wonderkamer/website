@@ -237,8 +237,8 @@ importers:
         specifier: 0.3.20
         version: 0.3.20(ioredis@5.4.2)(pg@8.13.1)(redis@4.7.0)(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))
       uuid:
-        specifier: 11.0.4
-        version: 11.0.4
+        specifier: 11.0.5
+        version: 11.0.5
     devDependencies:
       '@golevelup/ts-jest':
         specifier: 0.6.1
@@ -11488,8 +11488,8 @@ packages:
     resolution: {integrity: sha512-d0z310fCWv5dJwnX1Y/MncBAqGMKEzlBb1AOf7z9K8ALnd0utBX/msg/fA0+sbyN1ihbMsLhrBlnl1ak7Wa0rg==}
     hasBin: true
 
-  uuid@11.0.4:
-    resolution: {integrity: sha512-IzL6VtTTYcAhA/oghbFJ1Dkmqev+FpQWnCBaKq/gUluLxliWvO8DPFWfIviRmYbtaavtSQe4WBL++rFjdcGWEg==}
+  uuid@11.0.5:
+    resolution: {integrity: sha512-508e6IcKLrhxKdBbcA2b4KQZlLVp2+J5UwQ6F7Drckkc5N9ZJwFa4TgWtsww9UG8fGHbm6gbV19TdM5pQ4GaIA==}
     hasBin: true
 
   uuid@8.3.2:
@@ -25880,7 +25880,7 @@ snapshots:
 
   uuid@11.0.3: {}
 
-  uuid@11.0.4: {}
+  uuid@11.0.5: {}
 
   uuid@8.3.2: {}
 
