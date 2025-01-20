@@ -14,6 +14,7 @@ export class MailService {
 
   async sendContactEmail(contact: ContactDto) {
     await this.mailQueue.add('mailer', {
+      replyTo: contact?.email,
       subject: 'Contact request from the website',
       template: './support-contact',
       context: Object.assign({ ...contact }),

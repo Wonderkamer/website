@@ -310,7 +310,7 @@
       "attributes": {
         "title": "Marine Rabier",
         "slug": "marine-rabier",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -320,6 +320,76 @@
       "attributes": {
         "title": "Michael Siega",
         "slug": "michael-siega",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 32,
+      "type": "member",
+      "attributes": {
+        "title": "Nathan Warren",
+        "slug": "nathan-warren",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 33,
+      "type": "member",
+      "attributes": {
+        "title": "Yasmin Veenman",
+        "slug": "yasmin-veenman",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 34,
+      "type": "member",
+      "attributes": {
+        "title": "Jad Joubran",
+        "slug": "jad-joubran",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 35,
+      "type": "member",
+      "attributes": {
+        "title": "Jorine Koenen",
+        "slug": "jorine-koenen",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 36,
+      "type": "member",
+      "attributes": {
+        "title": "Joany Beer",
+        "slug": "joany-beer",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 37,
+      "type": "member",
+      "attributes": {
+        "title": "Hui Yee Tan",
+        "slug": "hui-yee-tan",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 38,
+      "type": "member",
+      "attributes": {
+        "title": "David Blackman",
+        "slug": "david-blackman",
         "is-active": true,
         "tag-line": "..."
       }
