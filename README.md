@@ -1,41 +1,24 @@
 # wonderkamer
 
-This README outlines the details of collaborating on this Ember application.
+This README outlines the details of collaborating on this application.
 A short introduction of this app could easily go here.
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
+- [A github acount and access to Wonderkamer/website](https://github.com)
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/) (with npm)
-- [Ember CLI](https://cli.emberjs.com/release/)
+- [Node.js](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
 - [Google Chrome](https://google.com/chrome/)
+- [Docker](https://www.docker.com/get-started/)
 
 ## Installation
 
-- `git clone <repository-url>` this repository
+- `git clone git@github.com:Wonderkamer/website.git` this repository
 - `cd wonderkamer`
-- `npm install`
-
-## Running / Development
-
-- `ember serve` or `pnpm run start`
-- Visit your app at [http://localhost:4200](http://localhost:4200).
-- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Running Tests
-
-- `pnpm run test`
-
-### Linting
-
-- `pnpm run lint`
-
-### Manual building (not needed)
-
-- `ember build` (development)
-- `ember build --environment production` (production)
+- `pnpm install`
 
 ### Releasing
 
@@ -47,10 +30,4 @@ Will generate a release with a changelog and tags it. Push to github to deploy.
 
 Deployment is done via github actions. If you deploy changes to the development branch they will be deployed to dev.wonderkamer.com. If you tag a commit it will be deployed to wonderkamer.com.
 
-## Further Reading / Useful Links
-
-- [ember.js](https://emberjs.com/)
-- [ember-cli](https://cli.emberjs.com/release/)
-- Development Browser Extensions
-  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+See [CONTRIBUTING](./CONTRIBUTING.md) for further instructions.

@@ -4,6 +4,7 @@
 
 You will need the following things properly installed on your computer.
 
+- [A github acount and access to Wonderkamer/website](https://github.com)
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/)
 - [pnpm](https://pnpm.io/)
@@ -22,7 +23,7 @@ You will need the following things properly installed on your computer.
 - `pnpm run start:dev` => this will start the backend NestJS application and an EmberJS frontend application. The later is served by the backend and has hot reloading enabled.
 
 - Visit your app at [http://localhost:3000](http://localhost:3000).
-- Visit your tests at [http://localhost:3000/tests](http://localhost:3000/tests).
+- Visit your frontend tests at [http://localhost:3000/tests](http://localhost:3000/tests).
 
 ### Running Tests
 
