@@ -44,7 +44,9 @@
       <title>{{{ page.title }}}</title>
     </if>
     <style>
-      {{{ page.css }}}
+      @config 'tailwind.config.js';
+      @tailwind components;
+      @tailwind utilities;
     </style>
     <block name="head"></block>
   </head>
@@ -92,7 +94,7 @@
                           </tr>
                         </table>
 
-                        <block name="template"></block>
+                        <yield />
 
                         <table class="w-full" role="separator">
                           <tr>

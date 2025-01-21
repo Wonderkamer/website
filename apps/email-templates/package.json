@@ -1,19 +1,22 @@
 {
   "name": "@wonderkamer/email-templates",
   "private": true,
+  "type": "module",
   "scripts": {
     "start:dev": "maizzle serve",
     "build": "maizzle build production"
   },
   "devDependencies": {
-    "@types/node": "22.10.5"
+    "@types/node": "22.10.7"
   },
   "dependencies": {
     "@maizzle/framework": "5.0.0",
     "tailwindcss": "3.4.17",
     "tailwindcss-box-shadow": "2.0.3",
     "tailwindcss-email-variants": "3.0.3",
-    "tailwindcss-mso": "2.0.1"
+    "tailwindcss-mso": "2.0.1",
+    "tailwindcss-preset-email": "1.4.0",
+    "morphdom": "2.7.4"
   },
   "turbo": {
     "tasks": {

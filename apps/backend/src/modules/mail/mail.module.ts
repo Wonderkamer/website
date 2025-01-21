@@ -19,7 +19,7 @@ import { MailService } from './mail.service';
           preview: false /* 👈 preview emails in the browser */,
 
           template: {
-            dir: join(configService.get<EnvConfig>('env.appRoot', { infer: true }), '../email-templates/dist'),
+            dir: join(configService.get<EnvConfig>('env.appRoot', { infer: true }), '../email-templates/dist/emails'),
             adapter: new HandlebarsAdapter(),
             options: {
               strict: true,

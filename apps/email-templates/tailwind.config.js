@@ -1,4 +1,10 @@
 module.exports = {
+  presets: [require("tailwindcss-preset-email")],
+  content: [
+    "./src/components/**/*.html",
+    "./src/emails/**/*.html",
+    "./src/layouts/**/*.html",
+  ],
   theme: {
     screens: {
       xs: { max: "425px" },
