@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.7.1](https://github.com/Wonderkamer/website/compare/v1.7.0...v1.7.1) (2025-01-21)
+
+
+### Bug Fixes
+
+* docker build (due to maizle v5) ([9e16977](https://github.com/Wonderkamer/website/commits/9e169778c4c20705d0031036697e385dad432642))
+
 ## [1.7.0](https://github.com/Wonderkamer/website/compare/v1.6.3...v1.7.0) (2025-01-20)
 
 
