@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.7.2](https://github.com/Wonderkamer/website/compare/v1.7.1...v1.7.2) (2025-01-22)
+
+
+### Content Changes
+
+* members ([161f236](https://github.com/Wonderkamer/website/commits/161f23648628b3cb0876fdd108a3c34052554997))
+
 ## [1.7.1](https://github.com/Wonderkamer/website/compare/v1.7.0...v1.7.1) (2025-01-21)
 
 
