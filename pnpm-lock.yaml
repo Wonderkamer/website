@@ -774,26 +774,26 @@ importers:
         specifier: 1.83.1
         version: 1.83.1
       stylelint:
-        specifier: 16.13.0
-        version: 16.13.0(typescript@5.7.3)
+        specifier: 16.13.2
+        version: 16.13.2(typescript@5.7.3)
       stylelint-config-recommended:
         specifier: 15.0.0
-        version: 15.0.0(stylelint@16.13.0(typescript@5.7.3))
+        version: 15.0.0(stylelint@16.13.2(typescript@5.7.3))
       stylelint-config-sass-guidelines:
         specifier: 12.1.0
-        version: 12.1.0(postcss@8.4.49)(stylelint@16.13.0(typescript@5.7.3))
+        version: 12.1.0(postcss@8.4.49)(stylelint@16.13.2(typescript@5.7.3))
       stylelint-config-standard:
         specifier: 37.0.0
-        version: 37.0.0(stylelint@16.13.0(typescript@5.7.3))
+        version: 37.0.0(stylelint@16.13.2(typescript@5.7.3))
       stylelint-config-tailwindcss:
         specifier: 0.0.7
-        version: 0.0.7(stylelint@16.13.0(typescript@5.7.3))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3)))
+        version: 0.0.7(stylelint@16.13.2(typescript@5.7.3))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3)))
       stylelint-prettier:
         specifier: 5.0.2
-        version: 5.0.2(prettier@3.3.3)(stylelint@16.13.0(typescript@5.7.3))
+        version: 5.0.2(prettier@3.3.3)(stylelint@16.13.2(typescript@5.7.3))
       stylelint-scss:
         specifier: 6.10.0
-        version: 6.10.0(stylelint@16.13.0(typescript@5.7.3))
+        version: 6.10.0(stylelint@16.13.2(typescript@5.7.3))
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))
@@ -10784,8 +10784,8 @@ packages:
     peerDependencies:
       stylelint: ^16.0.2
 
-  stylelint@16.13.0:
-    resolution: {integrity: sha512-muxVjMhZB8BrDFSKNva0dmvD2tM0o/szrvuZuXYcAnN9a8nQmbGLqNUOemSgumaCMCPQ+0USYyG3hA5vJjUC1Q==}
+  stylelint@16.13.2:
+    resolution: {integrity: sha512-wDlgh0mRO9RtSa3TdidqHd0nOG8MmUyVKl+dxA6C1j8aZRzpNeEgdhFmU5y4sZx4Fc6r46p0fI7p1vR5O2DZqA==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -15330,7 +15330,7 @@ snapshots:
       '@stdlib/utils-constructor-name': 0.2.2
       '@stdlib/utils-global': 0.2.2
 
-  '@stylistic/stylelint-plugin@3.1.1(stylelint@16.13.0(typescript@5.7.3))':
+  '@stylistic/stylelint-plugin@3.1.1(stylelint@16.13.2(typescript@5.7.3))':
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
@@ -15339,7 +15339,7 @@ snapshots:
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
       style-search: 0.1.0
-      stylelint: 16.13.0(typescript@5.7.3)
+      stylelint: 16.13.2(typescript@5.7.3)
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -24990,35 +24990,35 @@ snapshots:
       postcss: 8.4.49
       postcss-selector-parser: 6.1.2
 
-  stylelint-config-recommended@15.0.0(stylelint@16.13.0(typescript@5.7.3)):
+  stylelint-config-recommended@15.0.0(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.0(typescript@5.7.3)
+      stylelint: 16.13.2(typescript@5.7.3)
 
-  stylelint-config-sass-guidelines@12.1.0(postcss@8.4.49)(stylelint@16.13.0(typescript@5.7.3)):
+  stylelint-config-sass-guidelines@12.1.0(postcss@8.4.49)(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
-      '@stylistic/stylelint-plugin': 3.1.1(stylelint@16.13.0(typescript@5.7.3))
+      '@stylistic/stylelint-plugin': 3.1.1(stylelint@16.13.2(typescript@5.7.3))
       postcss: 8.4.49
       postcss-scss: 4.0.9(postcss@8.4.49)
-      stylelint: 16.13.0(typescript@5.7.3)
-      stylelint-scss: 6.10.0(stylelint@16.13.0(typescript@5.7.3))
+      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint-scss: 6.10.0(stylelint@16.13.2(typescript@5.7.3))
 
-  stylelint-config-standard@37.0.0(stylelint@16.13.0(typescript@5.7.3)):
+  stylelint-config-standard@37.0.0(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
-      stylelint: 16.13.0(typescript@5.7.3)
-      stylelint-config-recommended: 15.0.0(stylelint@16.13.0(typescript@5.7.3))
+      stylelint: 16.13.2(typescript@5.7.3)
+      stylelint-config-recommended: 15.0.0(stylelint@16.13.2(typescript@5.7.3))
 
-  stylelint-config-tailwindcss@0.0.7(stylelint@16.13.0(typescript@5.7.3))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))):
+  stylelint-config-tailwindcss@0.0.7(stylelint@16.13.2(typescript@5.7.3))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))):
     dependencies:
-      stylelint: 16.13.0(typescript@5.7.3)
+      stylelint: 16.13.2(typescript@5.7.3)
       tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@22.10.5)(typescript@5.7.3))
 
-  stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.13.0(typescript@5.7.3)):
+  stylelint-prettier@5.0.2(prettier@3.3.3)(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
       prettier: 3.3.3
       prettier-linter-helpers: 1.0.0
-      stylelint: 16.13.0(typescript@5.7.3)
+      stylelint: 16.13.2(typescript@5.7.3)
 
-  stylelint-scss@6.10.0(stylelint@16.13.0(typescript@5.7.3)):
+  stylelint-scss@6.10.0(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
       css-tree: 3.1.0
       is-plain-object: 5.0.0
@@ -25028,9 +25028,9 @@ snapshots:
       postcss-resolve-nested-selector: 0.1.6
       postcss-selector-parser: 7.0.0
       postcss-value-parser: 4.2.0
-      stylelint: 16.13.0(typescript@5.7.3)
+      stylelint: 16.13.2(typescript@5.7.3)
 
-  stylelint@16.13.0(typescript@5.7.3):
+  stylelint@16.13.2(typescript@5.7.3):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
