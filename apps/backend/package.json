@@ -35,7 +35,7 @@
     "typeorm:migration:revert": "pnpm run typeorm migration:revert -d ./src/typeOrm.config.ts"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "3.726.1",
+    "@aws-sdk/client-s3": "3.733.0",
     "@bull-board/api": "6.7.1",
     "@bull-board/express": "6.7.1",
     "@bull-board/nestjs": "6.7.1",
