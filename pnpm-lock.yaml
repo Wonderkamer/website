@@ -45,17 +45,17 @@ importers:
         specifier: 3.726.1
         version: 3.726.1
       '@bull-board/api':
-        specifier: 6.6.1
-        version: 6.6.1(@bull-board/ui@6.6.1)
+        specifier: 6.7.1
+        version: 6.7.1(@bull-board/ui@6.7.1)
       '@bull-board/express':
-        specifier: 6.6.1
-        version: 6.6.1
+        specifier: 6.7.1
+        version: 6.7.1
       '@bull-board/nestjs':
-        specifier: 6.6.1
-        version: 6.6.1(@bull-board/api@6.6.1(@bull-board/ui@6.6.1))(@bull-board/express@6.6.1)(@nestjs/common@10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.15)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+        specifier: 6.7.1
+        version: 6.7.1(@bull-board/api@6.7.1(@bull-board/ui@6.7.1))(@bull-board/express@6.7.1)(@nestjs/common@10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.15)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@bull-board/ui':
-        specifier: 6.6.1
-        version: 6.6.1
+        specifier: 6.7.1
+        version: 6.7.1
       '@liaoliaots/nestjs-redis':
         specifier: 10.0.0
         version: 10.0.0(@nestjs/common@10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.15)(ioredis@5.4.2)
@@ -1729,26 +1729,26 @@ packages:
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@bull-board/api@6.6.1':
-    resolution: {integrity: sha512-IlG60N/r/pGfZH39/IZz2rfzBXOuTpKA+5SOLX5ESqk/JPtHq2ipnaczdxSsXIcXtefmhwyhBBfQujW1bJdJlw==}
+  '@bull-board/api@6.7.1':
+    resolution: {integrity: sha512-Gv+0jo0QYBjNE0DatcUSavMLfGAOuhsLVPxJHR3QjN7Rp0s1VM/O2ExNTezDip1Q67G8fq8Tp9ZfleJZb1KP2Q==}
     peerDependencies:
-      '@bull-board/ui': 6.6.1
+      '@bull-board/ui': 6.7.1
 
-  '@bull-board/express@6.6.1':
-    resolution: {integrity: sha512-/3ghya2Uroq3yIEQfK4XG4oT/zGR4NMbEveqLFcOuvhvm4x3IAO3z04ugp0eDvr8pxgD3uS2Tg1cQimzUOIo4A==}
+  '@bull-board/express@6.7.1':
+    resolution: {integrity: sha512-PQ3nMDbafnJPk+O/CPFi+MftBYDomi9jSJkuAMxAIMDGN+nhiVVYkyflUt7ToeV9YppB+GJnunpoGbAN6HZfeg==}
 
-  '@bull-board/nestjs@6.6.1':
-    resolution: {integrity: sha512-ghDhV4zBz/PgW6F1xoruO93qhiUWKsV05wkpvAN6kbR/FmDhqzxt+1Rw6uXoCSM4lFqcEa0rrz2R6fHlUX227g==}
+  '@bull-board/nestjs@6.7.1':
+    resolution: {integrity: sha512-GwbfXn5KTqVPPBfiz5ZuwnZr4IKXMBVNPc/fSDgXEO9JIiLA+RLvk/MFLyZocja/N/5GQF5PsJ3myoj/6iWx/Q==}
     peerDependencies:
-      '@bull-board/api': ^6.6.1
-      '@bull-board/express': ^6.6.1
-      '@nestjs/common': ^9.0.0 || ^10.0.0
-      '@nestjs/core': ^9.0.0 || ^10.0.0
+      '@bull-board/api': ^6.7.1
+      '@bull-board/express': ^6.7.1
+      '@nestjs/common': ^9.0.0 || ^10.0.0 || ^11.0.0
+      '@nestjs/core': ^9.0.0 || ^10.0.0 || ^11.0.0
       reflect-metadata: ^0.1.13 || ^0.2.0
       rxjs: ^7.8.1
 
-  '@bull-board/ui@6.6.1':
-    resolution: {integrity: sha512-L4xELOzDgUz4o7mQssGM0sef1QD41AyJ3iHbXIi8V72jj2FXeDwv63BoccZTC3GZHHNo21RkslcJvBYPkUsEnA==}
+  '@bull-board/ui@6.7.1':
+    resolution: {integrity: sha512-Bf2S81enM+KSz7ltOmWBE/Z69NtKPmYhUFbPEXooFGXs63yrR/17vzdSlraJb9jC6kMLzJhp0y61rXLdCqPTBw==}
 
   '@clack/core@0.3.5':
     resolution: {integrity: sha512-5cfhQNH+1VQ2xLQlmzXMqUoiaH0lRBq9/CLW9lTyMbuKLC3+xEK01tHVvyut++mLOn5urSHmkm6I0Lg9MaJSTQ==}
@@ -13177,33 +13177,33 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@bull-board/api@6.6.1(@bull-board/ui@6.6.1)':
+  '@bull-board/api@6.7.1(@bull-board/ui@6.7.1)':
     dependencies:
-      '@bull-board/ui': 6.6.1
+      '@bull-board/ui': 6.7.1
       redis-info: 3.1.0
 
-  '@bull-board/express@6.6.1':
+  '@bull-board/express@6.7.1':
     dependencies:
-      '@bull-board/api': 6.6.1(@bull-board/ui@6.6.1)
-      '@bull-board/ui': 6.6.1
+      '@bull-board/api': 6.7.1(@bull-board/ui@6.7.1)
+      '@bull-board/ui': 6.7.1
       ejs: 3.1.10
       express: 4.21.2
     transitivePeerDependencies:
       - supports-color
 
-  '@bull-board/nestjs@6.6.1(@bull-board/api@6.6.1(@bull-board/ui@6.6.1))(@bull-board/express@6.6.1)(@nestjs/common@10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.15)(reflect-metadata@0.2.2)(rxjs@7.8.1)':
+  '@bull-board/nestjs@6.7.1(@bull-board/api@6.7.1(@bull-board/ui@6.7.1))(@bull-board/express@6.7.1)(@nestjs/common@10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.15)(reflect-metadata@0.2.2)(rxjs@7.8.1)':
     dependencies:
-      '@bull-board/api': 6.6.1(@bull-board/ui@6.6.1)
-      '@bull-board/express': 6.6.1
+      '@bull-board/api': 6.7.1(@bull-board/ui@6.7.1)
+      '@bull-board/express': 6.7.1
       '@nestjs/bull-shared': 10.2.3(@nestjs/common@10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.15)
       '@nestjs/common': 10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 10.4.15(@nestjs/common@10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.15)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       reflect-metadata: 0.2.2
       rxjs: 7.8.1
 
-  '@bull-board/ui@6.6.1':
+  '@bull-board/ui@6.7.1':
     dependencies:
-      '@bull-board/api': 6.6.1(@bull-board/ui@6.6.1)
+      '@bull-board/api': 6.7.1(@bull-board/ui@6.7.1)
 
   '@clack/core@0.3.5':
     dependencies:
