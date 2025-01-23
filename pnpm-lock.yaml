@@ -231,8 +231,8 @@ importers:
         specifier: 6.6.2
         version: 6.6.2
       ts-japi:
-        specifier: 1.11.4
-        version: 1.11.4
+        specifier: 1.11.5
+        version: 1.11.5
       typeorm:
         specifier: 0.3.20
         version: 0.3.20(ioredis@5.4.2)(pg@8.13.1)(redis@4.7.0)(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))
@@ -11080,8 +11080,8 @@ packages:
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  ts-japi@1.11.4:
-    resolution: {integrity: sha512-Nh49KRuDUxnUYbaFLZhhjj2Hbqlw/xYcp/Kp5ct8ZWWW3al9PdZEVbljABzPvlOtjoz1rfi5hzCPol3WUJ8bmA==}
+  ts-japi@1.11.5:
+    resolution: {integrity: sha512-gaZH/pis2qWxlzBx0vkSRJe0hyi9Ruuij9BjU3vMERFxMCKpa8W85ASnTXiLgL0Klw85sS7o0t4MAhBYVbYITw==}
     engines: {node: '>=10'}
 
   ts-jest@29.2.5:
@@ -25476,7 +25476,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  ts-japi@1.11.4: {}
+  ts-japi@1.11.5: {}
 
   ts-jest@29.2.5(@babel/core@7.26.0)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.26.0))(jest@29.7.0(@types/node@22.10.9)(node-notifier@10.0.1)(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)))(typescript@5.7.3):
     dependencies:
