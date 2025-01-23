@@ -400,8 +400,8 @@ importers:
         specifier: 3.0.4
         version: 3.0.4(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)))
       tailwindcss-mso:
-        specifier: 2.0.1
-        version: 2.0.1(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)))
+        specifier: 2.0.2
+        version: 2.0.2(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)))
       tailwindcss-preset-email:
         specifier: 1.4.0
         version: 1.4.0(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)))
@@ -10851,11 +10851,11 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.4.0 < 4'
 
-  tailwindcss-mso@2.0.1:
-    resolution: {integrity: sha512-77QvlGNqduGCtwTjLJog+PLD5YMNRR6FdbBTS6DcfbmO+9q0rSLgy/0y70wZ/jbDx152g6i5w3noFpHq8hzYPw==}
+  tailwindcss-mso@2.0.2:
+    resolution: {integrity: sha512-GaR8RW/Kan+YWEQ9Y9Ah6AYy7R2wEQ3X++YK4ffJVWycCTd6ryMLezqmyhi7KWHqsgQOb4nhjJYayI+JF44BXw==}
     engines: {node: '>=18.20'}
     peerDependencies:
-      tailwindcss: '>=3.4.0'
+      tailwindcss: '>=3.4.0 < 4'
 
   tailwindcss-preset-email@1.4.0:
     resolution: {integrity: sha512-UgvLHT5UsPEEXjto1WlR1wYXmYKeMaS2OPTJQqyufsU12os/EjBpeygEjTdrId7U2/mwDF4grlgo81qlzYSByg==}
@@ -25076,7 +25076,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))
 
-  tailwindcss-mso@2.0.1(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))):
+  tailwindcss-mso@2.0.2(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))):
     dependencies:
       tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))
 
@@ -25084,7 +25084,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))
       tailwindcss-email-variants: 3.0.4(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)))
-      tailwindcss-mso: 2.0.1(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)))
+      tailwindcss-mso: 2.0.2(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)))
 
   tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3)):
     dependencies:
