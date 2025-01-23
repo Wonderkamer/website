@@ -83,7 +83,7 @@
     "nestjs-ember-static": "0.2.4",
     "nestjs-s3": "2.1.0-next.1",
     "node-fetch-commonjs": "3.3.2",
-    "node-html-parser": "6.1.13",
+    "node-html-parser": "7.0.1",
     "nodemailer": "6.10.0",
     "object-hash": "3.0.0",
     "passport": "0.7.0",
