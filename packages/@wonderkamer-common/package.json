@@ -52,7 +52,7 @@
     "rpc-websockets": "9.0.4"
   },
   "devDependencies": {
-    "@golevelup/ts-jest": "0.6.1",
+    "@golevelup/ts-jest": "0.6.2",
     "@jest/globals": "29.7.0",
     "@nullvoxpopuli/eslint-configs": "4.3.0",
     "@types/jest": "29.5.14",

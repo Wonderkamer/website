@@ -241,8 +241,8 @@ importers:
         version: 11.0.5
     devDependencies:
       '@golevelup/ts-jest':
-        specifier: 0.6.1
-        version: 0.6.1
+        specifier: 0.6.2
+        version: 0.6.2
       '@nestjs/cli':
         specifier: 10.4.9
         version: 10.4.9
@@ -829,8 +829,8 @@ importers:
         version: 9.0.4
     devDependencies:
       '@golevelup/ts-jest':
-        specifier: 0.6.1
-        version: 0.6.1
+        specifier: 0.6.2
+        version: 0.6.2
       '@jest/globals':
         specifier: 29.7.0
         version: 29.7.0
@@ -2365,8 +2365,8 @@ packages:
   '@glint/template@1.5.1':
     resolution: {integrity: sha512-KBWG3XZemv8VyFsq3m7eebXmQuY+AShgKSUlbjiqQaPfMK3a1ri1oS3wqTS5eRGwcfQgbbEHH2rkgppB7yoz5w==}
 
-  '@golevelup/ts-jest@0.6.1':
-    resolution: {integrity: sha512-ubs2xao8q2BsFWD6g2GnkWLLIeVHsPQKYMihzk3v0ptegKJhlNRZvk8wodDx2U2MI7cyKh43mueafZ9xpYdwHQ==}
+  '@golevelup/ts-jest@0.6.2':
+    resolution: {integrity: sha512-ks82vcWbnRuwHSKlrZTGCPPWXZEKlsn1VA2OiYfJ+tVMcMsI4y9ExWkf7FnmYypYJIRWKS9b9N5QVVrCOmaVlg==}
 
   '@handlebars/parser@2.0.0':
     resolution: {integrity: sha512-EP9uEDZv/L5Qh9IWuMUGJRfwhXJ4h1dqKTT4/3+tY0eu7sPis7xh23j61SYUnNF4vqCQvvUXpDo9Bh/+q1zASA==}
@@ -14142,7 +14142,7 @@ snapshots:
 
   '@glint/template@1.5.1': {}
 
-  '@golevelup/ts-jest@0.6.1': {}
+  '@golevelup/ts-jest@0.6.2': {}
 
   '@handlebars/parser@2.0.0': {}
 
