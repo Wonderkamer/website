@@ -133,7 +133,7 @@
     "@typescript-eslint/parser": "7.18.0",
     "@wonderkamer/tsconfig": "workspace:*",
     "eslint": "8.57.1",
-    "eslint-config-prettier": "9.1.0",
+    "eslint-config-prettier": "10.1.1",
     "eslint-import-resolver-typescript": "3.7.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-prettier": "5.2.3",
