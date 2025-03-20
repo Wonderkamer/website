@@ -825,8 +825,8 @@ importers:
         specifier: 5.0.1
         version: 5.0.1
       rpc-websockets:
-        specifier: 9.0.4
-        version: 9.0.4
+        specifier: 10.0.0
+        version: 10.0.0
     devDependencies:
       '@golevelup/ts-jest':
         specifier: 0.6.1
@@ -10249,8 +10249,8 @@ packages:
       route-recognizer: ^0.3.4
       rsvp: ^4.8.5
 
-  rpc-websockets@9.0.4:
-    resolution: {integrity: sha512-yWZWN0M+bivtoNLnaDbtny4XchdAIF5Q4g/ZsC5UC61Ckbp0QczwO8fg44rV3uYmY4WHd+EZQbn90W1d8ojzqQ==}
+  rpc-websockets@10.0.0:
+    resolution: {integrity: sha512-ci68pI2x0TZdrRbpFx8oiBosNUKR1a2Y9kADVwwhX6UUq+B1E9oqNXnxq20WvTwR7+3Dsow1qAtU8pPGoZE4sw==}
 
   rrweb-cssom@0.7.1:
     resolution: {integrity: sha512-TrEMa7JGdVm0UThDJSx7ddw5nVm3UJS9o9CCIZ72B1vSyEZoziDqBYP3XIoi/12lKrJR8rE3jeFHMok2F/Mnsg==}
@@ -24394,7 +24394,7 @@ snapshots:
       route-recognizer: 0.3.4
       rsvp: 4.8.5
 
-  rpc-websockets@9.0.4:
+  rpc-websockets@10.0.0:
     dependencies:
       '@swc/helpers': 0.5.15
       '@types/uuid': 8.3.4
