@@ -2,6 +2,7 @@
 FROM node:22.13.1-alpine AS base-installer
 
 # Installs pnpm
+RUN npm install -g corepack@latest
 RUN corepack enable
 
 # Set working directory
@@ -79,9 +80,6 @@ COPY --from=frontend-builder /app/apps/frontend/dist/ /app/apps/frontend/dist/
 COPY --from=backend-builder /app/apps/backend/dist/ /app/apps/backend/dist/
 COPY --from=backend-builder /app/packages/@wonderkamer-common/dist/ /app/packages/@wonderkamer-common/dist/
 COPY --from=email-template-builder /app/apps/email-templates/dist/ /app/apps/email-templates/dist/
-
-# Install pnpm
-RUN corepack prepare
 
 # Install Node.js dependencies for production
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --filter=@wonderkamer/backend --frozen-lockfile --ignore-scripts --prod
