@@ -75,7 +75,7 @@
     "handlebars": "4.7.8",
     "ini": "5.0.0",
     "ioredis": "5.4.2",
-    "js-beautify": "1.15.1",
+    "js-beautify": "1.15.4",
     "jsonapi-serializer": "3.6.9",
     "jsonwebtoken": "9.0.2",
     "ms": "2.1.3",

@@ -165,8 +165,8 @@ importers:
         specifier: 5.4.2
         version: 5.4.2
       js-beautify:
-        specifier: 1.15.1
-        version: 1.15.1
+        specifier: 1.15.4
+        version: 1.15.4
       jsonapi-serializer:
         specifier: 3.6.9
         version: 3.6.9
@@ -7889,6 +7889,11 @@ packages:
 
   js-beautify@1.15.1:
     resolution: {integrity: sha512-ESjNzSlt/sWE8sciZH8kBF8BPlwXPwhR6pWKAw8bw4Bwj+iZcnKW6ONWUutJ7eObuBZQpiIb8S7OYspWrKt7rA==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  js-beautify@1.15.4:
+    resolution: {integrity: sha512-9/KXeZUKKJwqCXUdBxFJ3vPh467OCckSBmYDwSK/EtV090K+iMJ7zx2S3HLVDIWFQdqMIsZWbnaGiba18aWhaA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -21689,6 +21694,14 @@ snapshots:
       js-cookie: 3.0.5
       nopt: 7.2.1
 
+  js-beautify@1.15.4:
+    dependencies:
+      config-chain: 1.1.13
+      editorconfig: 1.0.4
+      glob: 10.4.5
+      js-cookie: 3.0.5
+      nopt: 7.2.1
+
   js-cookie@3.0.5: {}
 
   js-string-escape@1.0.1: {}
@@ -22430,7 +22443,7 @@ snapshots:
       chokidar: 3.6.0
       glob: 10.4.5
       html-minifier: 4.0.0
-      js-beautify: 1.15.1
+      js-beautify: 1.15.4
       lodash: 4.17.21
       minimatch: 9.0.5
       mjml-core: 4.15.3
@@ -22457,7 +22470,7 @@ snapshots:
       cheerio: 1.0.0-rc.12
       detect-node: 2.1.0
       html-minifier: 4.0.0
-      js-beautify: 1.15.1
+      js-beautify: 1.15.4
       juice: 10.0.1
       lodash: 4.17.21
       mjml-migrate: 4.15.3
@@ -22578,7 +22591,7 @@ snapshots:
   mjml-migrate@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      js-beautify: 1.15.1
+      js-beautify: 1.15.4
       lodash: 4.17.21
       mjml-core: 4.15.3
       mjml-parser-xml: 4.15.3
@@ -23887,7 +23900,7 @@ snapshots:
     dependencies:
       condense-newlines: 0.2.1
       extend-shallow: 2.0.1
-      js-beautify: 1.15.1
+      js-beautify: 1.15.4
 
   preview-email@3.1.0:
     dependencies:
@@ -24591,7 +24604,7 @@ snapshots:
     dependencies:
       cli-color: 2.0.4
       fs-extra: 9.1.0
-      js-beautify: 1.15.1
+      js-beautify: 1.15.4
       lodash: 4.17.21
       resolve: 1.22.8
       umzug: 2.3.0
