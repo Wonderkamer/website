@@ -388,8 +388,8 @@ importers:
   apps/email-templates:
     dependencies:
       '@maizzle/framework':
-        specifier: 5.0.0
-        version: 5.0.0(bufferutil@4.0.8)(jiti@2.4.1)(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))(utf-8-validate@5.0.10)(yaml@2.6.1)
+        specifier: 5.0.6
+        version: 5.0.6(bufferutil@4.0.8)(jiti@2.4.1)(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))(utf-8-validate@5.0.10)(yaml@2.6.1)
       morphdom:
         specifier: 2.7.4
         version: 2.7.4
@@ -2527,8 +2527,8 @@ packages:
     resolution: {integrity: sha512-ZTvEM58L5ndRtnxtBykMAFUjsFYZU2gpYEC9eSs2mqIAJ3ogT10p7ehq+YacwAXOHpCm5uk04pJRNvg6TcA40w==}
     hasBin: true
 
-  '@maizzle/framework@5.0.0':
-    resolution: {integrity: sha512-NeTG+oTlKkyxF0+8kDvdZEEmFdqsFAUkhRoAG5cL0KtAtluuCVqV+6XmGgyDkn76UVoQqXOkixHnxoCXf3mVXg==}
+  '@maizzle/framework@5.0.6':
+    resolution: {integrity: sha512-gjXBq6QBcTEnLmRQ59icL6rIvw/affcmErPNi9hCswlYByrZwhaIz1DDZdYzed44/xwdpngtMC5Z246HFpQW4A==}
     engines: {node: '>=18.20'}
     hasBin: true
 
@@ -9264,6 +9264,9 @@ packages:
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
 
+  pathe@2.0.3:
+    resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
+
   pause@0.0.1:
     resolution: {integrity: sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==}
 
@@ -14436,7 +14439,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@maizzle/framework@5.0.0(bufferutil@4.0.8)(jiti@2.4.1)(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))(utf-8-validate@5.0.10)(yaml@2.6.1)':
+  '@maizzle/framework@5.0.6(bufferutil@4.0.8)(jiti@2.4.1)(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))(utf-8-validate@5.0.10)(yaml@2.6.1)':
     dependencies:
       '@maizzle/cli': 2.0.0
       cheerio: 1.0.0
@@ -14455,12 +14458,12 @@ snapshots:
       lodash-es: 4.17.21
       morphdom: 2.7.4
       ora: 8.1.1
-      pathe: 1.1.2
-      postcss: 8.5.1
-      postcss-calc: 10.0.2(postcss@8.5.1)
-      postcss-css-variables: 0.19.0(postcss@8.5.1)
-      postcss-import: 16.1.0(postcss@8.5.1)
-      postcss-safe-parser: 7.0.1(postcss@8.5.1)
+      pathe: 2.0.3
+      postcss: 8.5.3
+      postcss-calc: 10.0.2(postcss@8.5.3)
+      postcss-css-variables: 0.19.0(postcss@8.5.3)
+      postcss-import: 16.1.0(postcss@8.5.3)
+      postcss-safe-parser: 7.0.1(postcss@8.5.3)
       posthtml: 0.16.6
       posthtml-attrs-parser: 1.1.1
       posthtml-base-url: 3.1.5(posthtml@0.16.6)
@@ -23349,6 +23352,8 @@ snapshots:
 
   pathe@1.1.2: {}
 
+  pathe@2.0.3: {}
+
   pause@0.0.1: {}
 
   peberminta@0.9.0:
@@ -23441,12 +23446,6 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-calc@10.0.2(postcss@8.5.1):
-    dependencies:
-      postcss: 8.5.1
-      postcss-selector-parser: 6.1.2
-      postcss-value-parser: 4.2.0
-
   postcss-calc@10.0.2(postcss@8.5.3):
     dependencies:
       postcss: 8.5.3
@@ -23467,12 +23466,12 @@ snapshots:
       postcss: 8.5.3
       postcss-value-parser: 4.2.0
 
-  postcss-css-variables@0.19.0(postcss@8.5.1):
+  postcss-css-variables@0.19.0(postcss@8.5.3):
     dependencies:
       balanced-match: 1.0.2
       escape-string-regexp: 1.0.5
       extend: 3.0.2
-      postcss: 8.5.1
+      postcss: 8.5.3
 
   postcss-discard-comments@7.0.3(postcss@8.5.3):
     dependencies:
@@ -23498,9 +23497,9 @@ snapshots:
       read-cache: 1.0.0
       resolve: 1.22.8
 
-  postcss-import@16.1.0(postcss@8.5.1):
+  postcss-import@16.1.0(postcss@8.5.3):
     dependencies:
-      postcss: 8.5.1
+      postcss: 8.5.3
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.8
@@ -23672,10 +23671,6 @@ snapshots:
       postcss-value-parser: 4.2.0
 
   postcss-resolve-nested-selector@0.1.6: {}
-
-  postcss-safe-parser@7.0.1(postcss@8.5.1):
-    dependencies:
-      postcss: 8.5.1
 
   postcss-safe-parser@7.0.1(postcss@8.5.3):
     dependencies:
