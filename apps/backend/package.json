@@ -100,7 +100,7 @@
     "sequelize-cli": "6.6.2",
     "ts-japi": "1.11.5",
     "typeorm": "0.3.20",
-    "uuid": "11.0.5"
+    "uuid": "11.1.0"
   },
   "devDependencies": {
     "@golevelup/ts-jest": "0.6.2",
