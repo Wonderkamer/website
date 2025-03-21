@@ -675,8 +675,8 @@ importers:
         specifier: 4.2.1
         version: 4.2.1(ember-source@6.1.0(@glimmer/component@2.0.0)(@glint/template@1.5.1)(rsvp@4.8.5)(webpack@5.97.1))
       ember-metrics:
-        specifier: 2.0.0-beta.2
-        version: 2.0.0-beta.2
+        specifier: 2.0.0
+        version: 2.0.0(@ember/string@3.1.1)(@glint/template@1.5.1)(ember-source@6.1.0(@glimmer/component@2.0.0)(@glint/template@1.5.1)(rsvp@4.8.5)(webpack@5.97.1))(webpack@5.97.1)
       ember-modifier:
         specifier: 4.2.0
         version: 4.2.0(@babel/core@7.26.10)(ember-source@6.1.0(@glimmer/component@2.0.0)(@glint/template@1.5.1)(rsvp@4.8.5)(webpack@5.97.1))
@@ -5987,9 +5987,12 @@ packages:
     peerDependencies:
       ember-source: '>= 4.0.0'
 
-  ember-metrics@2.0.0-beta.2:
-    resolution: {integrity: sha512-vKPVfY4IIO5KszCsExUkxwqUgnuiUpvacNhzudms4JKZy0zeoU5tyXscPngW8vpqcGF6q8ZbaNTxw1OIVKd+xw==}
-    engines: {node: 12.* || 14.* || >= 16}
+  ember-metrics@2.0.0:
+    resolution: {integrity: sha512-r62LSNiivGKdhV7UOC9H9lmmApO/zaCnVo9BStVDkHTgcdzoq6iENft/ZDsCihQt3loevCi/BXb+DLffOBjKxg==}
+    engines: {node: 18.* || 20.* || >= 22}
+    peerDependencies:
+      '@ember/string': '>= 3.0.0'
+      ember-source: '>= 3.28.0'
 
   ember-modifier-manager-polyfill@1.2.0:
     resolution: {integrity: sha512-bnaKF1LLKMkBNeDoetvIJ4vhwRPKIIumWr6dbVuW6W6p4QV8ZiO+GdF8J7mxDNlog9CeL9Z/7wam4YS86G8BYA==}
@@ -19058,13 +19061,18 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-metrics@2.0.0-beta.2:
+  ember-metrics@2.0.0(@ember/string@3.1.1)(@glint/template@1.5.1)(ember-source@6.1.0(@glimmer/component@2.0.0)(@glint/template@1.5.1)(rsvp@4.8.5)(webpack@5.97.1))(webpack@5.97.1):
     dependencies:
+      '@ember/string': 3.1.1
       broccoli-funnel: 3.0.8
+      ember-auto-import: 2.10.0(@glint/template@1.5.1)(webpack@5.97.1)
       ember-cli-babel: 7.26.11
       ember-cli-typescript: 5.3.0
+      ember-source: 6.1.0(@glimmer/component@2.0.0)(@glint/template@1.5.1)(rsvp@4.8.5)(webpack@5.97.1)
     transitivePeerDependencies:
+      - '@glint/template'
       - supports-color
+      - webpack
 
   ember-modifier-manager-polyfill@1.2.0(@babel/core@7.26.10):
     dependencies:
