@@ -52,7 +52,7 @@
     "@nestjs/passport": "11.0.5",
     "@nestjs/platform-express": "11.0.12",
     "@nestjs/schedule": "4.1.2",
-    "@nestjs/typeorm": "10.0.2",
+    "@nestjs/typeorm": "11.0.0",
     "@nestlab/google-recaptcha": "3.8.0",
     "@nextnm/nestjs-mailgun": "3.0.1",
     "@stdlib/utils-convert-path": "0.2.2",
