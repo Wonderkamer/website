@@ -702,8 +702,8 @@ importers:
         specifier: 4.4.0
         version: 4.4.0(@babel/core@7.26.10)(@ember/string@3.1.1)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.97.1))
       ember-template-imports:
-        specifier: 4.2.0
-        version: 4.2.0
+        specifier: 4.3.0
+        version: 4.3.0
       ember-template-lint:
         specifier: 6.1.0
         version: 6.1.0
@@ -5279,9 +5279,6 @@ packages:
   content-tag@2.0.3:
     resolution: {integrity: sha512-htLIdtfhhKW2fHlFLnZH7GFzHSdSpHhDLrWVswkNiiPMZ5uXq5JfrGboQKFhNQuAAFF8VNB2EYUj3MsdJrKKpg==}
 
-  content-tag@3.0.0:
-    resolution: {integrity: sha512-HxWPmF9hzehv5PV7TSK7QSzlVBhmwQA8NgBrXmL+fqXfM3L1r3ResAPzeiGbxra3Zw6U3gdhw3cIDJADQnuCVQ==}
-
   content-tag@3.1.2:
     resolution: {integrity: sha512-Z+MGhZfnFFKzYC+pUTWXnoDYhfiXP9ojZe3JbwsYufmDuoeq2EvuDyeFAJ/RnKokUwz5s9bQhDOrbvSYRShcrQ==}
 
@@ -6279,8 +6276,8 @@ packages:
     resolution: {integrity: sha512-OS8TUVG2kQYYwP3netunLVfeijPoOKIs1SvPQRTNOQX4Pu8xGGBEZmrv0U1YTnQn12Eg+p6w/0UdGbUnITjyzw==}
     engines: {node: 12.* || >= 14}
 
-  ember-template-imports@4.2.0:
-    resolution: {integrity: sha512-qwf/38E1ut8M2/1tsFJl6kL99799MvxQrx0lN3LAc0HJRQhM/lYHqnHhzS30rkH76g+76TfxcMB5JJZQabWk2A==}
+  ember-template-imports@4.3.0:
+    resolution: {integrity: sha512-jZ5D6KLKU8up/AynZltmKh4lkXBPgTGSPgomprI/55XvIVqn42UNUpEz7ra/mO3QiGODDZOUesbggPe49i38sQ==}
     engines: {node: 16.* || >= 18}
 
   ember-template-lint@6.1.0:
@@ -18198,8 +18195,6 @@ snapshots:
 
   content-tag@2.0.3: {}
 
-  content-tag@3.0.0: {}
-
   content-tag@3.1.2: {}
 
   content-type@1.0.5: {}
@@ -19781,10 +19776,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-template-imports@4.2.0:
+  ember-template-imports@4.3.0:
     dependencies:
       broccoli-stew: 3.0.0
-      content-tag: 3.0.0
+      content-tag: 3.1.2
       ember-cli-version-checker: 5.1.2
     transitivePeerDependencies:
       - supports-color
