@@ -801,8 +801,8 @@ importers:
         specifier: 5.0.3
         version: 5.0.3(prettier@3.3.3)(stylelint@16.13.2(typescript@5.7.3))
       stylelint-scss:
-        specifier: 6.10.1
-        version: 6.10.1(stylelint@16.13.2(typescript@5.7.3))
+        specifier: 6.11.1
+        version: 6.11.1(stylelint@16.13.2(typescript@5.7.3))
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17(ts-node@10.9.2(@types/node@22.10.9)(typescript@5.7.3))
@@ -10035,6 +10035,10 @@ packages:
     resolution: {integrity: sha512-9RbEr1Y7FFfptd/1eEdntyjMwLeghW1bHX9GWjXo19vx4ytPQhANltvVxDggzJl7mnWM+dX28kb6cyS/4iQjlQ==}
     engines: {node: '>=4'}
 
+  postcss-selector-parser@7.1.0:
+    resolution: {integrity: sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA==}
+    engines: {node: '>=4'}
+
   postcss-svgo@7.0.1:
     resolution: {integrity: sha512-0WBUlSL4lhD9rA5k1e5D8EN5wCEyZD6HJk0jIvRxl+FDVOMlJ7DePHYWGGVc5QRqrJ3/06FTXM0bxjmJpmTPSA==}
     engines: {node: ^18.12.0 || ^20.9.0 || >= 18}
@@ -11278,8 +11282,8 @@ packages:
       prettier: '>=3.0.0'
       stylelint: '>=16.0.0'
 
-  stylelint-scss@6.10.1:
-    resolution: {integrity: sha512-CBqs0jecftIyhic6xba+4OvZUp4B0wNbX19w6Rq1fPo+lBDmTevk+olo8H7u/WQpTSDCDbBN4f3oocQurvXLTQ==}
+  stylelint-scss@6.11.1:
+    resolution: {integrity: sha512-e4rYo0UY+BIMtGeGanghrvHTjcryxgZbyFxUedp8dLFqC4P70aawNdYjRrQxbnKhu3BNr4+lt5e/53tcKXiwFA==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       stylelint: ^16.0.2
@@ -24629,6 +24633,11 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
+  postcss-selector-parser@7.1.0:
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+
   postcss-svgo@7.0.1(postcss@8.5.3):
     dependencies:
       postcss: 8.5.3
@@ -26082,7 +26091,7 @@ snapshots:
       postcss: 8.5.3
       postcss-scss: 4.0.9(postcss@8.5.3)
       stylelint: 16.13.2(typescript@5.7.3)
-      stylelint-scss: 6.10.1(stylelint@16.13.2(typescript@5.7.3))
+      stylelint-scss: 6.11.1(stylelint@16.13.2(typescript@5.7.3))
 
   stylelint-config-standard@37.0.0(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
@@ -26100,7 +26109,7 @@ snapshots:
       prettier-linter-helpers: 1.0.0
       stylelint: 16.13.2(typescript@5.7.3)
 
-  stylelint-scss@6.10.1(stylelint@16.13.2(typescript@5.7.3)):
+  stylelint-scss@6.11.1(stylelint@16.13.2(typescript@5.7.3)):
     dependencies:
       css-tree: 3.1.0
       is-plain-object: 5.0.0
@@ -26108,7 +26117,7 @@ snapshots:
       mdn-data: 2.15.0
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.6
-      postcss-selector-parser: 7.0.0
+      postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
       stylelint: 16.13.2(typescript@5.7.3)
 
