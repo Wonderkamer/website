@@ -16,14 +16,17 @@
     "release": "turbo run release",
     "start:dev": "concurrently --kill-others 'cd apps/frontend && pnpm run start' 'cd apps/backend && pnpm run start:debug'",
     "test": "turbo run test",
-    "prepare": "husky || true"
+    "prepare": "husky || true",
+    "knip": "knip"
   },
   "devDependencies": {
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
+    "@types/node": "22.10.9",
     "concurrently": "9.1.2",
     "dotenv": "16.4.7",
     "husky": "9.1.7",
+    "knip": "^5.46.2",
     "npm-run-all2": "7.0.2",
     "prettier": "latest",
     "rimraf": "6.0.1",
