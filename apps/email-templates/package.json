@@ -7,7 +7,7 @@
     "build": "maizzle build production"
   },
   "devDependencies": {
-    "@types/node": "22.10.9"
+    "@types/node": "22.13.14"
   },
   "dependencies": {
     "@maizzle/framework": "5.0.6",
