@@ -53,7 +53,7 @@
     "@nestjs/platform-express": "11.0.12",
     "@nestjs/schedule": "5.0.1",
     "@nestjs/typeorm": "11.0.0",
-    "@nestlab/google-recaptcha": "3.8.0",
+    "@nestlab/google-recaptcha": "3.9.0",
     "@nextnm/nestjs-mailgun": "3.0.1",
     "@stdlib/utils-convert-path": "0.2.2",
     "@wonderkamer/common": "workspace:*",
