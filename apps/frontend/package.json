@@ -41,7 +41,7 @@
     "ember-headless-form": "1.1.1",
     "ember-headless-form-changeset": "1.0.0",
     "ember-lifeline": "7.0.0",
-    "reactiveweb": "1.3.0",
+    "reactiveweb": "1.4.0",
     "@wonderkamer/common": "workspace:*"
   },
   "devDependencies": {
