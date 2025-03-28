@@ -105,8 +105,8 @@ importers:
         specifier: 11.0.0
         version: 11.0.0(@nestjs/common@11.0.12(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.12)(reflect-metadata@0.2.2)(rxjs@7.8.2)(typeorm@0.3.21(ioredis@5.4.2)(pg@8.14.1)(redis@4.7.0)(reflect-metadata@0.2.2)(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2)))
       '@nestlab/google-recaptcha':
-        specifier: 3.8.0
-        version: 3.8.0(@nestjs/common@11.0.12(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.12)
+        specifier: 3.9.0
+        version: 3.9.0(@nestjs/common@11.0.12(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.12)
       '@nextnm/nestjs-mailgun':
         specifier: 3.0.1
         version: 3.0.1(@nestjs/common@11.0.12(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))
@@ -2908,11 +2908,11 @@ packages:
       rxjs: ^7.2.0
       typeorm: ^0.3.0
 
-  '@nestlab/google-recaptcha@3.8.0':
-    resolution: {integrity: sha512-I0+4k3rTiYoT0fZCzNsgDwB7H7pEYcZpSWb03cHGtwnvXFaoYRVDHCmJ1bXVM87mox0YTaCUzGt4zuSSFGuyqA==}
+  '@nestlab/google-recaptcha@3.9.0':
+    resolution: {integrity: sha512-WJnh7+g8jjp5aGTxi10Vj83kUSTSIWcYfvyAiwhPEORflaGfdmx3/jMChm+H5awnlqx28RTzOXFhPGw54FDIPw==}
     peerDependencies:
-      '@nestjs/common': '>=8.0.0 <11.0.0'
-      '@nestjs/core': '>=8.0.0 <11.0.0'
+      '@nestjs/common': '>=8.0.0 <12.0.0'
+      '@nestjs/core': '>=8.0.0 <12.0.0'
       '@nestjs/graphql': '*'
     peerDependenciesMeta:
       '@nestjs/graphql':
@@ -15440,7 +15440,7 @@ snapshots:
       rxjs: 7.8.2
       typeorm: 0.3.21(ioredis@5.4.2)(pg@8.14.1)(redis@4.7.0)(reflect-metadata@0.2.2)(ts-node@10.9.2(@types/node@22.13.14)(typescript@5.8.2))
 
-  '@nestlab/google-recaptcha@3.8.0(@nestjs/common@11.0.12(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.12)':
+  '@nestlab/google-recaptcha@3.9.0(@nestjs/common@11.0.12(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.12)':
     dependencies:
       '@nestjs/common': 11.0.12(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.0.12(@nestjs/common@11.0.12(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.12)(reflect-metadata@0.2.2)(rxjs@7.8.2)
