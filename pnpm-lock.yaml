@@ -156,8 +156,8 @@ importers:
         specifier: 4.21.2
         version: 4.21.2
       find-remove:
-        specifier: 5.0.0
-        version: 5.0.0
+        specifier: 5.1.1
+        version: 5.1.1
       form-data:
         specifier: 4.0.2
         version: 4.0.2
@@ -4143,6 +4143,11 @@ packages:
 
   ajv-formats@2.1.1:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
+    peerDependencies:
+      ajv: ^8.0.0
+    peerDependenciesMeta:
+      ajv:
+        optional: true
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
@@ -7013,8 +7018,8 @@ packages:
   find-index@1.1.1:
     resolution: {integrity: sha512-XYKutXMrIK99YMUPf91KX5QVJoG31/OsgftD6YoTPAObfQIxM4ziA9f0J1AsqKhJmo+IeaIPP0CFopTD4bdUBw==}
 
-  find-remove@5.0.0:
-    resolution: {integrity: sha512-7wIHb/VKn3tFpyh6/lvU8Hgwd9qkqTDA5MsrZgcF4Zw/wqnL95Ny5/CifcsyYrcYbZHdI6008esvJ4RMcaDmoA==}
+  find-remove@5.1.1:
+    resolution: {integrity: sha512-tlHkbvWNlmpeQxh2/Kc/Uib3U8lY8V1F9H0s4zgr/pDF6tAiovlhUeu2m3bNZSAhEBxcM2KUl3uyfxUtm/eHWA==}
     engines: {node: '>=20.12.2', npm: '>=10.5.0'}
 
   find-up@2.1.0:
@@ -16938,8 +16943,8 @@ snapshots:
       clean-stack: 2.2.0
       indent-string: 4.0.0
 
-  ajv-formats@2.1.1:
-    dependencies:
+  ajv-formats@2.1.1(ajv@8.17.1):
+    optionalDependencies:
       ajv: 8.17.1
 
   ajv-formats@3.0.1(ajv@8.17.1):
@@ -20939,7 +20944,7 @@ snapshots:
 
   find-index@1.1.1: {}
 
-  find-remove@5.0.0:
+  find-remove@5.1.1:
     dependencies:
       rimraf: 6.0.1
 
@@ -25427,7 +25432,7 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
       ajv: 8.17.1
-      ajv-formats: 2.1.1
+      ajv-formats: 2.1.1(ajv@8.17.1)
       ajv-keywords: 5.1.0(ajv@8.17.1)
 
   section-matter@1.0.0:
