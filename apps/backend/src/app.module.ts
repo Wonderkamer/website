@@ -20,7 +20,7 @@ import { SupportModule } from './modules/support/support.module';
         const config = configService.get<EnvConfig>('env', { infer: true });
         const rootPath = join(config['appRoot'], '../frontend/dist');
 
-        return { rootPath, liveReloadOrigin: 'http://127.0.0.1:4222' };
+        return { rootPath, renderPath: '/*path', liveReloadOrigin: 'http://127.0.0.1:4222' };
       },
       inject: [ConfigService],
       extraProviders: [
