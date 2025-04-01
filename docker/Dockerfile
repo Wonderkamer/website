@@ -23,7 +23,7 @@ COPY .npmrc                                     /app/
 COPY turbo.json                                 /app/
 
 # Install Node.js dependencies
-RUN pnpm install --frozen-lockfile --ignore-scripts
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --ignore-scripts
 
 #
 # Stage 2.1: Building the backend
@@ -82,7 +82,7 @@ COPY --from=backend-builder /app/packages/@wonderkamer-common/dist/ /app/package
 COPY --from=email-template-builder /app/apps/email-templates/dist/ /app/apps/email-templates/dist/
 
 # Install Node.js dependencies for production
-RUN pnpm install --filter=@wonderkamer/backend --frozen-lockfile --ignore-scripts --prod
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --filter=@wonderkamer/backend --frozen-lockfile --ignore-scripts --prod
 
 # Set working directory
 WORKDIR /app/apps/backend
