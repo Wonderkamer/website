@@ -8,6 +8,11 @@ module.exports = async function (defaults) {
   const { setConfig } = await import('@warp-drive/build-config');
 
   let app = new EmberApp(defaults, {
+    emberData: {
+      deprecations: {
+        DEPRECATE_STORE_EXTENDS_EMBER_OBJECT: false,
+      },
+    },
     'ember-cli-terser': {
       enabled: isProductionLikeBuild,
 
@@ -56,6 +61,10 @@ module.exports = async function (defaults) {
   const { Webpack } = require('@embroider/webpack');
 
   return require('@embroider/compat').compatBuild(app, Webpack, {
+    staticEmberSource: true,
+    staticAddonTrees: true,
+    staticAddonTestSupportTrees: true,
+
     skipBabel: [
       {
         package: 'qunit',
