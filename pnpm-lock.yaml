@@ -768,8 +768,8 @@ importers:
         specifier: 3.3.3
         version: 3.3.3
       prettier-plugin-ember-template-tag:
-        specifier: 2.0.4
-        version: 2.0.4(prettier@3.3.3)
+        specifier: 2.0.5
+        version: 2.0.5(prettier@3.3.3)
       qunit:
         specifier: 2.24.1
         version: 2.24.1
@@ -10167,6 +10167,12 @@ packages:
 
   prettier-plugin-ember-template-tag@2.0.4:
     resolution: {integrity: sha512-Ude3MJyPBMr/Er5aSS9Y0dsnHWX3prpJB+Jj/BKKUT/EvG2ftnIMBsZXmRu68RJA62JJB8MdKBloYmCu2pTRNg==}
+    engines: {node: 18.* || >= 20}
+    peerDependencies:
+      prettier: '>= 3.0.0'
+
+  prettier-plugin-ember-template-tag@2.0.5:
+    resolution: {integrity: sha512-G9lbK3wmryIBSzqBKKoy254v7hIjqzqYpqWxi9NvOxcxNtwLyrC1u9NLJJFm+x9blzqHQOzKGOseVnbLtEwEbg==}
     engines: {node: 18.* || >= 20}
     peerDependencies:
       prettier: '>= 3.0.0'
@@ -24724,6 +24730,14 @@ snapshots:
     dependencies:
       '@babel/core': 7.26.10(supports-color@8.1.1)
       content-tag: 2.0.3
+      prettier: 3.3.3
+    transitivePeerDependencies:
+      - supports-color
+
+  prettier-plugin-ember-template-tag@2.0.5(prettier@3.3.3):
+    dependencies:
+      '@babel/core': 7.26.10(supports-color@8.1.1)
+      content-tag: 3.1.2
       prettier: 3.3.3
     transitivePeerDependencies:
       - supports-color
