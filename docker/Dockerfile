@@ -38,7 +38,7 @@ COPY --from=node-installer /app /app/
 
 # Build the all packages
 RUN pnpm run build:backend
-
+RUN pnpm why path-to-regexp -r 
 #
 # Stage 2.2: Building the frontend
 #
