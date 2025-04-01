@@ -111,7 +111,6 @@
     "@types/async": "3.2.24",
     "@types/bcrypt": "5.0.2",
     "@types/body-parser": "1.19.5",
-    "@types/cache-manager": "5.0.0",
     "@types/express": "5.0.1",
     "@types/find-remove": "2.0.3",
     "@types/ini": "4.1.1",
