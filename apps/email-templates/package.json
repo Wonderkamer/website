@@ -15,8 +15,7 @@
     "tailwindcss-box-shadow": "2.0.3",
     "tailwindcss-email-variants": "3.0.4",
     "tailwindcss-mso": "2.0.2",
-    "tailwindcss-preset-email": "1.4.0",
-    "morphdom": "2.7.4"
+    "tailwindcss-preset-email": "1.4.0"
   },
   "turbo": {
     "tasks": {
