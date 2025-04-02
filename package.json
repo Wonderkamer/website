@@ -22,7 +22,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
-    "@types/node": "22.13.16",
+    "@types/node": "22.13.17",
     "concurrently": "9.1.2",
     "dotenv": "16.4.7",
     "husky": "9.1.7",
