@@ -657,8 +657,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0(@babel/core@7.26.10)(@glint/template@1.5.2)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))(webpack@5.98.0)
       ember-intl:
-        specifier: 7.1.5
-        version: 7.1.5(@ember/test-helpers@5.2.1(@babel/core@7.26.10)(@glint/template@1.5.2)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)))(@glint/template@1.5.2)(typescript@5.8.2)(webpack@5.98.0)
+        specifier: 7.1.6
+        version: 7.1.6(@ember/test-helpers@5.2.1(@babel/core@7.26.10)(@glint/template@1.5.2)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)))(@glint/template@1.5.2)(typescript@5.8.2)(webpack@5.98.0)
       ember-keyboard:
         specifier: 9.0.1
         version: 9.0.1(@babel/core@7.26.10)(@ember/test-helpers@5.2.1(@babel/core@7.26.10)(@glint/template@1.5.2)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)))(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))
@@ -2190,25 +2190,25 @@ packages:
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@formatjs/ecma402-abstract@2.3.3':
-    resolution: {integrity: sha512-pJT1OkhplSmvvr6i3CWTPvC/FGC06MbN5TNBfRO6Ox62AEz90eMq+dVvtX9Bl3jxCEkS0tATzDarRZuOLw7oFg==}
+  '@formatjs/ecma402-abstract@2.3.4':
+    resolution: {integrity: sha512-qrycXDeaORzIqNhBOx0btnhpD1c+/qFIHAN9znofuMJX6QBwtbrmlpWfD4oiUUD2vJUOIYFA/gYtg2KAMGG7sA==}
 
-  '@formatjs/fast-memoize@2.2.6':
-    resolution: {integrity: sha512-luIXeE2LJbQnnzotY1f2U2m7xuQNj2DA8Vq4ce1BY9ebRZaoPB1+8eZ6nXpLzsxuW5spQxr7LdCg+CApZwkqkw==}
+  '@formatjs/fast-memoize@2.2.7':
+    resolution: {integrity: sha512-Yabmi9nSvyOMrlSeGGWDiH7rf3a7sIwplbvo/dlz9WCIjzIQAfy1RMf4S0X3yG724n5Ghu2GmEl5NJIV6O9sZQ==}
 
-  '@formatjs/icu-messageformat-parser@2.11.1':
-    resolution: {integrity: sha512-o0AhSNaOfKoic0Sn1GkFCK4MxdRsw7mPJ5/rBpIqdvcC7MIuyUSW8WChUEvrK78HhNpYOgqCQbINxCTumJLzZA==}
+  '@formatjs/icu-messageformat-parser@2.11.2':
+    resolution: {integrity: sha512-AfiMi5NOSo2TQImsYAg8UYddsNJ/vUEv/HaNqiFjnI3ZFfWihUtD5QtuX6kHl8+H+d3qvnE/3HZrfzgdWpsLNA==}
 
-  '@formatjs/icu-skeleton-parser@1.8.13':
-    resolution: {integrity: sha512-N/LIdTvVc1TpJmMt2jVg0Fr1F7Q1qJPdZSCs19unMskCmVQ/sa0H9L8PWt13vq+gLdLg1+pPsvBLydL1Apahjg==}
+  '@formatjs/icu-skeleton-parser@1.8.14':
+    resolution: {integrity: sha512-i4q4V4qslThK4Ig8SxyD76cp3+QJ3sAqr7f6q9VVfeGtxG9OhiAk3y9XF6Q41OymsKzsGQ6OQQoJNY4/lI8TcQ==}
 
-  '@formatjs/intl-localematcher@0.6.0':
-    resolution: {integrity: sha512-4rB4g+3hESy1bHSBG3tDFaMY2CH67iT7yne1e+0CLTsGLDcmoEWWpJjjpWVaYgYfYuohIRuo0E+N536gd2ZHZA==}
+  '@formatjs/intl-localematcher@0.6.1':
+    resolution: {integrity: sha512-ePEgLgVCqi2BBFnTMWPfIghu6FkbZnnBVhO2sSxvLfrdFw7wCHAHiDoM2h4NRgjbaY7+B7HgOLZGkK187pZTZg==}
 
-  '@formatjs/intl@3.1.4':
-    resolution: {integrity: sha512-MBwjnRtDG+E3/QauEi2swZqikDQJjrP9vH6Hl1EtGVsQFZUAWsljtXaz2s1KBrtQEtFDJ0y/mGBHEdFwcUsvqQ==}
+  '@formatjs/intl@3.1.6':
+    resolution: {integrity: sha512-tDkXnA4qpIFcDWac8CyVJq6oW8DR7W44QDUBsfXWIIJD/FYYen0QoH46W7XsVMFfPOVKkvbufjboZrrWbEfmww==}
     peerDependencies:
-      typescript: '5'
+      typescript: ^5.6.0
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -4883,8 +4883,8 @@ packages:
   class-validator@0.14.1:
     resolution: {integrity: sha512-2VEG9JICxIqTpoK1eMzZqaV+u/EiwEJkMGzTrZf6sU/fwsnOITVgYJ8yojSy6CaXtO9V0Cc6ZQZ8h8m4UBuLwQ==}
 
-  cldr-core@46.1.0:
-    resolution: {integrity: sha512-YWIbxgpO6fUais+FIm6Stl/KoAAhNJx4wDg2sg06QxK6GQ+i1iwdpCiyIJ7CTWduRuqUmRoaYpL/n5/8Q8ywxg==}
+  cldr-core@47.0.0:
+    resolution: {integrity: sha512-tdYRy66DMgpjEwVOWCTN0zhNr+zh1+d4A6MCNgJKU7voFDGsrwcWHor6jcqudHDmElCgyVNqWBKAB1JeNdSOKg==}
 
   clean-base-url@1.0.0:
     resolution: {integrity: sha512-9q6ZvUAhbKOSRFY7A/irCQ/rF0KIpa3uXpx6izm8+fp7b2H4hLeUJ+F1YYk9+gDQ/X8Q0MEyYs+tG3cht//HTg==}
@@ -6173,8 +6173,8 @@ packages:
     resolution: {integrity: sha512-3y6qWXuJPPc6vX2GfxWgtr+sDjb+bdZF9babstr0lTd8t8c1b42gJ13GaJqlylZIyZz2dEXFCimX9WAeudPv9g==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  ember-intl@7.1.5:
-    resolution: {integrity: sha512-k2ZXnDBMUhRRVzoltXmu8jWuY3UCKDoXuaS2opMmnBkT5EtrcfnkvXr7VP+2RV2S09k35Kr0XTh82H0Ph7OMeg==}
+  ember-intl@7.1.6:
+    resolution: {integrity: sha512-828AdJfj/tlMVolQ9XbNkG84mNx/ktBMpZmHoQwEAem3RM5l7y2w4ze42gP3ITTFKhR6ogJx30glZrZwezqJOA==}
     engines: {node: 18.* || >= 20}
     peerDependencies:
       '@ember/test-helpers': ^2.9.4 || ^3.2.0 || ^4.0.0 || ^5.0.0
@@ -7625,8 +7625,8 @@ packages:
   intersection-observer-admin@0.3.4:
     resolution: {integrity: sha512-L9W5vBSu7W5Dx/RcbWcErNwoke3xWIAD2SADbmAZnsF9XL667keuKgaqnuwTY4XU9UwhzXref5tnNF5ZLTIQ3w==}
 
-  intl-messageformat@10.7.15:
-    resolution: {integrity: sha512-LRyExsEsefQSBjU2p47oAheoKz+EOJxSLDdjOaEjdriajfHsMXOmV/EhMvYSg9bAgCUHasuAC+mcUBe/95PfIg==}
+  intl-messageformat@10.7.16:
+    resolution: {integrity: sha512-UmdmHUmp5CIKKjSoE10la5yfU+AYJAaiYLsodbjL4lji83JNvgOQUjGaGhGrpFCb0Uh7sl7qfP1IyILa8Z40ug==}
 
   invert-kv@3.0.1:
     resolution: {integrity: sha512-CYdFeFexxhv/Bcny+Q0BfOV+ltRlJcd4BBZBYFX/O0u4npJrgZtIcjokegtiSMAvlMTJ+Koq0GBCc//3bueQxw==}
@@ -14219,38 +14219,38 @@ snapshots:
 
   '@eslint/js@8.57.1': {}
 
-  '@formatjs/ecma402-abstract@2.3.3':
+  '@formatjs/ecma402-abstract@2.3.4':
     dependencies:
-      '@formatjs/fast-memoize': 2.2.6
-      '@formatjs/intl-localematcher': 0.6.0
+      '@formatjs/fast-memoize': 2.2.7
+      '@formatjs/intl-localematcher': 0.6.1
       decimal.js: 10.4.3
       tslib: 2.8.1
 
-  '@formatjs/fast-memoize@2.2.6':
+  '@formatjs/fast-memoize@2.2.7':
     dependencies:
       tslib: 2.8.1
 
-  '@formatjs/icu-messageformat-parser@2.11.1':
+  '@formatjs/icu-messageformat-parser@2.11.2':
     dependencies:
-      '@formatjs/ecma402-abstract': 2.3.3
-      '@formatjs/icu-skeleton-parser': 1.8.13
+      '@formatjs/ecma402-abstract': 2.3.4
+      '@formatjs/icu-skeleton-parser': 1.8.14
       tslib: 2.8.1
 
-  '@formatjs/icu-skeleton-parser@1.8.13':
+  '@formatjs/icu-skeleton-parser@1.8.14':
     dependencies:
-      '@formatjs/ecma402-abstract': 2.3.3
+      '@formatjs/ecma402-abstract': 2.3.4
       tslib: 2.8.1
 
-  '@formatjs/intl-localematcher@0.6.0':
+  '@formatjs/intl-localematcher@0.6.1':
     dependencies:
       tslib: 2.8.1
 
-  '@formatjs/intl@3.1.4(typescript@5.8.2)':
+  '@formatjs/intl@3.1.6(typescript@5.8.2)':
     dependencies:
-      '@formatjs/ecma402-abstract': 2.3.3
-      '@formatjs/fast-memoize': 2.2.6
-      '@formatjs/icu-messageformat-parser': 2.11.1
-      intl-messageformat: 10.7.15
+      '@formatjs/ecma402-abstract': 2.3.4
+      '@formatjs/fast-memoize': 2.2.7
+      '@formatjs/icu-messageformat-parser': 2.11.2
+      intl-messageformat: 10.7.16
       tslib: 2.8.1
     optionalDependencies:
       typescript: 5.8.2
@@ -17897,7 +17897,7 @@ snapshots:
       libphonenumber-js: 1.11.15
       validator: 13.12.0
 
-  cldr-core@46.1.0: {}
+  cldr-core@47.0.0: {}
 
   clean-base-url@1.0.0: {}
 
@@ -19524,22 +19524,22 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-intl@7.1.5(@ember/test-helpers@5.2.1(@babel/core@7.26.10)(@glint/template@1.5.2)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)))(@glint/template@1.5.2)(typescript@5.8.2)(webpack@5.98.0):
+  ember-intl@7.1.6(@ember/test-helpers@5.2.1(@babel/core@7.26.10)(@glint/template@1.5.2)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)))(@glint/template@1.5.2)(typescript@5.8.2)(webpack@5.98.0):
     dependencies:
       '@babel/core': 7.26.10(supports-color@8.1.1)
-      '@formatjs/icu-messageformat-parser': 2.11.1
-      '@formatjs/intl': 3.1.4(typescript@5.8.2)
+      '@formatjs/icu-messageformat-parser': 2.11.2
+      '@formatjs/intl': 3.1.6(typescript@5.8.2)
       broccoli-caching-writer: 3.0.3
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
       broccoli-source: 3.0.1
       calculate-cache-key-for-tree: 2.0.0
-      cldr-core: 46.1.0
+      cldr-core: 47.0.0
       ember-auto-import: 2.10.0(@glint/template@1.5.2)(webpack@5.98.0)
       ember-cli-babel: 8.2.0(@babel/core@7.26.10)
       ember-cli-typescript: 5.3.0
       extend: 3.0.2
-      intl-messageformat: 10.7.15
+      intl-messageformat: 10.7.16
       js-yaml: 4.1.0
       json-stable-stringify: 1.2.1
     optionalDependencies:
@@ -21617,11 +21617,11 @@ snapshots:
 
   intersection-observer-admin@0.3.4: {}
 
-  intl-messageformat@10.7.15:
+  intl-messageformat@10.7.16:
     dependencies:
-      '@formatjs/ecma402-abstract': 2.3.3
-      '@formatjs/fast-memoize': 2.2.6
-      '@formatjs/icu-messageformat-parser': 2.11.1
+      '@formatjs/ecma402-abstract': 2.3.4
+      '@formatjs/fast-memoize': 2.2.7
+      '@formatjs/icu-messageformat-parser': 2.11.2
       tslib: 2.8.1
 
   invert-kv@3.0.1: {}
