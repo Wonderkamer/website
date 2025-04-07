@@ -352,8 +352,8 @@ importers:
         specifier: 3.3.3
         version: 3.3.3
       run-script-webpack-plugin:
-        specifier: 0.2.2
-        version: 0.2.2
+        specifier: 0.2.3
+        version: 0.2.3
       source-map-support:
         specifier: 0.5.21
         version: 0.5.21
@@ -10728,8 +10728,8 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  run-script-webpack-plugin@0.2.2:
-    resolution: {integrity: sha512-6FBCE6gVwGI2BXWyUDI1zwjFimQRe2gW+j4KRnVWpA5oj4aq9n/CFhRlMvsTQsNx7B3eHWkxhZ+jTxjDSlGuYQ==}
+  run-script-webpack-plugin@0.2.3:
+    resolution: {integrity: sha512-GX1JqSNAmtGMAcE3iyLFlnxWpxKBWPNkpac/02w2RF3xynTjA8LWLkFzMzlvATA3c3kARWnT2OrsnvJviB79Lg==}
     engines: {node: '>=14'}
 
   rxjs@6.6.7:
@@ -25349,7 +25349,7 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  run-script-webpack-plugin@0.2.2: {}
+  run-script-webpack-plugin@0.2.3: {}
 
   rxjs@6.6.7:
     dependencies:
