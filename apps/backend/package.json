@@ -103,7 +103,7 @@
   "devDependencies": {
     "@golevelup/ts-jest": "0.6.2",
     "@nestjs/cli": "11.0.6",
-    "@nestjs/schematics": "11.0.3",
+    "@nestjs/schematics": "11.0.4",
     "@nestjs/testing": "11.0.13",
     "@nullvoxpopuli/eslint-configs": "4.3.0",
     "@types/async": "3.2.24",
