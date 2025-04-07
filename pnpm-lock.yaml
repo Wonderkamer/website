@@ -385,8 +385,8 @@ importers:
   apps/email-templates:
     dependencies:
       '@maizzle/framework':
-        specifier: 5.0.6
-        version: 5.0.6(bufferutil@4.0.8)(jiti@2.4.2)(ts-node@10.9.2(@types/node@22.14.0)(typescript@5.8.2))(utf-8-validate@5.0.10)(yaml@2.6.1)
+        specifier: 5.0.7
+        version: 5.0.7(bufferutil@4.0.8)(jiti@2.4.2)(ts-node@10.9.2(@types/node@22.14.0)(typescript@5.8.2))(utf-8-validate@5.0.10)(yaml@2.6.1)
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17(ts-node@10.9.2(@types/node@22.14.0)(typescript@5.8.2))
@@ -2751,8 +2751,8 @@ packages:
     resolution: {integrity: sha512-ZTvEM58L5ndRtnxtBykMAFUjsFYZU2gpYEC9eSs2mqIAJ3ogT10p7ehq+YacwAXOHpCm5uk04pJRNvg6TcA40w==}
     hasBin: true
 
-  '@maizzle/framework@5.0.6':
-    resolution: {integrity: sha512-gjXBq6QBcTEnLmRQ59icL6rIvw/affcmErPNi9hCswlYByrZwhaIz1DDZdYzed44/xwdpngtMC5Z246HFpQW4A==}
+  '@maizzle/framework@5.0.7':
+    resolution: {integrity: sha512-VnjP0hJ1qNWk2uSlD/2bIl7oiqa7wosXJ2CQn1GrX0MFfeHfBUC06ngI7vL7cM3dMOf/HhDEc2lI+Lzm4rco1A==}
     engines: {node: '>=18.20'}
     hasBin: true
 
@@ -15160,7 +15160,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@maizzle/framework@5.0.6(bufferutil@4.0.8)(jiti@2.4.2)(ts-node@10.9.2(@types/node@22.14.0)(typescript@5.8.2))(utf-8-validate@5.0.10)(yaml@2.6.1)':
+  '@maizzle/framework@5.0.7(bufferutil@4.0.8)(jiti@2.4.2)(ts-node@10.9.2(@types/node@22.14.0)(typescript@5.8.2))(utf-8-validate@5.0.10)(yaml@2.6.1)':
     dependencies:
       '@maizzle/cli': 2.0.0
       cheerio: 1.0.0
