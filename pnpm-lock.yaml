@@ -666,8 +666,8 @@ importers:
         specifier: 3.0.1
         version: 3.0.1(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))
       ember-math-helpers:
-        specifier: 4.2.1
-        version: 4.2.1(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))
+        specifier: 5.0.0
+        version: 5.0.0(@babel/core@7.26.10)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))
       ember-metrics:
         specifier: 2.0.0
         version: 2.0.0(@ember/string@3.1.1)(@glint/template@1.5.2)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))(webpack@5.98.0)
@@ -6289,11 +6289,11 @@ packages:
     peerDependencies:
       ember-source: '>= 5'
 
-  ember-math-helpers@4.2.1:
-    resolution: {integrity: sha512-/pOFz6tQ67mh0faiD7nzOCYRXHElg2d/SvQnYB8vdYoj7BLCkNHLjdo3F0oa5Qz/6J/+k3ie5ZGBjMumvlOeIw==}
+  ember-math-helpers@5.0.0:
+    resolution: {integrity: sha512-UKChQuu1Ki57NGMFF0V1mbRJ5LtkZ+EMIdCl5w+3nrwCOzn8GpePQDgtQqgdE3tFrm3TsHfLgHtfa38uNSSG6w==}
     engines: {node: '>= 18'}
     peerDependencies:
-      ember-source: '>= 4.0.0'
+      ember-source: '>= 4.12.0'
 
   ember-metrics@2.0.0:
     resolution: {integrity: sha512-r62LSNiivGKdhV7UOC9H9lmmApO/zaCnVo9BStVDkHTgcdzoq6iENft/ZDsCihQt3loevCi/BXb+DLffOBjKxg==}
@@ -19720,11 +19720,13 @@ snapshots:
     dependencies:
       ember-source: 6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)
 
-  ember-math-helpers@4.2.1(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)):
+  ember-math-helpers@5.0.0(@babel/core@7.26.10)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)):
     dependencies:
       '@embroider/addon-shim': 1.9.0
+      decorator-transforms: 2.3.0(@babel/core@7.26.10)
       ember-source: 6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0)
     transitivePeerDependencies:
+      - '@babel/core'
       - supports-color
 
   ember-metrics@2.0.0(@ember/string@3.1.1)(@glint/template@1.5.2)(ember-source@6.3.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))(webpack@5.98.0):
