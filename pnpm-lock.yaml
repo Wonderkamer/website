@@ -774,8 +774,8 @@ importers:
         specifier: 16.18.0
         version: 16.18.0(typescript@5.8.3)
       stylelint-config-recommended:
-        specifier: 15.0.0
-        version: 15.0.0(stylelint@16.18.0(typescript@5.8.3))
+        specifier: 16.0.0
+        version: 16.0.0(stylelint@16.18.0(typescript@5.8.3))
       stylelint-config-sass-guidelines:
         specifier: 12.1.0
         version: 12.1.0(postcss@8.5.3)(stylelint@16.18.0(typescript@5.8.3))
