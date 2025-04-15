@@ -121,7 +121,7 @@
     "ember-intl": "7.1.6",
     "validated-changeset": "1.4.1",
     "rsvp": "4.8.5",
-    "@types/node": "22.14.0",
+    "@types/node": "22.14.1",
     "@ember/test-waiters": "4.1.0",
     "ember-keyboard": "9.0.1",
     "ember-load-initializers": "3.0.1",
