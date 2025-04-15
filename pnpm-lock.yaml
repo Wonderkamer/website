@@ -603,8 +603,8 @@ importers:
         specifier: 7.0.6
         version: 7.0.6(postcss@8.5.3)
       daisyui:
-        specifier: 5.0.18
-        version: 5.0.18
+        specifier: 5.0.20
+        version: 5.0.20
       ember-auto-import:
         specifier: 2.10.0
         version: 2.10.0(@glint/template@1.5.2)(webpack@5.99.5)
@@ -5758,8 +5758,8 @@ packages:
   dag-map@2.0.2:
     resolution: {integrity: sha512-xnsprIzYuDeiyu5zSKwilV/ajRHxnoMlAhEREfyfTgTSViMVY2fGP1ZcHJbtwup26oCkofySU/m6oKJ3HrkW7w==}
 
-  daisyui@5.0.18:
-    resolution: {integrity: sha512-UKbuXChAZYhhjEGs9iKU3dSOup+WDY8fZaGa9VF4GkFQsF0ZAkb3yPTqjFUiE+2r3zFxv8JX+yhc06JPQbzqmw==}
+  daisyui@5.0.20:
+    resolution: {integrity: sha512-dR9WSFsWG5bHuwTnlcuh/MZFROaddxB+BFxB06EgDy7gU5M7eY/RsY1g/DwCMwgnqS7dEsjxNd/x+WgC3N+TDQ==}
 
   dargs@7.0.0:
     resolution: {integrity: sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==}
@@ -18826,7 +18826,7 @@ snapshots:
 
   dag-map@2.0.2: {}
 
-  daisyui@5.0.18: {}
+  daisyui@5.0.20: {}
 
   dargs@7.0.0: {}
 
