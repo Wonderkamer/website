@@ -37,7 +37,7 @@ importers:
         version: 7.0.2
       prettier:
         specifier: latest
-        version: 3.5.3
+        version: 3.6.2
       rimraf:
         specifier: 6.0.1
         version: 6.0.1
@@ -582,8 +582,8 @@ importers:
         specifier: 7.18.0
         version: 7.18.0(eslint@8.57.1)(typescript@5.8.3)
       '@warp-drive/build-config':
-        specifier: 0.0.2
-        version: 0.0.2(@glint/template@1.5.2)
+        specifier: 5.6.0
+        version: 5.6.0(@glint/template@1.5.2)
       '@wonderkamer/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -4122,6 +4122,9 @@ packages:
   '@warp-drive/build-config@0.0.2':
     resolution: {integrity: sha512-sPnLFRkN5a0sjr3wlEUysi3G0Gj9Si0HwYksva86hvtypGHY0tDd6rfLQFu9j4RxKAN/APDR0qa8EN2BsfdPeA==}
     engines: {node: '>= 18.20.7'}
+
+  '@warp-drive/build-config@5.6.0':
+    resolution: {integrity: sha512-7qdE7x1U0yRhbGy1wO47lirgKO6cjMqmKJUdLhpIhX31fIo0MM2/6n8p/+2rNTlZiCMhLNeV7RelA8LoIkxW3Q==}
 
   '@warp-drive/core-types@0.0.2':
     resolution: {integrity: sha512-FG0OGN0c/uv6eGlahlwfK6m+ElEUGDyli7HycO34If/AWLPnjUyzQzR47WOshKYy1er0onJZ459MpRzc7u7WOg==}
@@ -9141,6 +9144,7 @@ packages:
   multer@1.4.5-lts.2:
     resolution: {integrity: sha512-VzGiVigcG9zUAoCNU+xShztrlr1auZOlurXynNvO9GiWD1/mTBbUljOKY+qMeazBqXgRnjzeEgJI/wyjJUHg9A==}
     engines: {node: '>= 6.0.0'}
+    deprecated: Multer 1.x is impacted by a number of vulnerabilities, which have been patched in 2.x. You should upgrade to the latest 2.x version.
 
   multi-ini@2.3.2:
     resolution: {integrity: sha512-zuznIotGjtc8AXfWwX5/pfQI6JadxR/kN7zA1W8qqomk/7zKHMW54ik052dqV3bPzWLucysvPgJXEySsctUUWQ==}
@@ -10240,8 +10244,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -16886,6 +16890,16 @@ snapshots:
       '@embroider/macros': 1.16.12(@glint/template@1.5.2)
       babel-import-util: 2.1.1
       broccoli-funnel: 3.0.8
+      semver: 7.7.1
+    transitivePeerDependencies:
+      - '@glint/template'
+      - supports-color
+
+  '@warp-drive/build-config@5.6.0(@glint/template@1.5.2)':
+    dependencies:
+      '@embroider/addon-shim': 1.9.0
+      '@embroider/macros': 1.16.13(@glint/template@1.5.2)
+      babel-import-util: 2.1.1
       semver: 7.7.1
     transitivePeerDependencies:
       - '@glint/template'
@@ -24799,7 +24813,7 @@ snapshots:
 
   prettier@3.3.3: {}
 
-  prettier@3.5.3: {}
+  prettier@3.6.2: {}
 
   pretty-format@29.7.0:
     dependencies:
