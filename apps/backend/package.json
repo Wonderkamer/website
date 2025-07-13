@@ -105,7 +105,7 @@
     "@nestjs/cli": "11.0.6",
     "@nestjs/schematics": "11.0.5",
     "@nestjs/testing": "11.0.20",
-    "@nullvoxpopuli/eslint-configs": "4.3.0",
+    "@nullvoxpopuli/eslint-configs": "5.2.1",
     "@types/async": "3.2.24",
     "@types/bcrypt": "5.0.2",
     "@types/body-parser": "1.19.5",

@@ -63,7 +63,7 @@
     "@glint/environment-ember-loose": "1.5.2",
     "@glint/environment-ember-template-imports": "1.5.2",
     "@glint/template": "1.5.2",
-    "@nullvoxpopuli/eslint-configs": "4.3.0",
+    "@nullvoxpopuli/eslint-configs": "5.2.1",
     "@tailwindcss/typography": "0.5.16",
     "@tsconfig/ember": "3.0.10",
     "@types/ember__application": "4.0.11",
