@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { AbstractInjectionHelper } from 'nestjs-ember-static';
-import { HTMLElement } from 'node-html-parser';
 
 import { EnvConfig } from '../config/environment.config';
 import { FeaturesConfig } from '../config/features.config';
@@ -25,7 +24,7 @@ export class EmberClientConfigInjector extends AbstractInjectionHelper {
     super();
   }
 
-  process(htmlElement: HTMLElement): void {
+  process(htmlElement: Parameters<AbstractInjectionHelper['process']>[0]): void {
     const metaTag = htmlElement.querySelector(`meta[name="${this.metaTagSelector}"]`);
 
     const content = metaTag?.getAttribute('content');
