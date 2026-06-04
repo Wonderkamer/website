@@ -1,8 +1,7 @@
 # Stage 0: Node.js install the node dependencies
 FROM node:22.14.0-alpine AS base-installer
 
-# Installs pnpm
-RUN npm install -g corepack@latest
+# Use the Corepack bundled with the pinned Node image.
 RUN corepack enable
 
 # Set working directory
