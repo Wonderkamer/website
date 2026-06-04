@@ -1,5 +1,13 @@
 packages:
   - apps/*
   - packages/*
+
 onlyBuiltDependencies:
   - '@nestjs/core'
+  - '@parcel/watcher'
+  - bcrypt
+  - bufferutil
+  - core-js
+  - es5-ext
+  - msgpackr-extract
+  - utf-8-validate
