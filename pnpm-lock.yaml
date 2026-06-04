@@ -81,8 +81,8 @@ importers:
         specifier: 11.0.20
         version: 11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/config':
-        specifier: 4.0.2
-        version: 4.0.2(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(rxjs@7.8.2)
+        specifier: 4.0.4
+        version: 4.0.4(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(rxjs@7.8.2)
       '@nestjs/core':
         specifier: 11.0.20
         version: 11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -2860,8 +2860,8 @@ packages:
       class-validator:
         optional: true
 
-  '@nestjs/config@4.0.2':
-    resolution: {integrity: sha512-McMW6EXtpc8+CwTUwFdg6h7dYcBUpH5iUILCclAsa+MbCEvC9ZKu4dCHRlJqALuhjLw97pbQu62l4+wRwGeZqA==}
+  '@nestjs/config@4.0.4':
+    resolution: {integrity: sha512-CJPjNitr0bAufSEnRe2N+JbnVmMmDoo6hvKCPzXgZoGwJSmp/dZPk9f/RMbuD/+Q1ZJPjwsRpq0vxna++Knwow==}
     peerDependencies:
       '@nestjs/common': ^10.0.0 || ^11.0.0
       rxjs: ^7.1.0
@@ -6049,16 +6049,16 @@ packages:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
     engines: {node: '>=8'}
 
-  dotenv-expand@12.0.1:
-    resolution: {integrity: sha512-LaKRbou8gt0RNID/9RoI+J2rvXsBRPMV7p+ElHlPhcSARbCPDYcYG2s1TIzAfWv4YSgyY5taidWzzs31lNV3yQ==}
-    engines: {node: '>=12'}
-
-  dotenv@16.4.7:
-    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
+  dotenv-expand@12.0.3:
+    resolution: {integrity: sha512-uc47g4b+4k/M/SeaW1y4OApx+mtLWl92l5LMPP0GNXctZqELk+YGgOPIIC5elYmUH4OuoK3JLhuRUYegeySiFA==}
     engines: {node: '>=12'}
 
   dotenv@16.5.0:
     resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
+    engines: {node: '>=12'}
+
+  dotenv@17.4.1:
+    resolution: {integrity: sha512-k8DaKGP6r1G30Lx8V4+pCsLzKr8vLmV2paqEj1Y55GdAgJuIqpRp5FfajGF8KtwMxCz9qJc6wUIJnm053d/WCw==}
     engines: {node: '>=12'}
 
   dotgitignore@2.1.0:
@@ -8681,6 +8681,9 @@ packages:
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+
+  lodash@4.18.1:
+    resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
   log-symbols@2.2.0:
     resolution: {integrity: sha512-VeIAFslyIerEJLXHziedo2basKbMKtTw3vfn5IzG0XTjhAVEJyNHnL2p7vc+wBDSdQuUpNw3M2u6xb9QsAY5Eg==}
@@ -14309,7 +14312,7 @@ snapshots:
       babel-import-util: 2.1.1
       ember-cli-babel: 7.26.11
       find-up: 5.0.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       resolve: 1.22.8
       semver: 7.7.1
     optionalDependencies:
@@ -15413,12 +15416,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nestjs/config@4.0.2(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(rxjs@7.8.2)':
+  '@nestjs/config@4.0.4(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      dotenv: 16.4.7
-      dotenv-expand: 12.0.1
-      lodash: 4.17.21
+      dotenv: 17.4.1
+      dotenv-expand: 12.0.3
+      lodash: 4.18.1
       rxjs: 7.8.2
 
   '@nestjs/core@11.0.20(@nestjs/common@11.0.20(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.20)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
@@ -16319,26 +16322,6 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@types/ember@4.0.11':
-    dependencies:
-      '@types/ember__application': 4.0.11(@babel/core@7.26.10)
-      '@types/ember__array': 4.0.10(@babel/core@7.26.10)
-      '@types/ember__component': 4.0.22(@babel/core@7.26.10)
-      '@types/ember__controller': 4.0.12(@babel/core@7.26.10)
-      '@types/ember__debug': 4.0.8(@babel/core@7.26.10)
-      '@types/ember__engine': 4.0.11(@babel/core@7.26.10)
-      '@types/ember__error': 4.0.6
-      '@types/ember__object': 4.0.12(@babel/core@7.26.10)
-      '@types/ember__polyfills': 4.0.6
-      '@types/ember__routing': 4.0.22(@babel/core@7.26.10)
-      '@types/ember__runloop': 4.0.10
-      '@types/ember__service': 4.0.9(@babel/core@7.26.10)
-      '@types/ember__string': 3.0.15
-      '@types/ember__template': 4.0.7
-      '@types/ember__test': 4.0.6(@babel/core@7.26.10)
-      '@types/ember__utils': 4.0.7
-      '@types/rsvp': 4.0.9
-
   '@types/ember@4.0.11(@babel/core@7.26.10)':
     dependencies:
       '@types/ember__application': 4.0.11(@babel/core@7.26.10)
@@ -16365,7 +16348,7 @@ snapshots:
   '@types/ember__application@4.0.11(@babel/core@7.26.10)':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.26.10)
-      '@types/ember': 4.0.11
+      '@types/ember': 4.0.11(@babel/core@7.26.10)
       '@types/ember__engine': 4.0.11(@babel/core@7.26.10)
       '@types/ember__object': 4.0.12(@babel/core@7.26.10)
       '@types/ember__owner': 4.0.9
@@ -16448,10 +16431,6 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@types/ember__runloop@4.0.10':
-    dependencies:
-      '@types/ember': 4.0.11
-
   '@types/ember__runloop@4.0.10(@babel/core@7.26.10)':
     dependencies:
       '@types/ember': 4.0.11(@babel/core@7.26.10)
@@ -16476,10 +16455,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
-
-  '@types/ember__utils@4.0.7':
-    dependencies:
-      '@types/ember': 4.0.11
 
   '@types/ember__utils@4.0.7(@babel/core@7.26.10)':
     dependencies:
@@ -19135,13 +19110,13 @@ snapshots:
     dependencies:
       is-obj: 2.0.0
 
-  dotenv-expand@12.0.1:
+  dotenv-expand@12.0.3:
     dependencies:
       dotenv: 16.5.0
 
-  dotenv@16.4.7: {}
-
   dotenv@16.5.0: {}
+
+  dotenv@17.4.1: {}
 
   dotgitignore@2.1.0:
     dependencies:
@@ -20411,7 +20386,7 @@ snapshots:
       tinyglobby: 0.2.12
       unrs-resolver: 1.3.3
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.5.4))(eslint-import-resolver-typescript@3.10.0)(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.5.4))(eslint-import-resolver-typescript@4.3.2)(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -20549,7 +20524,7 @@ snapshots:
 
   eslint-plugin-json@3.1.0:
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.18.1
       vscode-json-languageservice: 4.2.1
 
   eslint-plugin-n@17.17.0(eslint@8.57.1):
@@ -21928,7 +21903,7 @@ snapshots:
       cli-width: 3.0.0
       external-editor: 3.1.0
       figures: 3.2.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mute-stream: 0.0.8
       run-async: 2.4.1
       rxjs: 6.6.7
@@ -23017,6 +22992,8 @@ snapshots:
 
   lodash@4.17.21: {}
 
+  lodash@4.18.1: {}
+
   log-symbols@2.2.0:
     dependencies:
       chalk: 2.4.2
@@ -23358,7 +23335,7 @@ snapshots:
   mjml-accordion@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23367,7 +23344,7 @@ snapshots:
   mjml-body@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23376,7 +23353,7 @@ snapshots:
   mjml-button@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23385,7 +23362,7 @@ snapshots:
   mjml-carousel@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23398,7 +23375,7 @@ snapshots:
       glob: 10.4.5
       html-minifier: 4.0.0
       js-beautify: 1.15.4
-      lodash: 4.17.21
+      lodash: 4.18.1
       minimatch: 9.0.5
       mjml-core: 4.15.3
       mjml-migrate: 4.15.3
@@ -23412,7 +23389,7 @@ snapshots:
   mjml-column@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23426,7 +23403,7 @@ snapshots:
       html-minifier: 4.0.0
       js-beautify: 1.15.4
       juice: 10.0.1
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-migrate: 4.15.3
       mjml-parser-xml: 4.15.3
       mjml-validator: 4.15.3
@@ -23437,7 +23414,7 @@ snapshots:
   mjml-divider@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23446,7 +23423,7 @@ snapshots:
   mjml-group@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23455,7 +23432,7 @@ snapshots:
   mjml-head-attributes@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23464,7 +23441,7 @@ snapshots:
   mjml-head-breakpoint@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23473,7 +23450,7 @@ snapshots:
   mjml-head-font@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23482,7 +23459,7 @@ snapshots:
   mjml-head-html-attributes@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23491,7 +23468,7 @@ snapshots:
   mjml-head-preview@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23500,7 +23477,7 @@ snapshots:
   mjml-head-style@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23509,7 +23486,7 @@ snapshots:
   mjml-head-title@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23518,7 +23495,7 @@ snapshots:
   mjml-head@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23527,7 +23504,7 @@ snapshots:
   mjml-hero@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23536,7 +23513,7 @@ snapshots:
   mjml-image@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23546,7 +23523,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.26.0
       js-beautify: 1.15.4
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
       mjml-parser-xml: 4.15.3
       yargs: 17.7.2
@@ -23557,7 +23534,7 @@ snapshots:
   mjml-navbar@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23568,7 +23545,7 @@ snapshots:
       '@babel/runtime': 7.26.0
       detect-node: 2.1.0
       htmlparser2: 9.1.0
-      lodash: 4.17.21
+      lodash: 4.18.1
     optional: true
 
   mjml-preset-core@4.15.3:
@@ -23606,7 +23583,7 @@ snapshots:
   mjml-raw@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23615,7 +23592,7 @@ snapshots:
   mjml-section@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23624,7 +23601,7 @@ snapshots:
   mjml-social@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23633,7 +23610,7 @@ snapshots:
   mjml-spacer@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23642,7 +23619,7 @@ snapshots:
   mjml-table@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23651,7 +23628,7 @@ snapshots:
   mjml-text@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
     transitivePeerDependencies:
       - encoding
@@ -23665,7 +23642,7 @@ snapshots:
   mjml-wrapper@4.15.3:
     dependencies:
       '@babel/runtime': 7.26.0
-      lodash: 4.17.21
+      lodash: 4.18.1
       mjml-core: 4.15.3
       mjml-section: 4.15.3
     transitivePeerDependencies:
@@ -23836,7 +23813,7 @@ snapshots:
 
   node-emoji@1.11.0:
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.18.1
 
   node-fetch-commonjs@3.3.2:
     dependencies:
@@ -24703,7 +24680,7 @@ snapshots:
 
   posthtml-component@2.1.0:
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.18.1
       posthtml: 0.16.6
       posthtml-attrs-parser: 1.1.1
       posthtml-expressions: 1.11.4
@@ -25189,7 +25166,7 @@ snapshots:
 
   redis-info@3.1.0:
     dependencies:
-      lodash: 4.17.21
+      lodash: 4.18.1
 
   redis-parser@3.0.0:
     dependencies:
