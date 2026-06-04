@@ -42,7 +42,7 @@
     "@bull-board/ui": "6.9.1",
     "@liaoliaots/nestjs-redis": "10.0.0",
     "@nestjs-modules/mailer": "2.0.2",
-    "@nestjs/bullmq": "11.0.2",
+    "@nestjs/bullmq": "11.0.4",
     "@nestjs/cache-manager": "3.0.1",
     "@nestjs/common": "11.0.20",
     "@nestjs/config": "4.0.4",
