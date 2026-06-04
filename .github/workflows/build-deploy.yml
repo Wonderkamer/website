@@ -31,7 +31,7 @@ jobs:
       semver_version: ${{ steps.git-describe-semver.outputs.version }}
     steps:
       - name: Checkout full Git history
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-tags: true
           fetch-depth: 0 # Fetch all history and tags
@@ -50,7 +50,7 @@ jobs:
     needs: get-version
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.event.inputs.branch }}
 
@@ -90,7 +90,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.event.inputs.branch }}
 
