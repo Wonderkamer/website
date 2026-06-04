@@ -9,6 +9,14 @@ module.exports = {
   overrides: [
     ...config.overrides,
     {
+      files: ['**/*.gjs'],
+      extends: ['plugin:ember/recommended-gjs'],
+    },
+    {
+      files: ['**/*.gts'],
+      extends: ['plugin:ember/recommended-gts'],
+    },
+    {
       files: ['**/*.{t,gt}s'],
       rules: {
         /**
