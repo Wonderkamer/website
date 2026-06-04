@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 import { isNone } from '@ember/utils';
 
 interface Args {
@@ -104,13 +104,6 @@ export default class OccupancyAveragesComponent extends Component<Args> {
     }
 
     event.stopPropagation();
-  }
-
-  @action
-  didInsertBar(element: HTMLElement, [value]: [number]) {
-    const pixels = value * 32;
-
-    element.style.height = pixels <= 1 ? '1px' : pixels + 'px';
   }
 }
 

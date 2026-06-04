@@ -1,6 +1,7 @@
 # Environment and config files
 .dockerignore
 .env
+.env-dist
 .git/
 .github/
 .gitignore

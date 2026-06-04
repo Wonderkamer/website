@@ -38,6 +38,9 @@ module.exports = async function (defaults) {
   setConfig(app, __dirname, {
     // WarpDrive/EmberData settings go here (if any)
     compatWith: process.env.EMBER_DATA_FULL_COMPAT ? '99.0' : null,
+    deprecations: {
+      DEPRECATE_STORE_EXTENDS_EMBER_OBJECT: false,
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -56,6 +59,10 @@ module.exports = async function (defaults) {
   const { Webpack } = require('@embroider/webpack');
 
   return require('@embroider/compat').compatBuild(app, Webpack, {
+    staticEmberSource: true,
+    staticAddonTrees: true,
+    staticAddonTestSupportTrees: true,
+
     skipBabel: [
       {
         package: 'qunit',

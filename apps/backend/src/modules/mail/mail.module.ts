@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MailerModule, MailerOptions } from '@nestjs-modules/mailer';
 import { HandlebarsAdapter } from '@nestjs-modules/mailer/dist/adapters/handlebars.adapter';
 import { EnvConfig } from '@wonderkamer/backend/config/environment.config';
+import { existsSync } from 'fs';
 import { join } from 'path';
 
 import { QueueModule } from '../queue/queue.module';
@@ -15,11 +16,18 @@ import { MailService } from './mail.service';
     MailerModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => {
+        const appRoot = configService.get<EnvConfig>('env.appRoot', { infer: true });
+        const templateDirCandidates = [
+          join(appRoot, '../email-templates/dist/src/emails'),
+          join(appRoot, '../email-templates/dist/emails'),
+        ];
+        const templateDir = templateDirCandidates.find((dir) => existsSync(dir)) ?? templateDirCandidates[0];
+
         return Object.assign({}, configService.get<MailerOptions>('mailer', { infer: true }), {
           preview: false /* 👈 preview emails in the browser */,
 
           template: {
-            dir: join(configService.get<EnvConfig>('env.appRoot', { infer: true }), '../email-templates/dist/emails'),
+            dir: templateDir,
             adapter: new HandlebarsAdapter(),
             options: {
               strict: true,

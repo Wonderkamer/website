@@ -5,7 +5,12 @@ const plugins = [require('tailwindcss/nesting'), require('tailwindcss')({ config
 if (env === 'production') {
   plugins.push(
     require('cssnano')({
-      preset: 'default',
+      preset: [
+        'default',
+        {
+          calc: false,
+        },
+      ],
     }),
   );
 }

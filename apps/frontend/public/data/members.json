@@ -320,7 +320,7 @@
       "attributes": {
         "title": "Michael Siega",
         "slug": "michael-siega",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -330,7 +330,7 @@
       "attributes": {
         "title": "Nathan Warren",
         "slug": "nathan-warren",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -340,7 +340,7 @@
       "attributes": {
         "title": "Yasmin Veenman",
         "slug": "yasmin-veenman",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -370,7 +370,7 @@
       "attributes": {
         "title": "Joany Beer",
         "slug": "joany-beer",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -390,6 +390,46 @@
       "attributes": {
         "title": "David Blackman",
         "slug": "david-blackman",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 39,
+      "type": "member",
+      "attributes": {
+        "title": "Leandro Oliva",
+        "slug": "leandro-oliva",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 40,
+      "type": "member",
+      "attributes": {
+        "title": "Jobjan Blonk",
+        "slug": "jobjan-blonk",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 41,
+      "type": "member",
+      "attributes": {
+        "title": "Jean de Becdelievre",
+        "slug": "jean-de-becdelievre",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 42,
+      "type": "member",
+      "attributes": {
+        "title": "Joseph Marcus",
+        "slug": "joseph-marcus",
         "is-active": true,
         "tag-line": "..."
       }

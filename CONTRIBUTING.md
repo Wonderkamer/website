@@ -19,7 +19,7 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-- `docker compose -f docker/docker-compose.yml up` => this will start additional services such as a redis instance for queing
+- `docker compose -f docker/docker-compose.yml --env-file ./.env up` => this will start additional services such as a redis instance for queing
 - `pnpm run start:dev` => this will start the backend NestJS application and an EmberJS frontend application. The later is served by the backend and has hot reloading enabled.
 
 - Visit your app at [http://localhost:3000](http://localhost:3000).

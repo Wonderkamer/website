@@ -10,6 +10,7 @@
 
 # misc
 /.env*
+!.env-dist
 /.pnp*
 /.sass-cache
 /connect.lock

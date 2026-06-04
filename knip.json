@@ -1,0 +1,28 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "workspaces": {
+    ".": {
+      "entry": "scripts/*.js",
+      "project": "scripts/**/*.js"
+    },
+    "apps/frontend": {
+      "entry": ["app/app.ts"],
+      "project": "**/*.{js,ts}",
+      "ignore": ["app/components/**/*.hbs", "app/templates/**/*.hbs"]
+    },
+    "apps/backend": {
+      "entry": [
+        "src/main.ts",
+        "src/config/*.ts",
+        "webpack-hmr.config.js",
+        "src/typeOrm.config.ts",
+        "test/app.e2e-spec.ts"
+      ],
+      "project": "**/*.{js,ts}"
+    },
+    "packages/@wonderkamer-common": {
+      "entry": ["src/index.ts", ".eslintrc.cjs"],
+      "project": "**/*.{js,ts,cjs}"
+    }
+  }
+}

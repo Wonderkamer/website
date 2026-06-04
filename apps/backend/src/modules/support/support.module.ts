@@ -11,10 +11,28 @@ import { SupportService } from './support.service';
     MailModule,
     GoogleRecaptchaModule.forRootAsync({
       imports: [ConfigModule],
-      useFactory: (configService: ConfigService) => ({
-        secretKey: configService.get<string>('recaptcha.secretKey'),
-        response: (req) => req.headers.recaptcha,
-      }),
+      useFactory: (configService: ConfigService) => {
+        const secretKey = configService.get<string>('recaptcha.secretKey')?.trim();
+        const environmentName = configService.get<string>('env.name');
+
+        if (secretKey) {
+          return {
+            secretKey,
+            response: (req) => req.headers.recaptcha,
+          };
+        }
+
+        if (environmentName === 'production') {
+          throw new Error('Missing GOOGLE_RECAPTCHA_SECRET in production environment.');
+        }
+
+        return {
+          // Keep application bootable in local/test environments when reCAPTCHA is not configured.
+          secretKey: '__recaptcha_disabled__',
+          response: (req) => req.headers.recaptcha,
+          skipIf: true,
+        };
+      },
       inject: [ConfigService],
     }),
   ],

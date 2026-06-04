@@ -1,3 +1,24 @@
 packages:
-  - "apps/*"
-  - "packages/*"
+  - apps/*
+  - packages/*
+
+allowBuilds:
+  '@nestjs/core': true
+  '@parcel/watcher': true
+  bcrypt: true
+  bufferutil: true
+  core-js: true
+  es5-ext: true
+  msgpackr-extract: true
+  unrs-resolver: true
+  utf-8-validate: true
+
+onlyBuiltDependencies:
+  - '@nestjs/core'
+  - '@parcel/watcher'
+  - bcrypt
+  - bufferutil
+  - core-js
+  - es5-ext
+  - msgpackr-extract
+  - utf-8-validate

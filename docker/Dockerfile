@@ -1,7 +1,7 @@
 # Stage 0: Node.js install the node dependencies
-FROM node:22.13.0-alpine AS base-installer
+FROM node:22.14.0-alpine AS base-installer
 
-# Installs pnpm
+# Use the Corepack bundled with the pinned Node image.
 RUN corepack enable
 
 # Set working directory
@@ -80,9 +80,6 @@ COPY --from=backend-builder /app/apps/backend/dist/ /app/apps/backend/dist/
 COPY --from=backend-builder /app/packages/@wonderkamer-common/dist/ /app/packages/@wonderkamer-common/dist/
 COPY --from=email-template-builder /app/apps/email-templates/dist/ /app/apps/email-templates/dist/
 
-# Install pnpm
-RUN corepack prepare
-
 # Install Node.js dependencies for production
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --filter=@wonderkamer/backend --frozen-lockfile --ignore-scripts --prod
 
@@ -93,6 +90,8 @@ WORKDIR /app/apps/backend
 EXPOSE 3000
 
 LABEL org.opencontainers.image.source=https://github.com/wonderkamer/website
+
+RUN echo "OK"
 
 # Start the Nest.js server
 CMD ["sh", "-c", "/usr/local/bin/pnpm run start:docker"]
