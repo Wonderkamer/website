@@ -1,7 +1,7 @@
 {{on-key "ArrowUp" this.previousSection}}
 {{on-key "ArrowDown" this.nextSection}}
 
-<div {{did-insert this.sectionInserted}}>
+<div {{section-inserted this.sectionInserted}}>
   <Section class="bg-primary" @routeId="home">
     <SectionTitle />
   </Section>

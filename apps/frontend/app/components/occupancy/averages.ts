@@ -105,13 +105,6 @@ export default class OccupancyAveragesComponent extends Component<Args> {
 
     event.stopPropagation();
   }
-
-  @action
-  didInsertBar(element: HTMLElement, [value]: [number]) {
-    const pixels = value * 32;
-
-    element.style.height = pixels <= 1 ? '1px' : pixels + 'px';
-  }
 }
 
 declare module '@glint/environment-ember-loose/registry' {
