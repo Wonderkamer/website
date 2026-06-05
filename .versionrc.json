@@ -38,6 +38,11 @@
       "section": "Content Changes"
     }
   ],
+  "bumpFiles": [
+    { "filename": "package.json", "type": "json" },
+    { "filename": "../backend/package.json", "type": "json" },
+    { "filename": "../../package.json", "type": "json" }
+  ],
   "commitUrlFormat": "https://github.com/Wonderkamer/website/commits/{{hash}}",
   "compareUrlFormat": "https://github.com/Wonderkamer/website/compare/{{previousTag}}...{{currentTag}}"
 }
