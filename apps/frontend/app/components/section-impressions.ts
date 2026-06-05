@@ -1,6 +1,8 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 
+import type Owner from '@ember/owner';
+
 interface Signature {
   Args: Record<string, never>;
 }
@@ -30,7 +32,7 @@ export default class SectionImpressionsComponent extends Component<Signature> {
 
   @tracked currentImage = 0;
 
-  constructor(owner: unknown, args: Signature['Args']) {
+  constructor(owner: Owner, args: Signature['Args']) {
     super(owner, args);
 
     setInterval(() => {

@@ -524,6 +524,9 @@ importers:
       '@types/ember__object':
         specifier: 4.0.12
         version: 4.0.12(@babel/core@7.26.10)
+      '@types/ember__owner':
+        specifier: 4.0.9
+        version: 4.0.9
       '@types/ember__polyfills':
         specifier: 4.0.6
         version: 4.0.6

@@ -8,9 +8,11 @@ import lookupValidator from 'ember-changeset-validations';
 
 import { ContactForm, ContactFormValidations } from '../changesets/contact-form';
 
+import type Owner from '@ember/owner';
 import type { Metrics } from 'ember-metrics/services/metrics';
 
 interface Signature {
+  Element: HTMLDivElement;
   Args: Record<string, never>;
 }
 
@@ -23,7 +25,7 @@ export default class SectionContactComponent extends Component<Signature> {
 
   @tracked reCaptchaReference: any;
 
-  constructor(owner: unknown, args: Signature['Args']) {
+  constructor(owner: Owner, args: Signature['Args']) {
     super(owner, args);
 
     this.changeset = Changeset(new ContactForm(), lookupValidator(ContactFormValidations), ContactFormValidations);
