@@ -13,6 +13,7 @@
   "scripts": {
     "build-dev": "ember build --environment=testing",
     "build": "ember build --environment=production",
+    "typecheck": "glint",
     "lint:css": "stylelint \"app/assets/**/*.css\"",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",

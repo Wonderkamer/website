@@ -40,6 +40,7 @@
     "build": "npm-run-all build:*",
     "build:exports": "node scripts/generate-exports.js",
     "build:tsc": "tsc",
+    "typecheck": "tsc --noEmit",
     "start:dev": "concurrently --kill-others  'tsc --watch --preserveWatchOutput'"
   },
   "keywords": [],

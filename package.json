@@ -12,6 +12,7 @@
     "build:email-templates": "turbo run build --filter=@wonderkamer/email-templates",
     "lint:fix": "pnpm --filter '*' lint:fix",
     "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
     "preinstall": "npx only-allow pnpm",
     "release": "turbo run release",
     "start:dev": "concurrently --kill-others 'cd apps/frontend && pnpm run start' 'cd apps/backend && pnpm run start:debug'",
