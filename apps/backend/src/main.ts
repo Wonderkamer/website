@@ -6,8 +6,6 @@ import { AppModule } from './app.module';
 import { ServerConfig } from './config/server.config';
 import { ValidationPipe } from './failures/custom-validation-pipe';
 
-declare const module: any;
-
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     forceCloseConnections: true,
@@ -22,11 +20,6 @@ async function bootstrap() {
   app.useGlobalInterceptors(new ClassSerializerInterceptor(app.get(Reflector)));
   app.enableShutdownHooks();
   app.enableCors();
-
-  if (module.hot) {
-    module.hot.accept();
-    module.hot.dispose(() => app.close());
-  }
 
   const serverConfig: ServerConfig = configService.get<ServerConfig>('server', { infer: true });
 
