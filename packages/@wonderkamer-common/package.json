@@ -7,10 +7,6 @@
   "exports": {
     ".": "./dist/index.js",
     "./data-structure/fifo-list": "./dist/data-structure/fifo-list.js",
-    "./profiles": "./dist/profiles/index.js",
-    "./profiles/machine-profile-key": "./dist/profiles/machine-profile-key.js",
-    "./profiles/mcu-profile-key": "./dist/profiles/mcu-profile-key.js",
-    "./profiles/screen-profile-key": "./dist/profiles/screen-profile-key.js",
     "./settings": "./dist/settings/index.js",
     "./settings/definitions/dashboard-settings": "./dist/settings/definitions/dashboard-settings.js",
     "./settings/definitions/organisation-preferences": "./dist/settings/definitions/organisation-preferences.js",
