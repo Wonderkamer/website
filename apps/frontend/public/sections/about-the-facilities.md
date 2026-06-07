@@ -18,12 +18,14 @@ Je hebt beschikking over oa.
   <li class="badge">exclusief gebruik vd ruimte voor eigen event</li>
 </ul>
 
+Lockers zijn compact en bedoeld voor kleine persoonlijke spullen zoals je portemonnee, sleutels of usb-sticks. In sommige gevallen past een laptop, maar reken vooral op een klein formaat.
+
 In de buurt vind je diverse lunch- en koffietentjes, cafes en terrasjes, diverse supermarkten en het Vondelpark.
 
 Parkeren is altijd lastig in Amsterdam, maar de lokatie is goed bereikbaar met het openbaar vervoer en/of fiets.
 
 #### Evenementen
 
-Wij bieden graag arrangementen om jou vergadering, workshop of brainstormsessie tot een succes te maken. Zo organiseren we een periodieke vintage kleding markt en maakt het [Huiskamerfestival Amsterdam](https://www.huiskamerfestival.nl/) dit jaar van onze lokatie gebruik.
+Wij bieden graag arrangementen om jou vergadering, workshop of brainstormsessie tot een succes te maken. Zo organiseren we een periodieke vintage kleding markt en is het [Huiskamerfestival Amsterdam](https://www.huiskamerfestival.nl/) een terugkerend evenement bij ons.
 
 Evenementen worden gecommuniceerd naar leden toe. De ruimte is dan immers niet of minder te gebruiken.

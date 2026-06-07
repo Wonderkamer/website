@@ -1,10 +1,13 @@
 import Component from '@glimmer/component';
 
-interface Args {
-  occupancies: any[];
+interface Signature {
+  Element: HTMLDivElement;
+  Args: {
+    occupancies: any[];
+  };
 }
 
-export default class OccupancySingularComponent extends Component<Args> {
+export default class OccupancySingularComponent extends Component<Signature> {
   get occupancies() {
     return this.args.occupancies || [];
   }
@@ -18,9 +21,9 @@ export default class OccupancySingularComponent extends Component<Args> {
         };
       })
       .sort((a, b) => a.on.getTime() - b.on.getTime())
-      .pop() ?? { on: new Date() };
+      .pop() ?? { on: new Date(), occupancy: 0 };
 
-    return { ...lastOccupancy, ago: -daysBetween(lastOccupancy.on), unit: 'day' };
+    return { ...lastOccupancy, ago: -daysBetween(lastOccupancy.on), unit: 'day' as const };
   }
 }
 

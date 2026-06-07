@@ -7,3 +7,4 @@ Op die manier hoef je je niet gelijk vast te leggen.
 
 Zoveel mensen, zoveel wensen. Daarom hebben we zowel vaste als flexibele werkplekken.
 De flex contracten werken in dagdelen; als je gemiddeld twee dagdelen in de week wilt werken kan je voor een FLEX1 kiezen, etc.
+De ruimte is 24 uur per dag toegankelijk.
