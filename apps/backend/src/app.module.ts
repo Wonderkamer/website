@@ -18,12 +18,15 @@ import { SupportModule } from './modules/support/support.module';
     EmberModule.forRootAsync({
       useFactory: async (configService): Promise<EmberModuleOptions> => {
         const config = configService.get<EnvConfig>('env', { infer: true });
-        const isDevelopment = config['name'] === 'development';
+        // Proxy to the local Ember dev server only when explicitly opted in (see the
+        // backend's local dev scripts). Deployed containers — including the staging
+        // stack, which also runs with NODE_ENV=development — serve the built frontend.
+        const emberProxyTarget = process.env.EMBER_PROXY_TARGET;
 
         return {
           metaTagName: '@wonderkamer/frontend/config/environment',
-          ...(isDevelopment
-            ? { proxy: { target: 'http://127.0.0.1:4222' } }
+          ...(emberProxyTarget
+            ? { proxy: { target: emberProxyTarget } }
             : { static: { rootPath: join(config['appRoot'], '../frontend/dist') } }),
         };
       },
