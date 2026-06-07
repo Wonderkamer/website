@@ -1,6 +1,7 @@
 import { ClassSerializerInterceptor, HttpStatus, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory, Reflector } from '@nestjs/core';
+import { initializeEmberApp } from 'nestjs-ember-static';
 
 import { AppModule } from './app.module';
 import { ServerConfig } from './config/server.config';
@@ -20,6 +21,9 @@ async function bootstrap() {
   app.useGlobalInterceptors(new ClassSerializerInterceptor(app.get(Reflector)));
   app.enableShutdownHooks();
   app.enableCors();
+
+  // v0.3.0+ no longer self-registers routes; layer the Ember loader onto the created app.
+  await initializeEmberApp(app);
 
   const serverConfig: ServerConfig = configService.get<ServerConfig>('server', { infer: true });
 

@@ -16,11 +16,16 @@ import { SupportModule } from './modules/support/support.module';
   imports: [
     ConfigInitModule,
     EmberModule.forRootAsync({
-      useFactory: async (configService: ConfigService): Promise<EmberModuleOptions> => {
+      useFactory: async (configService): Promise<EmberModuleOptions> => {
         const config = configService.get<EnvConfig>('env', { infer: true });
-        const rootPath = join(config['appRoot'], '../frontend/dist');
+        const isDevelopment = config['name'] === 'development';
 
-        return { rootPath, renderPath: '/*path', liveReloadOrigin: 'http://127.0.0.1:4222' };
+        return {
+          metaTagName: '@wonderkamer/frontend/config/environment',
+          ...(isDevelopment
+            ? { proxy: { target: 'http://127.0.0.1:4222' } }
+            : { static: { rootPath: join(config['appRoot'], '../frontend/dist') } }),
+        };
       },
       inject: [ConfigService],
       extraProviders: [
