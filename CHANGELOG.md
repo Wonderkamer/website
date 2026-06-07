@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.9.0](https://github.com/Wonderkamer/website/compare/v1.8.0...v1.9.0) (2026-06-07)
+
+
+### Features
+
+* **frontend:** navigate between sections with arrow keys ([013f246](https://github.com/Wonderkamer/website/commits/013f2468139323cab822018acfa64c46d4ddc4f1))
+
+
+### Bug Fixes
+
+* **backend:** serve built frontend in deployed dev environments ([0dbb373](https://github.com/Wonderkamer/website/commits/0dbb3736913d0e5fa9f65a4385b604ee11220e0f))
+* enforce required state parameter in State constructor ([4efb768](https://github.com/Wonderkamer/website/commits/4efb7684c550777d92f7b9ac269f36cfc42225fd))
+* **frontend:** resolve glint type errors ([9670af5](https://github.com/Wonderkamer/website/commits/9670af55fd266e40f690dbbfe77fb2b3a7a92a55))
+* update GitHub Actions to use latest versions of checkout, setup-node, pnpm, and cache actions ([2969421](https://github.com/Wonderkamer/website/commits/29694214994f29f69d455cd416e8995f581ae926))
+
+
+### Miscellaneous
+
+* add typecheck command ([ce42f4f](https://github.com/Wonderkamer/website/commits/ce42f4f1f1c43235662be721f108843a2ef2548a))
+* **backend:** remove unused ts-loader devDependency ([9f58216](https://github.com/Wonderkamer/website/commits/9f58216c026c0ba6f6cf810e6db05042686e8931))
+* **deps:** bump low-risk tooling libraries ([aab6213](https://github.com/Wonderkamer/website/commits/aab6213b59d85b573a9b0faeb35967c59c329238))
+* **deps:** bump markdown-it and markdown-it-deflist ([f648146](https://github.com/Wonderkamer/website/commits/f6481461dac5a7698b2eaef36d3cedfba3daf5df))
+* **deps:** upgrade dependencies and adopt nestjs-ember-static 0.3 API ([223ebeb](https://github.com/Wonderkamer/website/commits/223ebeb5c930d09011bb12e8bee72c3f6256f9ad))
+* **frontend:** remove border from badges ([56d4889](https://github.com/Wonderkamer/website/commits/56d48898b8b2bbab6e1546c5d14dac7d918a6318))
+* **release:** also bump backend and root package versions ([fccc551](https://github.com/Wonderkamer/website/commits/fccc551d4c4a2a4116c08142dcf3cb9b934a888e))
+* **release:** restore canonical changelog and upgrade tooling ([e45cbab](https://github.com/Wonderkamer/website/commits/e45cbab7006afc6d4e293e956888e06b0c21ae95))
+* remove unused dependencies across backend, email-templates and root ([b367c94](https://github.com/Wonderkamer/website/commits/b367c94bf75d4ad658ca0f3639437bcef40ff75c))
+
+
+### Refactoring
+
+* remove unused dependencies from package.json and pnpm-lock.yaml ([37745e0](https://github.com/Wonderkamer/website/commits/37745e060334665e290ce6ad95a428fa1e9f5774))
+* remove unused profile exports and related files ([b57ca52](https://github.com/Wonderkamer/website/commits/b57ca5284ac9d76d12917e18cf51ea54dd1ef5d8))
+
+
+### Content Changes
+
+* clarify locker, flex day timing and events ([f14890b](https://github.com/Wonderkamer/website/commits/f14890bdc618646d9ac3c3ea15a27701b95b3b5d))
+* **frontend:** add intro and trial-day block to about section ([5221b7c](https://github.com/Wonderkamer/website/commits/5221b7c7c611081608528b3bba5c5aaeebb2ba32))
+
 ## [1.8.0](https://github.com/Wonderkamer/website/compare/v1.7.2...v1.8.0) (2026-06-04)
 
 
