@@ -10,8 +10,12 @@ allowBuilds:
   core-js: true
   es5-ext: true
   msgpackr-extract: true
+  nestjs-ember-static: true
   unrs-resolver: true
   utf-8-validate: true
+
+minimumReleaseAgeExclude:
+  - nestjs-ember-static@0.3.1
 
 onlyBuiltDependencies:
   - '@nestjs/core'
@@ -21,4 +25,5 @@ onlyBuiltDependencies:
   - core-js
   - es5-ext
   - msgpackr-extract
+  - nestjs-ember-static
   - utf-8-validate

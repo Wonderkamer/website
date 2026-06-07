@@ -4,13 +4,16 @@ import { action } from '@ember/object';
 import { service } from '@ember/service';
 import { isNone } from '@ember/utils';
 
-interface Args {
-  occupancies: any[];
+interface Signature {
+  Element: HTMLDivElement;
+  Args: {
+    occupancies: any[];
+  };
 }
 
 const now = new Date();
 
-export default class OccupancyAveragesComponent extends Component<Args> {
+export default class OccupancyAveragesComponent extends Component<Signature> {
   @service intl!: any;
 
   days = [0, 1, 2, 3, 4, 5, 6];

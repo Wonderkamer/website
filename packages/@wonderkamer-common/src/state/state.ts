@@ -7,7 +7,7 @@ export default class State<T, E> {
   readonly error?: E;
   readonly detail?: string;
 
-  private constructor({ state, error, detail }: { state?: T | GenericState.erroneous; error?: E; detail?: string }) {
+  private constructor({ state, error, detail }: { state: T | GenericState.erroneous; error?: E; detail?: string }) {
     this.state = state;
     this.error = error;
     this.detail = detail;

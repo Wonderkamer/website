@@ -13,6 +13,7 @@
   "scripts": {
     "build-dev": "ember build --environment=testing",
     "build": "ember build --environment=production",
+    "typecheck": "glint",
     "lint:css": "stylelint \"app/assets/**/*.css\"",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
@@ -25,10 +26,10 @@
     "lint:prettier": "prettier . --list-different",
     "lint:prettier:fix": "prettier . --write",
     "preinstall": "npx only-allow pnpm",
-    "release:major": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as major",
-    "release:minor": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as minor",
-    "release:patch": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as patch",
-    "release": "commit-and-tag-version --commit-all --tag-prefix=\"v\"",
+    "release:major": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as major --infile ../../CHANGELOG.md",
+    "release:minor": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as minor --infile ../../CHANGELOG.md",
+    "release:patch": "commit-and-tag-version --tag-prefix=\"\" --commit-all --release-as patch --infile ../../CHANGELOG.md",
+    "release": "commit-and-tag-version --commit-all --tag-prefix=\"v\" --infile ../../CHANGELOG.md",
     "start": "ember serve",
     "test:ember": "ember test",
     "test": "npm-run-all test:*"
@@ -55,7 +56,7 @@
     "@ember/test-helpers": "5.2.1",
     "@ember/test-waiters": "4.1.1",
     "@embroider/compat": "3.9.0",
-    "@embroider/core": "3.5.6",
+    "@embroider/core": "3.5.10",
     "@embroider/webpack": "4.1.2",
     "@glimmer/component": "2.0.0",
     "@glimmer/tracking": "1.1.2",
@@ -82,6 +83,7 @@
     "@types/ember__error": "4.0.6",
     "@types/ember__helper": "4.0.9",
     "@types/ember__object": "4.0.12",
+    "@types/ember__owner": "4.0.9",
     "@types/ember__polyfills": "4.0.6",
     "@types/ember__routing": "4.0.23",
     "@types/ember__runloop": "4.0.10",
@@ -101,7 +103,7 @@
     "autoprefixer": "10.4.21",
     "broccoli-asset-rev": "3.0.0",
     "commit-and-tag-version": "12.5.1",
-    "concurrently": "9.1.2",
+    "concurrently": "9.2.1",
     "cssnano": "7.0.6",
     "daisyui": "5.0.20",
     "ember-auto-import": "2.10.0",
@@ -146,15 +148,15 @@
     "eslint-plugin-simple-import-sort": "12.1.1",
     "file-loader": "6.2.0",
     "loader.js": "4.7.0",
-    "markdown-it": "14.1.0",
-    "markdown-it-deflist": "3.0.0",
+    "markdown-it": "14.2.0",
+    "markdown-it-deflist": "3.0.1",
     "markdown-it-task-lists": "2.1.1",
     "npm-run-all2": "7.0.2",
-    "postcss": "8.5.3",
+    "postcss": "8.5.15",
     "postcss-loader": "8.1.1",
     "postcss-scss": "4.0.9",
-    "prettier": "3.3.3",
-    "prettier-plugin-ember-template-tag": "2.0.5",
+    "prettier": "3.8.3",
+    "prettier-plugin-ember-template-tag": "2.1.6",
     "qunit": "2.24.1",
     "qunit-dom": "3.4.0",
     "rsvp": "4.8.5",
@@ -171,10 +173,10 @@
     "typescript": "5.5.4",
     "url-loader": "4.1.1",
     "validated-changeset": "1.4.1",
-    "webpack": "5.99.5"
+    "webpack": "5.107.2"
   },
   "engines": {
-    "node": ">= 20.*"
+    "node": ">= 22.*"
   },
   "ember": {
     "edition": "octane"
