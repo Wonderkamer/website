@@ -56,12 +56,43 @@ export default class HomeController extends Controller {
   }
 
   @action
-  previousSection() {
-    //event.preventDefault();
+  previousSection(event) {
+    this.#scrollToAdjacentSection(-1, event);
   }
 
   @action
-  nextSection() {
-    //event.preventDefault();
+  nextSection(event) {
+    this.#scrollToAdjacentSection(1, event);
+  }
+
+  #scrollToAdjacentSection(direction, event) {
+    // Don't hijack arrow keys while typing in a form field.
+    const active = document.activeElement;
+
+    if (active && ['INPUT', 'TEXTAREA', 'SELECT'].includes(active.tagName)) {
+      return;
+    }
+
+    const sections = [...document.querySelectorAll('section[class*="section-"]')];
+
+    if (sections.length === 0) {
+      return;
+    }
+
+    event?.preventDefault();
+
+    // The current section is the last one whose top has scrolled past (or to) the viewport top.
+    const scrollY = window.scrollY;
+    let currentIndex = 0;
+
+    sections.forEach((section, index) => {
+      if (section.offsetTop <= scrollY + 2) {
+        currentIndex = index;
+      }
+    });
+
+    const targetIndex = Math.min(Math.max(currentIndex + direction, 0), sections.length - 1);
+
+    window.scrollTo({ top: sections[targetIndex].offsetTop, behavior: 'smooth' });
   }
 }
