@@ -8,5 +8,11 @@
        "files.insertFinalNewline": false
     },
     "typescript.tsdk": "node_modules/typescript/lib",
-    "eslint.validate": ["javascript", "glimmer-ts", "glimmer-js"],
+    "eslint.validate": [
+        "javascript",
+        "glimmer-ts",
+        "glimmer-js"
+    ],
+    "glint.libraryPath": "apps/frontend",
+    "glint.debug": false,
 }
