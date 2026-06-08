@@ -1,33 +1,21 @@
 import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
-import { service } from '@ember/service';
 
 export default class SectionMembersComponent extends Component {
-  @service router;
-
-  get selectedMember() {
-    return this.args.selectedMember;
-  }
+  @tracked detailMember = null;
 
   get activeMembers() {
     return this.args.activeMembers;
   }
 
-  get style() {
-    return {
-      maxWidth: '4rem',
-      maxHeight: '4rem',
-      minWidth: '3rem',
-      minHeight: '3rem',
-    };
+  @action
+  showMember(member) {
+    this.detailMember = member;
   }
 
   @action
-  onChange(selectedMember) {
-    if (selectedMember === null) {
-      return false;
-    }
-
-    this.router.transitionTo('home.members.member', selectedMember);
+  closeMember() {
+    this.detailMember = null;
   }
 }
