@@ -59,7 +59,7 @@ export default class HomeNavService extends Service {
     this._sectionsInViewPort = [...this._sectionsInViewPort.filter((i) => i !== id)];
   }
 
-  private get activeRoute() {
+  get activeRoute() {
     return this._sectionsInViewPort[this._sectionsInViewPort.length - 1];
   }
 }
