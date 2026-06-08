@@ -1,43 +1,53 @@
-<div class="container mx-auto px-4">
-  <div>
-    <h2 class="text-3xl py-5">Leden</h2>
+<div class="container mx-auto px-4 py-8 lg:px-16">
+  <div class="max-w-2xl">
+    <p class="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-gray-600">
+      <span class="inline-block h-px w-8 bg-gray-900"></span>
+      Wie er werken
+    </p>
+    <h2 class="mt-4 text-4xl font-bold text-gray-900 md:text-5xl">Leden</h2>
+    <p class="mt-4 text-lg text-gray-700">Een gevarieerde groep zelfstandigen en makers. Klik op iemand om kennis te maken.</p>
   </div>
-  {{#each @activeMembers as |member index|}}
-    <div class="collapse">
-      <label for="checktoggle{{index}}" class="hidden"></label>
-      <input type="radio" id="checktoggle{{index}}" name="checktoggle" />
-      <div class="collapse-title text-xl font-medium">
-        <div class="py-4" data-slug={{member.slug}}>
-          <div class="flex justify-content-between w-100 {{if (mod index 2) 'flex-row' 'flex-row-reverse'}}">
-            <img
-              src={{member.profileImgSmallSrc}}
-              class="img-fluid rounded-full {{if (mod index 2) 'mr-auto' 'ml-auto'}}"
-              alt=""
-              role="none"
-              {{style this.style}}
-            />
-            <div class="{{if (mod index 2) 'text-end' 'text-start'}}">
-              <h5 class="mb-0 text-xl">{{member.title}}</h5>
-              <p class="mb-0 font-italic">{{lowercase member.tagLine}}</p>
+
+  {{! Member cards }}
+  <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+    {{#each this.activeMembers as |member|}}
+      <button
+        type="button"
+        class="group flex flex-col overflow-hidden rounded-3xl bg-white text-left ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-md"
+        {{on "click" (fn this.showMember member)}}
+      >
+        <img src={{member.profileImgLargeSrc}} class="w-full transition duration-500 group-hover:scale-105" alt={{member.title}} loading="lazy" />
+        <div class="p-4">
+          <p class="mb-0 font-bold leading-tight text-gray-900">{{member.title}}</p>
+          {{#if member.tagLine}}
+            <p class="mb-0 text-sm text-gray-600">{{lowercase member.tagLine}}</p>
+          {{/if}}
+        </div>
+      </button>
+    {{/each}}
+  </div>
+
+  {{! Detail modal }}
+  {{#if this.detailMember}}
+    <div class="modal modal-open" role="dialog" aria-modal="true">
+      <div class="modal-box flex h-[500px] max-h-[90vh] max-w-3xl flex-col overflow-hidden rounded-3xl bg-white p-0 md:flex-row">
+        <img src={{this.detailMember.profileImgLargeSrc}} class="h-56 w-full flex-none object-cover md:h-full md:w-1/2" alt={{this.detailMember.title}} />
+        <div class="flex min-h-0 flex-1 flex-col p-6">
+          <div class="flex flex-none items-start justify-between gap-4">
+            <div>
+              <h3 class="mb-0 text-2xl font-bold text-gray-900">{{this.detailMember.title}}</h3>
+              {{#if this.detailMember.tagLine}}
+                <p class="mb-0 text-gray-600">{{lowercase this.detailMember.tagLine}}</p>
+              {{/if}}
             </div>
+            <button type="button" class="btn btn-circle btn-ghost flex-none" aria-label="Sluiten" {{on "click" this.closeMember}}>✕</button>
+          </div>
+          <div class="prose mt-4 min-h-0 max-w-none flex-1 overflow-y-auto">
+            <Util::MarkdownFromUrl @url={{this.detailMember.profileTextSrc}} />
           </div>
         </div>
       </div>
-      <div class="collapse-content">
-        <div class="grid grid-cols-3 gap-4">
-          <figure class="max-w-lg col-span-1 {{if (mod index 2) ' order-last' ''}}">
-            <img class="h-auto max-w-full mb-0" src="{{member.profileImgLargeSrc}}" alt={{member.title}} />
-            <figcaption class="mt-2 text-sm {{if (mod index 2) 'text-right' 'text-left'}}">{{member.title}}{{#if member.tagLine}},
-                {{member.tagLine}}{{/if}}</figcaption>
-
-          </figure>
-
-          <div class="col-span-2 {{if (mod index 2) '' 'order-last'}} prose md:prose-xl">
-            <Util::MarkdownFromUrl @url={{member.profileTextSrc}} />
-          </div>
-        </div>
-      </div>
+      <button type="button" class="modal-backdrop" aria-label="Sluiten" {{on "click" this.closeMember}}></button>
     </div>
-  {{/each}}
-
+  {{/if}}
 </div>

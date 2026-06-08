@@ -1,9 +1,11 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
 
 import type Owner from '@ember/owner';
 
 interface Signature {
+  Element: HTMLDivElement;
   Args: Record<string, never>;
 }
 
@@ -50,6 +52,11 @@ export default class SectionImpressionsComponent extends Component<Signature> {
 
   public get currentIndex() {
     return this.currentImage % this.images.length;
+  }
+
+  @action
+  setImage(index: number) {
+    this.currentImage = index;
   }
 }
 
