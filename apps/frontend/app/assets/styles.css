@@ -3,6 +3,10 @@
   --bs-secondary-rgb: 218, 229, 236;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   min-height: 100vh;
 
