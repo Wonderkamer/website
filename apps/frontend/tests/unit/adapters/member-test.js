@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 
-import { setupTest } from '@wonderkamer/frontend/tests/helpers';
+import { setupTest } from '../../helpers';
 
 module('Unit | Adapter | member', function (hooks) {
   setupTest(hooks);

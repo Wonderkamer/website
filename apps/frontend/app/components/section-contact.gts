@@ -4,7 +4,7 @@ import { get } from '@ember/helper';
 import { action } from '@ember/object';
 import { service } from '@ember/service';
 
-import UtilMarkdownFromUrl from '@wonderkamer/frontend/components/util/markdown-from-url';
+import UtilMarkdownFromUrl from './util/markdown-from-url';
 import { Changeset } from 'ember-changeset';
 import lookupValidator from 'ember-changeset-validations';
 import GRecaptcha from 'ember-g-recaptcha/components/g-recaptcha';

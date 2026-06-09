@@ -1,4 +1,4 @@
-import UtilMarkdownFromUrl from '@wonderkamer/frontend/components/util/markdown-from-url';
+import UtilMarkdownFromUrl from './util/markdown-from-url';
 
 import type { TOC } from '@ember/component/template-only';
 

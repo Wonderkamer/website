@@ -1,4 +1,4 @@
-import application from '@wonderkamer/frontend/utils/application';
+import application from '../utils/application';
 
 import type Application from '@ember/application';
 

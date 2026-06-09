@@ -1,7 +1,7 @@
 import { pageTitle } from 'ember-page-title';
 import RouteTemplate from 'ember-route-template';
 
-import type MemberModel from '@wonderkamer/frontend/models/member';
+import type MemberModel from '../../../models/member';
 
 interface MemberRouteSignature {
   Args: {

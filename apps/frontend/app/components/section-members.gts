@@ -4,7 +4,7 @@ import { fn } from '@ember/helper';
 import { on } from '@ember/modifier';
 import { action } from '@ember/object';
 
-import UtilMarkdownFromUrl from '@wonderkamer/frontend/components/util/markdown-from-url';
+import UtilMarkdownFromUrl from './util/markdown-from-url';
 import lowercase from 'ember-cli-string-helpers/helpers/lowercase';
 
 interface Signature {

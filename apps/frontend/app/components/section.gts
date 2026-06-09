@@ -4,7 +4,7 @@ import { service } from '@ember/service';
 
 import inViewport from 'ember-in-viewport/modifiers/in-viewport';
 
-import type HomeNavService from '@wonderkamer/frontend/services/home-nav';
+import type HomeNavService from '../services/home-nav';
 
 interface Signature {
   Element: HTMLElement;

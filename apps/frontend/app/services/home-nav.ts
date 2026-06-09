@@ -1,12 +1,25 @@
 import { tracked } from '@glimmer/tracking';
+import { registerDestructor } from '@ember/destroyable';
+import { cancel, debounce } from '@ember/runloop';
 import Service, { service } from '@ember/service';
-
-import { debounceTask } from 'ember-lifeline';
+import type { EmberRunTimer } from '@ember/runloop/types';
 
 import type RouterService from '@ember/routing/router-service';
 
 export default class HomeNavService extends Service {
   @service private router!: RouterService;
+
+  private _sectionInViewDebounceTimer?: EmberRunTimer;
+
+  constructor(...args: never[]) {
+    super(...args);
+
+    registerDestructor(this, () => {
+      if (this._sectionInViewDebounceTimer) {
+        cancel(this._sectionInViewDebounceTimer);
+      }
+    });
+  }
 
   @tracked private _lastActiveRoute?: string;
   @tracked private _ignoreViewEvents = true;
@@ -33,7 +46,7 @@ export default class HomeNavService extends Service {
   }
 
   public sectionWentIntoView(id: string) {
-    debounceTask(this, '_sectionWentIntoViewDebouncer', id, 250);
+    this._sectionInViewDebounceTimer = debounce(this, this._sectionWentIntoViewDebouncer, id, 250);
   }
 
   private _sectionWentIntoViewDebouncer = (id: string) => {

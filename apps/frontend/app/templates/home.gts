@@ -1,16 +1,16 @@
 import { on } from '@ember/modifier';
 
-import Section from '@wonderkamer/frontend/components/section';
-import SectionAbout from '@wonderkamer/frontend/components/section-about';
-import SectionContact from '@wonderkamer/frontend/components/section-contact';
-import SectionImpressions from '@wonderkamer/frontend/components/section-impressions';
-import SectionMap from '@wonderkamer/frontend/components/section-map';
-import SectionMembers from '@wonderkamer/frontend/components/section-members';
-import SectionPricing from '@wonderkamer/frontend/components/section-pricing';
-import SectionRules from '@wonderkamer/frontend/components/section-rules';
-import SectionTitle from '@wonderkamer/frontend/components/section-title';
+import Section from '../components/section';
+import SectionAbout from '../components/section-about';
+import SectionContact from '../components/section-contact';
+import SectionImpressions from '../components/section-impressions';
+import SectionMap from '../components/section-map';
+import SectionMembers from '../components/section-members';
+import SectionPricing from '../components/section-pricing';
+import SectionRules from '../components/section-rules';
+import SectionTitle from '../components/section-title';
 import appVersion from '@wonderkamer/frontend/helpers/app-version';
-import sectionInserted from '@wonderkamer/frontend/modifiers/section-inserted';
+import sectionInserted from '../modifiers/section-inserted';
 import onKey from 'ember-keyboard/helpers/on-key';
 import RouteTemplate from 'ember-route-template';
 
