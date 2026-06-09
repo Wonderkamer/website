@@ -19,6 +19,16 @@ const appRoot = dirname(fileURLToPath(import.meta.url));
 const headlessFormRoot = dirname(dirname(require.resolve('ember-headless-form')));
 
 export default defineConfig({
+  server: {
+    // The NestJS backend dev server proxies to the frontend at
+    // EMBER_PROXY_TARGET=http://127.0.0.1:4222 (historically ember-cli's port +
+    // host, set in .ember-cli.js). Vite defaults to port 4200 and binds IPv6
+    // `localhost` (::1) only, so the IPv4 proxy target can't reach it. Pin both
+    // the port and an explicit IPv4 host so `nestjs-ember-static` connects.
+    host: '127.0.0.1',
+    port: 4222,
+    strictPort: true,
+  },
   resolve: {
     alias: [
       {
