@@ -7,6 +7,9 @@ settings:
 overrides:
   ember-cli-htmlbars: 7.0.1
 
+patchedDependencies:
+  '@embroider/vite@1.7.6': 6a06242ade682c2bac3ce251f7965f4586ccd0cf36240fe8500883788f47bf46
+
 importers:
 
   .:
@@ -288,7 +291,7 @@ importers:
         version: 1.20.4(@babel/core@7.26.10)(@glint/template@1.5.2)
       '@embroider/vite':
         specifier: 1.7.6
-        version: 1.7.6(@embroider/core@4.6.1(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10))(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)(vite@5.4.19(@types/node@22.14.1)(lightningcss@1.32.0)(sass@1.86.3)(terser@5.48.0))
+        version: 1.7.6(patch_hash=6a06242ade682c2bac3ce251f7965f4586ccd0cf36240fe8500883788f47bf46)(@embroider/core@4.6.1(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10))(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)(vite@5.4.19(@types/node@22.14.1)(lightningcss@1.32.0)(sass@1.86.3)(terser@5.48.0))
       '@glimmer/component':
         specifier: 2.1.1
         version: 2.1.1
@@ -13087,7 +13090,7 @@ snapshots:
       fs-tree-diff: 2.0.1
       handlebars: 4.7.9
       js-string-escape: 1.0.1
-      jsdom: 25.0.1(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)
+      jsdom: 25.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       lodash: 4.18.1
       resolve: 1.22.12
       resolve-package-path: 4.0.3
@@ -13171,7 +13174,7 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@embroider/vite@1.7.6(@embroider/core@4.6.1(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10))(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)(vite@5.4.19(@types/node@22.14.1)(lightningcss@1.32.0)(sass@1.86.3)(terser@5.48.0))':
+  '@embroider/vite@1.7.6(patch_hash=6a06242ade682c2bac3ce251f7965f4586ccd0cf36240fe8500883788f47bf46)(@embroider/core@4.6.1(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10))(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)(vite@5.4.19(@types/node@22.14.1)(lightningcss@1.32.0)(sass@1.86.3)(terser@5.48.0))':
     dependencies:
       '@babel/core': 7.26.10
       '@embroider/core': 4.6.1(@glint/template@1.5.2)(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)
@@ -13185,7 +13188,7 @@ snapshots:
       debug: 4.4.3(supports-color@8.1.1)
       fast-glob: 3.3.3
       fs-extra: 10.1.0
-      jsdom: 25.0.1(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)
+      jsdom: 25.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       send: 1.2.1
       source-map-url: 0.4.1
       terser: 5.48.0
@@ -16977,7 +16980,7 @@ snapshots:
       figures: 3.2.0
       find-up: 5.0.0
       git-semver-tags: 5.0.1
-      jsdom: 25.0.1(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)
+      jsdom: 25.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       semver: 7.7.1
       w3c-xmlserializer: 5.0.0
       yaml: 2.9.0
@@ -20459,7 +20462,7 @@ snapshots:
 
   http-parser-js@0.5.10: {}
 
-  http-proxy-agent@7.0.2(supports-color@8.1.1):
+  http-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.3(supports-color@8.1.1)
@@ -20492,7 +20495,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.6(supports-color@8.1.1):
+  https-proxy-agent@7.0.6:
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.3(supports-color@8.1.1)
@@ -21286,15 +21289,15 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jsdom@25.0.1(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10):
+  jsdom@25.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10):
     dependencies:
       cssstyle: 4.6.0
       data-urls: 5.0.0
       decimal.js: 10.6.0
       form-data: 4.0.5
       html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2(supports-color@8.1.1)
-      https-proxy-agent: 7.0.6(supports-color@8.1.1)
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.6
       is-potential-custom-element-name: 1.0.1
       nwsapi: 2.2.23
       parse5: 7.3.0
@@ -21320,8 +21323,8 @@ snapshots:
       data-urls: 5.0.0
       decimal.js: 10.6.0
       html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2(supports-color@8.1.1)
-      https-proxy-agent: 7.0.6(supports-color@8.1.1)
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.6
       is-potential-custom-element-name: 1.0.1
       nwsapi: 2.2.23
       parse5: 7.3.0

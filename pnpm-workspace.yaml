@@ -35,3 +35,6 @@ onlyBuiltDependencies:
   - msgpackr-extract
   - nestjs-ember-static
   - utf-8-validate
+
+patchedDependencies:
+  '@embroider/vite@1.7.6': patches/@embroider__vite@1.7.6.patch
