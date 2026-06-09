@@ -1,3 +1,8 @@
+/* This file is imported separately from tailwind.css, so it needs @reference to
+   resolve Tailwind/daisyUI classes used by @apply (e.g. `badge-info`) without
+   re-emitting the framework CSS. */
+@reference './tailwind.css';
+
 :root {
   --bs-primary-rgb: 255, 230, 7;
   --bs-secondary-rgb: 218, 229, 236;

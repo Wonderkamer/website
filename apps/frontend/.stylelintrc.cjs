@@ -7,13 +7,13 @@ module.exports = {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'layer', 'apply', 'config', 'variants', 'responsive', 'screen'],
+        ignoreAtRules: ['tailwind', 'layer', 'apply', 'config', 'variants', 'responsive', 'screen', 'reference', 'source', 'plugin', 'theme', 'utility', 'custom-variant'],
       },
     ],
     'at-rule-no-deprecated': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'layer', 'apply', 'config', 'variants', 'responsive', 'screen'],
+        ignoreAtRules: ['tailwind', 'layer', 'apply', 'config', 'variants', 'responsive', 'screen', 'reference', 'source', 'plugin', 'theme', 'utility', 'custom-variant'],
       },
     ],
   },

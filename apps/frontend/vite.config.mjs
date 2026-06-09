@@ -1,5 +1,6 @@
 import { classicEmberSupport, ember, extensions } from '@embroider/vite';
 import { babel } from '@rollup/plugin-babel';
+import tailwindcss from '@tailwindcss/vite';
 import { createRequire } from 'node:module';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -49,6 +50,7 @@ export default defineConfig({
   plugins: [
     classicEmberSupport(),
     ember(),
+    tailwindcss(),
     // extra plugins here
     babel({
       babelHelpers: 'runtime',
