@@ -4,7 +4,6 @@ import { get } from '@ember/helper';
 import { action } from '@ember/object';
 import { service } from '@ember/service';
 
-import UtilMarkdownFromUrl from './util/markdown-from-url';
 import { Changeset } from 'ember-changeset';
 import lookupValidator from 'ember-changeset-validations';
 import GRecaptcha from 'ember-g-recaptcha/components/g-recaptcha';
@@ -13,6 +12,7 @@ import { validateChangeset } from 'ember-headless-form-changeset';
 import PortalTarget from 'ember-stargate/components/portal-target';
 
 import { ContactForm, ContactFormValidations } from '../changesets/contact-form';
+import UtilMarkdownFromUrl from './util/markdown-from-url';
 
 import type Owner from '@ember/owner';
 import type { Metrics } from 'ember-metrics/services/metrics';

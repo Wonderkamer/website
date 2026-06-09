@@ -21,9 +21,7 @@ export class MailProcessor extends WorkerHost {
     try {
       const result = await this.mailerService.sendMail(job.data);
 
-      this.logger.log(
-        `Email sent '${job.data.subject}' accepted=${JSON.stringify(result.accepted)} rejected=${JSON.stringify(result.rejected)}`,
-      );
+      this.logger.log(`Email sent '${job.data.subject}' accepted=${JSON.stringify(result.accepted)} rejected=${JSON.stringify(result.rejected)}`);
     } catch (error) {
       this.logger.error(error);
     }

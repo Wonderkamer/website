@@ -2,15 +2,13 @@ import Component from '@glimmer/component';
 import { htmlSafe, type SafeString } from '@ember/template';
 
 import ENV from '@wonderkamer/frontend/config/environment';
-import { cell } from 'ember-resources';
+import { cell, resource, resourceFactory, use } from 'ember-resources';
 import MarkdownIt from 'markdown-it';
 import MarkdownDefinitionList from 'markdown-it-deflist';
 
 const {
   APP: { version },
 } = ENV;
-
-import { resource, resourceFactory, use } from 'ember-resources';
 
 const MarkdownLoader = resourceFactory((url: string) => {
   const renderer = MarkdownIt({
@@ -20,7 +18,7 @@ const MarkdownLoader = resourceFactory((url: string) => {
   }).use(MarkdownDefinitionList);
 
   return resource(() => {
-    let markdown = cell('');
+    const markdown = cell('');
 
     fetch(`${url}?_v=${version}`).then((response: Response) => {
       if (response.ok) {

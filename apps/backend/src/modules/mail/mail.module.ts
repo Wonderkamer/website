@@ -17,10 +17,7 @@ import { MailService } from './mail.service';
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => {
         const appRoot = configService.get<EnvConfig>('env.appRoot', { infer: true });
-        const templateDirCandidates = [
-          join(appRoot, '../email-templates/dist/src/emails'),
-          join(appRoot, '../email-templates/dist/emails'),
-        ];
+        const templateDirCandidates = [join(appRoot, '../email-templates/dist/src/emails'), join(appRoot, '../email-templates/dist/emails')];
         const templateDir = templateDirCandidates.find((dir) => existsSync(dir)) ?? templateDirCandidates[0];
 
         return Object.assign({}, configService.get<MailerOptions>('mailer', { infer: true }), {

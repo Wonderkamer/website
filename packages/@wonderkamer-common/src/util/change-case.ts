@@ -12,9 +12,7 @@ export interface Options extends SplitOptions {
  * Convert a string to space separated lower case (`foo bar`).
  */
 export function noCase(input: string, options?: Options) {
-  return split(input, options)
-    .map(lowerFactory(options?.locale))
-    .join(' ');
+  return split(input, options).map(lowerFactory(options?.locale)).join(' ');
 }
 
 // Regexps involved with splitting words in various case formats.

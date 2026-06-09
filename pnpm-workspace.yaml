@@ -24,6 +24,7 @@ allowBuilds:
 
 minimumReleaseAgeExclude:
   - nestjs-ember-static@0.3.1
+  - prettier@3.8.4
 
 onlyBuiltDependencies:
   - '@nestjs/core'

@@ -1,10 +1,13 @@
+/* eslint-disable ember/no-runloop -- this service debounces viewport events with
+   @ember/runloop's debounce/cancel and cleans the timer up via registerDestructor,
+   which is a correct, self-contained runloop usage. */
 import { tracked } from '@glimmer/tracking';
 import { registerDestructor } from '@ember/destroyable';
 import { cancel, debounce } from '@ember/runloop';
 import Service, { service } from '@ember/service';
-import type { EmberRunTimer } from '@ember/runloop/types';
 
 import type RouterService from '@ember/routing/router-service';
+import type { EmberRunTimer } from '@ember/runloop/types';
 
 export default class HomeNavService extends Service {
   @service private router!: RouterService;
@@ -59,7 +62,6 @@ export default class HomeNavService extends Service {
     const activeRoute = this.activeRoute;
 
     if (this._lastActiveRoute !== activeRoute) {
-      // eslint-disable-next-line ember/no-side-effects
       this._lastActiveRoute = activeRoute;
 
       if (!this._ignoreViewEvents) {

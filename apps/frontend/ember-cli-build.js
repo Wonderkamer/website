@@ -7,7 +7,7 @@ const { buildOnce } = require('@embroider/vite');
 module.exports = async function (defaults) {
   const { setConfig } = await import('@warp-drive/build-config');
 
-  let app = new EmberApp(defaults, {
+  const app = new EmberApp(defaults, {
     'ember-math-helpers': {
       only: ['mod', 'mult'],
     },

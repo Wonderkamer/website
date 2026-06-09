@@ -4,8 +4,9 @@ import { fn } from '@ember/helper';
 import { on } from '@ember/modifier';
 import { action } from '@ember/object';
 
-import UtilMarkdownFromUrl from './util/markdown-from-url';
 import lowercase from 'ember-cli-string-helpers/helpers/lowercase';
+
+import UtilMarkdownFromUrl from './util/markdown-from-url';
 
 interface Signature {
   Element: HTMLDivElement;

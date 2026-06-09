@@ -7,7 +7,7 @@ const googleTrackingIdsPerEnvironment = {
 };
 
 module.exports = function (environment) {
-  let ENV = {
+  const ENV = {
     modulePrefix: '@wonderkamer/frontend',
     environment,
     rootURL: '/',

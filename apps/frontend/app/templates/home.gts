@@ -1,5 +1,9 @@
 import { on } from '@ember/modifier';
 
+import appVersion from '@wonderkamer/frontend/helpers/app-version';
+import onKey from 'ember-keyboard/helpers/on-key';
+import RouteTemplate from 'ember-route-template';
+
 import Section from '../components/section';
 import SectionAbout from '../components/section-about';
 import SectionContact from '../components/section-contact';
@@ -9,10 +13,7 @@ import SectionMembers from '../components/section-members';
 import SectionPricing from '../components/section-pricing';
 import SectionRules from '../components/section-rules';
 import SectionTitle from '../components/section-title';
-import appVersion from '@wonderkamer/frontend/helpers/app-version';
 import sectionInserted from '../modifiers/section-inserted';
-import onKey from 'ember-keyboard/helpers/on-key';
-import RouteTemplate from 'ember-route-template';
 
 interface HomeRouteController {
   previousSection: (event: KeyboardEvent) => void;

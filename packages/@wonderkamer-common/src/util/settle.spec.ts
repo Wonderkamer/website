@@ -18,7 +18,7 @@ describe('settle function tests', () => {
     const { result, error } = await settle(promise);
 
     expect(error).toEqual(expectedError);
-    expect(result).toBeUndefined;
+    expect(result).toBeUndefined();
   });
 
   test('should handle asynchronous operations correctly', async () => {

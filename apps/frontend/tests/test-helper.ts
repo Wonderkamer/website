@@ -3,8 +3,9 @@ import * as QUnit from 'qunit';
 import { setup } from 'qunit-dom';
 import { start as qunitStart } from 'ember-qunit';
 
-import Application from '../app/app';
 import config from '@wonderkamer/frontend/config/environment';
+
+import Application from '../app/app';
 
 export function start() {
   setApplication(Application.create(config.APP));

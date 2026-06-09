@@ -17,6 +17,7 @@ function normalizeAttributes(attributes = {}) {
 
   for (const [key, value] of Object.entries(attributes)) {
     const camelKey = key.replace(/-([a-z])/g, (_, char) => char.toUpperCase());
+
     normalized[camelKey] = value;
   }
 

@@ -1,7 +1,8 @@
 import { debug } from '@ember/debug';
 
-import application from '../utils/application';
 import defaultMessages from 'ember-changeset-validations/utils/messages';
+
+import application from '../utils/application';
 
 /**
  * This is basicly ember-intl-changeset-validations but then working.
@@ -48,18 +49,22 @@ const messages = new Proxy(
   {
     get(_target, prop) {
       cached ??= buildMessages();
+
       return cached[prop];
     },
     ownKeys() {
       cached ??= buildMessages();
+
       return Reflect.ownKeys(cached);
     },
     getOwnPropertyDescriptor(_target, prop) {
       cached ??= buildMessages();
+
       return Object.getOwnPropertyDescriptor(cached, prop);
     },
     has(_target, prop) {
       cached ??= buildMessages();
+
       return prop in cached;
     },
   },

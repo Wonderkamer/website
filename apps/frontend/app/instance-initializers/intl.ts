@@ -5,7 +5,7 @@ export default {
   name: 'intl',
   after: 'container',
   async initialize(applicationInstance: Application) {
-    const intl: IntlService = applicationInstance.lookup('service:intl') as IntlService;
+    const intl: IntlService = applicationInstance.lookup('service:intl');
 
     intl.setLocale('nl');
 
