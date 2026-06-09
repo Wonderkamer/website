@@ -111,6 +111,7 @@
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "@warp-drive/build-config": "5.8.2",
+    "@warp-drive/ember": "5.8.2",
     "@wonderkamer/tsconfig": "workspace:*",
     "babel-plugin-ember-template-compilation": "4.0.0",
     "broccoli-asset-rev": "3.0.0",

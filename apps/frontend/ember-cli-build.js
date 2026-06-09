@@ -18,6 +18,9 @@ module.exports = async function (defaults) {
     compatWith: process.env.EMBER_DATA_FULL_COMPAT ? '99.0' : null,
     deprecations: {
       DEPRECATE_STORE_EXTENDS_EMBER_OBJECT: false,
+      // We provide Ember's reactivity via `import '@warp-drive/ember/install'`
+      // in app.ts, so the legacy @ember-data/tracking package is not needed.
+      DEPRECATE_TRACKING_PACKAGE: false,
     },
   });
 

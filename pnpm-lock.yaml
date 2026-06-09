@@ -418,6 +418,9 @@ importers:
       '@warp-drive/build-config':
         specifier: 5.8.2
         version: 5.8.2(@babel/core@7.26.10)(@glint/template@1.5.2)
+      '@warp-drive/ember':
+        specifier: 5.8.2
+        version: 5.8.2(@babel/core@7.26.10)(@ember/test-waiters@4.1.1(@babel/core@7.26.10)(@glint/template@1.5.2))(@glint/template@1.5.2)
       '@wonderkamer/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -13084,7 +13087,7 @@ snapshots:
       fs-tree-diff: 2.0.1
       handlebars: 4.7.9
       js-string-escape: 1.0.1
-      jsdom: 25.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      jsdom: 25.0.1(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)
       lodash: 4.18.1
       resolve: 1.22.12
       resolve-package-path: 4.0.3
@@ -13182,7 +13185,7 @@ snapshots:
       debug: 4.4.3(supports-color@8.1.1)
       fast-glob: 3.3.3
       fs-extra: 10.1.0
-      jsdom: 25.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      jsdom: 25.0.1(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)
       send: 1.2.1
       source-map-url: 0.4.1
       terser: 5.48.0
@@ -16974,7 +16977,7 @@ snapshots:
       figures: 3.2.0
       find-up: 5.0.0
       git-semver-tags: 5.0.1
-      jsdom: 25.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      jsdom: 25.0.1(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10)
       semver: 7.7.1
       w3c-xmlserializer: 5.0.0
       yaml: 2.9.0
@@ -20456,7 +20459,7 @@ snapshots:
 
   http-parser-js@0.5.10: {}
 
-  http-proxy-agent@7.0.2:
+  http-proxy-agent@7.0.2(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.3(supports-color@8.1.1)
@@ -20489,7 +20492,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  https-proxy-agent@7.0.6:
+  https-proxy-agent@7.0.6(supports-color@8.1.1):
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.3(supports-color@8.1.1)
@@ -21283,15 +21286,15 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jsdom@25.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10):
+  jsdom@25.0.1(bufferutil@4.1.0)(supports-color@8.1.1)(utf-8-validate@5.0.10):
     dependencies:
       cssstyle: 4.6.0
       data-urls: 5.0.0
       decimal.js: 10.6.0
       form-data: 4.0.5
       html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.6
+      http-proxy-agent: 7.0.2(supports-color@8.1.1)
+      https-proxy-agent: 7.0.6(supports-color@8.1.1)
       is-potential-custom-element-name: 1.0.1
       nwsapi: 2.2.23
       parse5: 7.3.0
@@ -21317,8 +21320,8 @@ snapshots:
       data-urls: 5.0.0
       decimal.js: 10.6.0
       html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.6
+      http-proxy-agent: 7.0.2(supports-color@8.1.1)
+      https-proxy-agent: 7.0.6(supports-color@8.1.1)
       is-potential-custom-element-name: 1.0.1
       nwsapi: 2.2.23
       parse5: 7.3.0
