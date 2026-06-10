@@ -1,6 +1,6 @@
 import { createMock } from '@golevelup/ts-jest';
 import { ConfigModule } from '@nestjs/config';
-import { Test , TestingModule } from '@nestjs/testing';
+import { Test, TestingModule } from '@nestjs/testing';
 import { Queue } from 'bullmq';
 
 import { MAIL_QUEUE } from './constants/mail.constants';

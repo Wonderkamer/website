@@ -4,8 +4,14 @@ import { readdirSync, statSync } from 'fs';
 import path, { join } from 'path';
 
 const loadConfigFiles = (files: string[], denyList: string[] = []) => {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  return files.filter((file) => !denyList.includes(path.basename(file))).map((file) => require(file).default);
+  return files
+    .filter((file) => !denyList.includes(path.basename(file)))
+    .map(
+      (file) =>
+        // Dynamically load each compiled *.config.js at runtime.
+        // eslint-disable-next-line @typescript-eslint/no-require-imports
+        require(file).default,
+    );
 };
 
 const findConfigFilesRecursively = (dir: string, fileList: string[] = []): string[] => {

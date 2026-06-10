@@ -1,5 +1,5 @@
 # Stage 0: Node.js install the node dependencies
-FROM node:22.14.0-alpine AS base-installer
+FROM node:22.19.0-alpine AS base-installer
 
 # Use the Corepack bundled with the pinned Node image.
 RUN corepack enable
@@ -13,11 +13,10 @@ FROM base-installer AS node-installer
 COPY apps/frontend/package.json                 /app/apps/frontend/
 COPY apps/backend/package.json                  /app/apps/backend/
 COPY apps/email-templates/package.json          /app/apps/email-templates/
-COPY packages/@wonderkamer-common/package.json  /app/packages/@wonderkamer-common/
-COPY packages/tsconfig/package.json             /app/packages/tsconfig/
 COPY package.json                               /app/
 COPY pnpm-workspace.yaml                        /app/
 COPY pnpm-lock.yaml                             /app/
+COPY patches/                                   /app/patches/
 COPY .npmrc                                     /app/
 COPY turbo.json                                 /app/
 
@@ -31,7 +30,6 @@ FROM node-installer AS backend-builder
 
 # Copy installed from node-installer
 COPY apps/backend/ /app/apps/backend/
-COPY packages/ /app/packages/
 
 COPY --from=node-installer /app /app/
 
@@ -44,7 +42,6 @@ RUN pnpm run build:backend
 FROM node-installer AS frontend-builder
 
 COPY apps/frontend/ /app/apps/frontend/
-COPY packages/ /app/packages/
 COPY --from=node-installer /app /app/
 
 # Build the all packages
@@ -68,16 +65,15 @@ FROM base-installer AS node-runtime
 
 # Copy pnpm stuff for to build the backend in production
 COPY apps/backend/package.json /app/apps/backend/
-COPY packages/@wonderkamer-common/package.json /app/packages/@wonderkamer-common/
 COPY package.json /app/
 COPY pnpm-workspace.yaml /app/
 COPY pnpm-lock.yaml /app/
+COPY patches/ /app/patches/
 COPY .npmrc /app/
 
 # Copy dist/** files from the builders
 COPY --from=frontend-builder /app/apps/frontend/dist/ /app/apps/frontend/dist/
 COPY --from=backend-builder /app/apps/backend/dist/ /app/apps/backend/dist/
-COPY --from=backend-builder /app/packages/@wonderkamer-common/dist/ /app/packages/@wonderkamer-common/dist/
 COPY --from=email-template-builder /app/apps/email-templates/dist/ /app/apps/email-templates/dist/
 
 # Install Node.js dependencies for production

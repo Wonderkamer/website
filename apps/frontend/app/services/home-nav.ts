@@ -1,12 +1,28 @@
+/* eslint-disable ember/no-runloop -- this service debounces viewport events with
+   @ember/runloop's debounce/cancel and cleans the timer up via registerDestructor,
+   which is a correct, self-contained runloop usage. */
 import { tracked } from '@glimmer/tracking';
+import { registerDestructor } from '@ember/destroyable';
+import { cancel, debounce } from '@ember/runloop';
 import Service, { service } from '@ember/service';
 
-import { debounceTask } from 'ember-lifeline';
-
 import type RouterService from '@ember/routing/router-service';
+import type { EmberRunTimer } from '@ember/runloop/types';
 
 export default class HomeNavService extends Service {
   @service private router!: RouterService;
+
+  private _sectionInViewDebounceTimer?: EmberRunTimer;
+
+  constructor(...args: never[]) {
+    super(...args);
+
+    registerDestructor(this, () => {
+      if (this._sectionInViewDebounceTimer) {
+        cancel(this._sectionInViewDebounceTimer);
+      }
+    });
+  }
 
   @tracked private _lastActiveRoute?: string;
   @tracked private _ignoreViewEvents = true;
@@ -33,7 +49,7 @@ export default class HomeNavService extends Service {
   }
 
   public sectionWentIntoView(id: string) {
-    debounceTask(this, '_sectionWentIntoViewDebouncer', id, 250);
+    this._sectionInViewDebounceTimer = debounce(this, this._sectionWentIntoViewDebouncer, id, 250);
   }
 
   private _sectionWentIntoViewDebouncer = (id: string) => {
@@ -46,7 +62,6 @@ export default class HomeNavService extends Service {
     const activeRoute = this.activeRoute;
 
     if (this._lastActiveRoute !== activeRoute) {
-      // eslint-disable-next-line ember/no-side-effects
       this._lastActiveRoute = activeRoute;
 
       if (!this._ignoreViewEvents) {
@@ -59,7 +74,7 @@ export default class HomeNavService extends Service {
     this._sectionsInViewPort = [...this._sectionsInViewPort.filter((i) => i !== id)];
   }
 
-  private get activeRoute() {
+  get activeRoute() {
     return this._sectionsInViewPort[this._sectionsInViewPort.length - 1];
   }
 }

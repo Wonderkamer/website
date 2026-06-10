@@ -1,6 +1,5 @@
 import '@glint/environment-ember-loose';
 
-import type { ComponentLike } from '@glint/template';
 import type EmberHeadlessFormRegistry from 'ember-headless-form/template-registry';
 import type EmberHeadlessFormChangesetRegistry from 'ember-headless-form-changeset/template-registry';
 import type EmberIntlRegistry from 'ember-intl/template-registry';
@@ -20,15 +19,5 @@ declare module '@glint/environment-ember-loose/registry' {
       EmberPageTitleRegistry,
       EmberStargateRegistry,
       EmberStyleModifierRegistry,
-      EmberTruthHelpersRegistry {
-    // ember-g-recaptcha ships no Glint types; register the surface we use.
-    GRecaptcha: ComponentLike<{
-      Element: HTMLDivElement;
-      Args: {
-        onSuccess?: (token: string) => void;
-        onExpired?: () => void;
-        ref?: unknown;
-      };
-    }>;
-  }
+      EmberTruthHelpersRegistry {}
 }

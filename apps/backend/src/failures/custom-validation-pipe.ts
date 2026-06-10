@@ -1,4 +1,4 @@
-import { HttpStatus, Logger, UnprocessableEntityException, ValidationError, ValidationPipe as BaseValidationPipe , ValidationPipeOptions } from '@nestjs/common';
+import { HttpStatus, Logger, UnprocessableEntityException, ValidationError, ValidationPipe as BaseValidationPipe, ValidationPipeOptions } from '@nestjs/common';
 
 export class ValidationPipe extends BaseValidationPipe {
   private readonly logger = new Logger(ValidationPipe.name);

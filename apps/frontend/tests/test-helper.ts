@@ -1,13 +1,19 @@
 import { setApplication } from '@ember/test-helpers';
 import * as QUnit from 'qunit';
 import { setup } from 'qunit-dom';
-import { start } from 'ember-qunit';
+import { start as qunitStart } from 'ember-qunit';
 
-import Application from '@wonderkamer/frontend/app';
 import config from '@wonderkamer/frontend/config/environment';
 
-setApplication(Application.create(config.APP));
+import Application from '../app/app';
 
-setup(QUnit.assert);
+export function start() {
+  setApplication(Application.create(config.APP));
 
-start();
+  setup(QUnit.assert);
+
+  // Test modules are discovered via `import.meta.glob` in tests/index.html, so
+  // disable ember-qunit's AMD/requirejs-based test loader (which isn't available
+  // under the Embroider + Vite ESM build).
+  qunitStart({ loadTests: false });
+}

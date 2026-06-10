@@ -400,7 +400,7 @@
       "attributes": {
         "title": "Leandro Oliva",
         "slug": "leandro-oliva",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
@@ -430,6 +430,26 @@
       "attributes": {
         "title": "Joseph Marcus",
         "slug": "joseph-marcus",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 43,
+      "type": "member",
+      "attributes": {
+        "title": "Jack Gordon",
+        "slug": "jack-gordon",
+        "is-active": true,
+        "tag-line": "..."
+      }
+    },
+    {
+      "id": 44,
+      "type": "member",
+      "attributes": {
+        "title": "Nathan Howe",
+        "slug": "nathan-howe",
         "is-active": true,
         "tag-line": "..."
       }

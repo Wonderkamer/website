@@ -1,3 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* Tailwind v4 auto-detects sources, but our templates live under app/ (relative
+   to this file) and content also appears in public markdown. Be explicit so the
+   .gts/.gjs/.hbs class usage is always scanned. */
+@source '../**/*.{js,ts,hbs,gjs,gts,html}';
+@source '../../public/**/*.md';
+
+@plugin '@tailwindcss/typography';
+
+/* daisyUI 5 is loaded as a Tailwind v4 plugin. Only the `light` theme is used
+   (applied via <html data-theme="light">). */
+@plugin 'daisyui' {
+  themes: light --default;
+}
+
+@theme {
+  --font-sans: 'Dosis-Regular', sans-serif;
+}

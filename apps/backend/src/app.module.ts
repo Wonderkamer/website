@@ -25,9 +25,7 @@ import { SupportModule } from './modules/support/support.module';
 
         return {
           metaTagName: '@wonderkamer/frontend/config/environment',
-          ...(emberProxyTarget
-            ? { proxy: { target: emberProxyTarget } }
-            : { static: { rootPath: join(config['appRoot'], '../frontend/dist') } }),
+          ...(emberProxyTarget ? { proxy: { target: emberProxyTarget } } : { static: { rootPath: join(config['appRoot'], '../frontend/dist') } }),
         };
       },
       inject: [ConfigService],

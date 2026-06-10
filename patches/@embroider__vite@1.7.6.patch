@@ -1,0 +1,13 @@
+diff --git a/dist/src/resolver.js b/dist/src/resolver.js
+index 9075afbeaa4a6698ac23b7602d1c502b0932df47..3c1bcad9d346194abdb560b2be994625692eb636 100644
+--- a/dist/src/resolver.js
++++ b/dist/src/resolver.js
+@@ -143,7 +143,7 @@ export function resolver(params) {
+             }
+         },
+         async buildEnd() {
+-            if (command !== 'dev') {
++            if (command === 'build') {
+                 emitVirtualFile(this, '@embroider/virtual/vendor.js');
+                 emitVirtualFile(this, '@embroider/virtual/vendor.css');
+                 if (mode !== 'production') {

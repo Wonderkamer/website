@@ -7,6 +7,23 @@ import { task, timeout } from 'ember-concurrency';
 import { use } from 'ember-resources';
 import { RemoteData } from 'reactiveweb/remote-data';
 
+/**
+ * Convert a JSON:API resource's dasherized attribute keys (e.g. `is-active`,
+ * `tag-line`) to the camelCase keys the Member model declares. The legacy
+ * JSONAPISerializer did this implicitly; `store.push` expects it done already.
+ */
+function normalizeAttributes(attributes = {}) {
+  const normalized = {};
+
+  for (const [key, value] of Object.entries(attributes)) {
+    const camelKey = key.replace(/-([a-z])/g, (_, char) => char.toUpperCase());
+
+    normalized[camelKey] = value;
+  }
+
+  return normalized;
+}
+
 export default class HomeController extends Controller {
   @service router;
   @service store;
@@ -39,15 +56,19 @@ export default class HomeController extends Controller {
       return [];
     }
 
-    this.store.pushPayload('member', this.membersRemoteData.value);
-
-    const members = [];
-
-    data.forEach((element) => {
-      members.push(this.store.peekRecord(element.type, element.id));
+    // /data/members.json is already a JSON:API document, so push it straight
+    // into the store with `store.push` (the modern, non-deprecated path that
+    // replaces the legacy `store.pushPayload`). It expects normalized resources:
+    // string ids and camelCased attribute keys, which we map here.
+    const records = this.store.push({
+      data: data.map((resource) => ({
+        type: resource.type,
+        id: String(resource.id),
+        attributes: normalizeAttributes(resource.attributes),
+      })),
     });
 
-    return members.filter((member) => member.isActive).sort(() => Math.random() - 0.5);
+    return records.filter((member) => member.isActive).sort(() => Math.random() - 0.5);
   }
 
   @action

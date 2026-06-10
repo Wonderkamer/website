@@ -17,9 +17,7 @@ export class MailService {
   ) {}
 
   async sendContactEmail(contact: ContactDto) {
-    const defaultRecipient =
-      this.configService.get<string>('mailer.defaults.to', { infer: true }) ??
-      '"De Wonderkamer" <hallo@wonderkamer.com>';
+    const defaultRecipient = this.configService.get<string>('mailer.defaults.to', { infer: true }) ?? '"De Wonderkamer" <hallo@wonderkamer.com>';
 
     await this.mailQueue.add('mailer', {
       to: defaultRecipient,
