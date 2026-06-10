@@ -400,7 +400,7 @@
       "attributes": {
         "title": "Leandro Oliva",
         "slug": "leandro-oliva",
-        "is-active": true,
+        "is-active": false,
         "tag-line": "..."
       }
     },
