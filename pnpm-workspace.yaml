@@ -1,6 +1,5 @@
 packages:
   - apps/*
-  - packages/*
 
 overrides:
   # Ember 7 removed the legacy AMD ember-template-compiler bundle that

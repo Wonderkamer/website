@@ -1,5 +1,6 @@
 import { registerAs } from '@nestjs/config';
-import { toBoolean } from '@wonderkamer/common/util/to-boolean';
+
+import { toBoolean } from '../common/util/to-boolean';
 
 export interface FeaturesConfig {
   animateSpinner: boolean;
