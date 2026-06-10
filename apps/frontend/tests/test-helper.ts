@@ -12,5 +12,8 @@ export function start() {
 
   setup(QUnit.assert);
 
-  qunitStart();
+  // Test modules are discovered via `import.meta.glob` in tests/index.html, so
+  // disable ember-qunit's AMD/requirejs-based test loader (which isn't available
+  // under the Embroider + Vite ESM build).
+  qunitStart({ loadTests: false });
 }

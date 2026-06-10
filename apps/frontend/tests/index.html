@@ -33,6 +33,11 @@
 
     <script type="module">
       import { start } from './test-helper';
+      // Tests are loaded as ESM modules below rather than via the classic
+      // assets/tests.js, so satisfy the ember-cli content-for guard that checks
+      // EmberENV.TESTS_FILE_LOADED.
+      window.EmberENV = window.EmberENV || {};
+      window.EmberENV.TESTS_FILE_LOADED = true;
       import.meta.glob('./**/*.{js,ts,gjs,gts}', { eager: true });
       start();
     </script>
