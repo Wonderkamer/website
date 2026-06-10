@@ -42,8 +42,6 @@
     "scripts": {}
   },
   "dependencies": {
-    "@wonderkamer/common": "workspace:*",
-    "ember-element-helper": "0.8.7",
     "ember-headless-form": "1.1.1",
     "ember-headless-form-changeset": "1.0.0",
     "reactiveweb": "1.4.1"
@@ -127,7 +125,6 @@
     "ember-intl": "7.1.6",
     "ember-keyboard": "9.0.4",
     "ember-load-initializers": "3.0.1",
-    "ember-math-helpers": "5.0.0",
     "ember-metrics": "2.0.0",
     "ember-modifier": "4.2.0",
     "ember-page-title": "9.0.3",
@@ -144,7 +141,6 @@
     "eslint": "9.39.4",
     "markdown-it": "14.2.0",
     "markdown-it-deflist": "3.0.1",
-    "markdown-it-task-lists": "2.1.1",
     "npm-run-all2": "7.0.2",
     "postcss": "8.5.15",
     "postcss-scss": "4.0.9",
@@ -152,13 +148,10 @@
     "prettier-plugin-ember-template-tag": "2.1.6",
     "qunit": "2.24.1",
     "qunit-dom": "3.4.0",
-    "rsvp": "4.8.5",
     "stylelint": "16.18.0",
     "stylelint-config-recommended": "16.0.0",
     "tailwindcss": "4.3.0",
-    "tracked-built-ins": "4.0.0",
     "typescript": "5.5.4",
-    "validated-changeset": "1.4.1",
     "vite": "5.4.19"
   },
   "engines": {
