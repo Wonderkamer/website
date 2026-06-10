@@ -149,6 +149,14 @@ module.exports = {
       lineHeight: (theme) => ({
         ...theme("spacing"),
       }),
+      width: (theme) => ({
+        ...theme("spacing"),
+        // Named value for the Outlook ghost-button spacer technique. Using a
+        // named utility (mso-font-width-negative-full) instead of the arbitrary
+        // value mso-font-width-[-100%] avoids Tailwind's ambiguity warning, which
+        // was preventing the class from being generated/inlined.
+        "negative-full": "-100%",
+      }),
       maxWidth: (theme) => ({
         ...theme("spacing"),
         xs: "160px",
