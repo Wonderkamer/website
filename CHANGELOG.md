@@ -2,6 +2,52 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.10.0](https://github.com/Wonderkamer/website/compare/v1.9.0...v1.10.0) (2026-06-10)
+
+
+### Features
+
+* **frontend:** convert route templates to .gts via ember-route-template ([690d519](https://github.com/Wonderkamer/website/commits/690d51984a2e1920bb33f08c104d7d4ce2b52e00))
+* **frontend:** redesign about and split out Lidmaatschap and Reglement ([425c4ae](https://github.com/Wonderkamer/website/commits/425c4ae8b0b7d9c2bd98cda5c47ecb3928ac0e42))
+* **frontend:** redesign hero, impressions, members, contact and location ([f10e6ea](https://github.com/Wonderkamer/website/commits/f10e6eaf620344ad9f55ce7a944ed6695f5ccada))
+* **frontend:** smooth in-page navigation between sections ([40e7e16](https://github.com/Wonderkamer/website/commits/40e7e16834a661924fae1ea7bfe0113202e7eb05))
+
+
+### Bug Fixes
+
+* **backend:** fall back to default stackVersion when SEMVER_TAG is empty ([9de5ab8](https://github.com/Wonderkamer/website/commits/9de5ab8c9c495c5f2bb8cd9eeac73c1889bf5fcc))
+* **docker:** drop removed packages/ copies, add patches/ for pnpm ([996340b](https://github.com/Wonderkamer/website/commits/996340bf4d895ac16b36c0307433d6cdda619f30))
+* **email-templates:** use a named mso-font-width utility for Outlook buttons ([3750966](https://github.com/Wonderkamer/website/commits/3750966b2572d7224f3fa00d55ec46120e357790))
+* **frontend:** bind Vite dev server to 127.0.0.1:4222 for backend proxy ([7d928ee](https://github.com/Wonderkamer/website/commits/7d928ee13537453c5c5f552d55a3aa11c097c900))
+* **frontend:** make pricing badges yellow again ([91cf5aa](https://github.com/Wonderkamer/website/commits/91cf5aa2d15dd5bd37be6884a106e7e1919e36ba))
+* **frontend:** patch @embroider/vite to not emitFile in serve mode ([e6e5883](https://github.com/Wonderkamer/website/commits/e6e588346770284d667c800575fc011eb3fb7c97))
+* **frontend:** repair runtime boot under Embroider/Vite ([7b245b5](https://github.com/Wonderkamer/website/commits/7b245b551459126fb978b0e47f2b42da209b573b))
+* **frontend:** resolve WarpDrive/EmberData 5.8 boot deprecations ([22abb55](https://github.com/Wonderkamer/website/commits/22abb5520819e285e3cd4feb16e0a50727485147))
+
+
+### Miscellaneous
+
+* apply patch-level dependency updates ([b653a94](https://github.com/Wonderkamer/website/commits/b653a948c25cfd86dd950c72ed9874515d72fa96))
+* **frontend:** fix the Vite/Embroider test harness ([530c1c8](https://github.com/Wonderkamer/website/commits/530c1c823f6e46bbff6740642e0d7adaeb13bfca))
+* **frontend:** remove more unused dependencies ([a00865f](https://github.com/Wonderkamer/website/commits/a00865fad9e0d617e3d12f079d80b44561301e49))
+* **frontend:** stop generated member tests using deprecated EmberData API ([48e43e1](https://github.com/Wonderkamer/website/commits/48e43e11a607a5d9a94a9d678fa3682753a812df))
+* point the editor glint extension at the frontend app ([4293b42](https://github.com/Wonderkamer/website/commits/4293b4242fd6ebd2894fdf834ffe54971e41ed6f))
+* remove @wonderkamer/common package, inline the one used util ([5f4f467](https://github.com/Wonderkamer/website/commits/5f4f4678c9daa14f80e417db0b500bfa24589fbb))
+* remove dependencies orphaned by the build/tooling refactors ([cdb4411](https://github.com/Wonderkamer/website/commits/cdb4411774acefb21f0f6a27f8699326e1c98361))
+* remove unused @wonderkamer/tsconfig workspace package ([8f4f57c](https://github.com/Wonderkamer/website/commits/8f4f57ca9b689fb2b58f438116120f83d35c1659))
+
+
+### Refactoring
+
+* **frontend:** convert components to .gts glint components ([2fe1d7b](https://github.com/Wonderkamer/website/commits/2fe1d7b7c1e608c1b15aefb0a7587b2d2e23de2f))
+* **frontend:** remove the occupancy route and its components ([6546400](https://github.com/Wonderkamer/website/commits/654640011a1f984c79dd5129a2b533908c54d9e8))
+
+
+### Content Changes
+
+* **frontend:** add Jack Gordon and Nathan Howe as members ([1c24f6a](https://github.com/Wonderkamer/website/commits/1c24f6a53bd08bdc709c298075a612a47001b3b5))
+* **frontend:** disable Leandro Oliva as an active member ([5d18124](https://github.com/Wonderkamer/website/commits/5d181240b4ff3e00424c93f47a1451faca09ba5e))
+
 ## [1.9.0](https://github.com/Wonderkamer/website/compare/v1.8.0...v1.9.0) (2026-06-07)
 
 
