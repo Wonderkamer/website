@@ -29,7 +29,12 @@ section {
 }
 
 .badge {
-  @apply badge-info self-start place-self-start justify-self-start font-bold ms-2 rounded-md bg-primary inline-block w-auto border-none;
+  @apply badge-info self-start place-self-start justify-self-start font-bold ms-2 rounded-md inline-block w-auto border-none;
+
+  /* Set the yellow brand colour explicitly: under Tailwind 4, `@apply bg-primary`
+     resolves to daisyUI's primary (purple in the light theme) rather than the
+     custom `.bg-primary` override below. */
+  background-color: rgb(var(--bs-primary-rgb));
 }
 
 /* section impression */
