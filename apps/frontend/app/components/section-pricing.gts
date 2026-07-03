@@ -23,6 +23,7 @@ const SectionPricing: TOC<{ Element: HTMLElement }> = <template>
           <span class="text-4xl font-bold text-gray-900">€130</span>
           <span class="text-sm text-gray-500">/ maand</span>
         </p>
+        <p class="mt-1 text-xs text-gray-500">ex BTW</p>
         <ul class="mt-6 space-y-3 text-sm text-gray-700">
           <li class="flex gap-2">
             <svg class="h-5 w-5 flex-none text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path
@@ -50,6 +51,7 @@ const SectionPricing: TOC<{ Element: HTMLElement }> = <template>
           <span class="text-4xl font-bold text-gray-900">€205</span>
           <span class="text-sm text-gray-500">/ maand</span>
         </p>
+        <p class="mt-1 text-xs text-gray-500">ex BTW</p>
         <ul class="mt-6 space-y-3 text-sm text-gray-700">
           <li class="flex gap-2">
             <svg class="h-5 w-5 flex-none text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path
@@ -78,6 +80,7 @@ const SectionPricing: TOC<{ Element: HTMLElement }> = <template>
           <span class="text-4xl font-bold text-gray-900">€295</span>
           <span class="text-sm text-gray-700">/ maand</span>
         </p>
+        <p class="mt-1 text-xs text-gray-700">ex BTW</p>
         <ul class="mt-6 space-y-3 text-sm text-gray-800">
           <li class="flex gap-2">
             <svg class="h-5 w-5 flex-none text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path
