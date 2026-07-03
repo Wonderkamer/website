@@ -15,7 +15,7 @@
     "typecheck": "turbo run typecheck",
     "preinstall": "npx only-allow pnpm",
     "release": "turbo run release",
-    "start:dev": "concurrently --kill-others 'cd apps/frontend && pnpm run start' 'cd apps/backend && pnpm run start:debug'",
+    "dev": "concurrently --kill-others 'cd apps/frontend && pnpm run start' 'cd apps/backend && pnpm run start:debug'",
     "test": "turbo run test",
     "prepare": "husky || true"
   },
