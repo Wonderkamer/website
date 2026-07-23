@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import { getAllMemberSlugs, getMemberBySlug } from '@/lib/content';
+import { getActiveMemberSlugs, getMemberBySlug } from '@/lib/content';
 
 export function generateStaticParams() {
-  return getAllMemberSlugs().map((slug) => ({ slug }));
+  return getActiveMemberSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

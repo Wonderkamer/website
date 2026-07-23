@@ -29,15 +29,17 @@ export function getActiveMembers(): Member[] {
   return getAllMembers().filter((member) => member.isActive);
 }
 
-export function getAllMemberSlugs(): string[] {
+export function getActiveMemberSlugs(): string[] {
+  const activeSlugs = new Set(getActiveMembers().map((member) => member.slug));
+
   return fs
     .readdirSync(path.join(CONTENT_DIR, 'members'), { withFileTypes: true })
-    .filter((entry) => entry.isDirectory() && entry.name !== '_default')
+    .filter((entry) => entry.isDirectory() && activeSlugs.has(entry.name))
     .map((entry) => entry.name);
 }
 
 export async function getMemberBySlug(slug: string): Promise<{ meta: Member; contentHtml: string } | null> {
-  const meta = getAllMembers().find((member) => member.slug === slug);
+  const meta = getActiveMembers().find((member) => member.slug === slug);
   if (!meta) {
     return null;
   }
