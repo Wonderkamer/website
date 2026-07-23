@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Repo-level tooling config, not app code.
+    ".commitlintrc.mjs",
   ]),
 ]);
 

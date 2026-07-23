@@ -1,4 +1,4 @@
-import packageJson from '../package.json';
+import packageJson from '../../package.json';
 import { VersionFooterButton } from './version-footer-button';
 
 function GoogleIcon() {

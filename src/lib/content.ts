@@ -13,7 +13,7 @@ export type Member = {
   isActive: boolean;
 };
 
-const CONTENT_DIR = path.join(process.cwd(), 'content');
+const CONTENT_DIR = path.join(process.cwd(), 'src', 'content');
 
 async function renderMarkdownFile(filePath: string): Promise<string> {
   const raw = fs.readFileSync(filePath, 'utf8');

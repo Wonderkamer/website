@@ -15,7 +15,7 @@ describe('content loader', () => {
 
   it('member slugs match the content/members directory, excluding _default', () => {
     const folders = fs
-      .readdirSync(path.join(process.cwd(), 'content', 'members'), { withFileTypes: true })
+      .readdirSync(path.join(process.cwd(), 'src', 'content', 'members'), { withFileTypes: true })
       .filter((entry) => entry.isDirectory() && entry.name !== '_default')
       .map((entry) => entry.name);
 
