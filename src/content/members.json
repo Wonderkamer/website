@@ -1,0 +1,317 @@
+[
+  {
+    "id": 0,
+    "slug": "bas-kamer",
+    "title": "Bas",
+    "tagLine": "Developer slash Designer",
+    "isActive": true
+  },
+  {
+    "id": 1,
+    "slug": "tom-akkermans",
+    "title": "Tom",
+    "tagLine": "Fintech Developer",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "slug": "eric-haas",
+    "title": "Eric",
+    "tagLine": "Sociaal ondernemer / business development",
+    "isActive": false
+  },
+  {
+    "id": 3,
+    "slug": "masja-ros",
+    "title": "Masja",
+    "tagLine": "Social media entrepreneur",
+    "isActive": false
+  },
+  {
+    "id": 4,
+    "slug": "moniek-wester",
+    "title": "Moniek",
+    "tagLine": "Video vrouw",
+    "isActive": true
+  },
+  {
+    "id": 5,
+    "slug": "michael-dommershuizen",
+    "title": "Michaël",
+    "tagLine": "Product Designer",
+    "isActive": false
+  },
+  {
+    "id": 6,
+    "slug": "joanne-wienen",
+    "title": "Joanne",
+    "tagLine": "Freelance journalist",
+    "isActive": false
+  },
+  {
+    "id": 7,
+    "slug": "nienke-schachtschabel",
+    "title": "Nienke",
+    "tagLine": "Design Researcher",
+    "isActive": false
+  },
+  {
+    "id": 8,
+    "slug": "femke-deckers",
+    "title": "Femke",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 9,
+    "slug": "maaike-wijdema",
+    "title": "Maaike",
+    "tagLine": "Docent NT2",
+    "isActive": false
+  },
+  {
+    "id": 10,
+    "slug": "kaoutar-beni-driss",
+    "title": "Kaoutar",
+    "tagLine": "Verbinder",
+    "isActive": false
+  },
+  {
+    "id": 11,
+    "slug": "christine-van-rossum",
+    "title": "Christine",
+    "tagLine": "",
+    "isActive": false
+  },
+  {
+    "id": 12,
+    "slug": "liesbeth-scholten",
+    "title": "Liesbeth",
+    "tagLine": "Co-creator, facilitator en onderzoeker",
+    "isActive": false
+  },
+  {
+    "id": 13,
+    "slug": "piero-zagami",
+    "title": "Piero",
+    "tagLine": "Information designer",
+    "isActive": true
+  },
+  {
+    "id": 14,
+    "slug": "bas-mijling",
+    "title": "Bas",
+    "tagLine": "Onderzoeker luchtkwaliteit",
+    "isActive": false
+  },
+  {
+    "id": 15,
+    "slug": "maria",
+    "title": "Maria",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 16,
+    "slug": "trudy-westby",
+    "title": "Trudy",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 17,
+    "slug": "jan-bruin",
+    "title": "Jan",
+    "tagLine": "Freelance Strateeg, Programmamaker en Schrijver",
+    "isActive": false
+  },
+  {
+    "id": 18,
+    "slug": "an-tonen",
+    "title": "An",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 19,
+    "slug": "selm-wenselaar",
+    "title": "Selm",
+    "tagLine": "Dramaturg, Schrijver, Curator",
+    "isActive": false
+  },
+  {
+    "id": 20,
+    "slug": "manuel-schipper",
+    "title": "Manuel",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 21,
+    "slug": "michael-kiliaan",
+    "title": "Michaël",
+    "tagLine": "Frontend developer",
+    "isActive": false
+  },
+  {
+    "id": 22,
+    "slug": "ares-driessen",
+    "title": "Ares Driessen",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 23,
+    "slug": "katherine-decker",
+    "title": "Katherine Decker",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 24,
+    "slug": "martijn-de-vries",
+    "title": "Martijn De Vries",
+    "tagLine": "researcher",
+    "isActive": false
+  },
+  {
+    "id": 25,
+    "slug": "ramses-dali",
+    "title": "Ramses Dali",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 26,
+    "slug": "kenny-held",
+    "title": "Kenny Held",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 27,
+    "slug": "thomas-tilkema",
+    "title": "Thomas Tilkema",
+    "tagLine": "...",
+    "isActive": true
+  },
+  {
+    "id": 28,
+    "slug": "paul-brouwer",
+    "title": "Paul Brouwer",
+    "tagLine": "digital product designer",
+    "isActive": false
+  },
+  {
+    "id": 29,
+    "slug": "erik-prins",
+    "title": "Erik Prins",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 30,
+    "slug": "marine-rabier",
+    "title": "Marine Rabier",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 31,
+    "slug": "michael-siega",
+    "title": "Michael Siega",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 32,
+    "slug": "nathan-warren",
+    "title": "Nathan Warren",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 33,
+    "slug": "yasmin-veenman",
+    "title": "Yasmin Veenman",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 34,
+    "slug": "jad-joubran",
+    "title": "Jad Joubran",
+    "tagLine": "Educator/Entrepreneur",
+    "isActive": true
+  },
+  {
+    "id": 35,
+    "slug": "jorine-koenen",
+    "title": "Jorine Koenen",
+    "tagLine": "...",
+    "isActive": true
+  },
+  {
+    "id": 36,
+    "slug": "joany-beer",
+    "title": "Joany Beer",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 37,
+    "slug": "hui",
+    "title": "Hui",
+    "tagLine": "Journalist",
+    "isActive": true
+  },
+  {
+    "id": 38,
+    "slug": "david-blackman",
+    "title": "David Blackman",
+    "tagLine": "...",
+    "isActive": true
+  },
+  {
+    "id": 39,
+    "slug": "leandro-oliva",
+    "title": "Leandro Oliva",
+    "tagLine": "...",
+    "isActive": false
+  },
+  {
+    "id": 40,
+    "slug": "jobjan-blonk",
+    "title": "Jobjan Blonk",
+    "tagLine": "...",
+    "isActive": true
+  },
+  {
+    "id": 41,
+    "slug": "jean-de-becdelievre",
+    "title": "Jean de Becdelievre",
+    "tagLine": "...",
+    "isActive": true
+  },
+  {
+    "id": 42,
+    "slug": "joseph-marcus",
+    "title": "Joseph Marcus",
+    "tagLine": "...",
+    "isActive": true
+  },
+  {
+    "id": 43,
+    "slug": "jack-gordon",
+    "title": "Jack Gordon",
+    "tagLine": "...",
+    "isActive": true
+  },
+  {
+    "id": 44,
+    "slug": "nathan-howe",
+    "title": "Nathan Howe",
+    "tagLine": "...",
+    "isActive": true
+  }
+]

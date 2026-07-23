@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@source '../content/**/*.md';
+
+@plugin '@tailwindcss/typography';
+
+@theme inline {
+  --font-sans: var(--font-dosis), sans-serif;
+}
+
+:root {
+  --bs-primary-rgb: 255, 230, 7;
+  --bs-secondary-rgb: 218, 229, 236;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+
+  &:not(:last-of-type) {
+    margin-bottom: 40vh;
+  }
+}
+
+.bg-primary {
+  background-color: rgb(var(--bs-primary-rgb));
+}
+
+.bg-secondary {
+  background-color: rgb(var(--bs-secondary-rgb));
+}
+
+.badge {
+  @apply self-start place-self-start justify-self-start inline-block w-auto rounded-md border-none px-2 py-0.5 text-xs font-bold ms-2;
+  background-color: rgb(var(--bs-primary-rgb));
+}
+
+/* section impressions carousel */
+.image-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  &.show {
+    opacity: 1;
+  }
+
+  height: 100%;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
