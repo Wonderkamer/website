@@ -5,7 +5,13 @@
       "dependsOn": ["test"]
     },
     "build": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "env": [
+        "BREVO_API_KEY",
+        "RECAPTCHA_SECRET_KEY",
+        "NEXT_PUBLIC_RECAPTCHA_SITE_KEY",
+        "NEXT_PUBLIC_SITE_URL"
+      ]
     },
     "test": {
       "dependsOn": ["^test", "lint"],
