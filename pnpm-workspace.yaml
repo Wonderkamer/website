@@ -2,31 +2,11 @@ packages:
   - apps/*
 
 allowBuilds:
-  '@nestjs/core': true
   '@parcel/watcher': true
-  bcrypt: true
-  bufferutil: true
-  core-js: true
-  es5-ext: true
   esbuild: true
-  msgpackr-extract: true
-  nestjs-ember-static: true
   sharp: true
   unrs-resolver: true
-  utf-8-validate: true
-
-minimumReleaseAgeExclude:
-  - nestjs-ember-static@0.3.1
-  - prettier@3.8.4
 
 onlyBuiltDependencies:
-  - '@nestjs/core'
   - '@parcel/watcher'
-  - bcrypt
-  - bufferutil
-  - core-js
-  - es5-ext
-  - msgpackr-extract
-  - nestjs-ember-static
   - sharp
-  - utf-8-validate
