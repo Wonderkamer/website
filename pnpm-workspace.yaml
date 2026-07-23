@@ -1,13 +1,6 @@
 packages:
   - apps/*
 
-overrides:
-  # Ember 7 removed the legacy AMD ember-template-compiler bundle that
-  # ember-cli-htmlbars < 6.1 references. Force the whole tree onto a version
-  # that uses the modern compiler so unmaintained addons (ember-cli-head,
-  # ember-g-recaptcha, ember-in-element-polyfill) keep building.
-  ember-cli-htmlbars: '7.0.1'
-
 allowBuilds:
   '@nestjs/core': true
   '@parcel/watcher': true
@@ -18,6 +11,7 @@ allowBuilds:
   esbuild: true
   msgpackr-extract: true
   nestjs-ember-static: true
+  sharp: true
   unrs-resolver: true
   utf-8-validate: true
 
@@ -34,7 +28,5 @@ onlyBuiltDependencies:
   - es5-ext
   - msgpackr-extract
   - nestjs-ember-static
+  - sharp
   - utf-8-validate
-
-patchedDependencies:
-  '@embroider/vite@1.7.6': patches/@embroider__vite@1.7.6.patch
